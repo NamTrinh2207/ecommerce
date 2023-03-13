@@ -9,12 +9,7 @@ public interface IEcommerce<T> {
 
     T findById(long id);
 
-<<<<<<< HEAD
-    void update(int id, T product);
-
-=======
     void update(long id, T t);
->>>>>>> d4f8b10d1264e811f3284f64fd3e595d9a767cac
 
     void delete(long id);
 }

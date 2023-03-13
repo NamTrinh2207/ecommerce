@@ -30,7 +30,7 @@ public class ProductService implements IProductService {
 
     @Override
     public void update(long id, Product product) {
-        products.set(id, product);
+        products.set((int) id, product);
     }
 
     @Override

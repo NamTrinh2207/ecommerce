@@ -29,8 +29,8 @@ public class CategoryService implements ICategory {
     }
 
     @Override
-    public void update(long id, Categories category)
-    {
+    public void update(long id, Categories category) {
+        categories.set((int) id, category);
     }
 
     @Override
