@@ -19,8 +19,13 @@ public class CreateDatabase {
     {
         Connection connection = null;
         try {
+<<<<<<< HEAD
             Class.forName(className);
             connection = DriverManager.getConnection(jdbcURL, acc,pass);
+=======
+            Class.forName(DRIVER);
+            connection =DriverManager.getConnection(URL,USER,PASSWORD);
+>>>>>>> 36a850dbfdbc82cb1227d80be119901f694b4060
         }
         catch (SQLException | ClassNotFoundException e)
         {
