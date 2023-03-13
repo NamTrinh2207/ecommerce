@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+<<<<<<< HEAD
+    <bytecodeTargetLevel target="1.8" />
+=======
     <bytecodeTargetLevel>
       <module name="case-nhom-3" target="1.8" />
       <module name="case-nhom-3.main" target="1.8" />
       <module name="case-nhom-3.test" target="1.8" />
+      <module name="com.example.case-nhom-3.test" target="1.8" />
     </bytecodeTargetLevel>
+>>>>>>> 196016c7db4519ccdd0784539bcdc43804de9f1f
   </component>
 </project>
