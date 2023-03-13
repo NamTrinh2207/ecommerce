@@ -41,9 +41,9 @@ public class OrderServiceImpl implements OrderService
                 {
                     long order_id = rs.getLong("id");
                     Date orderDate = rs.getDate("orderDate");
-
                     int orderStatus = rs.getInt("status");
 
+                    // get customer infomation
                     Long customer_id = rs.getLong("customer_id");
                     String customerCode = rs.getString("customerCode");
                     String customerName = rs.getString("customerName");
@@ -51,6 +51,8 @@ public class OrderServiceImpl implements OrderService
                     String customerPlace = rs.getString("customerPlace");
                     String customerEmail = rs.getString("customerEmail");
                     String customerPhone = rs.getString("customerPhone");
+
+                    // get employee infomation
                     Long employee_id = rs.getLong("employee_id");
                     String employeeCode = rs.getString("employeeCode");
                     String employeeName = rs.getString("employeeName");
