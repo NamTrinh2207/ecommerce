@@ -3,6 +3,9 @@ package com.example.casenhom3.model;
 public class Product {
     private long id;
     private String code;
+
+    private String name;
+
     private double price;
     private String img;
     private String describe;
@@ -10,9 +13,10 @@ public class Product {
     public Product() {
     }
 
-    public Product(long id, String code, double price, String img, String describe) {
+    public Product(long id, String code,String name, double price, String img, String describe) {
         this.id = id;
         this.code = code;
+        this.name = name;
         this.price = price;
         this.img = img;
         this.describe = describe;
@@ -32,6 +36,14 @@ public class Product {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double getPrice() {

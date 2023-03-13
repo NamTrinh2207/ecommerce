@@ -121,8 +121,6 @@
                                         </li>
                                         <li class="menu_iconb">
 
-                                            <a href="#"><img style="margin-right: 15px;" src="icon/3.png" alt="#"/></a>
-
                                             <a href="login/searchproduct.jsp"><img style="margin-right: 15px;" src="icon/3.png" alt="#" /></a>
 
                                         </li>
