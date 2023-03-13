@@ -31,11 +31,14 @@ public class ProductServlet extends HttpServlet {
                 deleteForm(request, response);
                 break;
             case "view":
+                viewProduct(request, response);
                 break;
             default:
                 listProduct(request, response);
         }
     }
+
+
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -106,7 +109,24 @@ public class ProductServlet extends HttpServlet {
         }
     }
 
-
+    private void viewProduct(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        Product product = this.productService.findById(id);
+        RequestDispatcher dispatcher;
+        if( product == null){
+            dispatcher = request.getRequestDispatcher("/productServlet");
+        }else {
+            request.setAttribute("product", product);
+            dispatcher = request.getRequestDispatcher("viewProduct");
+        }
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
     private void creteProduct(HttpServletRequest request, HttpServletResponse response) {
         String code = request.getParameter("code");
         double price = Double.parseDouble(request.getParameter("price"));
@@ -114,6 +134,7 @@ public class ProductServlet extends HttpServlet {
         String describe = request.getParameter("img");
         Product product = new Product(id, code, price, img, describe);
         this.productService.save(product);
+        id++;
         RequestDispatcher dispatcher = request.getRequestDispatcher("create.jsp");
         try {
             dispatcher.forward(request, response);
