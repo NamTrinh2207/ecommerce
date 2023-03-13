@@ -1,76 +1,60 @@
 package com.example.casenhom3.model;
 
 public class Product {
-    private Long id;
-    private String productCode;
-    private double productPrice;
-    private String productImage;
-    private String productDescribe;
-    private Categories productCategories;
+    private int id;
+    private String code;
+    private double price;
+    private String img;
+    private String describe;
 
+    public Product() {
+    }
 
-    public Product(Long id, String productCode, double productPrice, String productImage, String productDescribe, Categories productCategories) {
+    public Product(int id, String code, double price, String img, String describe) {
         this.id = id;
-        this.productCode = productCode;
-        this.productPrice = productPrice;
-        this.productImage = productImage;
-        this.productDescribe = productDescribe;
-        this.productCategories = productCategories;
+        this.code = code;
+        this.price = price;
+        this.img = img;
+        this.describe = describe;
     }
 
-    public Product(String productCode, double productPrice, String productImage, String productDescribe, Categories productCategories) {
-        this.productCode = productCode;
-        this.productPrice = productPrice;
-        this.productImage = productImage;
-        this.productDescribe = productDescribe;
-        this.productCategories = productCategories;
-    }
-
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getProductCode() {
-        return productCode;
+    public String getCode() {
+        return code;
     }
 
-    public void setProductCode(String productCode) {
-        this.productCode = productCode;
+    public void setCode(String code) {
+        this.code = code;
     }
 
-    public double getProductPrice() {
-        return productPrice;
+    public double getPrice() {
+        return price;
     }
 
-    public void setProductPrice(double productPrice) {
-        this.productPrice = productPrice;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public String getProductImage() {
-        return productImage;
+    public String getImg() {
+        return img;
     }
 
-    public void setProductImage(String productImage) {
-        this.productImage = productImage;
+    public void setImg(String img) {
+        this.img = img;
     }
 
-    public String getProductDescribe() {
-        return productDescribe;
+    public String getDescribe() {
+        return describe;
     }
 
-    public void setProductDescribe(String productDescribe) {
-        this.productDescribe = productDescribe;
-    }
-
-    public Categories getProductCategories() {
-        return productCategories;
-    }
-
-    public void setProductCategories(Categories productCategories) {
-        this.productCategories = productCategories;
+    public void setDescribe(String describe) {
+        this.describe = describe;
     }
 }
