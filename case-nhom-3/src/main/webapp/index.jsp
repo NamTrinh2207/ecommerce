@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -97,10 +98,10 @@
                                             <a href="#"><img style="margin-right: 15px;" src="icon/1.png" alt="#" />7213456789</a>
                                         </li>
                                         <li class="menu_iconb">
-                                            <a href="#">Log in <img style="margin-right: 15px;" src="icon/5.png" alt="#" /> </a>
+                                            <a href="login/login.jsp">Log in <img style="margin-right: 15px;" src="icon/5.png" alt="#" /> </a>
                                         </li>
                                         <li class="menu_iconb">
-                                            <a href="#">Signup<img style="margin-left: 15px;" src="icon/6.png" alt="#" /></a>
+                                            <a href="login/signup.jsp">Signup<img style="margin-left: 15px;" src="icon/6.png" alt="#" /></a>
                                         </li>
                                         <li class="tytyu">
                                             <a href="#"> <img style="margin-right: 15px;" src="icon/2.png" alt="#" /></a>
@@ -204,7 +205,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="title">
-                            <h2> Categories</h2>
+                            <h2> Đoàn</h2>
                             <ul class="categiri">
                                 <li class="active"><a href="#">Clothing</a></li>
                                 <li><a href="#">Electronics</a></li>
