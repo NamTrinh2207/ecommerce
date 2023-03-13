@@ -7,6 +7,8 @@ public class OrderDetail {
     private int quantity;
     private double amount;
 
+    private double sumAmount;
+
     public OrderDetail() {
     }
 
@@ -17,6 +19,12 @@ public class OrderDetail {
         this.quantity = quantity;
         this.amount = amount;
     }
+    public OrderDetail(Order order_id, double sumAmount)
+    {
+        this.order_id = order_id;
+        this.sumAmount = sumAmount;
+    }
+
 
     public long getId() {
         return id;
@@ -51,10 +59,17 @@ public class OrderDetail {
     }
 
     public double getAmount() {
-        return amount;
+        return quantity * product_id.getPrice();
     }
 
-    public void setAmount(double amount) {
+    public void setAmount(double amount)
+    {
         this.amount = amount;
     }
+
+    public double getSumAmount()
+    {
+        return sumAmount;
+    }
+
 }

@@ -137,6 +137,50 @@ public class OrderServiceImpl implements OrderService
         return null;
     }
 
+    // 75. Tổng tiền khách hàng đã đặt hàng
+    @Override
+    public List<OrderDetail> amountSumOfCustomer()
+    {
+        if (connection != null)
+        {
+            try
+            {
+                List<OrderDetail> orderDetails = new ArrayList<>();
+                StringBuilder s = new StringBuilder();
+                s.append("select id, customerCode, customerName, customerDate,customerPlace,customerEmail, customerPhone, sum(od.amount) as amountSum");
+                s.append("from _orderdetail od, _order o, _customer c ");
+                s.append(" ");
+                s.append(" where od.order_id = o.id and c.id = o.customer_id and status = 1 ");
+                s.append(" ");
+                s.append("group by id, customerCode, customerName, customerDate,customerPlace,customerEmail, customerPhone");
+                PreparedStatement p = connection.prepareStatement(s.toString());
+                ResultSet rs = p.executeQuery();
+                while (rs.next())
+                {
+                    long customerId = rs.getLong("id");
+                    String customerCode = rs.getString("customerCode");
+                    String customerName = rs.getString("customerName");
+                    Date customerDate = rs.getDate("customerDate");
+                    String customerPlace = rs.getString("customerPlace");
+                    String customerEmail = rs.getString("customerEmail");
+                    String customerPhone = rs.getString("customerPhone");
+                    double sumAmount = rs.getDouble("amountSum");
+
+                    Customer customer = new Customer(customerId,customerCode,customerName,customerDate, customerPlace, customerEmail, customerPhone);
+                    Order order = new Order(customer);
+                    OrderDetail orderDetail = new OrderDetail(order, sumAmount);
+                    orderDetails.add(orderDetail);
+                }
+                return orderDetails;
+            }
+            catch (SQLException e)
+            {
+                System.out.println("Query Error");
+            }
+        }
+        return null;
+    }
+
     // 72  Tìm kiếm đơn hàng theo khoảng thời gian
     @Override
     public List<Order> findOrderByDate(Date start, Date end)
@@ -222,6 +266,9 @@ public class OrderServiceImpl implements OrderService
     {
 
     }
+
+
+    // Cập nhật theo status
     @Override
     public void update(long id, Order order)
     {
