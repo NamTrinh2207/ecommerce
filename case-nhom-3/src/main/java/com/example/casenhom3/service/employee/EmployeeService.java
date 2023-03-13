@@ -9,7 +9,7 @@ import java.util.List;
 
 public class EmployeeService implements IEmployeeService {
     CreateDatabase createDatabase = new CreateDatabase();
-    private final Connection connection; = createDatabase.getConnection();
+    private final Connection connection = createDatabase.getConnection();
     private static final String INSERT_EMPLOYEE = "INSERT INTO employee (code,name,date,address, email, phone) VALUES (?,?,?,?,?,?);";
     private static final String SELECT_EMPLOYEE_BY_ID = "select * from employee where id =?";
     private static final String SELECT_ALL_EMPLOYEES = "select * from employee";

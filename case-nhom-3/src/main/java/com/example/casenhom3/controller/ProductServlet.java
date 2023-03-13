@@ -12,7 +12,7 @@ import java.util.List;
 @WebServlet(name = "ProductServlet", value = "/productServlet")
 public class ProductServlet extends HttpServlet {
     ProductService productService = new ProductService();
-    int id = 0;
+    long id = 0;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -131,8 +131,9 @@ public class ProductServlet extends HttpServlet {
         String code = request.getParameter("code");
         double price = Double.parseDouble(request.getParameter("price"));
         String img = request.getParameter("img");
+        String name = request.getParameter("name");
         String describe = request.getParameter("img");
-        Product product = new Product(id, code, price, img, describe);
+        Product product = new Product(id, code, name,price, img, describe);
         this.productService.save(product);
         id++;
         RequestDispatcher dispatcher = request.getRequestDispatcher("create.jsp");
