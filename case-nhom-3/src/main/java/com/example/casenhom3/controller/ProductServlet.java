@@ -131,14 +131,9 @@ public class ProductServlet extends HttpServlet {
         String code = request.getParameter("code");
         double price = Double.parseDouble(request.getParameter("price"));
         String img = request.getParameter("img");
-<<<<<<< HEAD
         String describe = request.getParameter("describe");
-        Product product = new Product(id, code, price, img, describe);
-=======
         String name = request.getParameter("name");
-        String describe = request.getParameter("img");
         Product product = new Product(id, code, name,price, img, describe);
->>>>>>> d4f8b10d1264e811f3284f64fd3e595d9a767cac
         this.productService.save(product);
         id++;
         RequestDispatcher dispatcher = request.getRequestDispatcher("create.jsp");
