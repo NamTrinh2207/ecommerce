@@ -10,16 +10,18 @@ public class CreateDatabase {
     private  final String USER = "Nam";
     private  final String PASSWORD = "Anhnam220797anhnam";
 
-    public Connection getConnection() throws SQLException
+    public Connection getConnection()
     {
         Connection connection = null;
         try {
             Class.forName(DRIVER);
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            connection = DriverManager.getConnection(URL, USER,PASSWORD);
         }
-        System.out.println("Dang ket noi toi co so du lieu ...");
-        connection = DriverManager.getConnection(URL, USER, PASSWORD);
+        catch (SQLException | ClassNotFoundException e)
+        {
+            System.out.println("Connection Error");
+        }
+
         return connection;
     }
 }
