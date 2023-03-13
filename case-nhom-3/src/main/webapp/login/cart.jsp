@@ -22,7 +22,7 @@
             <div class="row">
               <div class="col-lg-6 px-5 py-4">
 
-                <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Your products</h3>
+                <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Sản Phẩm Của Bạn</h3>
 
                 <div class="d-flex align-items-center mb-5">
                   <div class="flex-shrink-0">
@@ -146,7 +146,7 @@
                   <button type="button" class="btn btn-primary btn-block btn-lg">Buy now</button>
 
                   <h5 class="fw-bold mb-5" style="position: absolute; bottom: 0;">
-                    <a href="#!"><i class="fas fa-angle-left me-2"></i>Back to shopping</a>
+                    <a href="/index.jsp"><i class="fas fa-angle-left me-2"></i>Back to shopping</a>
                   </h5>
 
                 </form>
