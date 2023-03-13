@@ -1,5 +1,4 @@
 package com.example.casenhom3.model;
-
 import java.sql.Date;
 
 public class Person {
@@ -10,9 +9,9 @@ public class Person {
     private String address;
     private String email;
     private String phone;
+
     public Person() {
     }
-
     public Person(long id, String code, String name, Date date, String address, String email, String phone) {
         this.id = id;
         this.code = code;

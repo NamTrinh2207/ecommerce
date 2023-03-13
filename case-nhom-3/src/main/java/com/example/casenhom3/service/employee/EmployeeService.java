@@ -34,7 +34,7 @@ public class EmployeeService implements IEmployeeService {
                 }
                 return employees;
             } catch (Exception e) {
-                e.printStackTrace();
+                System.out.println("Query error");
             }
         }
         return null;
@@ -52,7 +52,7 @@ public class EmployeeService implements IEmployeeService {
             preparedStatement.setString(6, employee.getPhone());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("Query error");
         }
     }
 
@@ -75,7 +75,7 @@ public class EmployeeService implements IEmployeeService {
                 }
                 return employee;
             } catch (SQLException e) {
-                e.printStackTrace();
+                System.out.println("Query error");
             }
         }
         return null;
@@ -95,7 +95,7 @@ public class EmployeeService implements IEmployeeService {
                 statement.setLong(7, id);
                 statement.executeUpdate();
             } catch (SQLException e) {
-                e.printStackTrace();
+                System.out.println("Query error");
             }
         }
     }
@@ -108,7 +108,7 @@ public class EmployeeService implements IEmployeeService {
                 preparedStatement.setLong(1, id);
                 preparedStatement.executeUpdate();
             } catch (SQLException e) {
-                e.printStackTrace();
+                System.out.println("Query error");
             }
         }
     }
