@@ -10,7 +10,13 @@ public class Person {
     private String address;
     private String email;
     private String phone;
-    public Person() {
+    public Person()
+    {
+
+    }
+    public Person(long id)
+    {
+        this.id = id;
     }
 
     public Person(long id, String code, String name, Date date, String address, String email, String phone) {
