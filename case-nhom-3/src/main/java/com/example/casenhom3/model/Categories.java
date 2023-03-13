@@ -1,30 +1,31 @@
 package com.example.casenhom3.model;
 
 public class Categories {
-    private int id;
-    private String name;
+    private Long id;
+    private String categoriesName;
 
-    public Categories() {
-    }
-
-    public Categories(int id, String name) {
+    public Categories(Long id, String categoriesName) {
         this.id = id;
-        this.name = name;
+        this.categoriesName = categoriesName;
+    }
+    public Categories(String categoriesName)
+    {
+        this.categoriesName = categoriesName;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getCategoriesName() {
+        return categoriesName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCategoriesName(String categoriesName) {
+        this.categoriesName = categoriesName;
     }
 }
