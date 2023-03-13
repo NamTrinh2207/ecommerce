@@ -4,5 +4,9 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/case-nhom-3" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK" />
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="openjdk-19 (2)" project-jdk-type="JavaSDK" />
+>>>>>>> 2f0e887cc137290a7cfbb55c4cfa91f3f726860f
 </project>

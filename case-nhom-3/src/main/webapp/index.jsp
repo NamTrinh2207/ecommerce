@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <!-- basic -->
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,9 +29,14 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 <!-- body -->
-
 <body class="main-layout">
 <!-- loader  -->
 <div class="loader_bg">
@@ -205,17 +209,20 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="title">
+<<<<<<< HEAD
                             <h2> Đoàn</h2>
+=======
+                            <h2> THỂ LOẠI</h2>
+>>>>>>> 2f0e887cc137290a7cfbb55c4cfa91f3f726860f
                             <ul class="categiri">
-                                <li class="active"><a href="#">Clothing</a></li>
-                                <li><a href="#">Electronics</a></li>
-                                <li><a href="#shoes">Shoes</a></li>
-                                <li><a href="#">Watches</a></li>
-                                <li><a href="#jewellery">Jewellery</a></li>
-                                <li><a href="#">Health and Beauty</a></li>
-                                <li><a href="#kids">Kids and Babies</a></li>
-                                <li><a href="#">Sports</a></li>
-                                <li><a href="#">Home and Garden</a></li>
+                                <li class="active"><a href="#">DANH MỤC</a></li>
+                                <li><a href="#">Thiết bị điện tử</a></li>
+                                <li><a href="#shoes">Sức khỏe & làm đẹp</a></li>
+                                <li><a href="#">Thời trang nam</a></li>
+                                <li><a href="#jewellery">Thời trang nữ</a></li>
+                                <li><a href="#">Đồ gia dụng</a></li>
+                                <li><a href="#kids">Thể thao & du lịch</a></li>
+                                <li><a href="#">Ô tô - Xe máy</a></li>
                             </ul>
                         </div>
                     </div>
@@ -223,7 +230,7 @@
 
                 <!-- news brand -->
                 <div id="brand"  class="brand-bg">
-                    <h3>New brands</h3>
+                    <h3>THƯƠNG HIỆU MỚI</h3>
                     <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                             <div class="brand-box">
