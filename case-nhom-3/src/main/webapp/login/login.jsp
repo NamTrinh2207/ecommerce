@@ -111,9 +111,8 @@
     <div class="form-group">
       <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Sign in</button>
     </div>
-    <p class="hint-text">Don't have an account? <a href="#">Sign up here</a></p>
+    <p class="hint-text">Don't have an account? <a href="signup.jsp">Sign up here</a></p>
   </form>
-  <div class="form-footer"><a href="#">Forgot Your Password?</a></div>
 </div>
 </body>
 </html>
