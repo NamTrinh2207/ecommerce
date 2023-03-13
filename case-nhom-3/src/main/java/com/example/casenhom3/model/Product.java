@@ -1,7 +1,7 @@
 package com.example.casenhom3.model;
 
 public class Product {
-    private int id;
+    private long id;
     private String code;
     private double price;
     private String img;
@@ -10,7 +10,7 @@ public class Product {
     public Product() {
     }
 
-    public Product(int id, String code, double price, String img, String describe) {
+    public Product(long id, String code, double price, String img, String describe) {
         this.id = id;
         this.code = code;
         this.price = price;
@@ -18,7 +18,7 @@ public class Product {
         this.describe = describe;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
