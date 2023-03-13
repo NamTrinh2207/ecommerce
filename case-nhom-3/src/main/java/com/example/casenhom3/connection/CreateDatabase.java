@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class CreateDatabase {
-    private static final String databaseName = "";
+    private static final String databaseName = "ecommerce";
     private final String DRIVER = "com.mysql.jdbc.Driver";
     private static final String URL = "jdbc:mysql://localhost:3306/"+databaseName;
     private static final String USER = "Nam";

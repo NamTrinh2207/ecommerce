@@ -20,19 +20,25 @@
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- fevicon -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="icon" href="images/fevicon.png" type="image/gif"/>
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+          media="screen">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <style>
-        *{
+        * {
             font-family: 'Roboto', sans-serif;
+        }
+
+        .img_bg img {
+            width: 1600px;
+            height: 600px;
         }
     </style>
 </head>
@@ -40,7 +46,7 @@
 <body class="main-layout">
 <!-- loader  -->
 <div class="loader_bg">
-    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    <div class="loader"><img src="images/loading.gif" alt="#"/></div>
 </div>
 
 <div class="wrapper">
@@ -57,19 +63,19 @@
             <ul class="list-unstyled components">
 
                 <li class="active">
-                    <a href="index.html">Home</a>
+                    <a href="index.html">Trang chủ</a>
                 </li>
                 <li>
-                    <a href="#brand">Brands</a>
+                    <a href="#brand">Thương Hiệu</a>
                 </li>
                 <li>
-                    <a href="#shoes">Shoes</a>
+                    <a href="#shoes">Dày</a>
                 </li>
                 <li>
-                    <a href="#jewellery">Jewellery</a>
+                    <a href="#jewellery">Trang Sức</a>
                 </li>
                 <li>
-                    <a href="#kids">Kids and Babies</a>
+                    <a href="#kids">Trẻ em và Trẻ sơ sinh</a>
                 </li>
             </ul>
 
@@ -99,24 +105,27 @@
                                 <div class="right_header_info">
                                     <ul>
                                         <li class="menu_iconb">
-                                            <a href="#"><img style="margin-right: 15px;" src="icon/1.png" alt="#" />7213456789</a>
+                                            <a href="#"><img style="margin-right: 15px;" src="icon/1.png" alt="#"/>7213456789</a>
                                         </li>
                                         <li class="menu_iconb">
-                                            <a href="login/login.jsp">Log in <img style="margin-right: 15px;" src="icon/5.png" alt="#" /> </a>
+                                            <a href="login/login.jsp">Đăng Nhập <img style="margin-right: 15px;"
+                                                                                     src="icon/5.png" alt="#"/> </a>
                                         </li>
                                         <li class="menu_iconb">
-                                            <a href="login/signup.jsp">Signup<img style="margin-left: 15px;" src="icon/6.png" alt="#" /></a>
+                                            <a href="login/login.jsp">Đăng Xuất<img style="margin-left: 15px;"
+                                                                                    src="icon/6.png" alt="#"/></a>
                                         </li>
                                         <li class="tytyu">
-                                            <a href="#"> <img style="margin-right: 15px;" src="icon/2.png" alt="#" /></a>
+                                            <a href="login/cart.jsp"> <img style="margin-right: 15px;" src="icon/2.png"
+                                                                           alt="#"/></a>
                                         </li>
                                         <li class="menu_iconb">
-                                            <a href="#"><img style="margin-right: 15px;" src="icon/3.png" alt="#" /></a>
+                                            <a href="#"><img style="margin-right: 15px;" src="icon/3.png" alt="#"/></a>
                                         </li>
 
                                         <li>
                                             <button type="button" id="sidebarCollapse">
-                                                <img src="images/menu_icon.png" alt="#" />
+                                                <img src="images/menu_icon.png" alt="#"/>
                                             </button>
                                         </li>
                                     </ul>
@@ -135,12 +144,12 @@
                             <div class="row">
                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mapimg">
                                     <div class="text-bg">
-                                        <h1>All <br>
-                                            In<br>
-                                            One <br>
-                                            Shop</h1>
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
-                                        <a href="#">Buy now</a>
+                                        <h1>Tất <br>
+                                            Cả <br>
+                                            Sản <br>
+                                            Phẩm</h1>
+                                        <span>Hệ Thống Bán Hàng Lớn Nhất Việt Nam</span>
+                                        <a href="#">Mua Ngay</a>
                                     </div>
                                 </div>
                                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
@@ -157,7 +166,24 @@
                                                         <div class="row">
                                                             <div class="col-md-12">
                                                                 <div class="img_bg">
-                                                                    <figure><img src="images/cap.png" /></figure>
+                                                                    <figure><img
+                                                                            src="images/Banner-dien-may-720x445-a.png"/>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="container">
+                                                    <div class="carousel-caption text">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="img_bg">
+                                                                    <figure><img
+                                                                            src="images/Banner-may-hut-bui-720x445.png"/>
+                                                                    </figure>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -171,21 +197,9 @@
                                                         <div class="row">
                                                             <div class="col-md-12">
                                                                 <div class="img_bg">
-                                                                    <figure><img src="images/cap.png" /></figure>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <div class="container">
-                                                    <div class="carousel-caption text">
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="img_bg">
-                                                                    <figure><img src="images/cap.png" /></figure>
+                                                                    <figure><img
+                                                                            src="images/Banner-may-loc-nuoc-720x445.png"/>
+                                                                    </figure>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -209,11 +223,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="title">
-<<<<<<< HEAD
-                            <h2> Đoàn</h2>
-=======
                             <h2> THỂ LOẠI</h2>
->>>>>>> 2f0e887cc137290a7cfbb55c4cfa91f3f726860f
                             <ul class="categiri">
                                 <li class="active"><a href="#">DANH MỤC</a></li>
                                 <li><a href="#">Thiết bị điện tử</a></li>
@@ -227,85 +237,83 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- news brand -->
-                <div id="brand"  class="brand-bg">
+                <div id="brand" class="brand-bg">
                     <h3>THƯƠNG HIỆU MỚI</h3>
                     <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                             <div class="brand-box">
-                                <h5>Sale</h5>
+                                <h5>Giảm Giá</h5>
                                 <i><img src="icon/p1.png"/>
                                 </i>
-                                <h4>Price $<span class="nolmal">100</span></h4>
-
+                                <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
-                            <a class="buynow" href="#">Buy now</a>
+                            <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                             <div class="brand-box">
                                 <i><img src="icon/p2.png"/></i>
-                                <h4>Price $<span class="nolmal">100</span></h4>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
-                            <a class="buynow" href="#">Buy now</a>
+                            <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                             <div class="brand-box">
                                 <i><img src="icon/p1.png"/></i>
-                                <h4>Price $<span class="nolmal">100</span></h4>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
-                            <a class="buynow" href="#">Buy now</a>
+                            <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                             <div class="brand-box">
                                 <i><img src="icon/p4.png"/></i>
-                                <h4>Price $<span class="nolmal">100</span></h4>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
-                            <a class="buynow" href="#">Buy now</a>
+                            <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                     </div>
                 </div>
-                <a class="seemore" href="#">See more</a>
+                <a class="seemore" href="#">Nhiều Hơn</a>
                 <!-- end news brand -->
 
                 <!-- news shoes -->
                 <div id="shoes" class="shoes-bg">
-                    <h3>New shoes</h3>
+                    <h3>Giày Mới</h3>
                     <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                             <div class="shoes-box">
-                                <h5>Sale</h5>
+                                <h5>Giảm Giá</h5>
                                 <i><img src="icon/s1.png"/>
                                 </i>
-                                <h4>Price $<span class="nolmal">100</span></h4>
+                                <h4>Mua $<span class="nolmal">100</span></h4>
 
                             </div>
-                            <a class="buynow" href="#">Buy now</a>
+                            <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                             <div class="shoes-box">
                                 <i><img src="icon/s2.png"/></i>
-                                <h4>Price $<span class="nolmal">100</span></h4>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
-                            <a class="buynow" href="#">Buy now</a>
+                            <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                             <div class="shoes-box">
                                 <i><img src="icon/s3.png"/></i>
-                                <h4>Price $<span class="nolmal">100</span></h4>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
-                            <a class="buynow" href="#">Buy now</a>
+                            <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                             <div class="shoes-box">
                                 <i><img src="icon/s4.png"/></i>
-                                <h4>Price $<span class="nolmal">100</span></h4>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
-                            <a class="buynow" href="#">Buy now</a>
+                            <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                     </div>
                 </div>
-                <a class="seemore" href="#">See more</a>
+                <a class="seemore" href="#">Nhiều Hơn</a>
             </div>
 
         </div>
@@ -324,8 +332,8 @@
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                 <div class="save_box">
-                                    <h3>save up to 50%</h3>
-                                    <a href="#">Buy now</a>
+                                    <h3>Đang Giảm 50%</h3>
+                                    <a href="#">Mua Ngay</a>
                                 </div>
                             </div>
                         </div>
@@ -341,42 +349,42 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="jewellery" class="Jewellery-bg">
-                    <h3>New Jewellery</h3>
+                    <h3>Trang Sức Mới</h3>
                     <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                             <div class="Jewellery-box">
-                                <h5>Sale</h5>
+                                <h5>Giảm</h5>
                                 <i><img src="icon/j1.png"/>
                                 </i>
-                                <h4>Price $<span class="nolmal">100</span></h4>
+                                <h4>Mua $<span class="nolmal">100</span></h4>
 
                             </div>
-                            <a class="buynow" href="#">Buy now</a>
+                            <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                             <div class="Jewellery-box">
                                 <i><img src="icon/j2.png"/></i>
-                                <h4>Price $<span class="nolmal">100</span></h4>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
-                            <a class="buynow" href="#">Buy now</a>
+                            <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                             <div class="Jewellery-box">
                                 <i><img src="icon/j3.png"/></i>
-                                <h4>Price $<span class="nolmal">100</span></h4>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
-                            <a class="buynow" href="#">Buy now</a>
+                            <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                             <div class="Jewellery-box">
                                 <i><img src="icon/j4.png"/></i>
-                                <h4>Price $<span class="nolmal">100</span></h4>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
-                            <a class="buynow" href="#">Buy now</a>
+                            <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                     </div>
                 </div>
-                <a class="seemore" href="#">See more</a>
+                <a class="seemore" href="#">Nhiều Hơn</a>
             </div>
         </div>
     </div>
@@ -388,33 +396,33 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="Kids-bg">
-                        <h3>Kids and Babies</h3>
+                        <h3>Đồ Trẻ Em</h3>
                         <div class="row">
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                                 <div class="Kids-box">
 
                                     <i><img src="icon/k1.png"/>
                                     </i>
-                                    <h4>Price $<span class="nolmal">100</span></h4>
+                                    <h4>Giá $<span class="nolmal">100</span></h4>
 
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                                 <div class="Kids-box">
                                     <i><img src="icon/k1.png"/></i>
-                                    <h4>Price $<span class="nolmal">100</span></h4>
+                                    <h4>Giá $<span class="nolmal">100</span></h4>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                                 <div class="Kids-box">
                                     <i><img src="icon/k1.png"/></i>
-                                    <h4>Price $<span class="nolmal">100</span></h4>
+                                    <h4>Giá $<span class="nolmal">100</span></h4>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                                 <div class="Kids-box">
                                     <i><img src="icon/k1.png"/></i>
-                                    <h4>Price $<span class="nolmal">100</span></h4>
+                                    <h4>Giá $<span class="nolmal">100</span></h4>
                                 </div>
                             </div>
                         </div>
@@ -435,14 +443,14 @@
                         <div class="footer_top">
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                    <a href="index.html"> <img class="logo1" src="images/logo1.png" /></a>
+                                    <a href="index.html"> <img class="logo1" src="images/logo1.png"/></a>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                     <ul class="sociel">
-                                        <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -454,15 +462,19 @@
                         <div class="row">
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 ">
                                 <div class="address">
-                                    <h3>Contact us </h3>
+                                    <h3>Liên Hệ Chúng Tôi </h3>
                                     <ul class="loca">
                                         <li>
-                                            <a href="#"><img src="icon/loc.png" alt="#" /></a>145 londone
-                                            <br>uk </li>
+                                            <a href="https://www.google.com/maps/place/CodeGym/@21.0357101,105.7660288,17z/data=!4m14!1m7!3m6!1s0x313454b9444c676b:0xe713200541b7456d!2sCodeGym!8m2!3d21.0357101!4d105.7682175!16s%2Fg%2F11dxrrzx7t!3m5!1s0x313454b9444c676b:0xe713200541b7456d!8m2!3d21.0357101!4d105.7682175!16s%2Fg%2F11dxrrzx7t"><img
+                                                    src="icon/loc.png" alt="#"/></a>Lô 02/MonCity
+                                            <br>uk
+                                        </li>
                                         <li>
-                                            <a href="#"><img src="icon/call.png" alt="#" /></a>+12586954775 </li>
+                                            <a href="#"><img src="icon/call.png" alt="#"/></a>+12586954775
+                                        </li>
                                         <li>
-                                            <a href="#"><img src="icon/email.png" alt="#" /></a>demo@gmail.com </li>
+                                            <a href="https://mail.google.com/"><img src="icon/email.png" alt="#"/></a>Kieuanh@gmail.com
+                                        </li>
 
                                     </ul>
 
@@ -470,36 +482,36 @@
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="address">
-                                    <h3>customer service</h3>
+                                    <h3>Dịch Vụ Khách Hàng</h3>
                                     <ul class="Menu_footer">
-                                        <li class="active"> <a href="#">My account</a> </li>
-                                        <li><a href="#">Wishlist</a> </li>
-                                        <li><a href="#">My Cart</a> </li>
-                                        <li><a href="#">Checkout</a> </li>
-                                        <li><a href="#">Login</a> </li>
+                                        <li class="active"><a href="#">Tài Khoản</a></li>
+                                        <li><a href="#">Yêu Thích</a></li>
+                                        <li><a href="#">Giỏ Hàng</a></li>
+                                        <li><a href="#">Đăng Xuất</a></li>
+                                        <li><a href="#">Đăng Nhập</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="address">
-                                    <h3>corporation</h3>
+                                    <h3>Danh Sách</h3>
                                     <ul class="Links_footer">
-                                        <li class="active"><a href="#">My account</a> </li>
-                                        <li><a href="#">Wishlist</a> </li>
-                                        <li><a href="#">My Cart</a> </li>
-                                        <li><a href="#"> Checkout</a> </li>
-                                        <li><a href="#">Login</a> </li>
+                                        <li class="active"><a href="#">Tài Khoản</a></li>
+                                        <li><a href="#">Yêu Thích</a></li>
+                                        <li><a href="#">Giỏ Hàng</a></li>
+                                        <li><a href="#"> Đăng Xuất</a></li>
+                                        <li><a href="#">Đăng Nhập</a></li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div class="col-lg-3 col-md-6 col-sm-6 ">
                                 <div class="address">
-                                    <h3>why choose us</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+                                    <h3>Phản Hồi</h3>
+                                    <p>Hãy Ủng Hộ Chúng Tôi Băng Cách Đăng Kí </p>
                                     <form class="newtetter">
                                         <input class="tetter" placeholder="Your email" type="text" name="Your email">
-                                        <button class="submit">Subscribe</button>
+                                        <button class="submit">Đăng Kí</button>
                                     </form>
                                 </div>
                             </div>
@@ -510,7 +522,6 @@
 
             <div class="copyright">
                 <div class="container">
-                    <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
                 </div>
             </div>
         </div>
@@ -534,17 +545,17 @@
 <script src="js/custom.js"></script>
 <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $("#sidebar").mCustomScrollbar({
             theme: "minimal"
         });
 
-        $('#dismiss, .overlay').on('click', function() {
+        $('#dismiss, .overlay').on('click', function () {
             $('#sidebar').removeClass('active');
             $('.overlay').removeClass('active');
         });
 
-        $('#sidebarCollapse').on('click', function() {
+        $('#sidebarCollapse').on('click', function () {
             $('#sidebar').addClass('active');
             $('.overlay').addClass('active');
             $('.collapse.in').toggleClass('in');
@@ -554,16 +565,16 @@
 </script>
 
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $(".fancybox").fancybox({
             openEffect: "none",
             closeEffect: "none"
         });
 
-        $(".zoom").hover(function() {
+        $(".zoom").hover(function () {
 
             $(this).addClass('transition');
-        }, function() {
+        }, function () {
 
             $(this).removeClass('transition');
         });
