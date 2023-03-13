@@ -16,9 +16,21 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+<div class="container">
+    <div class="row height d-flex justify-content-center align-items-center">
+        <div class="col-md-8">
+            <h1>DANH SÁCH NHÂN VIÊN</h1>
+            <div class="search">
+                <i class="fa fa-search"></i>
+                <input type="text" class="form-control"
+                       placeholder="Tìm kiếm nhân viên">
+                <button class="btn btn-primary">Search</button></div>
+        </div>
+    </div>
+</div>
 <section class="intro">
     <div class="bg-image h-100" style="background-color: #f5f7fa;">
-        <div class="mask d-flex align-items-center h-100">
+        <div class="mask d-flex align-items-center h-auto">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
