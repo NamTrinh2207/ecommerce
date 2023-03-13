@@ -17,4 +17,8 @@
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.9.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.9.1" level="project" />
   </component>
+<<<<<<< HEAD
+  <component name="TestModuleProperties" production-module="case-nhom-3.main" />
+=======
+>>>>>>> 65f1f6d8e574b6b29966ac43e61081626426e35c
 </module>
