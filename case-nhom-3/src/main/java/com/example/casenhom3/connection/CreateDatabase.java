@@ -15,7 +15,7 @@ public class CreateDatabase {
         Connection connection = null;
         try {
             Class.forName(DRIVER);
-            connection = DriverManager.getConnection(URL, USER,PASSWORD);
+            connection =DriverManager.getConnection(URL,USER,PASSWORD);
         }
         catch (SQLException | ClassNotFoundException e)
         {
