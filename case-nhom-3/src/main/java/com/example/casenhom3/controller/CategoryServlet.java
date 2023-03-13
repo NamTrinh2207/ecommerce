@@ -121,12 +121,29 @@ public class CategoryServlet extends HttpServlet {
                 editCategory(request, response);
                 break;
             case "delete":
-
+                delteteCategory(request, response);
                 break;
             case "view":
                 break;
             default:
                 listProduct(request, response);
+        }
+    }
+
+    private void delteteCategory(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        int id = Integer.parseInt(request.getParameter("id"));
+        Categories categories = this.categoryService.findById(id);
+        RequestDispatcher dispatcher;
+        if(categories == null){
+            dispatcher = request.getRequestDispatcher("/CategoryServlet");
+            try {
+                dispatcher.forward(request, response);
+            } catch (ServletException e) {
+                throw new RuntimeException(e);
+            }
+        }else {
+            this.categoryService.delete(id);
+            response.sendRedirect("CategoryServlet");
         }
     }
 
