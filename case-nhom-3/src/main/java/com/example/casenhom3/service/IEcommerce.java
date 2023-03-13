@@ -1,4 +1,15 @@
 package com.example.casenhom3.service;
 
-public interface IEcommerce {
+import java.util.List;
+
+public interface IEcommerce<T> {
+    List<T> findAll();
+
+    void save(T product);
+
+    T findById(int id);
+
+    void update(int id, T product);
+
+    void delete(int id);
 }
