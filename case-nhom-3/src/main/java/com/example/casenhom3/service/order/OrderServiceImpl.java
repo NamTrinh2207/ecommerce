@@ -17,6 +17,40 @@ public class OrderServiceImpl implements OrderService
         connection = CreateDatabase.getConnection();
     }
 
+    private List<Order> orderListResult(ResultSet rs) throws SQLException
+    {
+        List<Order> orderList = new ArrayList<>();
+        while (rs.next())
+        {
+            long order_id = rs.getLong("id");
+            Date orderDate = rs.getDate("orderDate");
+            int orderStatus = rs.getInt("status");
+
+            // get customer infomation
+            Long customer_id = rs.getLong("customer_id");
+            String customerCode = rs.getString("customerCode");
+            String customerName = rs.getString("customerName");
+            Date customerDate = rs.getDate("customerDate");
+            String customerPlace = rs.getString("customerPlace");
+            String customerEmail = rs.getString("customerEmail");
+            String customerPhone = rs.getString("customerPhone");
+
+            // get employee infomation
+            Long employee_id = rs.getLong("employee_id");
+            String employeeCode = rs.getString("employeeCode");
+            String employeeName = rs.getString("employeeName");
+            Date employeeDate = rs.getDate("employeeDate");
+            String employeePlace = rs.getString("employeePlace");
+            String employeeEmail = rs.getString("employeeEmail");
+            String employeePhone = rs.getString("employeePhone");
+            Customer customer = new Customer(customer_id, customerCode, customerName,customerDate,customerPlace, customerEmail, customerPhone);
+            Employee employee = new Employee(employee_id, employeeCode, employeeName,employeeDate, employeePlace, employeeEmail,employeePhone);
+            Order order = new Order(order_id, customer, employee,orderDate, orderStatus);
+            orderList.add(order);
+        }
+        return orderList;
+    }
+
     @Override
     public List<Order> findAll()
     {
@@ -31,37 +65,10 @@ public class OrderServiceImpl implements OrderService
                 s.append(" ");
                 s.append("and ");
                 s.append("_employee e on o.employee_id = e.id");
-                List<Order> orders = new ArrayList<>();
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 ResultSet rs = p.executeQuery();
-                while (rs.next())
-                {
-                    long order_id = rs.getLong("id");
-                    Date orderDate = rs.getDate("orderDate");
-                    int orderStatus = rs.getInt("status");
+                return orderListResult(rs);
 
-                    // get customer infomation
-                    Long customer_id = rs.getLong("customer_id");
-                    String customerCode = rs.getString("customerCode");
-                    String customerName = rs.getString("customerName");
-                    Date customerDate = rs.getDate("customerDate");
-                    String customerPlace = rs.getString("customerPlace");
-                    String customerEmail = rs.getString("customerEmail");
-                    String customerPhone = rs.getString("customerPhone");
-
-                    // get employee infomation
-                    Long employee_id = rs.getLong("employee_id");
-                    String employeeCode = rs.getString("employeeCode");
-                    String employeeName = rs.getString("employeeName");
-                    Date employeeDate = rs.getDate("employeeDate");
-                    String employeePlace = rs.getString("employeePlace");
-                    String employeeEmail = rs.getString("employeeEmail");
-                    String employeePhone = rs.getString("employeePhone");
-                    Customer customer = new Customer(customer_id, customerCode, customerName,customerDate,customerPlace, customerEmail, customerPhone);
-                    Employee employee = new Employee(employee_id, employeeCode, employeeName,employeeDate, employeePlace, employeeEmail,employeePhone);
-                    Order order = new Order(order_id, customer, employee,orderDate, orderStatus);
-                    orders.add(order);
-                }
             }
             catch (SQLException e)
             {
@@ -77,6 +84,37 @@ public class OrderServiceImpl implements OrderService
 
             }
 
+        }
+        return null;
+    }
+    @Override
+    public List<Order> findOrderByDate(Date start, Date end)
+    {
+        if (connection != null)
+        {
+            try
+            {
+                String sql = "select * from _order where orderDate between ? and ?";
+                PreparedStatement p = connection.prepareStatement(sql);
+                p.setDate(1, start);
+                p.setDate(2, end);
+                ResultSet rs = p.executeQuery();
+                return orderListResult(rs);
+
+            }
+            catch (SQLException e)
+            {
+                System.out.println("Query Error");
+            }
+            finally
+            {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    System.out.println("Close Error");
+                }
+
+            }
         }
         return null;
     }
@@ -105,64 +143,7 @@ public class OrderServiceImpl implements OrderService
 
     }
 
-    @Override
-    public List<Order> findOrderByDate(Date start, Date end)
-    {
-        if (connection != null)
-        {
-            try
-            {
-                String sql = "select * from _order where orderDate between ? and ?";
-                PreparedStatement p = connection.prepareStatement(sql);
-                p.setDate(1, start);
-                p.setDate(2, end);
-                ResultSet rs = p.executeQuery();
-                List<Order> orderSearchByDate = new ArrayList<>();
-                while (rs.next())
-                {
-                        long order_id = rs.getLong("id");
-                        Date orderDate = rs.getDate("orderDate");
-                        int orderStatus = rs.getInt("status");
 
-                        // get customer infomation
-                        Long customer_id = rs.getLong("customer_id");
-                        String customerCode = rs.getString("customerCode");
-                        String customerName = rs.getString("customerName");
-                        Date customerDate = rs.getDate("customerDate");
-                        String customerPlace = rs.getString("customerPlace");
-                        String customerEmail = rs.getString("customerEmail");
-                        String customerPhone = rs.getString("customerPhone");
-
-                        // get employee infomation
-                        Long employee_id = rs.getLong("employee_id");
-                        String employeeCode = rs.getString("employeeCode");
-                        String employeeName = rs.getString("employeeName");
-                        Date employeeDate = rs.getDate("employeeDate");
-                        String employeePlace = rs.getString("employeePlace");
-                        String employeeEmail = rs.getString("employeeEmail");
-                        String employeePhone = rs.getString("employeePhone");
-                        Customer customer = new Customer(customer_id, customerCode, customerName,customerDate,customerPlace, customerEmail, customerPhone);
-                        Employee employee = new Employee(employee_id, employeeCode, employeeName,employeeDate, employeePlace, employeeEmail,employeePhone);
-                        Order order = new Order(order_id, customer, employee,orderDate, orderStatus);
-                        orderSearchByDate.add(order);
-                }
-            }
-            catch (SQLException e)
-            {
-                System.out.println("Query Error");
-            }
-            finally
-            {
-                try {
-                    connection.close();
-                } catch (SQLException e) {
-                    System.out.println("Close Error");
-                }
-
-            }
-        }
-        return null;
-    }
 
     @Override
     public OrderDetail getOrderDetailById(long orderId)
