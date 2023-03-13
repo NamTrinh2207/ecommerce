@@ -50,9 +50,7 @@ public class CategoryServlet extends HttpServlet {
         }
         try {
             dispatcher.forward(request, response);
-        } catch (ServletException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
+        } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
         }
 
