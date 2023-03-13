@@ -57,7 +57,7 @@
             <ul class="list-unstyled components">
 
                 <li class="active">
-                    <a href="index.html">Trang chủ</a>
+                    <a href="/index.jsp">Trang chủ</a>
                 </li>
                 <li>
                     <a href="#brand">Thương Hiệu</a>
@@ -111,7 +111,7 @@
                                             <a href="login/cart.jsp"> <img style="margin-right: 15px;" src="icon/2.png" alt="#" /></a>
                                         </li>
                                         <li class="menu_iconb">
-                                            <a href="#"><img style="margin-right: 15px;" src="icon/3.png" alt="#" /></a>
+                                            <a href="login/searchproduct.jsp"><img style="margin-right: 15px;" src="icon/3.png" alt="#" /></a>
                                         </li>
 
                                         <li>
