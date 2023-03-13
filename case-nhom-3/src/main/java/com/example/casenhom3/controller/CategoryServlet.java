@@ -39,7 +39,7 @@ public class CategoryServlet extends HttpServlet {
     }
 
     private void viewCategory(HttpServletRequest request, HttpServletResponse response) {
-        long id = Integer.parseInt(request.getParameter("id"));
+        int id = Integer.parseInt(request.getParameter("id"));
         Categories categories = this.categoryService.findById(id);
         RequestDispatcher dispatcher;
         if(categories == null) {
@@ -81,7 +81,7 @@ public class CategoryServlet extends HttpServlet {
     }
 
     private void editForm(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        long id = Integer.parseInt(request.getParameter("id"));
+        int id = Integer.parseInt(request.getParameter("id"));
         Categories categories = this.categoryService.findById(id);
         if (categories == null) {
             response.sendRedirect("CategoryServlet");

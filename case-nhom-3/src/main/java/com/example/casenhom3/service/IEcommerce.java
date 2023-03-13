@@ -5,11 +5,12 @@ import java.util.List;
 public interface IEcommerce<T> {
     List<T> findAll();
 
-    void save(T product);
+    void save(T t);
 
-    T findById(long id);
+    T findById(int id);
 
-    void update(long id, T product);
+    void update(int id, T product);
 
-    void delete(long id);
+
+    void delete(int id);
 }

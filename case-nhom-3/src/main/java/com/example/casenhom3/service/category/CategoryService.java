@@ -19,7 +19,7 @@ public class CategoryService implements ICategory {
     }
 
     @Override
-    public Categories findById(long id) {
+    public Categories findById(int id) {
         for (int i = 0; i < categories.size(); i++) {
             if (categories.get(i).getId() == id) {
                 return categories.get(i);
@@ -29,12 +29,12 @@ public class CategoryService implements ICategory {
     }
 
     @Override
-    public void update(long id, Categories category) {
+    public void update(int id, Categories category) {
         categories.set(id, category);
     }
 
     @Override
-    public void delete(long id) {
+    public void delete(int id) {
         categories.remove(id);
     }
 }
