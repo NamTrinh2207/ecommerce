@@ -12,7 +12,7 @@ import java.util.List;
 @WebServlet(name = "ProductServlet", value = "/productServlet")
 public class ProductServlet extends HttpServlet {
     ProductService productService = new ProductService();
-    int id = 0;
+    long id = 0;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -63,8 +63,8 @@ public class ProductServlet extends HttpServlet {
 
     private void listProduct(HttpServletRequest request, HttpServletResponse response) {
         List<Product> products = this.productService.findAll();
-        RequestDispatcher dispatcher = request.getRequestDispatcher("");
-        request.setAttribute("", products);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("list.jsp");
+        request.setAttribute("product", products);
         try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
@@ -73,7 +73,7 @@ public class ProductServlet extends HttpServlet {
     }
 
     private void createForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/productServlet.create.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("create.jsp");
         dispatcher.forward(request, response);
     }
 
@@ -117,7 +117,7 @@ public class ProductServlet extends HttpServlet {
             dispatcher = request.getRequestDispatcher("/productServlet");
         }else {
             request.setAttribute("product", product);
-            dispatcher = request.getRequestDispatcher("viewProduct");
+            dispatcher = request.getRequestDispatcher("view.jsp");
         }
         try {
             dispatcher.forward(request, response);
@@ -131,7 +131,7 @@ public class ProductServlet extends HttpServlet {
         String code = request.getParameter("code");
         double price = Double.parseDouble(request.getParameter("price"));
         String img = request.getParameter("img");
-        String describe = request.getParameter("img");
+        String describe = request.getParameter("describe");
         Product product = new Product(id, code, price, img, describe);
         this.productService.save(product);
         id++;

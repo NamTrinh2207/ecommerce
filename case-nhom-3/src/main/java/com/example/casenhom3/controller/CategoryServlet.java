@@ -39,14 +39,14 @@ public class CategoryServlet extends HttpServlet {
     }
 
     private void viewCategory(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("id"));
+        long id = Integer.parseInt(request.getParameter("id"));
         Categories categories = this.categoryService.findById(id);
         RequestDispatcher dispatcher;
         if(categories == null) {
             dispatcher = request.getRequestDispatcher("CategoryServlet");
         }else {
             request.setAttribute("category", categories);
-            dispatcher = request.getRequestDispatcher("viewCategory.jsp");
+            dispatcher = request.getRequestDispatcher("view.jsp");
         }
         try {
             dispatcher.forward(request, response);
@@ -81,12 +81,12 @@ public class CategoryServlet extends HttpServlet {
     }
 
     private void editForm(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
+        long id = Integer.parseInt(request.getParameter("id"));
         Categories categories = this.categoryService.findById(id);
         if (categories == null) {
             response.sendRedirect("CategoryServlet");
         } else {
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("editCategory");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("edit.jsp");
             request.setAttribute("category", categories);
             try {
                 requestDispatcher.forward(request, response);
@@ -123,8 +123,7 @@ public class CategoryServlet extends HttpServlet {
             case "delete":
                 delteteCategory(request, response);
                 break;
-            case "view":
-                break;
+
             default:
                 listProduct(request, response);
         }
@@ -154,7 +153,7 @@ public class CategoryServlet extends HttpServlet {
         if (categories == null) {
             response.sendRedirect("CategoryServlet");
         } else {
-            RequestDispatcher requestDispatcher = request.getRequestDispatcher("editCategory");
+            RequestDispatcher requestDispatcher = request.getRequestDispatcher("edit.jsp");
             categories.setCategoriesName(categoryName);
             request.setAttribute("category", categories);
             try {
@@ -169,7 +168,7 @@ public class CategoryServlet extends HttpServlet {
         String categoryName = request.getParameter("name");
         Categories categories = new Categories(id, categoryName);
         this.categoryService.save(categories);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("createCategory.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("create.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
