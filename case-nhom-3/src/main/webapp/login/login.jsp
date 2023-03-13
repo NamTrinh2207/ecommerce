@@ -98,7 +98,7 @@
 <body>
 <div class="login-form">
   <h2 class="text-center">Member Login</h2>
-  <form action="/examples/actions/confirmation.php" method="post">
+  <form action="/LoginServlet" method="post">
     <div class="avatar">
       <img src="https://www.tutorialrepublic.com/examples/images/avatar.png" alt="Avatar">
     </div>

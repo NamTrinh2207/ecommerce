@@ -20,19 +20,25 @@
     <!-- Responsive-->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- fevicon -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="icon" href="images/fevicon.png" type="image/gif"/>
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+          media="screen">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <style>
-        *{
+        * {
             font-family: 'Roboto', sans-serif;
+        }
+
+        .img_bg img {
+            width: 1600px;
+            height: 600px;
         }
     </style>
 </head>
@@ -40,7 +46,7 @@
 <body class="main-layout">
 <!-- loader  -->
 <div class="loader_bg">
-    <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    <div class="loader"><img src="images/loading.gif" alt="#"/></div>
 </div>
 
 <div class="wrapper">
@@ -99,24 +105,29 @@
                                 <div class="right_header_info">
                                     <ul>
                                         <li class="menu_iconb">
-                                            <a href="#"><img style="margin-right: 15px;" src="icon/1.png" alt="#" />7213456789</a>
+                                            <a href="#"><img style="margin-right: 15px;" src="icon/1.png" alt="#"/>7213456789</a>
                                         </li>
                                         <li class="menu_iconb">
-                                            <a href="login/login.jsp">Đăng Nhập <img style="margin-right: 15px;" src="icon/5.png" alt="#" /> </a>
+                                            <a href="login/login.jsp">Đăng Nhập <img style="margin-right: 15px;"
+                                                                                     src="icon/5.png" alt="#"/> </a>
                                         </li>
                                         <li class="menu_iconb">
-                                            <a href="login/login.jsp">Đăng Xuất<img style="margin-left: 15px;" src="icon/6.png" alt="#" /></a>
+                                            <a href="login/login.jsp">Đăng Xuất<img style="margin-left: 15px;"
+                                                                                    src="icon/6.png" alt="#"/></a>
                                         </li>
                                         <li class="tytyu">
-                                            <a href="login/cart.jsp"> <img style="margin-right: 15px;" src="icon/2.png" alt="#" /></a>
+                                            <a href="login/cart.jsp"> <img style="margin-right: 15px;" src="icon/2.png"
+                                                                           alt="#"/></a>
                                         </li>
                                         <li class="menu_iconb">
+
                                             <a href="login/searchproduct.jsp"><img style="margin-right: 15px;" src="icon/3.png" alt="#" /></a>
+
                                         </li>
 
                                         <li>
                                             <button type="button" id="sidebarCollapse">
-                                                <img src="images/menu_icon.png" alt="#" />
+                                                <img src="images/menu_icon.png" alt="#"/>
                                             </button>
                                         </li>
                                     </ul>
@@ -157,7 +168,24 @@
                                                         <div class="row">
                                                             <div class="col-md-12">
                                                                 <div class="img_bg">
-                                                                    <figure><img src="images/Banner-dien-may-720x445-a.png" /></figure>
+                                                                    <figure><img
+                                                                            src="images/Banner-dien-may-720x445-a.png"/>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="container">
+                                                    <div class="carousel-caption text">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="img_bg">
+                                                                    <figure><img
+                                                                            src="images/Banner-may-hut-bui-720x445.png"/>
+                                                                    </figure>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -171,21 +199,9 @@
                                                         <div class="row">
                                                             <div class="col-md-12">
                                                                 <div class="img_bg">
-                                                                    <figure><img src="images/Banner-may-hut-bui-720x445.png" /></figure>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="carousel-item">
-                                                <div class="container">
-                                                    <div class="carousel-caption text">
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <div class="img_bg">
-                                                                    <figure><img src="images/Banner-may-loc-nuoc-720x445.png" /></figure>
+                                                                    <figure><img
+                                                                            src="images/Banner-may-loc-nuoc-720x445.png"/>
+                                                                    </figure>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -209,26 +225,22 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="title">
-
-
                             <h2> THỂ LOẠI</h2>
-
                             <ul class="categiri">
                                 <li class="active"><a href="#">DANH MỤC</a></li>
-                                <li><a href="#">Thiết bị điện tử</a></li>
+                                <li><a href="#electrolic">Thiết bị điện tử</a></li>
                                 <li><a href="#shoes">Sức khỏe & làm đẹp</a></li>
-                                <li><a href="#">Thời trang nam</a></li>
+                                <li><a href="#men">Thời trang nam</a></li>
                                 <li><a href="#jewellery">Thời trang nữ</a></li>
-                                <li><a href="#">Đồ gia dụng</a></li>
+                                <li><a href="#giadung">Đồ gia dụng</a></li>
                                 <li><a href="#kids">Thể thao & du lịch</a></li>
-                                <li><a href="#">Ô tô - Xe máy</a></li>
+                                <li><a href="#xemay">Ô tô - Xe máy</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
                 <!-- news brand -->
-                <div id="brand"  class="brand-bg">
+                <div id="brand" class="brand-bg">
                     <h3>THƯƠNG HIỆU MỚI</h3>
                     <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
@@ -237,7 +249,6 @@
                                 <i><img src="icon/p1.png"/>
                                 </i>
                                 <h4>Giá $<span class="nolmal">100</span></h4>
-
                             </div>
                             <a class="buynow" href="#">Mua Ngay</a>
                         </div>
@@ -269,12 +280,12 @@
 
                 <!-- news shoes -->
                 <div id="shoes" class="shoes-bg">
-                    <h3>Giày Mới</h3>
+                    <h3>Mỹ Phẩm</h3>
                     <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                             <div class="shoes-box">
                                 <h5>Giảm Giá</h5>
-                                <i><img src="icon/s1.png"/>
+                                <i><img src="https://tse1.mm.bing.net/th?id=OIP.Y3_7SLYCS1S7z-eLKGMu0AHaHa&pid=Api&P=0"/>
                                 </i>
                                 <h4>Mua $<span class="nolmal">100</span></h4>
 
@@ -283,21 +294,21 @@
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                             <div class="shoes-box">
-                                <i><img src="icon/s2.png"/></i>
+                                <i><img src="https://tse3.mm.bing.net/th?id=OIP.WqbtDvR_KsbbmBNfo4ddmgHaFj&pid=Api&P=0"/></i>
                                 <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
                             <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                             <div class="shoes-box">
-                                <i><img src="icon/s3.png"/></i>
+                                <i><img src="https://tse1.mm.bing.net/th?id=OIP.MllPUXEix7dYdugo1OjRpgHaHa&pid=Api&P=0"/></i>
                                 <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
                             <a class="buynow" href="#">Mua Ngay</a>
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                             <div class="shoes-box">
-                                <i><img src="icon/s4.png"/></i>
+                                <i><img src="https://tse1.mm.bing.net/th?id=OIP.Wphwy_m4qHbVK2BR0Z3WbgFSC4&pid=Api&P=0"/></i>
                                 <h4>Giá $<span class="nolmal">100</span></h4>
                             </div>
                             <a class="buynow" href="#">Mua Ngay</a>
@@ -379,7 +390,183 @@
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="xemay" class="Jewellery-bg">
+                    <h3>Trang Sức Mới</h3>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
+                            <div class="Jewellery-box">
+                                <h5>Giảm</h5>
+                                <i><img src="https://tse2.mm.bing.net/th?id=OIP.RffYYaMdu_GeihgpXoJ0TgHaEK&pid=Api&P=0"/>
+                                </i>
+                                <h4>Mua $<span class="nolmal">100</span></h4>
+
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
+                            <div class="Jewellery-box">
+                                <i><img src="https://tse2.mm.bing.net/th?id=OIP.4koKjaHyeyz7z0Vg5-eGSgHaEd&pid=Api&P=0"/></i>
+                                <h4>Giá $<span class="nolmal">10000000</span></h4>
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="Jewellery-box">
+                                <i><img src="https://tse2.mm.bing.net/th?id=OIP.P8nLoJYBepVO3qSaRB0JfAHaEz&pid=Api&P=0"/></i>
+                                <h4>Giá $<span class="nolmal">10000000</span></h4>
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="Jewellery-box">
+                                <i><img src="https://tse2.mm.bing.net/th?id=OIP.R0u4YOiDAojVHN6jez3tJQHaEJ&pid=Api&P=0"/></i>
+                                <h4>Giá $<span class="nolmal">10000000</span></h4>
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="seemore" href="#">Nhiều Hơn</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="giadung" class="Jewellery-bg">
+                    <h3>Đồ Gia Dụng</h3>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
+                            <div class="Jewellery-box">
+                                <h5>Giảm</h5>
+                                <i><img src="https://tse2.mm.bing.net/th?id=OIP.fMJZ62mF88ybkESENA8WRQHaFj&pid=Api&P=0"/>
+                                </i>
+                                <h4>Mua $<span class="nolmal">100</span></h4>
+
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
+                            <div class="Jewellery-box">
+                                <i><img src="https://tse1.mm.bing.net/th?id=OIP.J07oP8jIbSmKHtYrQWChVQHaE7&pid=Api&P=0"/></i>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="Jewellery-box">
+                                <i><img src="https://tse2.mm.bing.net/th?id=OIP.SUjhGPUp8ls0H49yyI9gDwHaD4&pid=Api&P=0"/></i>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="Jewellery-box">
+                                <i><img src="https://tse1.mm.bing.net/th?id=OIP.dAn1zA3dk-TY5uIgS6rWMgHaEC&pid=Api&P=0"/></i>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="seemore" href="#">Nhiều Hơn</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="men" class="Jewellery-bg">
+                    <h3>Thời Trang Nam</h3>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
+                            <div class="Jewellery-box">
+                                <h5>Giảm</h5>
+                                <i><img src="https://tse3.mm.bing.net/th?id=OIP.0GQNTYijqIYTIIlBgffojAAAAA&pid=Api&P=0"/>
+                                </i>
+                                <h4>Mua $<span class="nolmal">100</span></h4>
+
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
+                            <div class="Jewellery-box">
+                                <i><img src="https://tse2.mm.bing.net/th?id=OIP._L5PqNUPiYZxEBwGR53LsgHaIJ&pid=Api&P=0"/></i>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="Jewellery-box">
+                                <i><img src="https://tse4.mm.bing.net/th?id=OIP.yITsmEXOhlMUjrtt4CN6NgHaEo&pid=Api&P=0"/></i>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="Jewellery-box">
+                                <i><img src="https://tse3.mm.bing.net/th?id=OIP.Az4lQDxbudtGSivgvljD6QHaHa&pid=Api&P=0"/></i>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="seemore" href="#">Nhiều Hơn</a>
+            </div>
+        </div>
+    </div>
     <!-- end news Jewellery -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="electrolic" class="Jewellery-bg">
+                    <h3>Thiết Bị Điện Tử</h3>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
+                            <div class="Jewellery-box">
+                                <h5>Giảm</h5>
+                                <i><img src="https://tse3.mm.bing.net/th?id=OIP.w8Jqx1Yb4KNssodBH_EzJwHaE7&pid=Api&P=0"/>
+                                </i>
+                                <h4>Mua $<span class="nolmal">100</span></h4>
+
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
+                            <div class="Jewellery-box">
+                                <i><img src="https://tse1.mm.bing.net/th?id=OIP.Ps_LBG2AWahnS1KNP4WUBwHaHa&pid=Api&P=0"/></i>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="Jewellery-box">
+                                <i><img src="https://tse3.mm.bing.net/th?id=OIP.UG70mq0Qk-2DUFAvGD83iQHaE8&pid=Api&P=0"/></i>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="Jewellery-box">
+                                <i><img src="https://tse4.mm.bing.net/th?id=OIP.blAcpb1--RaFRm-0tJPQ-QHaEv&pid=Api&P=0"/></i>
+                                <h4>Giá $<span class="nolmal">100</span></h4>
+                            </div>
+                            <a class="buynow" href="#">Mua Ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="seemore" href="#">Nhiều Hơn</a>
+            </div>
+        </div>
+    </div>
 
     <!-- news Kids -->
     <div id="kids" class="Kids_background">
@@ -434,14 +621,14 @@
                         <div class="footer_top">
                             <div class="row">
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                    <a href="index.html"> <img class="logo1" src="images/logo1.png" /></a>
+                                    <a href="index.html"> <img class="logo1" src="images/logo1.png"/></a>
                                 </div>
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                     <ul class="sociel">
-                                        <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-                                        <li> <a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -456,12 +643,16 @@
                                     <h3>Liên Hệ Chúng Tôi </h3>
                                     <ul class="loca">
                                         <li>
-                                            <a href="https://www.google.com/maps/place/CodeGym/@21.0357101,105.7660288,17z/data=!4m14!1m7!3m6!1s0x313454b9444c676b:0xe713200541b7456d!2sCodeGym!8m2!3d21.0357101!4d105.7682175!16s%2Fg%2F11dxrrzx7t!3m5!1s0x313454b9444c676b:0xe713200541b7456d!8m2!3d21.0357101!4d105.7682175!16s%2Fg%2F11dxrrzx7t"><img src="icon/loc.png" alt="#" /></a>Lô 02/MonCity
-                                            <br>uk </li>
+                                            <a href="https://www.google.com/maps/place/CodeGym/@21.0357101,105.7660288,17z/data=!4m14!1m7!3m6!1s0x313454b9444c676b:0xe713200541b7456d!2sCodeGym!8m2!3d21.0357101!4d105.7682175!16s%2Fg%2F11dxrrzx7t!3m5!1s0x313454b9444c676b:0xe713200541b7456d!8m2!3d21.0357101!4d105.7682175!16s%2Fg%2F11dxrrzx7t"><img
+                                                    src="icon/loc.png" alt="#"/></a>Lô 02/MonCity
+                                            <br>uk
+                                        </li>
                                         <li>
-                                            <a href="#"><img src="icon/call.png" alt="#" /></a>+12586954775 </li>
+                                            <a href="#"><img src="icon/call.png" alt="#"/></a>+12586954775
+                                        </li>
                                         <li>
-                                            <a href="https://mail.google.com/"><img src="icon/email.png" alt="#" /></a>Kieuanh@gmail.com </li>
+                                            <a href="https://mail.google.com/"><img src="icon/email.png" alt="#"/></a>Kieuanh@gmail.com
+                                        </li>
 
                                     </ul>
 
@@ -471,11 +662,11 @@
                                 <div class="address">
                                     <h3>Dịch Vụ Khách Hàng</h3>
                                     <ul class="Menu_footer">
-                                        <li class="active"> <a href="#">Tài Khoản</a> </li>
-                                        <li><a href="#">Yêu Thích</a> </li>
-                                        <li><a href="#">Giỏ Hàng</a> </li>
-                                        <li><a href="#">Đăng Xuất</a> </li>
-                                        <li><a href="#">Đăng Nhập</a> </li>
+                                        <li class="active"><a href="#">Tài Khoản</a></li>
+                                        <li><a href="#">Yêu Thích</a></li>
+                                        <li><a href="#">Giỏ Hàng</a></li>
+                                        <li><a href="#">Đăng Xuất</a></li>
+                                        <li><a href="#">Đăng Nhập</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -483,11 +674,11 @@
                                 <div class="address">
                                     <h3>Danh Sách</h3>
                                     <ul class="Links_footer">
-                                        <li class="active"><a href="#">Tài Khoản</a> </li>
-                                        <li><a href="#">Yêu Thích</a> </li>
-                                        <li><a href="#">Giỏ Hàng</a> </li>
-                                        <li><a href="#"> Đăng Xuất</a> </li>
-                                        <li><a href="#">Đăng Nhập</a> </li>
+                                        <li class="active"><a href="#">Tài Khoản</a></li>
+                                        <li><a href="#">Yêu Thích</a></li>
+                                        <li><a href="#">Giỏ Hàng</a></li>
+                                        <li><a href="#"> Đăng Xuất</a></li>
+                                        <li><a href="#">Đăng Nhập</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -495,7 +686,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6 ">
                                 <div class="address">
                                     <h3>Phản Hồi</h3>
-                                    <p>Hãy Ủng Hộ Chúng Tôi Băng Cách Đăng Kí  </p>
+                                    <p>Hãy Ủng Hộ Chúng Tôi Băng Cách Đăng Kí </p>
                                     <form class="newtetter">
                                         <input class="tetter" placeholder="Your email" type="text" name="Your email">
                                         <button class="submit">Đăng Kí</button>
@@ -532,17 +723,17 @@
 <script src="js/custom.js"></script>
 <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $("#sidebar").mCustomScrollbar({
             theme: "minimal"
         });
 
-        $('#dismiss, .overlay').on('click', function() {
+        $('#dismiss, .overlay').on('click', function () {
             $('#sidebar').removeClass('active');
             $('.overlay').removeClass('active');
         });
 
-        $('#sidebarCollapse').on('click', function() {
+        $('#sidebarCollapse').on('click', function () {
             $('#sidebar').addClass('active');
             $('.overlay').addClass('active');
             $('.collapse.in').toggleClass('in');
@@ -552,16 +743,16 @@
 </script>
 
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $(".fancybox").fancybox({
             openEffect: "none",
             closeEffect: "none"
         });
 
-        $(".zoom").hover(function() {
+        $(".zoom").hover(function () {
 
             $(this).addClass('transition');
-        }, function() {
+        }, function () {
 
             $(this).removeClass('transition');
         });
