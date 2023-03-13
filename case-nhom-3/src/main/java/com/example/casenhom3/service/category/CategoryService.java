@@ -1,5 +1,6 @@
 package com.example.casenhom3.service.category;
 
+import com.example.casenhom3.DAO.CategoriesDAO;
 import com.example.casenhom3.model.Categories;
 
 import java.util.ArrayList;
@@ -7,34 +8,30 @@ import java.util.List;
 
 public class CategoryService implements ICategory {
     List<Categories> categories = new ArrayList<>();
+    CategoriesDAO categoriesDAO = new CategoriesDAO();
 
     @Override
     public List<Categories> findAll() {
-        return categories;
+        return categoriesDAO.findAll();
     }
 
     @Override
     public void save(Categories category) {
-        categories.add(category);
+        categoriesDAO.create(category);
     }
 
     @Override
     public Categories findById(long id) {
-        for (int i = 0; i < categories.size(); i++) {
-            if (categories.get(i).getId() == id) {
-                return categories.get(i);
-            }
-        }
-        return null;
+        return categoriesDAO.findById(id);
     }
 
     @Override
     public void update(long id, Categories category) {
-        categories.set((int) id, category);
+        categoriesDAO.update(id, category);
     }
 
     @Override
     public void delete(long id) {
-        categories.remove(id);
+        categoriesDAO.delete(id);
     }
 }

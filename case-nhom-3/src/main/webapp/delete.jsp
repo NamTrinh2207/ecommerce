@@ -6,7 +6,7 @@
 <body>
 <h1>Delete customer</h1>
 <p>
-    <a href="/productServlet">Back to customer list</a>
+    <a href="/CategoryServlet">Back to customer list</a>
 </p>
 <form method="post">
     <h3>Are you sure?</h3>
@@ -15,23 +15,11 @@
         <table>
             <tr>
                 <td>code:</td>
-                <td>${requestScope["product"].getCode()}</td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td>${requestScope["product"].getPrice()}</td>
-            </tr>
-            <tr>
-                <td>Address:</td>
-                <td>${requestScope["product"].getImg()}</td>
-            </tr>
-            <tr>
-                <td>Address:</td>
-                <td>${requestScope["product"].getDescribe()}</td>
+                <td>${requestScope["category"].getCategoriesName()}</td>
             </tr>
             <tr>
                 <td><input type="submit" value="Delete customer"></td>
-                <td><a href="/productServlet">Back to customer list</a></td>
+                <td><a href="/CategoryServlet">Back to customer list</a></td>
             </tr>
         </table>
     </fieldset>

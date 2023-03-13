@@ -148,6 +148,7 @@ public class ProductServlet extends HttpServlet {
         double price = Double.parseDouble(request.getParameter("price"));
         String img = request.getParameter("img");
         String describe = request.getParameter("describe");
+        String name = request.getParameter("name");
         Product product = this.productService.findById(id);
         if (product == null) {
             response.sendRedirect("productServlet");
@@ -156,6 +157,7 @@ public class ProductServlet extends HttpServlet {
             product.setPrice(price);
             product.setImg(img);
             product.setDescribe(describe);
+            product.setName(name);
             this.productService.update(id, product);
             RequestDispatcher dispatcher = request.getRequestDispatcher("edit.jsp");
             request.setAttribute("product", product);

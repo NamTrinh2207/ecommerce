@@ -11,15 +11,15 @@
     </c:if>
 </p>
 <p>
-    <a href="/productServlet">Back to customer list</a>
+    <a href="/CategoryServlet">Back to customer list</a>
 </p>
 <form method="post">
     <fieldset>
         <legend>Customer information</legend>
         <table>
             <tr>
-                <td>code:</td>
-                <td><input type="text" name="code" value="${requestScope["product"].getCode()}"></td>
+                <td>Name:</td>
+                <td><input type="text" name="name" value="${requestScope["category"].getCategoriesName()}"></td>
             </tr>
             <tr>
                 <td></td>
