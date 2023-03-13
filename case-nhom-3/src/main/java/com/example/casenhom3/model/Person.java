@@ -11,6 +11,11 @@ public class Person {
     private String phone;
 
     public Person() {
+
+    }
+    public Person(long id)
+    {
+        this.id = id;
     }
     public Person(long id, String code, String name, Date date, String address, String email, String phone) {
         this.id = id;

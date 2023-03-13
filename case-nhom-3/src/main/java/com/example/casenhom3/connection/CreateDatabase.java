@@ -12,7 +12,6 @@ public class CreateDatabase {
     private static final String URL = "jdbc:mysql://localhost:3306/"+databaseName;
     private static final String USER = "Nam";
     private static final String PASSWORD = "Anhnam220797anhnam";
-
     private static String jdbcURL = "jdbc:mysql://localhost:3306/test";
     private static String acc = "root";
     private static String pass = "tuong2001";
