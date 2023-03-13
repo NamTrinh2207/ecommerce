@@ -11,7 +11,8 @@ public class CreateDatabase {
     private static final String USER = "Nam";
     private static final String PASSWORD = "Anhnam220797anhnam";
 
-    public Connection getConnection() throws SQLException {
+    public Connection getConnection() throws SQLException
+    {
         Connection connection = null;
         try {
             Class.forName(DRIVER);
