@@ -7,9 +7,9 @@ public interface IEcommerce<T> {
 
     void save(T t);
 
-    T findById(int id);
+    T findById(long id);
 
-    void update(int id, T t);
+    void update(long id, T t);
 
-    void delete(int id);
+    void delete(long id);
 }
