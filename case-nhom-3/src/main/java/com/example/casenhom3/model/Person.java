@@ -3,7 +3,7 @@ package com.example.casenhom3.model;
 import java.sql.Date;
 
 public class Person {
-    private Long id;
+    private long id;
     private String code;
     private String name;
     private Date date;
@@ -13,7 +13,7 @@ public class Person {
     public Person() {
     }
 
-    public Person(Long id, String code, String name, Date date, String address, String email, String phone) {
+    public Person(long id, String code, String name, Date date, String address, String email, String phone) {
         this.id = id;
         this.code = code;
         this.name = name;
@@ -23,7 +23,7 @@ public class Person {
         this.phone = phone;
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
