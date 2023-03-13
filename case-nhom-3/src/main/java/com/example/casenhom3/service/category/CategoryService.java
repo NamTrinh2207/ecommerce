@@ -5,7 +5,7 @@ import com.example.casenhom3.model.Categories;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Category implements ICategory {
+public class CategoryService implements ICategory {
     List<Categories> categories = new ArrayList<>();
 
     @Override
