@@ -51,6 +51,8 @@ public class OrderServiceImpl implements OrderService
         return orderList;
     }
 
+
+    // 70. Hiển thị danh sách đơn hàng
     @Override
     public List<Order> findAll()
     {
@@ -87,64 +89,7 @@ public class OrderServiceImpl implements OrderService
         }
         return null;
     }
-    @Override
-    public List<Order> findOrderByDate(Date start, Date end)
-    {
-        if (connection != null)
-        {
-            try
-            {
-                String sql = "select * from _order where orderDate between ? and ?";
-                PreparedStatement p = connection.prepareStatement(sql);
-                p.setDate(1, start);
-                p.setDate(2, end);
-                ResultSet rs = p.executeQuery();
-                return orderListResult(rs);
-
-            }
-            catch (SQLException e)
-            {
-                System.out.println("Query Error");
-            }
-            finally
-            {
-                try {
-                    connection.close();
-                } catch (SQLException e) {
-                    System.out.println("Close Error");
-                }
-
-            }
-        }
-        return null;
-    }
-
-    @Override
-    public void save(Order order)
-    {
-
-    }
-
-    @Override
-    public Order findById(long id)
-    {
-        return null;
-    }
-
-    @Override
-    public void update(long id, Order order)
-    {
-
-    }
-
-    @Override
-    public void delete(long id)
-    {
-
-    }
-
-
-
+    //71.Xem chi tiết đơn hàng theo orderId
     @Override
     public OrderDetail getOrderDetailById(long orderId)
     {
@@ -189,7 +134,103 @@ public class OrderServiceImpl implements OrderService
                 }
             }
         }
-
         return null;
     }
+
+    // 72  Tìm kiếm đơn hàng theo khoảng thời gian
+    @Override
+    public List<Order> findOrderByDate(Date start, Date end)
+    {
+        if (connection != null)
+        {
+            try
+            {
+                String sql = "select * from _order where orderDate between ? and ?";
+                PreparedStatement p = connection.prepareStatement(sql);
+                p.setDate(1, start);
+                p.setDate(2, end);
+                ResultSet rs = p.executeQuery();
+                return orderListResult(rs);
+
+            }
+            catch (SQLException e)
+            {
+                System.out.println("Query Error");
+            }
+            finally
+            {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    System.out.println("Close Error");
+                }
+
+            }
+        }
+        return null;
+    }
+
+    // 72 Tìm kiếm đơn hàng theo order Id
+    @Override
+    public Order findById(long orderId)
+    {
+        if (connection != null)
+        {
+            try
+            {
+                StringBuilder s = new StringBuilder();
+                s.append("select * from _order o ");
+                s.append(" ");
+                s.append("join _customer c on o.customer_id = c.id and");
+                s.append(" ");
+                s.append("_employee e on o.employee_id = e.id");
+                s.append(" ");
+                s.append("where id = ?");
+                PreparedStatement p = connection.prepareStatement(s.toString());
+                p.setLong(1, orderId);
+                ResultSet rs = p.executeQuery();
+                if (rs.next())
+                {
+                    long customer_id = rs.getLong("customer_id");
+                    long employee_id = rs.getLong("employee_id");
+                    Date orderDate = rs.getDate("orderDate");
+                    int status = rs.getInt("status");
+                    Customer customer= new Customer(customer_id);
+                    Employee employee = new Employee(employee_id);
+                    Order order = new Order(orderId,customer, employee,orderDate,status);
+                    return order;
+                }
+            }
+            catch (SQLException e)
+            {
+                System.out.println("Query Error");
+            }
+            finally
+            {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    System.out.println("Close Error");
+                }
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public void save(Order order)
+    {
+
+    }
+    @Override
+    public void update(long id, Order order)
+    {
+
+    }
+    @Override
+    public void delete(long id)
+    {
+
+    }
+
 }

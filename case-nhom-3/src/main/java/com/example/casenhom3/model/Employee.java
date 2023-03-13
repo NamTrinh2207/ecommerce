@@ -3,7 +3,9 @@ package com.example.casenhom3.model;
 import java.sql.Date;
 
 public class Employee extends Person{
-    public Employee() {
+    public Employee(long id)
+    {
+        super(id);
     }
 
     public Employee(long id, String code, String name, Date date, String address, String email, String phone) {
