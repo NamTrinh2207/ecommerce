@@ -6,7 +6,6 @@
  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
@@ -15,7 +14,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>List Employees</title>
+    <title>List Order</title>
+    <script src="<c:url value="/js/jquery-3.1.1.min.js"/>" type='text/javascript'></script>
+    <link href='<c:url value="/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"/>' rel='stylesheet' type='text/css'>
+    <script src='<c:url value ="/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"/>' type='text/javascript'></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -59,6 +61,7 @@
         .search-box {
             position: relative;
             float: right;
+            margin-bottom: 30px;
         }
 
         .search-box input {
@@ -228,11 +231,21 @@
                 <div class="row">
                     <div class="col-sm-8"><h2>ORDER <b>LIST</b></h2></div>
                 </div>
+                <c:url value="/orders?action=searchByDate" var="searchByDate"/>
+                <form action="${searchByDate}" method="post">
+                    <div class="col-sm-4 float-right">
+                      <input type='text' class="form-control" data-provide="datepicker" name="startDate" placeholder='Từ ngày' style='width: 300px;' >
+                      <input type='text' class="form-control" data-provide="datepicker" name="endDate" placeholder="Đến ngày" style='width: 300px;' > <br>
+                        <button type="submit" class="form-control">Tìm kiếm</button>
+                    </div>
+
+                </form>
                 <form>
                     <div class="col-sm-4 float-right">
+                        <br>
                         <div class="search-box">
                             <i class="material-icons">&#xE8B6;</i>
-                            <input name="name" type="text" class="form-control" placeholder="Search&hellip;">
+                            <input name="name" type="text" class="form-control" placeholder="Tìm kiếm hóa đơn theo Id">
                         </div>
                     </div>
                 </form>
@@ -271,12 +284,9 @@
     </div>
 </div>
 <script type="text/javascript">
-    function delById(id) {
-        if (confirm("Bạn có chắc chắn muốn xóa nhân viên có id là " + id + " không ? ")) {
-            window.location = "/employees?action=delete&id=" + id;
-            window.location = "/employees?page=1";
-        }
-    }
+    $(document).ready(function(){
+        $('#datepicker').datepicker();
+    });
 </script>
 </body>
 </html>

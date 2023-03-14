@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class CreateDatabase {
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=yes&characterEncoding=UTF-8";
+    private static final String URL = "jdbc:mysql://localhost:3306/productmanager_nhom3?useUnicode=yes&characterEncoding=UTF-8";
     private static final String userDoan = "root";
     private static final String passDoan = "10061995";
     private static final String user_nam = "Nam";

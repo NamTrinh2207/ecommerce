@@ -237,8 +237,9 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Quản lý nhân viên</a>
                 </li>
+                <c:url var="orderManager" value="/orders"/>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Quản lý hóa đơn</a>
+                    <a class="nav-link" href="${orderManager}">Quản lý hóa đơn</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Quản lý khách hàng</a>
