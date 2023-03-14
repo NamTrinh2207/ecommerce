@@ -6,7 +6,10 @@
  To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -234,38 +237,22 @@
                     </div>
                 </form>
             </div>
-            <c:set var="page" value="${requestScope.page}"/>
-            <div class="pagination flex-column">
-                <div class="clearfix mb-3">
-                    <div class="hint-text"><a href="<c:url value="/employees?action=create"/>" class="page-link">Create new
-                        employee</a></div>
-                    <div class="hint-text"><a href="<c:url value="/index.jsp"/>" class="page-link">Trang Chủ</a></div>
-                </div>
-                <c:forEach begin="${1}" end="${requestScope.num}" var="i">
-                    <a class="${i==page?"active":""}" href="<c:url value="/employees?page=${i}"/>">${i}</a>
-                </c:forEach>
-            </div>
             <table class="table table-striped table-hover table-bordered">
                 <thead>
                 <tr>
-                    <th>Mã NV</th>
-                    <th>Họ và tên <i class="fa fa-sort"></i></th>
-                    <th>Năm sinh</th>
-                    <th>Địa chỉ</th>
-                    <th>Email</th>
-                    <th>SĐT</th>
-                    <th>Actions</th>
+                    <th>Id</th>
+                    <th>Customer ID <i class="fa fa-sort"></i></th>
+                    <th>Employee Id</th>
+                    <th>Order Date</th>
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${requestScope.employees}" var="e">
+                <c:forEach items="${requestScope.orders}" var="order">
                     <tr>
-                        <td><c:out value="${e.code}"/></td>
-                        <td><c:out value="${e.name}"/></td>
-                        <td><c:out value="${e.date}"/></td>
-                        <td><c:out value="${e.address}"/></td>
-                        <td><c:out value="${e.email}"/></td>
-                        <td><c:out value="${e.phone}"/></td>
+                        <td><c:out value="${order.id}"/></td>
+                        <td><c:out value="${order.customer_id}"/></td>
+                        <td><c:out value="${order.employee_id}"/></td>
+                        <td><fmt:formatDate value="${order.orderDate}" type="date" pattern="dd-MM-yyyy"/></td>
                         <td>
                             <a href="<c:url value="/employees?action=view&id=${e.getId()}"/>" class="view" title="View"
                                data-toggle="tooltip"><i
