@@ -2,7 +2,6 @@ package com.example.casenhom3.service.employee;
 
 import com.example.casenhom3.connection.CreateDatabase;
 import com.example.casenhom3.model.Employee;
-import com.example.casenhom3.model.Product;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -16,7 +15,7 @@ public class EmployeeService implements IEmployeeService, SearchAndListByPage<Em
     private static final String DELETE_EMPLOYEE = "delete from employee where id = ?;";
     private static final String UPDATE_EMPLOYEE = "update employee set code = ?,name = ?,date = ?,address = ?, email = ?, phone = ? where id = ?;";
     private final String SEARCH_BY_NAME = "select id,code,name,date,address,email,phone from employee where name " +
-            "like concat('%' , ? , '%') ;";
+            "like concat('%' , ? ,'%') ;";
 
     @Override
     public List<Employee> findAll() {
@@ -144,11 +143,12 @@ public class EmployeeService implements IEmployeeService, SearchAndListByPage<Em
             while (resultSet.next()) {
                 long id = resultSet.getLong("id");
                 String code = resultSet.getString("code");
+                String name1 = resultSet.getString(3);
                 Date date = resultSet.getDate("date");
                 String address = resultSet.getString("address");
                 String email = resultSet.getString("email");
                 String phone = resultSet.getString("phone");
-                Employee employee = new Employee(id, code, name, date, address, email, phone);
+                Employee employee = new Employee(id, code, name1, date, address, email, phone);
                 employees.add(employee);
             }
         } catch (SQLException e) {
@@ -156,5 +156,4 @@ public class EmployeeService implements IEmployeeService, SearchAndListByPage<Em
         }
         return employees;
     }
-
 }

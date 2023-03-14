@@ -170,11 +170,13 @@
         .delete {
             cursor: pointer;
         }
-        .pagination{
+
+        .pagination {
             display: inline-block;
             float: left;
         }
-        .pagination a{
+
+        .pagination a {
             color: #ffffff;
             background-color: #03A9F4;
             font-size: 16px;
@@ -185,19 +187,22 @@
             margin-left: 3px;
         }
 
-        .pagination a.active{
+        .pagination a.active {
             background-color: #f6a906;
             color: white;
         }
-        .pagination a:hover:not(.active){
+
+        .pagination a:hover:not(.active) {
             background-color: #0069d9;
             transition: 0.8s;
             color: white;
         }
+
         .table-title h2 {
             margin: 8px 0 0;
             font-size: 45px;
         }
+
         .page-link {
             position: relative;
             display: block;
@@ -225,7 +230,7 @@
                 <div class="row">
                     <div class="col-sm-8"><h2>EMPLOYEES <b>LIST</b></h2></div>
                 </div>
-                <form>
+                <form action="/employees?action=search" method="post">
                     <div class="col-sm-4 float-right">
                         <div class="search-box">
                             <i class="material-icons">&#xE8B6;</i>
@@ -237,7 +242,8 @@
             <c:set var="page" value="${requestScope.page}"/>
             <div class="pagination flex-column">
                 <div class="clearfix mb-3">
-                    <div class="hint-text"><a href="<c:url value="/employees?action=create"/>" class="page-link">Create new
+                    <div class="hint-text"><a href="<c:url value="/employees?action=create"/>" class="page-link">Create
+                        new
                         employee</a></div>
                     <div class="hint-text"><a href="<c:url value="/index.jsp"/>" class="page-link">Trang Chủ</a></div>
                 </div>
@@ -287,7 +293,6 @@
     function delById(id) {
         if (confirm("Bạn có chắc chắn muốn xóa nhân viên có id là " + id + " không ? ")) {
             window.location = "/employees?action=delete&id=" + id;
-            window.location = "/employees?page=1";
         }
     }
 </script>

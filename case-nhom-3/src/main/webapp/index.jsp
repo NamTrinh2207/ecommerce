@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <!-- basic -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,17 +66,19 @@
                 <li class="active">
                     <a href="/index.jsp">Trang chủ</a>
                 </li>
+                <c:forEach items="${category}" var="p">
                 <li>
-                    <a href="#brand">Thương Hiệu</a>
+                    <a href="#">${p.getCategoriesName()}</a>
                 </li>
-                <li>
-                    <a href="#day">Dày</a>
-                </li>
-                <li>
-                    <a href="#jewellery">Trang Sức</a>
-                </li>
-                <li>
-                    <a href="#kids">Trẻ em và Trẻ sơ sinh</a>
+                </c:forEach>
+<%--                <li>--%>
+<%--                    <a href="#day">Dày</a>--%>
+<%--                </li>--%>
+<%--                <li>--%>
+<%--                    <a href="#jewellery">Trang Sức</a>--%>
+<%--                </li>--%>
+<%--                <li>--%>
+<%--                    <a href="#kids">Trẻ em và Trẻ sơ sinh</a>--%>
                 </li>
             </ul>
 
@@ -242,37 +245,40 @@
                 <!-- news brand -->
                 <div id="brand" class="brand-bg">
                     <h3>Bán Chạy Nhất</h3>
+                    <c:forEach items="${product}" var="p">
                     <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                             <div class="brand-box">
                                 <h5>Giảm Giá</h5>
-                                <i><img src="https://tse4.mm.bing.net/th?id=OIP.IBXmtN4cRfdZsjtEct2XMwHaKW&pid=Api&P=0"/>
+                                <i><img src="p."/>
                                 </i>
-                                <h4>Giá $<span class="nolmal">100</span></h4>
+                                <h4>Giá $<span class="nolmal">${p.productPrice}</span></h4>
                             </div>
                             <a class="buynow" href="#">Mua Ngay</a>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
-                            <div class="brand-box">
-                                <i><img src="https://tse4.mm.bing.net/th?id=OIP.RKEomozF2AJqx9f1uP-PtQHaJ4&pid=Api&P=0"/></i>
-                                <h4>Giá $<span class="nolmal">100</span></h4>
-                            </div>
-                            <a class="buynow" href="#">Mua Ngay</a>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                            <div class="brand-box">
-                                <i><img src="https://tse4.mm.bing.net/th?id=OIP.niwUXpQCgw49zQSiVPkZ5gHaFj&pid=Api&P=0"/></i>
-                                <h4>Giá $<span class="nolmal">100</span></h4>
-                            </div>
-                            <a class="buynow" href="#">Mua Ngay</a>
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                            <div class="brand-box">
-                                <i><img src="https://tse1.mm.bing.net/th?id=OIP.eGGXasx8eDDUi56KitaHxgHaGC&pid=Api&P=0"/></i>
-                                <h4>Giá $<span class="nolmal">100</span></h4>
-                            </div>
-                            <a class="buynow" href="#">Mua Ngay</a>
-                        </div>
+                        </c:forEach>
+
+<%--                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">--%>
+<%--                            <div class="brand-box">--%>
+<%--                                <i><img src="https://tse4.mm.bing.net/th?id=OIP.RKEomozF2AJqx9f1uP-PtQHaJ4&pid=Api&P=0"/></i>--%>
+<%--                                <h4>Giá $<span class="nolmal">100</span></h4>--%>
+<%--                            </div>--%>
+<%--                            <a class="buynow" href="#">Mua Ngay</a>--%>
+<%--                        </div>--%>
+<%--                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">--%>
+<%--                            <div class="brand-box">--%>
+<%--                                <i><img src="https://tse4.mm.bing.net/th?id=OIP.niwUXpQCgw49zQSiVPkZ5gHaFj&pid=Api&P=0"/></i>--%>
+<%--                                <h4>Giá $<span class="nolmal">100</span></h4>--%>
+<%--                            </div>--%>
+<%--                            <a class="buynow" href="#">Mua Ngay</a>--%>
+<%--                        </div>--%>
+<%--                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">--%>
+<%--                            <div class="brand-box">--%>
+<%--                                <i><img src="https://tse1.mm.bing.net/th?id=OIP.eGGXasx8eDDUi56KitaHxgHaGC&pid=Api&P=0"/></i>--%>
+<%--                                <h4>Giá $<span class="nolmal">100</span></h4>--%>
+<%--                            </div>--%>
+<%--                            <a class="buynow" href="#">Mua Ngay</a>--%>
+<%--                        </div>--%>
                     </div>
                 </div>
                 <a class="seemore" href="#">Nhiều Hơn</a>

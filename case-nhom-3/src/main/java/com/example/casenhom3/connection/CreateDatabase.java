@@ -15,9 +15,9 @@ public class CreateDatabase {
     private static final String USER = "Nam";
     private static final String PASSWORD = "Anhnam220797anhnam";
 
-    private static String jdbcURL = "jdbc:mysql://localhost:3306/productmanager_nhom3?useUnicode=yes&characterEncoding=UTF-8";
+    private static String jdbcURL = "jdbc:mysql://localhost:3306/test";
     private static String acc = "root";
-    private static String pass = "Nguyen251096*";
+    private static String pass = "tuong2001";
     private static String className = "com.mysql.cj.jdbc.Driver";
 
     public static Connection getConnection() {
@@ -30,6 +30,10 @@ public class CreateDatabase {
             e.printStackTrace();
         }
         return connection;
+    }
+
+    public static void main(String[] args) {
+        Connection connection = CreateDatabase.getConnection();
     }
 
 }

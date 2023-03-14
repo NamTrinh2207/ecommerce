@@ -2,69 +2,69 @@ package com.example.casenhom3.model;
 
 public class Product {
     private long id;
-    private String code;
-    private String name;
-    private double price;
-    private String img;
-    private String describe;
+    private String productCode;
+    private String productName;
+    private double productPrice;
+    private String productImage;
+    private String productDescribe;
 
     public Product() {
     }
 
-    public Product(long id, String code,String name, double price, String img, String describe) {
+    public Product(long id, String productCode, String productName, double productPrice, String productImage, String productDescribe) {
         this.id = id;
-        this.code = code;
-        this.name = name;
-        this.price = price;
-        this.img = img;
-        this.describe = describe;
+        this.productCode = productCode;
+        this.productName = productName;
+        this.productPrice = productPrice;
+        this.productImage = productImage;
+        this.productDescribe = productDescribe;
     }
 
     public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public String getCode() {
-        return code;
+    public String getProductCode() {
+        return productCode;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setProductCode(String productCode) {
+        this.productCode = productCode;
     }
 
-    public String getName() {
-        return name;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public double getPrice() {
-        return price;
+    public double getProductPrice() {
+        return productPrice;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setProductPrice(double productPrice) {
+        this.productPrice = productPrice;
     }
 
-    public String getImg() {
-        return img;
+    public String getProductImage() {
+        return productImage;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setProductImage(String productImage) {
+        this.productImage = productImage;
     }
 
-    public String getDescribe() {
-        return describe;
+    public String getProductDescribe() {
+        return productDescribe;
     }
 
-    public void setDescribe(String describe) {
-        this.describe = describe;
+    public void setProductDescribe(String productDescribe) {
+        this.productDescribe = productDescribe;
     }
 }

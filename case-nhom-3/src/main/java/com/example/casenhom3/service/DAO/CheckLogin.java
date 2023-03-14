@@ -10,8 +10,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CheckLogin {
-    private static final String SAVE_ACCOUNT="insert into  logincustomer(name, password) values (?,?);";
-    private static final String checkLOg="select * from logincustomer where name = ? and password = ?;";
+    private static final String SAVE_ACCOUNT="insert into  logincustomer(user, password) values (?,?);";
+    private static final String checkLOg="select * from logincustomer where user = ? and password = ?;";
     Connection connection=null;
     PreparedStatement preparedStatement=null;
     ResultSet resultSet=null;
@@ -23,7 +23,7 @@ public class CheckLogin {
                 preparedStatement.setString(1, name);
                 preparedStatement.setString(2,password);
                 resultSet = preparedStatement.executeQuery();
-                while (resultSet.next()){
+                if (resultSet.next()){
                     return new AcountSignUp(resultSet.getString(1),resultSet.getString(2));
                 }
             } catch (SQLException e) {
