@@ -21,9 +21,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
-        *{
+        * {
             font-family: 'Roboto', sans-serif;
         }
+
         body {
             color: #566787;
             background: #f5f5f5;
@@ -165,7 +166,8 @@
             margin-top: 6px;
             font-size: 95%;
         }
-        .delete{
+
+        .delete {
             cursor: pointer;
         }
     </style>
@@ -183,10 +185,9 @@
                 <div class="row">
                     <div class="col-sm-8"><h2>Employee <b>Details</b></h2></div>
                     <div class="col-sm-4">
-                        <div class="search-box">
-                            <i class="material-icons">&#xE8B6;</i>
-                            <input type="text" class="form-control" placeholder="Search&hellip;">
-                        </div>
+                        <form>
+                            <input type="text" name="search">
+                        </form>
                     </div>
                 </div>
             </div>
