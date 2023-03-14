@@ -1,6 +1,6 @@
 package com.example.casenhom3.controller;
 
-import com.example.casenhom3.DAO.AccountDao;
+import com.example.casenhom3.service.DAO.AccountDao;
 import com.example.casenhom3.model.AccountAdmin;
 
 import javax.servlet.*;
