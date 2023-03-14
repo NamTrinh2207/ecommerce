@@ -100,7 +100,7 @@ public class OrderServiceImpl implements OrderService
                 StringBuilder s = new StringBuilder();
                 s.append("select * from _orderdetail o");
                 s.append(" ");
-                s.append("join product p on o.product_id = p.id where order_id = ?");
+                s.append("join product p on o.product_id = p.id where o.order_id = ?");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 p.setLong(1, orderId);
                 ResultSet rs = p.executeQuery();
@@ -177,13 +177,9 @@ public class OrderServiceImpl implements OrderService
             try
             {
                 StringBuilder s = new StringBuilder();
-                s.append("select * from _order o ");
+                s.append("select * from _order o, _customer c, employee e ");
                 s.append(" ");
-                s.append("join _customer c on o.customer_id = c.id and");
-                s.append(" ");
-                s.append("_employee e on o.employee_id = e.id");
-                s.append(" ");
-                s.append("where id = ?");
+                s.append("where c.id = o.customer_id and e.id = o.employee_id and o.id = ?");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 p.setLong(1, orderId);
                 ResultSet rs = p.executeQuery();
@@ -317,7 +313,8 @@ public class OrderServiceImpl implements OrderService
                 s.append(" ");
                 s.append("where o.id = od.order_id and o.customer_id = ? and o.status = ? and o.status = 0");
                 PreparedStatement p = connection.prepareStatement(s.toString());
-                p.setInt(1, status);
+                p.setLong(1, customerId);
+                p.setInt(2, status);
                 result = p.executeUpdate();
             }
             catch (SQLException e)
@@ -369,7 +366,39 @@ public class OrderServiceImpl implements OrderService
         }
     }
 
-    // 77 Chỉnh sửa đơn hàng
+    // 77 Chỉnh sửa đơn hàng(hóa đơn)
+    @Override
+    public int orderUpdate(long orderId, int status)
+    {
+        int result = 0;
+        if (connection != null)
+        {
+            try
+            {
+                StringBuilder str = new StringBuilder();
+                str.append("update order set status = ? ");
+                str.append(" ");
+                str.append("where id = ?");
+                PreparedStatement p = connection.prepareStatement(str.toString());
+                p.setInt(1, status);
+                p.setLong(2, orderId);
+                result = p.executeUpdate();
+            }
+            catch (SQLException e)
+            {
+                System.out.println("Connection Error");
+            }
+            finally
+            {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    System.out.println("Close Error");
+                }
+            }
+        }
+        return result;
+    }
     @Override
     public void update(long id, Order order)
     {
