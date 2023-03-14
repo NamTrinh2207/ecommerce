@@ -348,30 +348,32 @@ public class OrderServiceImpl implements OrderService
             try
             {
                 StringBuilder s = new StringBuilder();
-                if (status == 0)
+                if (status == 0 || status == 1 || status == 2)
                 {
-                    s.append("Delete from _order o, _orderdetail od ");
-                    s.append(" ");
-                    s.append("where o.id = od.order_id and o.id = ? and o.customer_id = ? and o.status = ? and o.status = 0");
-                    PreparedStatement p = connection.prepareStatement(s.toString());
-                    p.setLong(1,orderId);
-                    p.setLong(2, customerId);
-                    p.setInt(3, status);
-                    p.executeUpdate();
+                    if (status == 0)
+                    {
+                        s.append("Delete from _order o, _orderdetail od ");
+                        s.append(" ");
+                        s.append("where o.id = od.order_id and o.id = ? and o.customer_id = ? and o.status = ? and o.status = 0");
+                        PreparedStatement p = connection.prepareStatement(s.toString());
+                        p.setLong(1,orderId);
+                        p.setLong(2, customerId);
+                        p.setInt(3, status);
+                        p.executeUpdate();
+                    }
+                    else
+                    {
+                        s = new StringBuilder();
+                        s.append("update order set status = ? ");
+                        s.append(" ");
+                        s.append("where id = ? and customerId = ? ");
+                        PreparedStatement p = connection.prepareStatement(s.toString());
+                        p.setInt(1, status);
+                        p.setLong(2, orderId);
+                        p.setLong(3,customerId);
+                        p.executeUpdate();
+                    }
                 }
-                else
-                {
-                    s = new StringBuilder();
-                    s.append("update order set status = ? ");
-                    s.append(" ");
-                    s.append("where id = ? and customerId = ? ");
-                    PreparedStatement p = connection.prepareStatement(s.toString());
-                    p.setInt(1, status);
-                    p.setLong(2, orderId);
-                    p.setLong(3,customerId);
-                    p.executeUpdate();
-                }
-
             }
             catch (SQLException e)
             {
