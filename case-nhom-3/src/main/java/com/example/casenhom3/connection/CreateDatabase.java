@@ -15,7 +15,7 @@ public class CreateDatabase {
     private static final String USER = "Nam";
     private static final String PASSWORD = "Anhnam220797anhnam";
 
-    private static String jdbcURL = "jdbc:mysql://localhost:3306/database_nhom3";
+    private static String jdbcURL = "jdbc:mysql://localhost:3306/productmanager_nhom3?useUnicode=yes&characterEncoding=UTF-8";
     private static String acc = "root";
     private static String pass = "Nguyen251096*";
     private static String className = "com.mysql.cj.jdbc.Driver";
@@ -31,4 +31,5 @@ public class CreateDatabase {
         }
         return connection;
     }
+
 }
