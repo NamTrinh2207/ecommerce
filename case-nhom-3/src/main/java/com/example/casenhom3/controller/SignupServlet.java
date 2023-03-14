@@ -1,7 +1,6 @@
 package com.example.casenhom3.controller;
 
-import com.example.casenhom3.DAO.CheckLogin;
-import com.example.casenhom3.model.AccountAdmin;
+import com.example.casenhom3.service.DAO.CheckLogin;
 import com.example.casenhom3.model.AcountSignUp;
 
 import javax.servlet.*;

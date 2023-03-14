@@ -1,4 +1,4 @@
-package com.example.casenhom3.DAO;
+package com.example.casenhom3.service.DAO;
 
 import com.example.casenhom3.connection.CreateDatabase;
 import com.example.casenhom3.model.Categories;

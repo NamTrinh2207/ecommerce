@@ -1,6 +1,6 @@
 package com.example.casenhom3.service.category;
 
-import com.example.casenhom3.DAO.CategoriesDAO;
+import com.example.casenhom3.service.DAO.CategoriesDAO;
 import com.example.casenhom3.model.Categories;
 
 import java.util.ArrayList;
