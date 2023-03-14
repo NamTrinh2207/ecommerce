@@ -1,4 +1,4 @@
-package com.example.casenhom3.controller.service;
+package com.example.casenhom3.service;
 
 import java.util.List;
 

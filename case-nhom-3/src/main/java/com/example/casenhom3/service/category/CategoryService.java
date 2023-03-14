@@ -1,4 +1,4 @@
-package com.example.casenhom3.controller.service.category;
+package com.example.casenhom3.service.category;
 
 import com.example.casenhom3.DAO.CategoriesDAO;
 import com.example.casenhom3.model.Categories;

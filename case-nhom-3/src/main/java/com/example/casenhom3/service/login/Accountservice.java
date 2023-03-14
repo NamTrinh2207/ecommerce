@@ -1,4 +1,4 @@
-package com.example.casenhom3.controller.service.login;
+package com.example.casenhom3.service.login;
 
 import com.example.casenhom3.model.AccountAdmin;
 

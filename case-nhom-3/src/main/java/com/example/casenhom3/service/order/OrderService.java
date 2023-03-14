@@ -1,8 +1,9 @@
-package com.example.casenhom3.controller.service.order;
+package com.example.casenhom3.service.order;
 
+import com.example.casenhom3.model.Customer;
 import com.example.casenhom3.model.Order;
 import com.example.casenhom3.model.OrderDetail;
-import com.example.casenhom3.controller.service.IEcommerce;
+import com.example.casenhom3.service.IEcommerce;
 
 import java.sql.Date;
 import java.util.List;
