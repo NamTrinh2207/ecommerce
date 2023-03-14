@@ -26,6 +26,14 @@ public class Person {
         this.email = email;
         this.phone = phone;
     }
+    public Person( String code, String name, Date date, String address, String email, String phone) {
+        this.code = code;
+        this.name = name;
+        this.date = date;
+        this.address = address;
+        this.email = email;
+        this.phone = phone;
+    }
 
     public long getId() {
         return id;

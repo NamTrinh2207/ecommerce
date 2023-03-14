@@ -18,12 +18,6 @@
                 <h2>Add New Employee</h2>
             </caption>
             <tr>
-                <th>ID</th>
-                <td>
-                    <input type="text" name="id" id="id"/>
-                </td>
-            </tr>
-            <tr>
                 <th>Mã NV</th>
                 <td>
                     <input type="text" name="code" id="code"/>
