@@ -20,8 +20,8 @@ public class CreateDatabase {
     public static Connection getConnection() {
         Connection connection = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(jdbcURLdoan, Doan, PassWord);
+            Class.forName(className);
+            connection = DriverManager.getConnection(jdbcURL, acc, pass);
             System.out.println("connection successfully");
         } catch (SQLException e) {
             // TODO Auto-generated catch block

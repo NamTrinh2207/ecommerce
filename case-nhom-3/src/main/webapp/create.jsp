@@ -12,20 +12,32 @@
 <body>
 <h1>Create new customer</h1>
 <p>
-    <a href="/CategoryServlet">Back to customer list</a>
+    <a href="/productServlet">Back to customer list</a>
 </p>
 <form method="post">
     <fieldset>
         <legend>Cate information</legend>
         <table>
             <tr>
-                <td>categoryName:</td>
+                <td>code:</td>
+                <td><input type="text" name="code"></td>
+            </tr><tr>
+                <td>Name</td>
                 <td><input type="text" name="name"></td>
+            </tr><tr>
+                <td>price</td>
+                <td><input type="text" name="price"></td>
+            </tr><tr>
+                <td>img:</td>
+                <td><input type="text" name="img"></td>
             </tr>
             <tr>
+                <td>des:</td>
+                <td><input type="text" name="describe"></td>
+            </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Create Cate|"></td>
+                <td><input type="submit" value="Create pro|"></td>
             </tr>
         </table>
     </fieldset>

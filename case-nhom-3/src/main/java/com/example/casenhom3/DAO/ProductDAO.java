@@ -15,6 +15,8 @@ public class ProductDAO implements IEcommerce<Product> {
     private final String INSERT_PRODUCT = "insert into product(code, name, price, img, describee) value(?,?,?,?,?);";
     private final String UPDATE_PRODUCT = "update product set code=?, name=?, price=?,img=?,describee=? where id = ?;";
     private final String DELETE_PRODUCT = "delete from product where id = ?;";
+    private final String FIND_BY_NAME = "select id,code,name,price,img,describee from product where name " +
+            "like concat('%' , ? , '%') ;";
 
     @Override
     public List<Product> findAll() {
@@ -52,28 +54,6 @@ public class ProductDAO implements IEcommerce<Product> {
     }
 
     @Override
-    public Product findById(long id) {
-        Product product = null;
-        try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT_PRODUCT_BY_ID);) {
-            preparedStatement.setLong(1, id);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()) {
-                product = new Product(resultSet.getLong("id"),
-                        resultSet.getString("code"),
-                        resultSet.getString("name"),
-                        resultSet.getDouble("price"),
-                        resultSet.getString("img"),
-                        resultSet.getString(6));
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-
-
-        return product;
-    }
-
-    @Override
     public void update(long id, Product product) {
         try (PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_PRODUCT)) {
             preparedStatement.setString(1, product.getCode());
@@ -96,5 +76,45 @@ public class ProductDAO implements IEcommerce<Product> {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @Override
+    public Product findById(long id) {
+        Product product = null;
+        try (PreparedStatement preparedStatement = connection.prepareStatement(SELECT_PRODUCT_BY_ID);) {
+            preparedStatement.setLong(1, id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                product = new Product(resultSet.getLong("id"),
+                        resultSet.getString("code"),
+                        resultSet.getString("name"),
+                        resultSet.getDouble("price"),
+                        resultSet.getString("img"),
+                        resultSet.getString(6));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return product;
+    }
+
+    public List<Product> findByName(String name) {
+        List<Product> product = new ArrayList<>();
+        try (PreparedStatement statement = connection.prepareStatement(FIND_BY_NAME)) {
+            statement.setString(1, name);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                product.add(new Product(resultSet.getLong("id"),
+                        resultSet.getString("code"),
+                        resultSet.getString("name"),
+                        resultSet.getDouble("price"),
+                        resultSet.getString("img"),
+                        resultSet.getString(6)));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return product;
+
     }
 }

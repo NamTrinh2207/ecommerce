@@ -35,4 +35,8 @@ public class ProductService implements IProductService {
     public void delete(long id) {
         productDAO.delete(id);
     }
+
+    public List<Product> findByName(String name){
+        return productDAO.findByName(name);
+    }
 }
