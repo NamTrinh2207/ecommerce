@@ -215,6 +215,35 @@ public class OrderServiceImpl implements OrderService
         return null;
     }
 
+    // 74 Hiển thị tổng tiền đơn hàng
+    @Override
+    public double allOrderSum()
+    {
+        double sum = 0.0;
+        if (connection != null)
+        {
+            try
+            {
+                StringBuilder s = new StringBuilder();
+                s.append("select sum(od.amount) as amountSum from _orderdetail od, _order o ");
+                s.append(" ");
+                s.append("where o.id = od_order_id and o.status = 1");
+                PreparedStatement p = connection.prepareStatement(s.toString());
+                ResultSet rs = p.executeQuery();
+                if (rs.next())
+                {
+                    sum += rs.getDouble("amountSum");
+                }
+            }
+            catch (SQLException e)
+            {
+                System.out.println("Query Error ");
+            }
+        }
+        return sum;
+    }
+
+
 
     // 75. Hiển thị tổng tiền khách hàng đã đặt hàng
     @Override
@@ -259,36 +288,6 @@ public class OrderServiceImpl implements OrderService
         }
         return null;
     }
-    // 74 Hiển thị tổng tiền đơn hàng
-    @Override
-    public double allOrderSum()
-    {
-        double sum = 0.0;
-        if (connection != null)
-        {
-            try
-            {
-                StringBuilder s = new StringBuilder();
-                s.append("select sum(od.amount) as amountSum from _orderdetail od, _order o ");
-                s.append(" ");
-                s.append("where o.id = od_order_id and o.status = 1");
-                PreparedStatement p = connection.prepareStatement(s.toString());
-                ResultSet rs = p.executeQuery();
-                if (rs.next())
-                {
-                    sum += rs.getDouble("amountSum");
-                }
-            }
-            catch (SQLException e)
-            {
-                System.out.println("Query Error ");
-            }
-        }
-        return sum;
-    }
-
-
-
 
     // 76 Hủy đơn hàng theo customer
     @Override
