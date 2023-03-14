@@ -20,6 +20,9 @@ public class OrderServiceImpl implements OrderService
         connection = CreateDatabase.getConnection();
     }
 
+    // 39.Hiển thị báo cáo bán hàng theo ngày
+
+
     private List<Order> orderListResult(ResultSet rs) throws SQLException
     {
         List<Order> orderList = new ArrayList<>();
