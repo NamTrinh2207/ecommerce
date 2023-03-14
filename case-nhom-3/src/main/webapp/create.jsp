@@ -3,16 +3,11 @@
 <html>
 <head>
     <title>Create new customer</title>
-    <style>
-        .message {
-            color: green;
-        }
-    </style>
 </head>
 <body>
 <h1>Create new customer</h1>
 <p>
-    <a href="/productServlet">Back to customer list</a>
+    <a href="/CustomerServlet">Back to customer list</a>
 </p>
 <form method="post">
     <fieldset>
@@ -21,19 +16,26 @@
             <tr>
                 <td>code:</td>
                 <td><input type="text" name="code"></td>
-            </tr><tr>
-                <td>Name</td>
-                <td><input type="text" name="name"></td>
-            </tr><tr>
-                <td>price</td>
-                <td><input type="text" name="price"></td>
-            </tr><tr>
-                <td>img:</td>
-                <td><input type="text" name="img"></td>
             </tr>
             <tr>
-                <td>des:</td>
-                <td><input type="text" name="describe"></td>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td><input type="text" name="date"></td>
+            </tr>
+            <tr>
+                <td>address:</td>
+                <td><input type="text" name="address"></td>
+            </tr>
+            <tr>
+                <td>email:</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>phone:</td>
+                <td><input type="text" name="phone"></td>
             </tr>
             <tr>
                 <td></td>

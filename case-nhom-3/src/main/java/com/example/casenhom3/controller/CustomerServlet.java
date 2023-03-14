@@ -28,32 +28,14 @@ public class CustomerServlet extends HttpServlet {
                 formCreate(request, response);
                 break;
             case "edit":
+                formEdit(request, response);
                 break;
             case "delete":
+                formDelete(request, response);
                 break;
             default:
                 listCustomer(request, response);
 
-        }
-    }
-
-    private void formCreate(HttpServletRequest request, HttpServletResponse response) {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("create.jsp");
-        try {
-            requestDispatcher.forward(request, response);
-        } catch (ServletException | IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    private void listCustomer(HttpServletRequest request, HttpServletResponse response) {
-        List<Customer> customers = this.customerService.findAll();
-        RequestDispatcher dispatcher = request.getRequestDispatcher("list.jsp");
-        request.setAttribute("customer", customers);
-        try {
-            dispatcher.forward(request, response);
-        } catch (ServletException | IOException e) {
-            throw new RuntimeException(e);
         }
     }
 
@@ -68,12 +50,68 @@ public class CustomerServlet extends HttpServlet {
                 createCustomer(request, response);
                 break;
             case "edit":
+                editCustomer(request, response);
                 break;
             case "delete":
+                deleteCustomer(request, response);
                 break;
             default:
                 listCustomer(request, response);
 
+        }
+    }
+
+    private void listCustomer(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            List<Customer> customers = this.customerService.findAll();
+            System.out.println("ttyyyy" + customers);
+            request.setAttribute("customer", customers);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("list.jsp");
+            dispatcher.forward(request, response);
+        } catch (ServletException | IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void formCreate(HttpServletRequest request, HttpServletResponse response) {
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("create.jsp");
+        try {
+            requestDispatcher.forward(request, response);
+        } catch (ServletException | IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void formEdit(HttpServletRequest request, HttpServletResponse response) {
+        long id = Long.parseLong(request.getParameter("id"));
+        Customer customer = this.customerService.findById(id);
+        RequestDispatcher dispatcher;
+        if (customer == null) {
+            dispatcher = request.getRequestDispatcher("/CustomerServlet");
+        } else {
+            dispatcher = request.getRequestDispatcher("edit.jsp");
+        }
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException | IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void formDelete(HttpServletRequest request, HttpServletResponse response) {
+        long id = Long.parseLong(request.getParameter("id"));
+        Customer customer = this.customerService.findById(id);
+        RequestDispatcher dispatcher;
+        if (customer == null) {
+            dispatcher = request.getRequestDispatcher("/CustomerServlet");
+        } else {
+            request.setAttribute("customer", customer);
+            dispatcher = request.getRequestDispatcher("delete.jsp");
+        }
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException | IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
@@ -99,6 +137,60 @@ public class CustomerServlet extends HttpServlet {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
+        }
+    }
+
+    private void editCustomer(HttpServletRequest request, HttpServletResponse response) {
+        long id = Long.parseLong(request.getParameter("id"));
+        String code = request.getParameter("code");
+        String name = request.getParameter("name");
+        String date = request.getParameter("date");
+        SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
+        Date dateConvert;
+        try {
+            dateConvert = new Date(format.parse(date).getTime());
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+        String address = request.getParameter("address");
+        String email = request.getParameter("email");
+        String phone = request.getParameter("phone");
+        Customer customer = this.customerService.findById(id);
+        RequestDispatcher dispatcher;
+        if (customer == null) {
+            dispatcher = request.getRequestDispatcher("/CustomerServlet");
+        } else {
+            customer.setCode(code);
+            customer.setName(name);
+            customer.setDate(dateConvert);
+            customer.setAddress(address);
+            customer.setEmail(email);
+            customer.setPhone(phone);
+            this.customerService.update(id, customer);
+            dispatcher = request.getRequestDispatcher("edit.jsp");
+            request.setAttribute("customer", customer);
+        }
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException | IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void deleteCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        long id = Long.parseLong(request.getParameter("id"));
+        Customer customer = this.customerService.findById(id);
+        RequestDispatcher dispatcher;
+        if (customer == null) {
+            dispatcher = request.getRequestDispatcher("/CustomerServlet");
+            try {
+                dispatcher.forward(request, response);
+            } catch (ServletException e) {
+                throw new RuntimeException(e);
+            }
+        } else {
+            this.customerService.delete(id);
+            response.sendRedirect("/CustomerServlet");
         }
     }
 }

@@ -20,16 +20,16 @@ public class CustomerService implements ICustomerService {
 
     @Override
     public Customer findById(long id) {
-        return null;
+        return customerDAO.findbyId(id);
     }
 
     @Override
     public void update(long id, Customer customer) {
-
+        customerDAO.updateCustomer(id, customer);
     }
 
     @Override
     public void delete(long id) {
-
+        customerDAO.deleteCustomer((int) id);
     }
 }
