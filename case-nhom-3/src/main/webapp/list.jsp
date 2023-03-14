@@ -7,33 +7,35 @@
 <body>
 <h1>Customers</h1>
 <p>
-    <a href="/productServlet?action=create">Create new customer</a>
+    <a href="/CustomerServlet?action=create">Create new customer</a>
 </p>
-<form action="/productServlet?action=search" method="post">
-    <p>
-        <a>Search</a>
-        <input type="text" name="name">
-        <input type="submit" value="search">
-    </p>
-</form>
+<%--<form action="/productServlet?action=search" method="post">--%>
+<%--    <p>--%>
+<%--        <a>Search</a>--%>
+<%--        <input type="text" name="name">--%>
+<%--        <input type="submit" value="search">--%>
+<%--    </p>--%>
+<%--</form>--%>
 
 <table border="1">
     <tr>
-        <td>Name</td>
-        <td>Code</td>
-        <td>price</td>
-        <td>img</td>
-        <td>des</td>
+        <td>code</td>
+        <td>name</td>
+        <td>date</td>
+        <td>address</td>
+        <td>Email</td>
+        <td>phone</td>
     </tr>
-    <c:forEach items='${product}' var="p">
+    <c:forEach items='${customer}' var="p">
         <tr>
-            <td><a href="/productServlet?action=view&id=${p.getId()}">${p.name}</a></td>
-            <td>${p.code}</td>
-            <td>${p.price}</td>
-            <td>${p.img}</td>
-            <td>${p.describe}</td>
-            <td><a href="/productServlet?action=edit&id=${p.getId()}">edit</a></td>
-            <td><a href="/productServlet?action=delete&id=${p.getId()}">delete</a></td>
+            <td><a href="/CustomerServlet?action=view&id=${p.getId()}">${p.code}</a></td>
+            <td>${p.name}</td>
+            <td>${p.date}</td>
+            <td>${p.address}</td>
+            <td>${p.email}</td>
+            <td>${p.phone}</td>
+            <td><a href="/CustomerServlet?action=edit&id=${p.getId()}">edit</a></td>
+            <td><a href="/CustomerServlet?action=delete&id=${p.getId()}">delete</a></td>
         </tr>
     </c:forEach>
 </table>
