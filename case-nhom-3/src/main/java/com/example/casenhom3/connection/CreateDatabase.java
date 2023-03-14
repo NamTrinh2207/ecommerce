@@ -4,9 +4,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+
 public class CreateDatabase {
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=yes&characterEncoding=UTF-8";
+    private static final String URL = "jdbc:mysql://localhost:3306/productmanager_nhom3?useUnicode=yes&characterEncoding=UTF-8";
     private static final String userDoan = "root";
     private static final String passDoan = "10061995";
     private static final String user_nam = "Nam";
@@ -19,12 +20,12 @@ public class CreateDatabase {
     public static Connection getConnection() {
         Connection connection = null;
         try {
-            Class.forName(DRIVER);
-            connection = DriverManager.getConnection(URL, userDoan, passDoan);
-            Class.forName(DRIVER);
-            connection = DriverManager.getConnection(URL, user_nam, pass_nam);
-            Class.forName(DRIVER);
-            connection = DriverManager.getConnection(URL, userTuong, passTuong);
+//            Class.forName(DRIVER);
+//            connection = DriverManager.getConnection(URL, userDoan, passDoan);
+//            Class.forName(DRIVER);
+//            connection = DriverManager.getConnection(URL, user_nam, pass_nam);
+//            Class.forName(DRIVER);
+//            connection = DriverManager.getConnection(URL, userTuong, passTuong);
             Class.forName(DRIVER);
             connection = DriverManager.getConnection(URL, userNguyen, passNguyen);
         } catch (SQLException | ClassNotFoundException e) {
