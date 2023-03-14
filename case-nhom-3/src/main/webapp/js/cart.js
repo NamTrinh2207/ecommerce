@@ -1,101 +1,53 @@
-// Modal
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("cart");
-let close_footer = document.getElementsByClassName("close-footer")[0];
-let order = document.getElementsByClassName("order")[0];
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-close_footer.onclick = function () {
-    modal.style.display = "none";
-}
-order.onclick = function () {
-    prompt("chuyển vào số tk 0983273136 Mb banks")
-}
-window.onclick = function (event) {
-    if (event.target ===modal) {
-        modal.style.display = "none";
-    }
-}
-// xóa cart
-let remove_cart = document.getElementsByClassName("btn-danger");
-for (let i = 0; i < remove_cart.length; i++) {
-    let button = remove_cart[i]
-    button.addEventListener("click", function () {
-        let button_remove = event.target
-        button_remove.parentElement.parentElement.remove()
-    })
-}
-// update cart
-function updatecart() {
-    let cart_item = document.getElementsByClassName("cart-items")[0];
-    let cart_rows = cart_item.getElementsByClassName("cart-row");
-    let total = 0;
-    for (let i = 0; i < cart_rows.length; i++) {
-        let cart_row = cart_rows[i]
-        let price_item = cart_row.getElementsByClassName("cart-price ")[0]
-        let quantity_item = cart_row.getElementsByClassName("cart-quantity-input")[0]
-        let price = parseFloat(price_item.innerText)// chuyển một chuổi sang number để tính tổng tiền.
-        let quantity = quantity_item.value // lấy giá trị trong thẻ input
-        total = total + (price * quantity)
-    }
-    document.getElementsByClassName("cart-total-price")[0].innerText = total + 'VNĐ'
-}
-// Thêm vào giỏ
-let add_cart = document.getElementsByClassName("btn-cart");
-for (let i = 0; i < add_cart.length; i++) {
-    let add = add_cart[i];
-    add.addEventListener("click", function (event) {
+$(function(){
+    $("#wizard").steps({
+        headerTag: "h4",
+        bodyTag: "section",
+        transitionEffect: "fade",
+        enableAllSteps: true,
+        transitionEffectSpeed: 500,
+        onStepChanging: function (event, currentIndex, newIndex) {
+            if ( newIndex === 1 ) {
+                $('.steps ul').addClass('step-2');
+            } else {
+                $('.steps ul').removeClass('step-2');
+            }
+            if ( newIndex === 2 ) {
+                $('.steps ul').addClass('step-3');
+            } else {
+                $('.steps ul').removeClass('step-3');
+            }
 
-        let button = event.target;
-        let product = button.parentElement.parentElement;
-        let img = product.parentElement.getElementsByClassName("img-prd")[0].src
-        let title = product.getElementsByClassName("content-product-h3")[0].innerText
-        let price = product.getElementsByClassName("price")[0].innerText
-        addItemToCart(title, price, img)
-        // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
-        modal.style.display = "block";
-
-        updatecart()
-    })
-}
-
-function addItemToCart(title, price, img) {
-    let cartRow = document.createElement('div')
-    cartRow.classList.add('cart-row')
-    let cartItems = document.getElementsByClassName('cart-items')[0]
-    let cart_title = cartItems.getElementsByClassName('cart-item-title')
-    // Nếu title của sản phẩm bằng với title mà bạn thêm vao giỏ hàng thì sẽ thông cho user.
-    for (let i = 0; i < cart_title.length; i++) {
-        if (cart_title[i].innerText == title) {
-            alert('Sản Phẩm Đã Có Trong Giỏ Hàng')
-            return
+            if ( newIndex === 3 ) {
+                $('.steps ul').addClass('step-4');
+                $('.actions ul').addClass('step-last');
+            } else {
+                $('.steps ul').removeClass('step-4');
+                $('.actions ul').removeClass('step-last');
+            }
+            return true;
+        },
+        labels: {
+            finish: "Order again",
+            next: "Next",
+            previous: "Previous"
         }
-    }
-
-    let cartRowContents = `
-  <div class="cart-item cart-column">
-      <img class="cart-item-image" src="${img}" width="200" height="200">
-      <span class="cart-item-title">${title}</span>
-  </div>
-  <span class="cart-price cart-column">${price}</span>
-  <div class="cart-quantity cart-column">
-      <input class="cart-quantity-input" type="number" value="1">
-      <button class="btn btn-danger" type="button">Xóa</button>
-  </div>`
-    cartRow.innerHTML = cartRowContents
-    cartItems.append(cartRow)
-    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', function () {
-        let button_remove = event.target
-        button_remove.parentElement.parentElement.remove()
-        updatecart()
+    });
+    // Custom Steps Jquery Steps
+    $('.wizard > .steps li a').click(function(){
+        $(this).parent().addClass('checked');
+        $(this).parent().prevAll().addClass('checked');
+        $(this).parent().nextAll().removeClass('checked');
+    });
+    // Custom Button Jquery Steps
+    $('.forward').click(function(){
+        $("#wizard").steps('next');
     })
-    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', function (event) {
-        let input = event.target
-        if (isNaN(input.value) || input.value <= 0) {
-            input.value = 1;
-        }
-        updatecart()
+    $('.backward').click(function(){
+        $("#wizard").steps('previous');
     })
-
-}
+    // Checkbox
+    $('.checkbox-circle label').click(function(){
+        $('.checkbox-circle label').removeClass('active');
+        $(this).addClass('active');
+    })
+})
