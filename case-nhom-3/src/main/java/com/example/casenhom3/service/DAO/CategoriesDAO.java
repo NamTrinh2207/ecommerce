@@ -77,10 +77,4 @@ public class CategoriesDAO {
             e.printStackTrace();
         }
     }
-
-//    public static void main(String[] args) {
-//        CategoriesDAO dao=new CategoriesDAO();
-//        List<Categories> list=dao.findAll();
-//        System.out.println(list);
-//    }
 }

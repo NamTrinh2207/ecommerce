@@ -77,7 +77,7 @@ public class CustomerDAO {
         }
     }
 
-    public Customer findbyId(long id) {
+    public Customer findById(long id) {
         Customer customer = null;
         if (connection != null) {
             try {
