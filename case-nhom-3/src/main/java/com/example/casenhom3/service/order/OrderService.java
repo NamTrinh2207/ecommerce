@@ -21,6 +21,9 @@ public interface OrderService extends IEcommerce<Order>
 
     double allOrderSum();
 
+    int orderUpdate(long orderId, int status);
+
+
 
 
 

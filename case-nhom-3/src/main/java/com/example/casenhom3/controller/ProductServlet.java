@@ -7,6 +7,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "ProductServlet", value = "/productServlet")
@@ -33,11 +34,27 @@ public class ProductServlet extends HttpServlet {
             case "view":
                 viewProduct(request, response);
                 break;
+            case "search" :
+
+                break;
             default:
                 listProduct(request, response);
         }
     }
 
+    private void searchByName(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String name = request.getParameter("name");
+        List<Product> products = this.productService.findByName(name);
+        if (products == null) {
+            response.sendRedirect("/productServlet");
+            System.out.println("ko tim thay");
+        } else {
+            RequestDispatcher dispatcher = request.getRequestDispatcher("list.jsp");
+            request.setAttribute("product", products);
+            dispatcher.forward(request, response);
+            System.out.println("Tim thay");
+        }
+    }
 
 
     @Override
@@ -55,6 +72,9 @@ public class ProductServlet extends HttpServlet {
                 break;
             case "delete":
                 deleteProduct(request, response);
+                break;
+            case "search":
+                searchByName(request, response);
                 break;
             default:
                 listProduct(request, response);
@@ -113,9 +133,9 @@ public class ProductServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         Product product = this.productService.findById(id);
         RequestDispatcher dispatcher;
-        if( product == null){
+        if (product == null) {
             dispatcher = request.getRequestDispatcher("/productServlet");
-        }else {
+        } else {
             request.setAttribute("product", product);
             dispatcher = request.getRequestDispatcher("view.jsp");
         }
@@ -125,13 +145,14 @@ public class ProductServlet extends HttpServlet {
             throw new RuntimeException(e);
         }
     }
+
     private void creteProduct(HttpServletRequest request, HttpServletResponse response) {
         String code = request.getParameter("code");
         double price = Double.parseDouble(request.getParameter("price"));
         String img = request.getParameter("img");
         String describe = request.getParameter("describe");
         String name = request.getParameter("name");
-        Product product = new Product(id, code, name,price, img, describe);
+        Product product = new Product(id, code, name, price, img, describe);
         this.productService.save(product);
         id++;
         RequestDispatcher dispatcher = request.getRequestDispatcher("create.jsp");
