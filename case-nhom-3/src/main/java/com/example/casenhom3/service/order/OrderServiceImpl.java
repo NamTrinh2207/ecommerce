@@ -2,6 +2,8 @@ package com.example.casenhom3.service.order;
 
 import com.example.casenhom3.connection.CreateDatabase;
 import com.example.casenhom3.model.*;
+import com.example.casenhom3.service.product.IProductService;
+import com.example.casenhom3.service.product.ProductService;
 import com.sun.org.apache.xpath.internal.operations.Or;
 
 import java.sql.*;
@@ -11,6 +13,7 @@ import java.util.List;
 public class OrderServiceImpl implements OrderService
 {
     private Connection connection;
+
 
     public OrderServiceImpl()
     {
@@ -316,6 +319,7 @@ public class OrderServiceImpl implements OrderService
                 p.setLong(1, customerId);
                 p.setInt(2, status);
                 result = p.executeUpdate();
+
             }
             catch (SQLException e)
             {
@@ -332,8 +336,6 @@ public class OrderServiceImpl implements OrderService
         }
         return result;
     }
-
-
     // Tạo hóa đơn
     @Override
     public void save(Order order)
@@ -350,6 +352,12 @@ public class OrderServiceImpl implements OrderService
                 p.setDate(3, order.getOrderDate());
                 p.setInt(4, order.getStatus());
                 p.executeUpdate();
+
+                s = new StringBuilder();
+                s.append("insert into _orderdetail(order_id,product_id,quantity,amount) values(?,?,?,?)");
+                p = connection.prepareStatement(s.toString());
+                p.setLong(1, order.getId());
+
             }
             catch (SQLException e)
             {
