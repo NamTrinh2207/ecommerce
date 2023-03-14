@@ -239,11 +239,17 @@ public class OrderServiceImpl implements OrderService
             {
                 System.out.println("Query Error ");
             }
+            finally
+            {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    System.out.println("Close Error");
+                }
+            }
         }
         return sum;
     }
-
-
 
     // 75. Hiển thị tổng tiền khách hàng đã đặt hàng
     @Override
@@ -285,6 +291,14 @@ public class OrderServiceImpl implements OrderService
             {
                 System.out.println("Query Error");
             }
+            finally
+            {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    System.out.println("Close Error");
+                }
+            }
         }
         return null;
     }
@@ -310,18 +324,52 @@ public class OrderServiceImpl implements OrderService
             {
                 System.out.println("Query Error ");
             }
+            finally
+            {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    System.out.println("Close Error");
+                }
+            }
         }
         return result;
     }
 
+
+    // Tạo hóa đơn
     @Override
     public void save(Order order)
     {
-
+        if (connection != null)
+        {
+            try
+            {
+                StringBuilder s = new StringBuilder();
+                s.append("insert into _order(customer_id,employee_id,orderDate,status) values(?,?,?,?)");
+                PreparedStatement p = connection.prepareStatement(s.toString());
+                p.setLong(1, order.getCustomer_id().getId());
+                p.setLong(2,order.getEmployee_id().getId());
+                p.setDate(3, order.getOrderDate());
+                p.setInt(4, order.getStatus());
+                p.executeUpdate();
+            }
+            catch (SQLException e)
+            {
+                System.out.println("Connection Error");
+            }
+            finally
+            {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    System.out.println("Close Error");
+                }
+            }
+        }
     }
 
-
-    // Cập nhật theo status
+    // 77 Chỉnh sửa đơn hàng
     @Override
     public void update(long id, Order order)
     {

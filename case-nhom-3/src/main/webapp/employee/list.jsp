@@ -1,4 +1,4 @@
-<%--
+ <%--
   Created by IntelliJ IDEA.
   User: 84983
   Date: 3/13/2023
@@ -12,7 +12,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bootstrap Simple Data Table</title>
+    <title>List Employees</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -208,18 +208,22 @@
                         <td><c:out value="${e.email}"/></td>
                         <td><c:out value="${e.phone}"/></td>
                         <td>
-                            <a href="<c:url value="/employees?action=view&id=${e.id}"/>" class="view" title="View" data-toggle="tooltip"><i
+                            <a href="<c:url value="/employees?action=view&id=${e.getId()}"/>" class="view" title="View" data-toggle="tooltip"><i
                                     class="material-icons">&#xE417;</i></a>
-                            <a href="<c:url value="/employees?action=edit&id=${e.id}"/>" class="edit" title="Edit" data-toggle="tooltip"><i
+                            <a href="<c:url value="/employees?action=edit&id=${e.getId()}"/>" class="edit" title="Edit" data-toggle="tooltip"><i
                                     class="material-icons">&#xE254;</i></a>
-                            <a href="<c:url value="/employees?action=delete&id=${e.id}"/>" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            <a href="<c:url value="/employees?action=delete&id=${e.getId()}"/>" class="delete"
+                               title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
                 </c:forEach>
                 </tbody>
             </table>
             <div class="clearfix">
-                <div class="hint-text"><a href="/index.jsp" class="page-link">Trang Chủ</a></div>
+                <div class="hint-text"><a href="<c:url value="/employees?action=create"/>" class="page-link">Create new employee</a></div>
+            </div>
+            <div class="clearfix">
+                <div class="hint-text"><a href="<c:url value="/index.jsp"/>" class="page-link">Trang Chủ</a></div>
             </div>
         </div>
     </div>

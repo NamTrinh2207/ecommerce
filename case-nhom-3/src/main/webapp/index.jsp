@@ -395,7 +395,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="xemay" class="Jewellery-bg">
-                    <h3>Trang Sức Mới</h3>
+                    <h3>Ô Tô-Xe Máy</h3>
                     <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 margintop">
                             <div class="Jewellery-box">
