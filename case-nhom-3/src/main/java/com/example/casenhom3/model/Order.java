@@ -19,6 +19,14 @@ public class Order {
         this.orderDate = orderDate;
         this.status = status;
     }
+    public Order(long id, Customer customer_id, Employee employee_id, Date orderDate)
+    {
+        this.id = id;
+        this.customer_id = customer_id;
+        this.employee_id = employee_id;
+        this.orderDate = orderDate;
+        this.status = 2;
+    }
     public Order(Customer customer_id)
     {
         this.customer_id = customer_id;

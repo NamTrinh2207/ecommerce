@@ -23,8 +23,4 @@ public interface OrderService extends IEcommerce<Order>
 
     int orderUpdate(long orderId, int status);
 
-
-
-
-
 }
