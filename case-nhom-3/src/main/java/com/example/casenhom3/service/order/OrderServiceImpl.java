@@ -357,7 +357,6 @@ public class OrderServiceImpl implements OrderService
                 s.append("insert into _orderdetail(order_id,product_id,quantity,amount) values(?,?,?,?)");
                 p = connection.prepareStatement(s.toString());
                 p.setLong(1, order.getId());
-
             }
             catch (SQLException e)
             {
