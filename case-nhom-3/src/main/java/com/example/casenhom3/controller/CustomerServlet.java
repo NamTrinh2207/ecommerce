@@ -75,7 +75,7 @@ public class CustomerServlet extends HttpServlet {
     private void sorfByName(HttpServletRequest request, HttpServletResponse response) {
         List<Customer> customers = this.customerService.sorfByName();
         request.setAttribute("customer", customers);
-        RequestDispatcher dispatcher =  request.getRequestDispatcher("list.jsp");
+        RequestDispatcher dispatcher =  request.getRequestDispatcher("order.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -89,7 +89,7 @@ public class CustomerServlet extends HttpServlet {
         try {
             List<Customer> customers = this.customerService.findAll();
             request.setAttribute("customer", customers);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("list.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("order.jsp");
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
@@ -217,9 +217,9 @@ public class CustomerServlet extends HttpServlet {
         List<Customer> customers = this.customerService.findByPhone(phone);
         RequestDispatcher dispatcher;
         if (customers == null) {
-            dispatcher = request.getRequestDispatcher("list.jsp");
+            dispatcher = request.getRequestDispatcher("order.jsp");
         } else {
-            dispatcher = request.getRequestDispatcher("list.jsp");
+            dispatcher = request.getRequestDispatcher("order.jsp");
             request.setAttribute("customer", customers);
         }
         try {

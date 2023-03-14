@@ -69,7 +69,7 @@ public class EmployeeServlet extends HttpServlet {
             request.setAttribute("employees", employees);
             request.setAttribute("page", page);
             request.setAttribute("num", num);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("employee/list.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("employee/order.jsp");
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
@@ -142,7 +142,7 @@ public class EmployeeServlet extends HttpServlet {
             String name = request.getParameter("name");
             List<Employee> employees = this.list.searchByName(name);
             if (employees != null) {
-                RequestDispatcher dispatcher = request.getRequestDispatcher("employee/list.jsp");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("employee/order.jsp");
                 request.setAttribute("employees", employees);
                 try {
                     dispatcher.forward(request, response);
@@ -164,7 +164,7 @@ public class EmployeeServlet extends HttpServlet {
             iEcommerce.delete(id);
             List<Employee> employees = iEcommerce.findAll();
             request.setAttribute("employees", employees);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("employee/list.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("employee/order.jsp");
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);

@@ -81,7 +81,7 @@ public class CategoryServlet extends HttpServlet {
 
     private void listCategory(HttpServletRequest request, HttpServletResponse response) {
         List<Categories> categories = categoryService.findAll();
-        RequestDispatcher dispatcher = request.getRequestDispatcher("list.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("order.jsp");
         request.setAttribute("category", categories);
         try {
             dispatcher.forward(request, response);
