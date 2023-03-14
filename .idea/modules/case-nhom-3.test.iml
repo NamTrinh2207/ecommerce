@@ -4,6 +4,7 @@
     <output-test url="file://$MODULE_DIR$/../../case-nhom-3/build/classes/java/test" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../case-nhom-3/src/test" />
+    <content url="file://$MODULE_DIR$/../../case-nhom-3/src/test" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="case-nhom-3.main" />
