@@ -1,8 +1,9 @@
-package com.example.casenhom3.controller.employee;
+package com.example.casenhom3.controller;
 
 import com.example.casenhom3.model.Employee;
 import com.example.casenhom3.service.IEcommerce;
 import com.example.casenhom3.service.employee.EmployeeService;
+import com.example.casenhom3.service.employee.ListByPage;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -16,10 +17,12 @@ import java.util.List;
 @WebServlet(name = "EmployeeServlet", value = "/employees")
 public class EmployeeServlet extends HttpServlet {
     IEcommerce<Employee> iEcommerce;
+    ListByPage<Employee> list;
 
     @Override
     public void init() throws ServletException {
         iEcommerce = new EmployeeService();
+        list = new EmployeeService();
     }
 
     @Override
@@ -48,8 +51,23 @@ public class EmployeeServlet extends HttpServlet {
 
     private void listEmployee(HttpServletRequest request, HttpServletResponse response) {
         try {
-            List<Employee> employees = iEcommerce.findAll();
+            List<Employee> employees1 = iEcommerce.findAll();
+            int page, numberPage = 8;
+            int size = employees1.size();
+            int num = (size % numberPage == 0 ? (size / numberPage) : ((size / numberPage)) + 1);
+            String xPage = request.getParameter("page");
+            if (xPage == null) {
+                page = 1;
+            } else {
+                page = Integer.parseInt(xPage);
+            }
+            int start, end;
+            start = (page - 1) * numberPage;
+            end = Math.min(page * numberPage, size);
+            List<Employee> employees = list.getListByPage(employees1, start, end);
             request.setAttribute("employees", employees);
+            request.setAttribute("page", page);
+            request.setAttribute("num", num);
             RequestDispatcher dispatcher = request.getRequestDispatcher("employee/list.jsp");
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {

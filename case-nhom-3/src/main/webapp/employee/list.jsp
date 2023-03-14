@@ -170,6 +170,46 @@
         .delete {
             cursor: pointer;
         }
+        .pagination{
+            display: inline-block;
+            float: left;
+        }
+        .pagination a{
+            color: #ffffff;
+            background-color: #03A9F4;
+            font-size: 16px;
+            float: left;
+            padding: 3px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 3px;
+        }
+
+        .pagination a.active{
+            background-color: #f6a906;
+            color: white;
+        }
+        .pagination a:hover:not(.active){
+            background-color: #0069d9;
+            transition: 0.8s;
+            color: white;
+        }
+        .table-title h2 {
+            margin: 8px 0 0;
+            font-size: 45px;
+        }
+        .page-link {
+            position: relative;
+            display: block;
+            padding: 0.5rem 0.75rem;
+            line-height: 1.25;
+            color: white;
+            background-color: #007bff;
+            border: 1px solid #007bff;
+            margin-left: 15px;
+            border-radius: 4px;
+            transition: 0.8s;
+        }
     </style>
     <script>
         $(document).ready(function () {
@@ -183,18 +223,29 @@
         <div class="table-wrapper">
             <div class="table-title">
                 <div class="row">
-                    <div class="col-sm-8"><h2>Employee <b>Details</b></h2></div>
-                    <div class="col-sm-4">
-                        <form>
-                            <input type="text" name="search">
-                        </form>
+                    <div class="col-sm-8"><h2>EMPLOYEES <b>LIST</b></h2></div>
+                </div>
+                <div class="col-sm-4 float-right">
+                    <div class="search-box">
+                        <i class="material-icons">&#xE8B6;</i>
+                        <input type="text" class="form-control" placeholder="Search&hellip;">
                     </div>
                 </div>
+            </div>
+            <c:set var="page" value="${requestScope.page}"/>
+            <div class="pagination flex-column">
+                <div class="clearfix mb-3">
+                    <div class="hint-text"><a href="<c:url value="/employees?action=create"/>" class="page-link">Create new
+                        employee</a></div>
+                    <div class="hint-text"><a href="<c:url value="/index.jsp"/>" class="page-link">Trang Chủ</a></div>
+                </div>
+                <c:forEach begin="${1}" end="${requestScope.num}" var="i">
+                    <a class="${i==page?"active":""}" href="<c:url value="/employees?page=${i}"/>">${i}</a>
+                </c:forEach>
             </div>
             <table class="table table-striped table-hover table-bordered">
                 <thead>
                 <tr>
-                    <th>ID</th>
                     <th>Mã NV</th>
                     <th>Họ và tên <i class="fa fa-sort"></i></th>
                     <th>Năm sinh</th>
@@ -207,7 +258,6 @@
                 <tbody>
                 <c:forEach items="${requestScope.employees}" var="e">
                     <tr>
-                        <td><c:out value="${e.id}"/></td>
                         <td><c:out value="${e.code}"/></td>
                         <td><c:out value="${e.name}"/></td>
                         <td><c:out value="${e.date}"/></td>
@@ -228,13 +278,6 @@
                 </c:forEach>
                 </tbody>
             </table>
-            <div class="clearfix">
-                <div class="hint-text"><a href="<c:url value="/employees?action=create"/>" class="page-link">Create new
-                    employee</a></div>
-            </div>
-            <div class="clearfix">
-                <div class="hint-text"><a href="<c:url value="/index.jsp"/>" class="page-link">Trang Chủ</a></div>
-            </div>
         </div>
     </div>
 </div>
@@ -242,6 +285,7 @@
     function delById(id) {
         if (confirm("Bạn có chắc chắn muốn xóa nhân viên có id là " + id + " không ? ")) {
             window.location = "/employees?action=delete&id=" + id;
+            window.location = "/employees?page=1";
         }
     }
 </script>
