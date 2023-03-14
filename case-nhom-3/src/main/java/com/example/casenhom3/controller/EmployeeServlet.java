@@ -58,7 +58,17 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void view(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        Employee employee = iEcommerce.findById(id);
+        request.setAttribute("employee", employee);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("employee/views.jsp");
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException | IOException e) {
+            throw new RuntimeException(e);
+        }
     }
+
     private void editForm(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         Employee employee = iEcommerce.findById(id);
@@ -129,8 +139,8 @@ public class EmployeeServlet extends HttpServlet {
         String address = request.getParameter("address");
         String email = request.getParameter("email");
         String phone = request.getParameter("phone");
-        Employee employee = new Employee(id,code,name,date,address,email,phone);
-        iEcommerce.update(id,employee);
+        Employee employee = new Employee(id, code, name, date, address, email, phone);
+        iEcommerce.update(id, employee);
         RequestDispatcher dispatcher = request.getRequestDispatcher("employee/update.jsp");
         try {
             dispatcher.forward(request, response);
