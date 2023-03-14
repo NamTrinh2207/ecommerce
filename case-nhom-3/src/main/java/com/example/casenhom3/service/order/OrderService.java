@@ -1,5 +1,6 @@
 package com.example.casenhom3.service.order;
 
+import com.example.casenhom3.model.Customer;
 import com.example.casenhom3.model.Order;
 import com.example.casenhom3.model.OrderDetail;
 import com.example.casenhom3.service.IEcommerce;
@@ -9,9 +10,18 @@ import java.util.List;
 
 public interface OrderService extends IEcommerce<Order>
 {
+
     List<Order> findOrderByDate(Date start, Date end);
 
     OrderDetail getOrderDetailById(long orderId);
+
+    List<OrderDetail> amountSumOfCustomer();
+
+    int orderCancelByCustomer(long customerId, int status);
+
+    double allOrderSum();
+
+
 
 
 }

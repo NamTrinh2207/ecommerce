@@ -1,40 +1,38 @@
 package com.example.casenhom3.service.product;
 
+import com.example.casenhom3.DAO.ProductDAO;
 import com.example.casenhom3.model.Product;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class ProductService implements IProductService {
     List<Product> products = new ArrayList<>();
+    private ProductDAO productDAO = new ProductDAO();
 
     @Override
     public List<Product> findAll() {
-        return products;
+        return productDAO.findAll();
     }
 
     @Override
     public void save(Product product) {
-        products.add(product);
+        productDAO.save(product);
     }
 
     @Override
     public Product findById(long id) {
-        for (int i = 0; i < products.size(); i++) {
-            if (products.get(i).getId() == id) {
-                return products.get(i);
-            }
-        }
-        return null;
+        return productDAO.findById(id);
     }
 
 
     @Override
     public void update(long id, Product product) {
-        products.set((int) id, product);
+        productDAO.update(id, product);
     }
 
     @Override
     public void delete(long id) {
-        products.remove(id);
+        productDAO.delete(id);
     }
 }

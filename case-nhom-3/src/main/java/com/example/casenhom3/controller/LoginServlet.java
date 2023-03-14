@@ -24,7 +24,7 @@ AccountDao accountDao=new AccountDao();
         if (accountAdmin1==null){
             response.sendRedirect("/login/login.jsp");
         }else {
-            response.sendRedirect("/login/customerlist.jsp");
+            response.sendRedirect("/employees");
         }
     }
 }
