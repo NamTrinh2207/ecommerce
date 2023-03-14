@@ -43,6 +43,7 @@ public class EmployeeService implements IEmployeeService {
     @Override
     public void save(Employee employee) {
         try {
+            connection.setAutoCommit(false);
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_EMPLOYEE);
             preparedStatement.setString(1, employee.getCode());
             preparedStatement.setString(2, employee.getName());
@@ -51,7 +52,13 @@ public class EmployeeService implements IEmployeeService {
             preparedStatement.setString(5, employee.getEmail());
             preparedStatement.setString(6, employee.getPhone());
             preparedStatement.executeUpdate();
+            connection.commit();
         } catch (SQLException e) {
+            try {
+                connection.rollback();
+            } catch (SQLException ex) {
+                throw new RuntimeException(ex);
+            }
             System.out.println("Query error");
         }
     }
@@ -82,9 +89,10 @@ public class EmployeeService implements IEmployeeService {
     }
 
     @Override
-    public void update(long id, Employee employee) {
+    public void update(long id, Employee employee) throws SQLException {
         if (connection != null) {
             try {
+                connection.setAutoCommit(false);
                 PreparedStatement statement = connection.prepareStatement(UPDATE_EMPLOYEE);
                 statement.setString(1, employee.getCode());
                 statement.setString(2, employee.getName());
@@ -94,7 +102,9 @@ public class EmployeeService implements IEmployeeService {
                 statement.setString(6, employee.getPhone());
                 statement.setLong(7, id);
                 statement.executeUpdate();
+                connection.commit();
             } catch (SQLException e) {
+                connection.rollback();
                 System.out.println("Query error");
             }
         }

@@ -8,7 +8,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.sql.Date;
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -47,10 +47,10 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void listEmployee(HttpServletRequest request, HttpServletResponse response) {
+        try {
         List<Employee> employees = iEcommerce.findAll();
         request.setAttribute("employees", employees);
         RequestDispatcher dispatcher = request.getRequestDispatcher("employee/list.jsp");
-        try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
@@ -58,11 +58,11 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void view(HttpServletRequest request, HttpServletResponse response) {
+        try {
         int id = Integer.parseInt(request.getParameter("id"));
         Employee employee = iEcommerce.findById(id);
         request.setAttribute("employee", employee);
         RequestDispatcher dispatcher = request.getRequestDispatcher("employee/views.jsp");
-        try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
@@ -70,11 +70,11 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void editForm(HttpServletRequest request, HttpServletResponse response) {
+        try {
         int id = Integer.parseInt(request.getParameter("id"));
         Employee employee = iEcommerce.findById(id);
         RequestDispatcher dispatcher = request.getRequestDispatcher("employee/update.jsp");
         request.setAttribute("employee", employee);
-        try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
@@ -82,8 +82,8 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void createForm(HttpServletRequest request, HttpServletResponse response) {
-        RequestDispatcher dispatcher = request.getRequestDispatcher("employee/create.jsp");
         try {
+        RequestDispatcher dispatcher = request.getRequestDispatcher("employee/create.jsp");
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
@@ -117,12 +117,12 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void deleteEmployee(HttpServletRequest request, HttpServletResponse response) {
+        try {
         int id = Integer.parseInt(request.getParameter("id"));
         iEcommerce.delete(id);
         List<Employee> employees = iEcommerce.findAll();
         request.setAttribute("employees", employees);
         RequestDispatcher dispatcher = request.getRequestDispatcher("employee/list.jsp");
-        try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
@@ -130,6 +130,7 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void editEmployee(HttpServletRequest request, HttpServletResponse response) throws ParseException {
+        try {
         int id = Integer.parseInt(request.getParameter("id"));
         String code = request.getParameter("code");
         String name = request.getParameter("name");
@@ -142,14 +143,14 @@ public class EmployeeServlet extends HttpServlet {
         Employee employee = new Employee(id, code, name, date, address, email, phone);
         iEcommerce.update(id, employee);
         RequestDispatcher dispatcher = request.getRequestDispatcher("employee/update.jsp");
-        try {
             dispatcher.forward(request, response);
-        } catch (ServletException | IOException e) {
+        } catch (ServletException | IOException | SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
     private void createEmployee(HttpServletRequest request, HttpServletResponse response) throws ParseException {
+        try {
         String code = request.getParameter("code");
         String name = request.getParameter("name");
         String startDateStr = request.getParameter("date");
@@ -160,7 +161,6 @@ public class EmployeeServlet extends HttpServlet {
         String phone = request.getParameter("phone");
         Employee employee = new Employee(code, name, date, address, email, phone);
         iEcommerce.save(employee);
-        try {
             request.getRequestDispatcher("employee/create.jsp").forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
