@@ -1,4 +1,4 @@
-package com.example.casenhom3.service.product;
+package com.example.casenhom3.controller.service.product;
 
 import com.example.casenhom3.DAO.ProductDAO;
 import com.example.casenhom3.model.Product;

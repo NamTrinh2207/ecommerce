@@ -1,4 +1,4 @@
-package com.example.casenhom3.service.employee;
+package com.example.casenhom3.controller.service.employee;
 
 import com.example.casenhom3.connection.CreateDatabase;
 import com.example.casenhom3.model.Employee;

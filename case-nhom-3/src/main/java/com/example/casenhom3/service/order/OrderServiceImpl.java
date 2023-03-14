@@ -1,8 +1,7 @@
-package com.example.casenhom3.service.order;
+package com.example.casenhom3.controller.service.order;
 
 import com.example.casenhom3.connection.CreateDatabase;
 import com.example.casenhom3.model.*;
-import com.sun.org.apache.xpath.internal.operations.Or;
 
 import java.sql.*;
 import java.util.ArrayList;
