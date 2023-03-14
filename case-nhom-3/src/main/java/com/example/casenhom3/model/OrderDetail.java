@@ -59,7 +59,7 @@ public class OrderDetail {
     }
 
     public double getAmount() {
-        return quantity * product_id.getPrice();
+        return amount;
     }
 
     public void setAmount(double amount)
