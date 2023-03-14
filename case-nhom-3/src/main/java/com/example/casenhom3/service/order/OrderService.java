@@ -10,11 +10,18 @@ import java.util.List;
 
 public interface OrderService extends IEcommerce<Order>
 {
+
     List<Order> findOrderByDate(Date start, Date end);
 
     OrderDetail getOrderDetailById(long orderId);
 
     List<OrderDetail> amountSumOfCustomer();
+
+    int orderCancelByCustomer(long customerId, int status);
+
+    double allOrderSum();
+
+
 
 
 }
