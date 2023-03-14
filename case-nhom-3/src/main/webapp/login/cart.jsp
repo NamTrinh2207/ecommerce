@@ -6,72 +6,51 @@
   To change this template use File | Settings | File Templates.
 --%>
 
-<link rel="stylesheet" href="/js/cart.js">
-<link rel="stylesheet" href="/css/cart.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="js/jquery-1.11.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-<!-- JQUERY STEP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
-<div class="wrapper">
-    <form action="">
-        <div id="wizard">
-            <!-- SECTION 1 -->
-            <h4></h4>
-            <section>
-                <div class="form-row"> <input type="text" class="form-control" placeholder="Name"> </div>
-                <div class="form-row"> <input type="text" class="form-control" placeholder="Email"> </div>
-                <div class="form-row"> <input type="text" class="form-control" placeholder="Phone number"> </div>
-                <div class="form-row"> <input type="text" class="form-control" placeholder="Street address"> </div>
-            </section> <!-- SECTION 2 -->
-            <h4></h4>
-            <section>
-                <div class="form-row"> <input type="text" class="form-control" placeholder="country"> </div>
-                <div class="form-row"> <input type="text" class="form-control" placeholder="zip code"> </div>
-                <div class="form-row" style="margin-bottom: 18px"> <textarea name="" id="" class="form-control" placeholder="Any order note about delivery or special offer" style="height: 108px"></textarea> </div>
-            </section> <!-- SECTION 3 -->
-            <h4></h4>
-            <section>
-                <div class="product">
-                    <div class="item">
-                        <div class="left"> <a href="#" class="thumb"> <img src="https://i.imgur.com/yYu3Hbl.jpg" alt=""> </a>
-                            <div class="purchase">
-                                <h6> <a href="#">Macbook Air Laptop</a> </h6> <span>x1</span>
-                            </div>
-                        </div> <span class="price">$290</span>
-                    </div>
-                    <div class="item">
-                        <div class="left"> <a href="#" class="thumb"> <img src="https://www.businessinsider.in/thumb/msid-70101317,width-600,resizemode-4,imgsize-87580/tech/ways-to-increase-mobile-phone-speed/13d0e0722dbca5aa91e16a8ae2a744e5.jpg" alt=""> </a>
-                            <div class="purchase">
-                                <h6> <a href="#">Mobile Phone Mi</a> </h6> <span>x1</span>
-                            </div>
-                        </div> <span class="price">$124</span>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    <table id="cart" class="table table-hover table-condensed">
+        <thead>
+        <tr>
+            <th style="width:50%">Product</th>
+            <th style="width:10%">Price</th>
+            <th style="width:8%">Quantity</th>
+            <th style="width:22%" class="text-center">Subtotal</th>
+            <th style="width:10%"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-th="Product">
+                <div class="row">
+                    <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..." class="img-responsive" /></div>
+                    <div class="col-sm-10">
+                        <h4 class="nomargin">Product 1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <div class="checkout">
-                    <div class="subtotal"> <span class="heading">Subtotal</span> <span class="total">$364</span> </div>
-                </div>
-            </section> <!-- SECTION 4 -->
-            <h4></h4>
-            <section>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-                    <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
-                    <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
-                </svg>
-                <p class="success">Order placed successfully. Your order will be dispacted soon. meanwhile you can track your order in my order section.</p>
-            </section>
-        </div>
-    </form>
+            </td>
+            <td data-th="Price">$5.11</td>
+            <td data-th="Quantity">
+                <input type="number" class="form-control text-center" value="1">
+            </td>
+            <td data-th="Subtotal" class="text-center">$5.11</td>
+            <td class="actions" data-th="">
+                <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr class="visible-xs">
+            <td class="text-center"><strong>Total $ 5.11</strong></td>
+        </tr>
+        <tr>
+            <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+            <td colspan="2" class="hidden-xs"></td>
+            <td class="hidden-xs text-center"><strong>Total $ 5.11</strong></td>
+            <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+        </tr>
+        </tfoot>
+    </table>
 </div>
-</body>
-</html>

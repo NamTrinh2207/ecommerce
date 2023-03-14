@@ -10,8 +10,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CheckLogin {
-    private static final String SAVE_ACCOUNT="insert into  logincustomer(user, password) values (?,?);";
-    private static final String checkLOg="select * from logincustomer where user = ? and password = ?;";
+    private static final String SAVE_ACCOUNT="insert into  logincustomer(name, password) values (?,?);";
+    private static final String checkLOg="select * from logincustomer where name = ? and password = ?;";
     Connection connection=null;
     PreparedStatement preparedStatement=null;
     ResultSet resultSet=null;
@@ -32,7 +32,7 @@ public class CheckLogin {
         }return null;
     }
     public void signUp(String name,String password){
-connection=CreateDatabase.getConnection();
+        connection=CreateDatabase.getConnection();
         try {
             preparedStatement=connection.prepareStatement(SAVE_ACCOUNT);
             preparedStatement.setString(1,name);

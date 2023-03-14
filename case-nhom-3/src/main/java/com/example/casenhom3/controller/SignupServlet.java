@@ -26,6 +26,9 @@ public class SignupServlet extends HttpServlet {
         }else {
             AcountSignUp acountSignUp=checkLogin.acountSignUp(name,password);
             if (acountSignUp==null){
+                HttpSession session= request.getSession();
+//                session.setAttribute("name",name);
+//                session.setAttribute("password",password);
                 checkLogin.signUp(name,password);
                 response.sendRedirect("/index.jsp");
             }else {
