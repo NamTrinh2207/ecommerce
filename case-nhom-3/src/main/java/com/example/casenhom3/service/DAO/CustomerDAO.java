@@ -2,6 +2,7 @@ package com.example.casenhom3.service.DAO;
 
 import com.example.casenhom3.connection.CreateDatabase;
 import com.example.casenhom3.model.Customer;
+import com.example.casenhom3.model.Employee;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ public class CustomerDAO {
     private final String SELECT_ALL_CUSTOMERS = "select * from customer;";
     private final String SELECT_CUSTOMERS_BY_ID = "select code,name,date,address,email,phone from customer where id =?;";
     private final String INSERT_CUSTOMERS = "insert into customer(code,name,date,address,email,phone) value(?,?,?,?,?,?);";
-    private final String UPDATE_CUSTOMER = "update customer set   where id=?;";
+    private final String UPDATE_CUSTOMER = "update customer set code=?,name=?,date=?,address=?,email=?,phone=?  where id=?;";
     private final String DELETE_CUSTOMER = "delete from customer where id =?;";
 
     public List<Customer> findAll() {
@@ -52,22 +53,26 @@ public class CustomerDAO {
 
     public Customer findbyId(long id) {
         Customer customer = null;
-        try (PreparedStatement statement = connection.prepareStatement(SELECT_CUSTOMERS_BY_ID)) {
-            statement.setLong(1, id);
-            ResultSet resultSet = statement.executeQuery();
-            while (resultSet.next()) {
-                customer = new Customer(resultSet.getLong("id"),
-                        resultSet.getString("code"),
-                        resultSet.getString("name"),
-                        resultSet.getDate("date"),
-                        resultSet.getString("address"),
-                        resultSet.getString("email"),
-                        resultSet.getString("phone"));
+        if (connection != null) {
+            try {
+                PreparedStatement preparedStatement = connection.prepareStatement(SELECT_CUSTOMERS_BY_ID);
+                preparedStatement.setLong(1, id);
+                ResultSet resultSet = preparedStatement.executeQuery();
+                while (resultSet.next()) {
+                    String code = resultSet.getNString("code");
+                    String name = resultSet.getString("name");
+                    Date date = resultSet.getDate("date");
+                    String address = resultSet.getString("address");
+                    String email = resultSet.getString("email");
+                    String phone = resultSet.getString("phone");
+                    customer = new Customer(id, code, name, date, address, email, phone);
+                }
+                return customer;
+            } catch (SQLException e) {
+                System.out.println("Query error");
             }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
         }
-        return customer;
+        return null;
     }
 
     public void updateCustomer(long id, Customer customer) {
