@@ -19,15 +19,14 @@ public class CreateDatabase {
     public static Connection getConnection() {
         Connection connection = null;
         try {
-//            Class.forName(DRIVER);
-//            connection = DriverManager.getConnection(URL, userDoan, passDoan);
-//            Class.forName(DRIVER);
-//            connection = DriverManager.getConnection(URL, user_nam, pass_nam);
-//            Class.forName(DRIVER);
-//            connection = DriverManager.getConnection(URL, userTuong, passTuong);
+            Class.forName(DRIVER);
+            connection = DriverManager.getConnection(URL, user_nam, pass_nam);
+            Class.forName(DRIVER);
+            connection = DriverManager.getConnection(URL, userTuong, passTuong);
             Class.forName(DRIVER);
             connection = DriverManager.getConnection(URL, userNguyen, passNguyen);
-        } catch (SQLException | ClassNotFoundException e) {
+        }
+        catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return connection;
