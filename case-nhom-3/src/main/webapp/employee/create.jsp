@@ -6,12 +6,17 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Create new employee</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
         body {
             color: #000;
             overflow-x: hidden;
@@ -74,6 +79,13 @@
             box-shadow: none !important;
             outline-width: 0
         }
+        .btn-primary {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 5px;
+            margin-top: 1px;
+        }
     </style>
 </head>
 <body>
@@ -82,11 +94,12 @@
         <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
             <h2>Add New Employee</h2>
             <div class="card">
-                <form method="post" class="form-card" onsubmit="event.preventDefault()">
+                <form method="post" class="form-card">
                     <div class="row justify-content-between text-left">
                         <div class="form-group col-sm-6 flex-column d-flex"><label class="form-control-label px-3">Mã NV<span
                                 class="text-danger"> *</span></label>
-                            <input type="text" id="code" name="code" placeholder="Mã nhân viên..." onblur="validate(1)"></div>
+                            <input type="text" id="code" name="code" placeholder="Mã nhân viên..." onblur="validate(1)">
+                        </div>
                         <div class="form-group col-sm-6 flex-column d-flex"><label class="form-control-label px-3">Họ và
                             tên
                             <span class="text-danger"> *</span></label> <input type="text" id="name" name="name"
@@ -109,7 +122,7 @@
                         <div class="form-group col-sm-6 flex-column d-flex"><label class="form-control-label px-3">Email
                             <span class="text-danger"> *</span></label> <input type="text" id="email" name="email"
                                                                                placeholder="Email..."
-                                                                               onblur="validate(3)">
+                                                                               onblur="validate(5)">
                         </div>
                     </div>
                     <div class="row justify-content-between text-left">
@@ -118,12 +131,16 @@
                                                                                id="address"
                                                                                name="address"
                                                                                placeholder="Địa chỉ..."
-                                                                               onblur="validate(4)">
+                                                                               onblur="validate(6)">
                         </div>
                     </div>
                     <div class="row justify-content-end">
                         <div class="form-group col-sm-6">
-                            <input class="btn-block btn-primary" type="submit" value="SAVE">
+                            <input class="btn-block btn-primary" type="submit" value="LƯU">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <a style="text-decoration: none; margin: auto 0;line-height: 3;"
+                               class="btn-block btn-primary" href="/employees">QUAY LẠI</a>
                         </div>
                     </div>
                 </form>
