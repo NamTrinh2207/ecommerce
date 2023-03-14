@@ -1,5 +1,6 @@
 package com.example.casenhom3.service;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public interface IEcommerce<T> {
@@ -9,7 +10,7 @@ public interface IEcommerce<T> {
 
     T findById(long id);
 
-    void update(long id, T t);
+    void update(long id, T t) throws SQLException;
 
     void delete(long id);
 }
