@@ -7,7 +7,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeeService implements IEmployeeService {
+public class EmployeeService implements IEmployeeService, ListByPage<Employee> {
     private final Connection connection = CreateDatabase.getConnection();
     private static final String INSERT_EMPLOYEE = "INSERT INTO employee (code,name,date,address, email, phone) VALUES (?,?,?,?,?,?);";
     private static final String SELECT_EMPLOYEE_BY_ID = "select * from employee where id =?";
@@ -121,5 +121,14 @@ public class EmployeeService implements IEmployeeService {
                 System.out.println("Query error");
             }
         }
+    }
+
+    @Override
+    public List<Employee> getListByPage(List<Employee> list, int start, int end) {
+        List<Employee> employees = new ArrayList<>();
+        for (int i = start; i<end; i++){
+            employees.add(list.get(i));
+        }
+        return employees;
     }
 }

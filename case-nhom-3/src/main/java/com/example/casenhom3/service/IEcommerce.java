@@ -13,4 +13,5 @@ public interface IEcommerce<T> {
     void update(long id, T t) throws SQLException;
 
     void delete(long id);
+
 }
