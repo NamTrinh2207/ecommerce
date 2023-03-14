@@ -33,8 +33,4 @@ public class CreateDatabase {
         return connection;
     }
 
-    public static void main(String[] args) {
-        Connection connection = CreateDatabase.getConnection();
-    }
-
 }
