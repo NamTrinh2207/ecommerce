@@ -7,7 +7,6 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "ProductServlet", value = "/productServlet")
@@ -34,7 +33,7 @@ public class ProductServlet extends HttpServlet {
             case "view":
                 viewProduct(request, response);
                 break;
-            case "search" :
+            case "search":
 
                 break;
             default:
@@ -76,8 +75,27 @@ public class ProductServlet extends HttpServlet {
             case "search":
                 searchByName(request, response);
                 break;
+            case "findMax":
+                findProductMaxPrice(request, response);
+                break;
             default:
                 listProduct(request, response);
+        }
+    }
+
+    private void findProductMaxPrice(HttpServletRequest request, HttpServletResponse response) {
+        List<Product> products = this.productService.findMaxPriceProduct();
+        RequestDispatcher dispatcher;
+        if (products == null) {
+            dispatcher = request.getRequestDispatcher("list.jsp");
+        } else {
+            dispatcher = request.getRequestDispatcher("list.jsp");
+            request.setAttribute("product", products);
+        }
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException | IOException e) {
+            throw new RuntimeException(e);
         }
     }
 
