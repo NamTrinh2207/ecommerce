@@ -136,7 +136,7 @@ public class OrderServiceImpl implements OrderService
         }
         return null;
     }
-    // 72  Tìm kiếm đơn hàng theo khoảng thời gian
+    // 72,78  Tìm kiếm đơn hàng theo khoảng thời gian
     @Override
     public List<Order> findOrderByDate(Date start, Date end)
     {
@@ -168,7 +168,7 @@ public class OrderServiceImpl implements OrderService
         }
         return null;
     }
-    // 72 Tìm kiếm đơn hàng theo order Id
+    // 72,78 Tìm kiếm đơn hàng theo order Id
     @Override
     public Order findById(long orderId)
     {
