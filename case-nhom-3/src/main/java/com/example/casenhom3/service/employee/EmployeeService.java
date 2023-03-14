@@ -1,8 +1,6 @@
 package com.example.casenhom3.service.employee;
 
-import com.example.casenhom3.connection.CreateDatabase;
 import com.example.casenhom3.model.Employee;
-import com.example.casenhom3.connection.CreateDatabase;
 
 import java.sql.*;
 import java.util.ArrayList;

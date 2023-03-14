@@ -85,6 +85,8 @@ public class CustomerServlet extends HttpServlet {
         }
     }
 
+    //Thêm sorf by date và mặc định
+
     private void listCustomer(HttpServletRequest request, HttpServletResponse response) {
         try {
             List<Customer> customers = this.customerService.findAll();
