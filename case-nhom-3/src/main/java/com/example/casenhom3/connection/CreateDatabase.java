@@ -21,12 +21,14 @@ public class CreateDatabase {
     public static Connection getConnection() {
         Connection connection = null;
         try {
+//            Class.forName(className);
+//            connection = DriverManager.getConnection(jdbcURL, acc, pass);
             Class.forName("com.mysql.jdbc.Driver");
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
             System.out.println("connection successfully");
-            Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection(jdbcURLdoan, Doan, PassWord);
-            System.out.println("connection successfully");
+//            Class.forName("com.mysql.jdbc.Driver");
+//            connection = DriverManager.getConnection(jdbcURLdoan, Doan, PassWord);
+//            System.out.println("connection successfully");
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

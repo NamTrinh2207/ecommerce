@@ -134,8 +134,8 @@ public class EmployeeServlet extends HttpServlet {
         String code = request.getParameter("code");
         String name = request.getParameter("name");
         String startDateStr = request.getParameter("date");
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        Date date = (Date) sdf.parse(startDateStr);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+        java.sql.Date date = new java.sql.Date (sdf.parse(startDateStr).getTime());
         String address = request.getParameter("address");
         String email = request.getParameter("email");
         String phone = request.getParameter("phone");
@@ -150,16 +150,15 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void createEmployee(HttpServletRequest request, HttpServletResponse response) throws ParseException {
-        long id = Long.parseLong(request.getParameter("id"));
         String code = request.getParameter("code");
         String name = request.getParameter("name");
         String startDateStr = request.getParameter("date");
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        Date startDate = (Date) sdf.parse(startDateStr);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+        java.sql.Date date = new java.sql.Date (sdf.parse(startDateStr).getTime());
         String address = request.getParameter("address");
         String email = request.getParameter("email");
         String phone = request.getParameter("phone");
-        Employee employee = new Employee(id, code, name, startDate, address, email, phone);
+        Employee employee = new Employee(code, name, date, address, email, phone);
         iEcommerce.save(employee);
         try {
             request.getRequestDispatcher("employee/create.jsp").forward(request, response);
