@@ -11,7 +11,7 @@ import java.util.List;
 public class ProductDAO implements IEcommerce<Product> {
     private final Connection connection = CreateDatabase.getConnection();
     private final String SELECT_ALL_PRODUCT = "select * from product; ";
-    private final String SELECT_PRODUCT_BY_ID = "select id,code,name,price,img,describee from product where id = ?; ";
+    private final String SELECT_PRODUCT_BY_ID = "select * from product where id = ?; ";
     private final String INSERT_PRODUCT = "insert into product(code, name, price, img, describee) value(?,?,?,?,?);";
     private final String UPDATE_PRODUCT = "update product set code=?, name=?, price=?,img=?,describee=? where id = ?;";
     private final String DELETE_PRODUCT = "delete from product where id = ?;";
@@ -25,11 +25,11 @@ public class ProductDAO implements IEcommerce<Product> {
             ResultSet resultSet = statement.executeQuery(SELECT_ALL_PRODUCT);
             while (resultSet.next()) {
                 products.add(new Product(resultSet.getLong("id"),
-                        resultSet.getString("code"),
-                        resultSet.getString("name"),
-                        resultSet.getDouble("price"),
-                        resultSet.getString("img"),
-                        resultSet.getString(6)));
+                        resultSet.getString("productCode"),
+                        resultSet.getString("productName"),
+                        resultSet.getDouble("productPrice"),
+                        resultSet.getString("productImage"),
+                        resultSet.getString("productDescribe")));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -86,11 +86,11 @@ public class ProductDAO implements IEcommerce<Product> {
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 product = new Product(resultSet.getLong("id"),
-                        resultSet.getString("code"),
-                        resultSet.getString("name"),
-                        resultSet.getDouble("price"),
-                        resultSet.getString("img"),
-                        resultSet.getString(6));
+                        resultSet.getString("productCode"),
+                        resultSet.getString("productName"),
+                        resultSet.getDouble("productPrice"),
+                        resultSet.getString("productImage"),
+                        resultSet.getString("productDescribe"));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -106,11 +106,11 @@ public class ProductDAO implements IEcommerce<Product> {
             while (resultSet.next()) {
                 product.add(new Product(
                         resultSet.getLong("id"),
-                        resultSet.getString("code"),
-                        resultSet.getString("name"),
-                        resultSet.getDouble("price"),
-                        resultSet.getString("img"),
-                        resultSet.getString(6)));
+                        resultSet.getString("productCode"),
+                        resultSet.getString("productName"),
+                        resultSet.getDouble("productPrice"),
+                        resultSet.getString("productImage"),
+                        resultSet.getString("productDescribe")));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -118,4 +118,5 @@ public class ProductDAO implements IEcommerce<Product> {
         return product;
 
     }
+
 }
