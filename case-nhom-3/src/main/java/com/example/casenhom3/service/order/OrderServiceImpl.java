@@ -63,12 +63,12 @@ public class OrderServiceImpl implements OrderService
             try
             {
                 StringBuilder s = new StringBuilder();
-                s.append("select * from _order o");
+                s.append("select * from order o");
                 s.append(" ");
-                s.append("join _customer c on o.customer_id = c.id");
+                s.append("join customer c on o.customer_id = c.id");
                 s.append(" ");
                 s.append("and ");
-                s.append("_employee e on o.employee_id = e.id");
+                s.append("employee e on o.employee_id = e.id");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 ResultSet rs = p.executeQuery();
                 return orderListResult(rs);
