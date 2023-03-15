@@ -23,7 +23,7 @@ public class CheckLogin {
                 preparedStatement.setString(1, name);
                 preparedStatement.setString(2,password);
                 resultSet = preparedStatement.executeQuery();
-                while (resultSet.next()){
+                if (resultSet.next()){
                     return new AcountSignUp(resultSet.getString(1),resultSet.getString(2));
                 }
             } catch (SQLException e) {

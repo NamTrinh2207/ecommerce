@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "CustomerServlet", value = "/CustomerServlet")
@@ -47,7 +48,11 @@ public class CustomerServlet extends HttpServlet {
         }
         switch (action) {
             case "create":
-                createCustomer(request, response);
+                try {
+                    createCustomer(request, response);
+                } catch (ParseException e) {
+                    throw new RuntimeException(e);
+                }
                 break;
             case "edit":
                 editCustomer(request, response);
@@ -55,16 +60,34 @@ public class CustomerServlet extends HttpServlet {
             case "delete":
                 deleteCustomer(request, response);
                 break;
+            case "search":
+                findCustomerByPhone(request, response);
+                break;
+            case "sorf" :
+                sorfByName(request, response);
+                break;
             default:
                 listCustomer(request, response);
 
         }
     }
 
+    private void sorfByName(HttpServletRequest request, HttpServletResponse response) {
+        List<Customer> customers = this.customerService.sorfByName();
+        request.setAttribute("customer", customers);
+        RequestDispatcher dispatcher =  request.getRequestDispatcher("list.jsp");
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private void listCustomer(HttpServletRequest request, HttpServletResponse response) {
         try {
             List<Customer> customers = this.customerService.findAll();
-            System.out.println("ttyyyy" + customers);
             request.setAttribute("customer", customers);
             RequestDispatcher dispatcher = request.getRequestDispatcher("list.jsp");
             dispatcher.forward(request, response);
@@ -115,21 +138,16 @@ public class CustomerServlet extends HttpServlet {
         }
     }
 
-    private void createCustomer(HttpServletRequest request, HttpServletResponse response) {
+    private void createCustomer(HttpServletRequest request, HttpServletResponse response) throws ParseException {
         String code = request.getParameter("code");
         String name = request.getParameter("name");
-        String date = request.getParameter("date");
+        String date1 = request.getParameter("date");
         SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
-        Date convertDate;
-        try {
-            convertDate = new Date(format.parse(date).getTime());
-        } catch (ParseException e) {
-            throw new RuntimeException(e);
-        }
+        java.sql.Date date = new java.sql.Date(format.parse(date1).getTime());
         String address = request.getParameter("address");
         String email = request.getParameter("email");
         String phone = request.getParameter("phone");
-        Customer customer = new Customer(id, code, name, convertDate, address, email, phone);
+        Customer customer = new Customer(id, code, name, date, address, email, phone);
         this.customerService.save(customer);
         id++;
         RequestDispatcher dispatcher = request.getRequestDispatcher("create.jsp");
@@ -191,6 +209,25 @@ public class CustomerServlet extends HttpServlet {
         } else {
             this.customerService.delete(id);
             response.sendRedirect("/CustomerServlet");
+        }
+    }
+
+    private void findCustomerByPhone(HttpServletRequest request, HttpServletResponse response) {
+        String phone = request.getParameter("phone");
+        List<Customer> customers = this.customerService.findByPhone(phone);
+        RequestDispatcher dispatcher;
+        if (customers == null) {
+            dispatcher = request.getRequestDispatcher("list.jsp");
+        } else {
+            dispatcher = request.getRequestDispatcher("list.jsp");
+            request.setAttribute("customer", customers);
+        }
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }

@@ -15,6 +15,9 @@ public class CustomerDAO {
     private final String INSERT_CUSTOMERS = "insert into customer(code,name,date,address,email,phone) value(?,?,?,?,?,?);";
     private final String UPDATE_CUSTOMER = "update customer set code=?,name=?,date=?,address=?,email=?,phone=?  where id=?;";
     private final String DELETE_CUSTOMER = "delete from customer where id =?;";
+    private final String FIND_CUSTOMER_BY_PHONE = "select id,code,name,date,address,email from customer where phone=?;";
+
+    private final String SORT_CUSTOMER_BY_NAME = "select * from customer order by name";
 
     public List<Customer> findAll() {
         List<Customer> customers = new ArrayList<>();
@@ -51,6 +54,30 @@ public class CustomerDAO {
         }
     }
 
+    public void updateCustomer(long id, Customer customer) {
+        try (PreparedStatement statement = connection.prepareStatement(UPDATE_CUSTOMER)) {
+            statement.setString(1, customer.getCode());
+            statement.setString(2, customer.getName());
+            statement.setDate(3, customer.getDate());
+            statement.setString(4, customer.getAddress());
+            statement.setString(5, customer.getEmail());
+            statement.setString(6, customer.getPhone());
+            statement.setLong(7, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void deleteCustomer(int id) {
+        try (PreparedStatement statement = connection.prepareStatement(DELETE_CUSTOMER)) {
+            statement.setLong(1, id);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public Customer findbyId(long id) {
         Customer customer = null;
         if (connection != null) {
@@ -75,28 +102,46 @@ public class CustomerDAO {
         return null;
     }
 
-    public void updateCustomer(long id, Customer customer) {
-        try (PreparedStatement statement = connection.prepareStatement(UPDATE_CUSTOMER)) {
-            statement.setString(1, customer.getCode());
-            statement.setString(2, customer.getName());
-            statement.setDate(3, customer.getDate());
-            statement.setString(4, customer.getAddress());
-            statement.setString(5, customer.getEmail());
-            statement.setString(6, customer.getPhone());
-            statement.setLong(7, id);
-            statement.executeUpdate();
+    public List<Customer> findCustomerByPhone(String phone) {
+        List<Customer> customers = new ArrayList<>();
+        try (PreparedStatement statement = connection.prepareStatement(FIND_CUSTOMER_BY_PHONE)) {
+            statement.setString(1, phone);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                long id = resultSet.getLong("id");
+                String code = resultSet.getString("code");
+                String name = resultSet.getString("name");
+                Date date = resultSet.getDate("date");
+                String address = resultSet.getString("date");
+                String email = resultSet.getString("email");
+                Customer customer = new Customer(id, code, name, date, address, email, phone);
+                customers.add(customer);
+            }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        return customers;
     }
 
-    public void deleteCustomer(int id) {
-        try (PreparedStatement statement = connection.prepareStatement(DELETE_CUSTOMER)) {
-            statement.setLong(1, id);
-            statement.executeUpdate();
+    public List<Customer> sortByName() {
+        List<Customer> customers = new ArrayList<>();
+        try (PreparedStatement statement = connection.prepareStatement(SORT_CUSTOMER_BY_NAME)) {
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                long id = resultSet.getLong("id");
+                String code = resultSet.getString("code");
+                String name = resultSet.getString("name");
+                Date date = resultSet.getDate("date");
+                String address = resultSet.getString("address");
+                String email = resultSet.getString("email");
+                String phone = resultSet.getString("phone");
+                Customer customer = new Customer(id, code, name, date, address, email, phone);
+                customers.add(customer);
+            }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        return customers;
     }
 }
 

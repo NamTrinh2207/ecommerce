@@ -32,4 +32,12 @@ public class CustomerService implements ICustomerService {
     public void delete(long id) {
         customerDAO.deleteCustomer((int) id);
     }
+
+    public List<Customer> findByPhone(String phone) {
+        return this.customerDAO.findCustomerByPhone(phone);
+    }
+
+    public List<Customer> sorfByName(){
+        return this.customerDAO.sortByName();
+    }
 }

@@ -174,11 +174,11 @@ public class ProductServlet extends HttpServlet {
         if (product == null) {
             response.sendRedirect("productServlet");
         } else {
-            product.setCode(code);
-            product.setPrice(price);
-            product.setImg(img);
-            product.setDescribe(describe);
-            product.setName(name);
+            product.setProductCode(code);
+            product.setProductPrice(price);
+            product.setProductImage(img);
+            product.setProductDescribe(describe);
+            product.setProductName(name);
             this.productService.update(id, product);
             RequestDispatcher dispatcher = request.getRequestDispatcher("edit.jsp");
             request.setAttribute("product", product);

@@ -20,6 +20,7 @@ public class OrderServiceImpl implements OrderService
         connection = CreateDatabase.getConnection();
     }
 
+    // 39.Hiển thị báo cáo bán hàng theo ngày
     private List<Order> orderListResult(ResultSet rs) throws SQLException
     {
         List<Order> orderList = new ArrayList<>();
@@ -301,41 +302,6 @@ public class OrderServiceImpl implements OrderService
         }
         return null;
     }
-
-    // 76 Hủy đơn hàng theo customer
-    @Override
-    public int orderCancelByCustomer(long customerId, int status)
-    {
-        int result = 0;
-        if (connection != null)
-        {
-            try
-            {
-                StringBuilder s = new StringBuilder();
-                s.append("Delete from _order o, _orderdetail od ");
-                s.append(" ");
-                s.append("where o.id = od.order_id and o.customer_id = ? and o.status = ? and o.status = 0");
-                PreparedStatement p = connection.prepareStatement(s.toString());
-                p.setLong(1, customerId);
-                p.setInt(2, status);
-                result = p.executeUpdate();
-
-            }
-            catch (SQLException e)
-            {
-                System.out.println("Query Error ");
-            }
-            finally
-            {
-                try {
-                    connection.close();
-                } catch (SQLException e) {
-                    System.out.println("Close Error");
-                }
-            }
-        }
-        return result;
-    }
     // Tạo hóa đơn
     @Override
     public void save(Order order)
@@ -373,23 +339,42 @@ public class OrderServiceImpl implements OrderService
         }
     }
 
-    // 77 Chỉnh sửa đơn hàng(hóa đơn)
+
+    // 76+77 Cập nhật + Hủy đơn hàng(hóa đơn)
     @Override
-    public int orderUpdate(long orderId, int status)
+    public void orderUpdate(long customerId, long orderId, int status)
     {
-        int result = 0;
         if (connection != null)
         {
             try
             {
-                StringBuilder str = new StringBuilder();
-                str.append("update order set status = ? ");
-                str.append(" ");
-                str.append("where id = ?");
-                PreparedStatement p = connection.prepareStatement(str.toString());
-                p.setInt(1, status);
-                p.setLong(2, orderId);
-                result = p.executeUpdate();
+                StringBuilder s = new StringBuilder();
+                if (status == 0 || status == 1 || status == 2)
+                {
+                    if (status == 0)
+                    {
+                        s.append("Delete from _order o, _orderdetail od ");
+                        s.append(" ");
+                        s.append("where o.id = od.order_id and o.id = ? and o.customer_id = ? and o.status = ? and o.status = 0");
+                        PreparedStatement p = connection.prepareStatement(s.toString());
+                        p.setLong(1,orderId);
+                        p.setLong(2, customerId);
+                        p.setInt(3, status);
+                        p.executeUpdate();
+                    }
+                    else
+                    {
+                        s = new StringBuilder();
+                        s.append("update order set status = ? ");
+                        s.append(" ");
+                        s.append("where id = ? and customerId = ? ");
+                        PreparedStatement p = connection.prepareStatement(s.toString());
+                        p.setInt(1, status);
+                        p.setLong(2, orderId);
+                        p.setLong(3,customerId);
+                        p.executeUpdate();
+                    }
+                }
             }
             catch (SQLException e)
             {
@@ -404,8 +389,8 @@ public class OrderServiceImpl implements OrderService
                 }
             }
         }
-        return result;
     }
+
     @Override
     public void update(long id, Order order)
     {

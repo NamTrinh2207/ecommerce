@@ -40,11 +40,11 @@ public class ProductDAO implements IEcommerce<Product> {
     @Override
     public void save(Product product) {
         try (PreparedStatement statement = connection.prepareStatement(INSERT_PRODUCT);) {
-            statement.setString(1, product.getCode());
-            statement.setString(2, product.getName());
-            statement.setDouble(3, product.getPrice());
-            statement.setString(4, product.getImg());
-            statement.setString(5, product.getDescribe());
+            statement.setString(1, product.getProductCode());
+            statement.setString(2, product.getProductName());
+            statement.setDouble(3, product.getProductPrice());
+            statement.setString(4, product.getProductImage());
+            statement.setString(5, product.getProductDescribe());
             statement.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -56,11 +56,11 @@ public class ProductDAO implements IEcommerce<Product> {
     @Override
     public void update(long id, Product product) {
         try (PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_PRODUCT)) {
-            preparedStatement.setString(1, product.getCode());
-            preparedStatement.setString(2, product.getName());
-            preparedStatement.setDouble(3, product.getPrice());
-            preparedStatement.setString(4, product.getImg());
-            preparedStatement.setString(5, product.getDescribe());
+            preparedStatement.setString(1, product.getProductCode());
+            preparedStatement.setString(2, product.getProductName());
+            preparedStatement.setDouble(3, product.getProductPrice());
+            preparedStatement.setString(4, product.getProductImage());
+            preparedStatement.setString(5, product.getProductDescribe());
             preparedStatement.setLong(6, id);
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -104,7 +104,8 @@ public class ProductDAO implements IEcommerce<Product> {
             statement.setString(1, name);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                product.add(new Product(resultSet.getLong("id"),
+                product.add(new Product(
+                        resultSet.getLong("id"),
                         resultSet.getString("code"),
                         resultSet.getString("name"),
                         resultSet.getDouble("price"),

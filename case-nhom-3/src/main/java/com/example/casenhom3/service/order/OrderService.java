@@ -17,10 +17,8 @@ public interface OrderService extends IEcommerce<Order>
 
     List<OrderDetail> amountSumOfCustomer();
 
-    int orderCancelByCustomer(long customerId, int status);
-
     double allOrderSum();
 
-    int orderUpdate(long orderId, int status);
+    void orderUpdate(long customerId, long orderId, int status);
 
 }
