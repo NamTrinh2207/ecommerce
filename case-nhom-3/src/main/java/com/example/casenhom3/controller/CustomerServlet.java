@@ -47,7 +47,11 @@ public class CustomerServlet extends HttpServlet {
         }
         switch (action) {
             case "create":
-                createCustomer(request, response);
+                try {
+                    createCustomer(request, response);
+                } catch (ParseException e) {
+                    throw new RuntimeException(e);
+                }
                 break;
             case "edit":
                 editCustomer(request, response);
@@ -115,21 +119,16 @@ public class CustomerServlet extends HttpServlet {
         }
     }
 
-    private void createCustomer(HttpServletRequest request, HttpServletResponse response) {
+    private void createCustomer(HttpServletRequest request, HttpServletResponse response) throws ParseException {
         String code = request.getParameter("code");
         String name = request.getParameter("name");
-        String date = request.getParameter("date");
+        String date1 = request.getParameter("date");
         SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
-        Date convertDate;
-        try {
-            convertDate = new Date(format.parse(date).getTime());
-        } catch (ParseException e) {
-            throw new RuntimeException(e);
-        }
+        java.sql.Date date = new java.sql.Date(format.parse(date1).getTime());
         String address = request.getParameter("address");
         String email = request.getParameter("email");
         String phone = request.getParameter("phone");
-        Customer customer = new Customer(id, code, name, convertDate, address, email, phone);
+        Customer customer = new Customer(id, code, name, date, address, email, phone);
         this.customerService.save(customer);
         id++;
         RequestDispatcher dispatcher = request.getRequestDispatcher("create.jsp");
