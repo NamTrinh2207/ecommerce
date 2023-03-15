@@ -132,6 +132,7 @@ public class EmployeeServlet extends HttpServlet {
                 break;
             case "search":
                 searchByName(request, response);
+                break;
             default:
                 listEmployee(request, response);
         }
@@ -149,9 +150,6 @@ public class EmployeeServlet extends HttpServlet {
                 } catch (ServletException e) {
                     throw new RuntimeException(e);
                 }
-            } else {
-                response.sendRedirect("/employees");
-                System.out.println("not found");
             }
         } catch (Exception e) {
             System.out.println("Query error");
@@ -162,11 +160,8 @@ public class EmployeeServlet extends HttpServlet {
         try {
             int id = Integer.parseInt(request.getParameter("id"));
             iEcommerce.delete(id);
-            List<Employee> employees = iEcommerce.findAll();
-            request.setAttribute("employees", employees);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("employee/list.jsp");
-            dispatcher.forward(request, response);
-        } catch (ServletException | IOException e) {
+            response.sendRedirect("http://localhost:8080/employees");
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
