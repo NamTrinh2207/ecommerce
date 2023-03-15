@@ -34,7 +34,7 @@ public class CategoryServlet extends HttpServlet {
                 viewCategory(request, response);
                 break;
             default:
-                listProduct(request, response);
+                listCategory(request, response);
         }
     }
 
@@ -56,7 +56,7 @@ public class CategoryServlet extends HttpServlet {
                 break;
 
             default:
-                listProduct(request, response);
+                listCategory(request, response);
         }
     }
 
