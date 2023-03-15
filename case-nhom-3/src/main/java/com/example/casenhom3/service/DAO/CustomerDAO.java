@@ -17,6 +17,8 @@ public class CustomerDAO {
     private final String DELETE_CUSTOMER = "delete from customer where id =?;";
     private final String FIND_CUSTOMER_BY_PHONE = "select id,code,name,date,address,email from customer where phone=?;";
 
+    private final String SORT_CUSTOMER_BY_NAME = "select * from customer order by name";
+
     public List<Customer> findAll() {
         List<Customer> customers = new ArrayList<>();
         try (Statement statement = connection.createStatement();) {
@@ -112,6 +114,27 @@ public class CustomerDAO {
                 Date date = resultSet.getDate("date");
                 String address = resultSet.getString("date");
                 String email = resultSet.getString("email");
+                Customer customer = new Customer(id, code, name, date, address, email, phone);
+                customers.add(customer);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return customers;
+    }
+
+    public List<Customer> sortByName() {
+        List<Customer> customers = new ArrayList<>();
+        try (PreparedStatement statement = connection.prepareStatement(SORT_CUSTOMER_BY_NAME)) {
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                long id = resultSet.getLong("id");
+                String code = resultSet.getString("code");
+                String name = resultSet.getString("name");
+                Date date = resultSet.getDate("date");
+                String address = resultSet.getString("address");
+                String email = resultSet.getString("email");
+                String phone = resultSet.getString("phone");
                 Customer customer = new Customer(id, code, name, date, address, email, phone);
                 customers.add(customer);
             }

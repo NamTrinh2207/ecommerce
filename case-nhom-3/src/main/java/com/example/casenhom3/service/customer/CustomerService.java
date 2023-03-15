@@ -36,4 +36,8 @@ public class CustomerService implements ICustomerService {
     public List<Customer> findByPhone(String phone) {
         return this.customerDAO.findCustomerByPhone(phone);
     }
+
+    public List<Customer> sorfByName(){
+        return this.customerDAO.sortByName();
+    }
 }

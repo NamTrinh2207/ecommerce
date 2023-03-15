@@ -63,16 +63,31 @@ public class CustomerServlet extends HttpServlet {
             case "search":
                 findCustomerByPhone(request, response);
                 break;
+            case "sorf" :
+                sorfByName(request, response);
+                break;
             default:
                 listCustomer(request, response);
 
         }
     }
 
+    private void sorfByName(HttpServletRequest request, HttpServletResponse response) {
+        List<Customer> customers = this.customerService.sorfByName();
+        request.setAttribute("customer", customers);
+        RequestDispatcher dispatcher =  request.getRequestDispatcher("list.jsp");
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private void listCustomer(HttpServletRequest request, HttpServletResponse response) {
         try {
             List<Customer> customers = this.customerService.findAll();
-            System.out.println("ttyyyy" + customers);
             request.setAttribute("customer", customers);
             RequestDispatcher dispatcher = request.getRequestDispatcher("list.jsp");
             dispatcher.forward(request, response);
