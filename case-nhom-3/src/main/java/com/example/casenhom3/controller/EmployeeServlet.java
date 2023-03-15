@@ -1,6 +1,7 @@
 package com.example.casenhom3.controller;
 
 import com.example.casenhom3.model.Employee;
+import com.example.casenhom3.model.Product;
 import com.example.casenhom3.service.IEcommerce;
 import com.example.casenhom3.service.employee.EmployeeService;
 import com.example.casenhom3.service.employee.SearchAndListByPage;
@@ -129,8 +130,31 @@ public class EmployeeServlet extends HttpServlet {
                     throw new RuntimeException(e);
                 }
                 break;
+            case "search":
+                searchByName(request, response);
             default:
                 listEmployee(request, response);
+        }
+    }
+
+    private void searchByName(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        try {
+            String name = request.getParameter("name");
+            List<Employee> employees = this.list.searchByName(name);
+            if (employees != null) {
+                RequestDispatcher dispatcher = request.getRequestDispatcher("employee/list.jsp");
+                request.setAttribute("employees", employees);
+                try {
+                    dispatcher.forward(request, response);
+                } catch (ServletException e) {
+                    throw new RuntimeException(e);
+                }
+            } else {
+                response.sendRedirect("/employees");
+                System.out.println("not found");
+            }
+        } catch (Exception e) {
+            System.out.println("Query error");
         }
     }
 

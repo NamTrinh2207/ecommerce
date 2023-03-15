@@ -225,12 +225,14 @@
                 <div class="row">
                     <div class="col-sm-8"><h2>EMPLOYEES <b>LIST</b></h2></div>
                 </div>
-                <div class="col-sm-4 float-right">
-                    <div class="search-box">
-                        <i class="material-icons">&#xE8B6;</i>
-                        <input type="text" class="form-control" placeholder="Search&hellip;">
+                <form>
+                    <div class="col-sm-4 float-right">
+                        <div class="search-box">
+                            <i class="material-icons">&#xE8B6;</i>
+                            <input name="name" type="text" class="form-control" placeholder="Search&hellip;">
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
             <c:set var="page" value="${requestScope.page}"/>
             <div class="pagination flex-column">
