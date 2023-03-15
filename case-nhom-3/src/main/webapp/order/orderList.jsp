@@ -266,16 +266,6 @@
                         <td><c:out value="${order.customer_id}"/></td>
                         <td><c:out value="${order.employee_id}"/></td>
                         <td><fmt:formatDate value="${order.orderDate}" type="date" pattern="dd-MM-yyyy"/></td>
-                        <td>
-                            <a href="<c:url value="/employees?action=view&id=${e.getId()}"/>" class="view" title="View"
-                               data-toggle="tooltip"><i
-                                    class="material-icons">&#xE417;</i></a>
-                            <a href="<c:url value="/employees?action=edit&id=${e.getId()}"/>" class="edit" title="Edit"
-                               data-toggle="tooltip"><i
-                                    class="material-icons">&#xE254;</i></a>
-                            <a onclick="delById('${e.getId()}')" class="delete" title="Delete" data-toggle="tooltip"><i
-                                    class="material-icons">&#xE872;</i></a>
-                        </td>
                     </tr>
                 </c:forEach>
                 </tbody>
