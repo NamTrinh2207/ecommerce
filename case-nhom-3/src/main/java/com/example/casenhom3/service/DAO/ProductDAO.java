@@ -18,6 +18,8 @@ public class ProductDAO implements IEcommerce<Product> {
     private final String FIND_BY_NAME = "select id,code,name,price,img,describee from product where name " +
             "like concat('%' , ? , '%') ;";
 
+    private final String FIND_PRODUCT_HAVE_MAX_PRICE = "select * from product where price >= all(select max(price) from product);";
+
     @Override
     public List<Product> findAll() {
         List<Product> products = new ArrayList<>();
@@ -117,5 +119,25 @@ public class ProductDAO implements IEcommerce<Product> {
         }
         return product;
 
+    }
+
+    public List<Product> findPriceMax() {
+        List<Product> products = new ArrayList<>();
+        try (Statement statement = connection.createStatement()) {
+            ResultSet resultSet = statement.executeQuery(FIND_PRODUCT_HAVE_MAX_PRICE);
+            while (resultSet.next()) {
+                long id = resultSet.getLong("id");
+                String code = resultSet.getString("code");
+                String name = resultSet.getString("name");
+                double price = resultSet.getDouble("price");
+                String img = resultSet.getString("img");
+                String des = resultSet.getString(6);
+               Product product = new Product(id, code, name, price, img, des);
+                products.add(product);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return products;
     }
 }

@@ -39,4 +39,8 @@ public class ProductService implements IProductService {
     public List<Product> findByName(String name){
         return productDAO.findByName(name);
     }
+
+    public List<Product> findMaxPriceProduct(){
+        return this.productDAO.findPriceMax();
+    }
 }
