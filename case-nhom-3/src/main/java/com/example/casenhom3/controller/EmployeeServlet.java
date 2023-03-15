@@ -3,7 +3,7 @@ package com.example.casenhom3.controller;
 import com.example.casenhom3.model.Employee;
 import com.example.casenhom3.service.IEcommerce;
 import com.example.casenhom3.service.employee.EmployeeService;
-import com.example.casenhom3.service.employee.ListByPage;
+import com.example.casenhom3.service.employee.SearchAndListByPage;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -17,7 +17,7 @@ import java.util.List;
 @WebServlet(name = "EmployeeServlet", value = "/employees")
 public class EmployeeServlet extends HttpServlet {
     IEcommerce<Employee> iEcommerce;
-    ListByPage<Employee> list;
+    SearchAndListByPage<Employee> list;
 
     @Override
     public void init() throws ServletException {
