@@ -19,22 +19,22 @@
         <table>
             <tr>
                 <td>code:</td>
-                <td><input type="text" name="code" value="${customer.code}"></td>
+                <td><input type="text" name="code" value="${customer.getCode()}"></td>
             </tr>            <tr>
                 <td>Name:</td>
-                <td><input type="text" name="name" value="${customer.name}"></td>
+                <td><input type="text" name="name" value="${customer.getName()}"></td>
             </tr>            <tr>
                 <td>date:</td>
-                <td><input type="text" name="date" value="${customer.date}"></td>
+                <td><input type="text" name="date" value="${customer.getDate()}"></td>
             </tr>            <tr>
                 <td>address:</td>
-                <td><input type="text" name="address" value="${customer.address}"></td>
+                <td><input type="text" name="address" value="${customer.getAddress()}"></td>
             </tr>            <tr>
                 <td>email:</td>
-                <td><input type="text" name="email" value="${customer.email}"></td>
+                <td><input type="text" name="email" value="${customer.getEmail()}"></td>
             </tr>            <tr>
                 <td>phone:</td>
-                <td><input type="text" name="phone" value="${customer.phone}"></td>
+                <td><input type="text" name="phone" value="${customer.getPhone()}"></td>
             </tr>
             <tr>
                 <td></td>
