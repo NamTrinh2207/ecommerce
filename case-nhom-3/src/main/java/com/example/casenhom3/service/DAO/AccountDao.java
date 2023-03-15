@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class AccountDao {
-    private static final String Login = "select *from login where name=?and password=?";
+    private static final String Login = "select *from login where user=?and password=?";
     Connection connection = null;
     PreparedStatement preparedStatement = null;
     ResultSet resultSet = null;

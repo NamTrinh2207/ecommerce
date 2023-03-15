@@ -24,7 +24,7 @@ public class CreateDatabase {
         Connection connection = null;
         try {
             Class.forName(className);
-            connection = DriverManager.getConnection(jdbcURL, acc, pass);
+            connection = DriverManager.getConnection(jdbcURLdoan, acc, PassWord);
             System.out.println("connection successfully");
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();

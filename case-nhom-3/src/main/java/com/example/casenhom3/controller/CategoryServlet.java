@@ -81,9 +81,9 @@ public class CategoryServlet extends HttpServlet {
 
     private void listProduct(HttpServletRequest request, HttpServletResponse response) {
         List<Categories> categories = categoryService.findAll();
-        RequestDispatcher dispatcher = request.getRequestDispatcher("list.jsp");
-        request.setAttribute("category", categories);
         try {
+            request.setAttribute("category", categories);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
