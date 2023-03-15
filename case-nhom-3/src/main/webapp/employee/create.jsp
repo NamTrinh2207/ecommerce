@@ -92,7 +92,7 @@
 <div class="container-fluid px-1 py-5 mx-auto">
     <div class="row d-flex justify-content-center">
         <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
-            <h2>Add New Employee</h2>
+            <h2>THÊM NHÂN VIÊN MỚI</h2>
             <div class="card">
                 <form method="post" class="form-card">
                     <div class="row justify-content-between text-left">
@@ -131,6 +131,15 @@
                                                                                id="address"
                                                                                name="address"
                                                                                placeholder="Địa chỉ..."
+                                                                               onblur="validate(6)">
+                        </div>
+                    </div>
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-12 flex-column d-flex"><label class="form-control-label px-3">Hình ảnh
+                            <span class="text-danger"> *</span></label> <input type="text"
+                                                                               id="image"
+                                                                               name="image"
+                                                                               placeholder="link ảnh..."
                                                                                onblur="validate(6)">
                         </div>
                     </div>

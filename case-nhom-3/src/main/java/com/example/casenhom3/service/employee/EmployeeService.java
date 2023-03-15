@@ -9,12 +9,12 @@ import java.util.List;
 
 public class EmployeeService implements IEmployeeService, SearchAndListByPage<Employee> {
     private final Connection connection = CreateDatabase.getConnection();
-    private static final String INSERT_EMPLOYEE = "INSERT INTO employee (code,name,date,address, email, phone) VALUES (?,?,?,?,?,?);";
+    private static final String INSERT_EMPLOYEE = "INSERT INTO employee (code,name,date,address, email, phone,image) VALUES (?,?,?,?,?,?,?);";
     private static final String SELECT_EMPLOYEE_BY_ID = "select * from employee where id =?";
     private static final String SELECT_ALL_EMPLOYEES = "select * from employee";
     private static final String DELETE_EMPLOYEE = "delete from employee where id = ?;";
-    private static final String UPDATE_EMPLOYEE = "update employee set code = ?,name = ?,date = ?,address = ?, email = ?, phone = ? where id = ?;";
-    private final String SEARCH_BY_NAME = "select id,code,name,date,address,email,phone from employee where name " +
+    private static final String UPDATE_EMPLOYEE = "update employee set code = ?,name = ?,date = ?,address = ?, email = ?, phone = ?, image=? where id = ?;";
+    private final String SEARCH_BY_NAME = "select id,code,name,date,address,email,phone,image from employee where name " +
             "like concat('%' , ? ,'%') ;";
 
     @Override
@@ -32,7 +32,8 @@ public class EmployeeService implements IEmployeeService, SearchAndListByPage<Em
                     String address = resultSet.getString("address");
                     String email = resultSet.getString("email");
                     String phone = resultSet.getString("phone");
-                    employees.add(new Employee(id, code, name, date, address, email, phone));
+                    String image = resultSet.getString("image");
+                    employees.add(new Employee(id, code, name, date, address, email, phone, image));
                 }
                 return employees;
             } catch (Exception e) {
@@ -41,7 +42,6 @@ public class EmployeeService implements IEmployeeService, SearchAndListByPage<Em
         }
         return null;
     }
-
     @Override
     public void save(Employee employee) {
         try {
@@ -53,6 +53,7 @@ public class EmployeeService implements IEmployeeService, SearchAndListByPage<Em
             preparedStatement.setString(4, employee.getAddress());
             preparedStatement.setString(5, employee.getEmail());
             preparedStatement.setString(6, employee.getPhone());
+            preparedStatement.setString(7, employee.getImage());
             preparedStatement.executeUpdate();
             connection.commit();
         } catch (SQLException e) {
@@ -80,7 +81,8 @@ public class EmployeeService implements IEmployeeService, SearchAndListByPage<Em
                     String address = resultSet.getString("address");
                     String email = resultSet.getString("email");
                     String phone = resultSet.getString("phone");
-                    employee = new Employee(id, code, name, date, address, email, phone);
+                    String image = resultSet.getString("image");
+                    employee = new Employee(id, code, name, date, address, email, phone,image);
                 }
                 return employee;
             } catch (SQLException e) {
@@ -102,7 +104,8 @@ public class EmployeeService implements IEmployeeService, SearchAndListByPage<Em
                 statement.setString(4, employee.getAddress());
                 statement.setString(5, employee.getEmail());
                 statement.setString(6, employee.getPhone());
-                statement.setLong(7, id);
+                statement.setString(7, employee.getImage());
+                statement.setLong(8, id);
                 statement.executeUpdate();
                 connection.commit();
             } catch (SQLException e) {
@@ -148,7 +151,8 @@ public class EmployeeService implements IEmployeeService, SearchAndListByPage<Em
                 String address = resultSet.getString("address");
                 String email = resultSet.getString("email");
                 String phone = resultSet.getString("phone");
-                Employee employee = new Employee(id, code, name1, date, address, email, phone);
+                String image = resultSet.getString("image");
+                Employee employee = new Employee(id, code, name1, date, address, email, phone,image);
                 employees.add(employee);
             }
         } catch (SQLException e) {

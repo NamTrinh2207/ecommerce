@@ -177,7 +177,8 @@ public class EmployeeServlet extends HttpServlet {
             String address = request.getParameter("address");
             String email = request.getParameter("email");
             String phone = request.getParameter("phone");
-            Employee employee = new Employee(id, code, name, date, address, email, phone);
+            String image = request.getParameter("image");
+            Employee employee = new Employee(id, code, name, date, address, email, phone,image);
             iEcommerce.update(id, employee);
             RequestDispatcher dispatcher = request.getRequestDispatcher("employee/update.jsp");
             dispatcher.forward(request, response);
@@ -196,7 +197,8 @@ public class EmployeeServlet extends HttpServlet {
             String address = request.getParameter("address");
             String email = request.getParameter("email");
             String phone = request.getParameter("phone");
-            Employee employee = new Employee(code, name, date, address, email, phone);
+            String image = request.getParameter("image");
+            Employee employee = new Employee(code, name, date, address, email, phone,image);
             iEcommerce.save(employee);
             request.getRequestDispatcher("employee/create.jsp").forward(request, response);
         } catch (ServletException | IOException e) {
