@@ -7,14 +7,14 @@ import java.sql.SQLException;
 public class CreateDatabase {
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
     private static final String URL = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=yes&characterEncoding=UTF-8";
-    private static final String userDoan = "Nam";
-    private static final String passDoan = "Anhnam220797anhnam";
+    private static final String userNam = "Nam";
+    private static final String passNam = "Anhnam220797anhnam";
 
     public static Connection getConnection() {
         Connection connection = null;
         try {
             Class.forName(DRIVER);
-            connection = DriverManager.getConnection(URL, userDoan, passDoan);
+            connection = DriverManager.getConnection(URL, userNam, passNam);
             Class.forName(DRIVER);
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
