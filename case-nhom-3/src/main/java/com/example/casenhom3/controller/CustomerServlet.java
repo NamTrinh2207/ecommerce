@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "CustomerServlet", value = "/CustomerServlet")
@@ -58,6 +59,9 @@ public class CustomerServlet extends HttpServlet {
                 break;
             case "delete":
                 deleteCustomer(request, response);
+                break;
+            case "search":
+                findCustomerByPhone(request, response);
                 break;
             default:
                 listCustomer(request, response);
@@ -190,6 +194,25 @@ public class CustomerServlet extends HttpServlet {
         } else {
             this.customerService.delete(id);
             response.sendRedirect("/CustomerServlet");
+        }
+    }
+
+    private void findCustomerByPhone(HttpServletRequest request, HttpServletResponse response) {
+        String phone = request.getParameter("phone");
+        List<Customer> customers = this.customerService.findByPhone(phone);
+        RequestDispatcher dispatcher;
+        if (customers == null) {
+            dispatcher = request.getRequestDispatcher("list.jsp");
+        } else {
+            dispatcher = request.getRequestDispatcher("list.jsp");
+            request.setAttribute("customer", customers);
+        }
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }
