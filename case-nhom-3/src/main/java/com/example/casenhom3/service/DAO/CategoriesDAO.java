@@ -1,5 +1,6 @@
 package com.example.casenhom3.service.DAO;
 
+import com.example.casenhom3.connection.CreateDatabase;
 import com.example.casenhom3.model.Categories;
 
 import java.sql.Connection;
@@ -76,10 +77,4 @@ public class CategoriesDAO {
             e.printStackTrace();
         }
     }
-
-//    public static void main(String[] args) {
-//        CategoriesDAO dao=new CategoriesDAO();
-//        List<Categories> list=dao.findAll();
-//        System.out.println(list);
-//    }
 }
