@@ -1,5 +1,6 @@
 package com.example.casenhom3.service.DAO;
 
+import com.example.casenhom3.connection.CreateDatabase;
 import com.example.casenhom3.model.Customer;
 
 import java.sql.*;
@@ -76,7 +77,7 @@ public class CustomerDAO {
         }
     }
 
-    public Customer findbyId(long id) {
+    public Customer findById(long id) {
         Customer customer = null;
         if (connection != null) {
             try {

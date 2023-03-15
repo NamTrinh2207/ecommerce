@@ -20,7 +20,7 @@ public class CustomerService implements ICustomerService {
 
     @Override
     public Customer findById(long id) {
-        return customerDAO.findbyId(id);
+        return customerDAO.findById(id);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.example.casenhom3.service.DAO;
 
+import com.example.casenhom3.connection.CreateDatabase;
 import com.example.casenhom3.model.AccountAdmin;
 
 import java.sql.Connection;
@@ -21,8 +22,7 @@ public class AccountDao {
             preparedStatement.setString(2, password);
             resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                AccountAdmin admin = new AccountAdmin(resultSet.getString(1), resultSet.getString(2));
-                return admin;
+                return new AccountAdmin(resultSet.getString(1), resultSet.getString(2));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
