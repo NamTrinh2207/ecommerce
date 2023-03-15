@@ -16,7 +16,7 @@ build/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-connection
+java/com/example/casenhom3/connection/
 ### Eclipse ###
 .apt_generated
 .classpath
