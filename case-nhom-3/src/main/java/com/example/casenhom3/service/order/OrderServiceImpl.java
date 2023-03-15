@@ -37,15 +37,16 @@ public class OrderServiceImpl implements OrderService
             String customerPhone = rs.getString("customerPhone");
 
             // get employee infomation
-            Long employee_id = rs.getLong("employee_id");
-            String employeeCode = rs.getString("employeeCode");
-            String employeeName = rs.getString("employeeName");
-            Date employeeDate = rs.getDate("employeeDate");
-            String employeePlace = rs.getString("employeePlace");
-            String employeeEmail = rs.getString("employeeEmail");
-            String employeePhone = rs.getString("employeePhone");
+            Long employee_id = rs.getLong("id");
+            String employeeCode = rs.getString("code");
+            String employeeName = rs.getString("name");
+            Date employeeDate = rs.getDate("date");
+            String employeePlace = rs.getString("address");
+            String employeeEmail = rs.getString("email");
+            String employeePhone = rs.getString("phone");
+            String employeeImage = rs.getString("image");
             Customer customer = new Customer(customer_id, customerCode, customerName,customerDate,customerPlace, customerEmail, customerPhone);
-            Employee employee = new Employee(employee_id, employeeCode, employeeName,employeeDate, employeePlace, employeeEmail,employeePhone);
+            Employee employee = new Employee(employee_id, employeeCode, employeeName,employeeDate, employeePlace, employeeEmail,employeePhone,employeeImage);
             Order order = new Order(order_id, customer, employee,orderDate, orderStatus);
             orderList.add(order);
         }
