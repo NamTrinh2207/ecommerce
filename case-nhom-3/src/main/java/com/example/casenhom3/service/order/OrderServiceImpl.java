@@ -63,12 +63,11 @@ public class OrderServiceImpl implements OrderService
             try
             {
                 StringBuilder s = new StringBuilder();
-                s.append("select * from order o");
+                s.append("select * from order");
                 s.append(" ");
-                s.append("join customer c on o.customer_id = c.id");
+                s.append("(join customer on order.customer_id = customer.id)");
                 s.append(" ");
-                s.append("and ");
-                s.append("employee e on o.employee_id = e.id");
+                s.append("join employee  on order.employee_id = employee.id");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 ResultSet rs = p.executeQuery();
                 return orderListResult(rs);
@@ -100,9 +99,9 @@ public class OrderServiceImpl implements OrderService
             try
             {
                 StringBuilder s = new StringBuilder();
-                s.append("select * from orderdetail o");
+                s.append("select * from orderdetail");
                 s.append(" ");
-                s.append("join product p on o.product_id = p.id where o.order_id = ?");
+                s.append("join product on orderdetail.product_id = product.id where orderdetail.order_id = ?");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 p.setLong(1, orderId);
                 ResultSet rs = p.executeQuery();
@@ -178,9 +177,9 @@ public class OrderServiceImpl implements OrderService
             try
             {
                 StringBuilder s = new StringBuilder();
-                s.append("select * from order o, customer c, employee e ");
+                s.append("select * from order, customer, employee ");
                 s.append(" ");
-                s.append("where c.id = o.customer_id and e.id = o.employee_id and o.id = ?");
+                s.append("where customer.id = order.customer_id and employee.id = order.employee_id and order.id = ?");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 p.setLong(1, orderId);
                 ResultSet rs = p.executeQuery();
@@ -222,9 +221,9 @@ public class OrderServiceImpl implements OrderService
             try
             {
                 StringBuilder s = new StringBuilder();
-                s.append("select sum(od.amount) as amountSum from orderdetail od, order o ");
+                s.append("select sum(od.amount) as amountSum from orderdetail, order  ");
                 s.append(" ");
-                s.append("where o.id = od.order_id and o.status = 1");
+                s.append("where order.id = orderdetail.order_id and order.status = 1");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 ResultSet rs = p.executeQuery();
                 if (rs.next())
@@ -259,9 +258,9 @@ public class OrderServiceImpl implements OrderService
                 List<OrderDetail> orderDetails = new ArrayList<>();
                 StringBuilder s = new StringBuilder();
                 s.append("select id, customerCode, customerName, customerDate,customerPlace,customerEmail, customerPhone, sum(od.amount) as amountSum");
-                s.append("from orderdetail od, order o, customer c ");
+                s.append("from orderdetail , order , customer ");
                 s.append(" ");
-                s.append("where od.order_id = o.id and c.id = o.customer_id and o.status = 1");
+                s.append("where orderdetail.order_id = order.id and customer.id = order.customer_id and order.status = 1");
                 s.append(" ");
                 s.append("group by id, customerCode, customerName, customerDate,customerPlace,customerEmail, customerPhone");
                 PreparedStatement p = connection.prepareStatement(s.toString());
@@ -350,9 +349,9 @@ public class OrderServiceImpl implements OrderService
                 {
                     if (status == 0)
                     {
-                        s.append("Delete from order o, orderdetail od ");
+                        s.append("Delete from order , orderdetail  ");
                         s.append(" ");
-                        s.append("where o.id = od.order_id and o.id = ? and o.customer_id = ? and o.status = ? and o.status = 0");
+                        s.append("where order.id = orderdetail.order_id and order.id = ? and order.customer_id = ? and order.status = ? and order.status = 0");
                         PreparedStatement p = connection.prepareStatement(s.toString());
                         p.setLong(1,orderId);
                         p.setLong(2, customerId);
