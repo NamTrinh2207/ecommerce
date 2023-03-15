@@ -215,6 +215,9 @@
             border-radius: 4px;
             transition: 0.8s;
         }
+        th{
+            text-align: center;
+        }
     </style>
     <script>
         $(document).ready(function () {
@@ -223,6 +226,27 @@
     </script>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href=<c:url value="/index.jsp"/>>Trang chủ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Quản lý nhân viên</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quản lý hóa đơn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Quản lý khách hàng</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <div class="container-xl">
     <div class="table-responsive">
         <div class="table-wrapper">
@@ -242,10 +266,8 @@
             <c:set var="page" value="${requestScope.page}"/>
             <div class="pagination flex-column">
                 <div class="clearfix mb-3">
-                    <div class="hint-text"><a href="<c:url value="/employees?action=create"/>" class="page-link">Create
-                        new
-                        employee</a></div>
-                    <div class="hint-text"><a href="<c:url value="/index.jsp"/>" class="page-link">Trang Chủ</a></div>
+                    <div class="hint-text"><a href="<c:url value="/employees?action=create"/>" class="page-link">Thêm
+                        Nhân viên</a></div>
                 </div>
                 <c:forEach begin="${1}" end="${requestScope.num}" var="i">
                     <a class="${i==page?"active":""}" href="<c:url value="/employees?page=${i}"/>">${i}</a>
@@ -256,9 +278,7 @@
                 <tr>
                     <th>Mã NV</th>
                     <th>Họ và tên <i class="fa fa-sort"></i></th>
-                    <th>Năm sinh</th>
                     <th>Địa chỉ</th>
-                    <th>Email</th>
                     <th>SĐT</th>
                     <th>Actions</th>
                 </tr>
@@ -268,9 +288,7 @@
                     <tr>
                         <td><c:out value="${e.code}"/></td>
                         <td><c:out value="${e.name}"/></td>
-                        <td><c:out value="${e.date}"/></td>
                         <td><c:out value="${e.address}"/></td>
-                        <td><c:out value="${e.email}"/></td>
                         <td><c:out value="${e.phone}"/></td>
                         <td>
                             <a href="<c:url value="/employees?action=view&id=${e.getId()}"/>" class="view" title="View"
@@ -289,6 +307,7 @@
         </div>
     </div>
 </div>
+
 <script type="text/javascript">
     function delById(id) {
         if (confirm("Bạn có chắc chắn muốn xóa nhân viên có id là " + id + " không ? ")) {

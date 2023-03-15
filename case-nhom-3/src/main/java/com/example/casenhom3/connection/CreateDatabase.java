@@ -19,8 +19,8 @@ public class CreateDatabase {
     public static Connection getConnection() {
         Connection connection = null;
         try {
-            Class.forName(DRIVER);
-            connection = DriverManager.getConnection(URL, userDoan, passDoan);
+//            Class.forName(DRIVER);
+//            connection = DriverManager.getConnection(URL, userDoan, passDoan);
             Class.forName(DRIVER);
             connection = DriverManager.getConnection(URL, user_nam, pass_nam);
             Class.forName(DRIVER);
