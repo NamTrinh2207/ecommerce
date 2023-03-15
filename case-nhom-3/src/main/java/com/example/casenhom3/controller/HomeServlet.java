@@ -23,10 +23,10 @@ doPost(request,response);
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Categories> categories = categoryService.findAll();
-//        List<Product> products=productDAO.findAll();
+        List<Product> products=productDAO.findAll();
         try {
             request.setAttribute("category", categories);
-//            request.setAttribute("product", products);
+            request.setAttribute("product", products);
             RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
