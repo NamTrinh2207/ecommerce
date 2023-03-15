@@ -1,6 +1,5 @@
 package com.example.casenhom3.service.order;
 
-import com.example.casenhom3.model.Customer;
 import com.example.casenhom3.model.Order;
 import com.example.casenhom3.model.OrderDetail;
 import com.example.casenhom3.service.IEcommerce;

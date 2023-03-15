@@ -7,12 +7,17 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>List Employees</title>
+    <title>List Order</title>
+    <script src="<c:url value="/js/jquery-3.1.1.min.js"/>" type='text/javascript'></script>
+    <link href='<c:url value="/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css"/>' rel='stylesheet' type='text/css'>
+    <script src='<c:url value ="/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"/>' type='text/javascript'></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -56,6 +61,7 @@
         .search-box {
             position: relative;
             float: right;
+            margin-bottom: 30px;
         }
 
         .search-box input {
@@ -225,57 +231,41 @@
                 <div class="row">
                     <div class="col-sm-8"><h2>ORDER <b>LIST</b></h2></div>
                 </div>
+                <c:url value="/orders?action=searchByDate" var="searchByDate"/>
+                <form action="${searchByDate}" method="post">
+                    <div class="col-sm-4 float-right">
+                      <input type='text' class="form-control" data-provide="datepicker" name="startDate" placeholder='Từ ngày' style='width: 300px;' >
+                      <input type='text' class="form-control" data-provide="datepicker" name="endDate" placeholder="Đến ngày" style='width: 300px;' > <br>
+                        <button type="submit" class="form-control">Tìm kiếm</button>
+                    </div>
+
+                </form>
                 <form>
                     <div class="col-sm-4 float-right">
+                        <br>
                         <div class="search-box">
                             <i class="material-icons">&#xE8B6;</i>
-                            <input name="name" type="text" class="form-control" placeholder="Search&hellip;">
+                            <input name="name" type="text" class="form-control" placeholder="Tìm kiếm hóa đơn theo Id">
                         </div>
                     </div>
                 </form>
             </div>
-            <c:set var="page" value="${requestScope.page}"/>
-            <div class="pagination flex-column">
-                <div class="clearfix mb-3">
-                    <div class="hint-text"><a href="<c:url value="/employees?action=create"/>" class="page-link">Create new
-                        employee</a></div>
-                    <div class="hint-text"><a href="<c:url value="/index.jsp"/>" class="page-link">Trang Chủ</a></div>
-                </div>
-                <c:forEach begin="${1}" end="${requestScope.num}" var="i">
-                    <a class="${i==page?"active":""}" href="<c:url value="/employees?page=${i}"/>">${i}</a>
-                </c:forEach>
-            </div>
             <table class="table table-striped table-hover table-bordered">
                 <thead>
                 <tr>
-                    <th>Mã NV</th>
-                    <th>Họ và tên <i class="fa fa-sort"></i></th>
-                    <th>Năm sinh</th>
-                    <th>Địa chỉ</th>
-                    <th>Email</th>
-                    <th>SĐT</th>
-                    <th>Actions</th>
+                    <th>Id</th>
+                    <th>Customer ID <i class="fa fa-sort"></i></th>
+                    <th>Employee Id</th>
+                    <th>Order Date</th>
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${requestScope.employees}" var="e">
+                <c:forEach items="${requestScope.orders}" var="order">
                     <tr>
-                        <td><c:out value="${e.code}"/></td>
-                        <td><c:out value="${e.name}"/></td>
-                        <td><c:out value="${e.date}"/></td>
-                        <td><c:out value="${e.address}"/></td>
-                        <td><c:out value="${e.email}"/></td>
-                        <td><c:out value="${e.phone}"/></td>
-                        <td>
-                            <a href="<c:url value="/employees?action=view&id=${e.getId()}"/>" class="view" title="View"
-                               data-toggle="tooltip"><i
-                                    class="material-icons">&#xE417;</i></a>
-                            <a href="<c:url value="/employees?action=edit&id=${e.getId()}"/>" class="edit" title="Edit"
-                               data-toggle="tooltip"><i
-                                    class="material-icons">&#xE254;</i></a>
-                            <a onclick="delById('${e.getId()}')" class="delete" title="Delete" data-toggle="tooltip"><i
-                                    class="material-icons">&#xE872;</i></a>
-                        </td>
+                        <td><c:out value="${order.id}"/></td>
+                        <td><c:out value="${order.customer_id}"/></td>
+                        <td><c:out value="${order.employee_id}"/></td>
+                        <td><fmt:formatDate value="${order.orderDate}" type="date" pattern="dd-MM-yyyy"/></td>
                     </tr>
                 </c:forEach>
                 </tbody>
@@ -284,12 +274,9 @@
     </div>
 </div>
 <script type="text/javascript">
-    function delById(id) {
-        if (confirm("Bạn có chắc chắn muốn xóa nhân viên có id là " + id + " không ? ")) {
-            window.location = "/employees?action=delete&id=" + id;
-            window.location = "/employees?page=1";
-        }
-    }
+    $(document).ready(function(){
+        $('#datepicker').datepicker();
+    });
 </script>
 </body>
 </html>
