@@ -2,18 +2,21 @@ package com.example.casenhom3.service.employee;
 
 import com.example.casenhom3.connection.CreateDatabase;
 import com.example.casenhom3.model.Employee;
+import com.example.casenhom3.model.Product;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeeService implements IEmployeeService, ListByPage<Employee> {
+public class EmployeeService implements IEmployeeService, SearchAndListByPage<Employee> {
     private final Connection connection = CreateDatabase.getConnection();
     private static final String INSERT_EMPLOYEE = "INSERT INTO employee (code,name,date,address, email, phone) VALUES (?,?,?,?,?,?);";
     private static final String SELECT_EMPLOYEE_BY_ID = "select * from employee where id =?";
     private static final String SELECT_ALL_EMPLOYEES = "select * from employee";
     private static final String DELETE_EMPLOYEE = "delete from employee where id = ?;";
     private static final String UPDATE_EMPLOYEE = "update employee set code = ?,name = ?,date = ?,address = ?, email = ?, phone = ? where id = ?;";
+    private final String SEARCH_BY_NAME = "select id,code,name,date,address,email,phone from employee where name " +
+            "like concat('%' , ? , '%') ;";
 
     @Override
     public List<Employee> findAll() {
@@ -126,9 +129,32 @@ public class EmployeeService implements IEmployeeService, ListByPage<Employee> {
     @Override
     public List<Employee> getListByPage(List<Employee> list, int start, int end) {
         List<Employee> employees = new ArrayList<>();
-        for (int i = start; i<end; i++){
+        for (int i = start; i < end; i++) {
             employees.add(list.get(i));
         }
         return employees;
     }
+
+    @Override
+    public List<Employee> searchByName(String name) {
+        List<Employee> employees = new ArrayList<>();
+        try (PreparedStatement statement = connection.prepareStatement(SEARCH_BY_NAME)) {
+            statement.setString(1, name);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                long id = resultSet.getLong("id");
+                String code = resultSet.getString("code");
+                Date date = resultSet.getDate("date");
+                String address = resultSet.getString("address");
+                String email = resultSet.getString("email");
+                String phone = resultSet.getString("phone");
+                Employee employee = new Employee(id, code, name, date, address, email, phone);
+                employees.add(employee);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return employees;
+    }
+
 }

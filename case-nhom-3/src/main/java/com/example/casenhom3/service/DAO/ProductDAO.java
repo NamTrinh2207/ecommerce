@@ -104,7 +104,8 @@ public class ProductDAO implements IEcommerce<Product> {
             statement.setString(1, name);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                product.add(new Product(resultSet.getLong("id"),
+                product.add(new Product(
+                        resultSet.getLong("id"),
                         resultSet.getString("code"),
                         resultSet.getString("name"),
                         resultSet.getDouble("price"),
