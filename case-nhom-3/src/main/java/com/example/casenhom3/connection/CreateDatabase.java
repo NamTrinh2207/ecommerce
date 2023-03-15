@@ -16,9 +16,15 @@ public class CreateDatabase {
     private static final String userNguyen = "root";
     private static final String passNguyen = "Nguyen251096*";
 
+    private static String jdbcURLTuong = "jdbc:mysql://localhost:3306/test";
+    private static String accTuong = "root";
+    private static String passTuong = "tuong2001";
+    private static String classNameTuong ="com.mysql.cj.jdbc.Driver" ;
+
     public static Connection getConnection() {
         Connection connection = null;
         try {
+<<<<<<< HEAD
 //            Class.forName(DRIVER);
 //            connection = DriverManager.getConnection(URL, userDoan, passDoan);
             Class.forName(DRIVER);
@@ -27,6 +33,11 @@ public class CreateDatabase {
             connection = DriverManager.getConnection(URL, userTuong, passTuong);
             Class.forName(DRIVER);
             connection = DriverManager.getConnection(URL, userNguyen, passNguyen);
+=======
+            Class.forName(classNameTuong);
+            connection = DriverManager.getConnection(jdbcURLTuong, accTuong, passTuong);
+            System.out.println("connection successfully");
+>>>>>>> tuong
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }

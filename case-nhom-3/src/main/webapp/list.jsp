@@ -9,14 +9,24 @@
 <p>
     <a href="/CustomerServlet?action=create">Create new customer</a>
 </p>
-<%--<form action="/productServlet?action=search" method="post">--%>
-<%--    <p>--%>
-<%--        <a>Search</a>--%>
-<%--        <input type="text" name="name">--%>
-<%--        <input type="submit" value="search">--%>
-<%--    </p>--%>
-<%--</form>--%>
+<form action="/CustomerServlet?action=sorf" method="post">
+    <p>
+        <a>sorf</a>
+        <input type="submit" value="sorf">
+    </p>
+</form>
 
+<form method="post">
+    <select>
+        <option>test</option>
+        <option><form action="/CustomerServlet?action=sorf" method="post">
+            <p>
+                <input type="submit" value="sorf">
+            </p>
+        </form></option>
+        <option></option>
+    </select>
+</form>
 <table border="1">
     <tr>
         <td>code</td>
