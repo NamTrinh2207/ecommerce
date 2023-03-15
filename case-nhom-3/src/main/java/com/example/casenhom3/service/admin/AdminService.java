@@ -1,28 +1,28 @@
-package com.example.casenhom3.service.DAO;
+package com.example.casenhom3.service.admin;
 
 import com.example.casenhom3.connection.CreateDatabase;
-import com.example.casenhom3.model.AccountAdmin;
+import com.example.casenhom3.model.Admin;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class AccountDao {
-    private static final String Login = "select *from login where user=?and password=?";
+public class AdminService {
+    private static final String sql = "select * from admin where user = ? and password = ?";
     Connection connection = null;
     PreparedStatement preparedStatement = null;
     ResultSet resultSet = null;
 
-    public AccountAdmin checkLogin(String name, String password) {
+    public Admin checkLogin(String name, String password) {
         try {
             connection = CreateDatabase.getConnection();
-            preparedStatement = connection.prepareStatement(Login);
+            preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, name);
             preparedStatement.setString(2, password);
             resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                return new AccountAdmin(resultSet.getString(1), resultSet.getString(2));
+                return new Admin(resultSet.getString(1), resultSet.getString(2));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
