@@ -24,20 +24,15 @@ public class CreateDatabase {
     public static Connection getConnection() {
         Connection connection = null;
         try {
-<<<<<<< HEAD
-//            Class.forName(DRIVER);
-//            connection = DriverManager.getConnection(URL, userDoan, passDoan);
             Class.forName(DRIVER);
             connection = DriverManager.getConnection(URL, user_nam, pass_nam);
             Class.forName(DRIVER);
             connection = DriverManager.getConnection(URL, userTuong, passTuong);
             Class.forName(DRIVER);
             connection = DriverManager.getConnection(URL, userNguyen, passNguyen);
-=======
             Class.forName(classNameTuong);
             connection = DriverManager.getConnection(jdbcURLTuong, accTuong, passTuong);
             System.out.println("connection successfully");
->>>>>>> tuong
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
