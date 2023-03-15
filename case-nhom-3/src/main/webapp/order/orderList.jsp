@@ -236,18 +236,12 @@
                     <div class="col-sm-4 float-right">
                       <input type='text' class="form-control" data-provide="datepicker" name="startDate" placeholder='Từ ngày' style='width: 300px;' >
                       <input type='text' class="form-control" data-provide="datepicker" name="endDate" placeholder="Đến ngày" style='width: 300px;' > <br>
-                        <button type="submit" class="form-control">Tìm kiếm</button>
-                    </div>
-
-                </form>
-                <form>
-                    <div class="col-sm-4 float-right">
-                        <br>
                         <div class="search-box">
                             <i class="material-icons">&#xE8B6;</i>
-                            <input name="name" type="text" class="form-control" placeholder="Tìm kiếm hóa đơn theo Id">
+                            <input name="name" type="text" class="form-control" placeholder="Tìm kiếm hóa đơn">
                         </div>
                     </div>
+
                 </form>
             </div>
             <table class="table table-striped table-hover table-bordered">
