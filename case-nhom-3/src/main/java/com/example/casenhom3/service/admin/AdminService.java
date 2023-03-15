@@ -11,18 +11,17 @@ import java.sql.SQLException;
 public class AdminService {
     private static final String sql = "select * from admin where user = ? and password = ?";
     Connection connection = null;
-    PreparedStatement preparedStatement = null;
-    ResultSet resultSet = null;
 
-    public Admin checkLogin(String name, String password) {
+    public Admin checkLogin(String user, String password) {
         try {
             connection = CreateDatabase.getConnection();
-            preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setString(1, name);
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1, user);
             preparedStatement.setString(2, password);
-            resultSet = preparedStatement.executeQuery();
+            ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                return new Admin(resultSet.getString(1), resultSet.getString(2));
+                return new Admin(resultSet.getString(1), resultSet.getString(2),
+                        resultSet.getInt(3));
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
