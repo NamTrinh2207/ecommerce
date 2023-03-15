@@ -10,7 +10,7 @@ build/
 *.iml
 *.ipr
 .idea/modules.xml
-.idea/inspectionProfiles
+.idea/inspectionProfiles/Project_Default.xml
 .idea/modules
 .idea/jarRepositories.xml
 .idea/compiler.xml
