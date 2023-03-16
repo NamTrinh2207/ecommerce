@@ -134,6 +134,7 @@ public class CustomerServlet extends HttpServlet {
         if (customer == null) {
             dispatcher = request.getRequestDispatcher("/CustomerServlet");
         } else {
+            request.setAttribute("customer", customer);
             dispatcher = request.getRequestDispatcher("customer/edit.jsp");
         }
         try {
