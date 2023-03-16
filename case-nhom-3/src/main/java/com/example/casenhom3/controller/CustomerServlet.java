@@ -36,6 +36,9 @@ public class CustomerServlet extends HttpServlet {
                 break;
             case "view":
                 viewCustomer(request, response);
+            case "sorf":
+                sorfByName(request, response);
+                break;
             default:
                 listCustomer(request, response);
 
@@ -82,9 +85,7 @@ public class CustomerServlet extends HttpServlet {
             case "search":
                 findCustomerByPhone(request, response);
                 break;
-            case "sorf":
-                sorfByName(request, response);
-                break;
+
             default:
                 listCustomer(request, response);
 
@@ -94,7 +95,7 @@ public class CustomerServlet extends HttpServlet {
     private void sorfByName(HttpServletRequest request, HttpServletResponse response) {
         List<Customer> customers = this.customerService.sorfByName();
         request.setAttribute("customer", customers);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("orderList.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("customer/customer.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -238,9 +239,9 @@ public class CustomerServlet extends HttpServlet {
         List<Customer> customers = this.customerService.findByPhone(phone);
         RequestDispatcher dispatcher;
         if (customers == null) {
-            dispatcher = request.getRequestDispatcher("orderList.jsp");
+            dispatcher = request.getRequestDispatcher("customer/customer.jsp");
         } else {
-            dispatcher = request.getRequestDispatcher("orderList.jsp");
+            dispatcher = request.getRequestDispatcher("customer/customer.jsp");
             request.setAttribute("customer", customers);
         }
         try {
@@ -250,5 +251,5 @@ public class CustomerServlet extends HttpServlet {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
+    }   //update có vấn đề
 }
