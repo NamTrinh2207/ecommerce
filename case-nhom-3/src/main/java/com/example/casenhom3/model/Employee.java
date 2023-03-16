@@ -1,7 +1,8 @@
 package com.example.casenhom3.model;
+
 import java.sql.Date;
 
-public class Employee extends User{
+public class Employee extends User {
     private long id;
     private String code;
     private String name;
@@ -12,6 +13,17 @@ public class Employee extends User{
     private String image;
 
     public Employee(String code, String name, Date date, String address, String email, String phone, String image) {
+        this.code = code;
+        this.name = name;
+        this.date = date;
+        this.address = address;
+        this.email = email;
+        this.phone = phone;
+        this.image = image;
+    }
+
+    public Employee(long id, String code, String name, Date date, String address, String email, String phone, String image) {
+        this.id = id;
         this.code = code;
         this.name = name;
         this.date = date;
