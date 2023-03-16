@@ -15,14 +15,5 @@ public class Check extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
             HttpSession session = request.getSession();
-            if (session.getAttribute("account")==null){
-                request.getRequestDispatcher("login/login.jsp").forward(request,response);
-            }else {
-                String action = request.getParameter("action");
-                switch (action){
-                    case "create":
-                        request.getRequestDispatcher("")
-                }
-            }
     }
 }
