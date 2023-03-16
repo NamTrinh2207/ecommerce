@@ -9,6 +9,7 @@ public class CreateDatabase {
     private static final String URL = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=yes&characterEncoding=UTF-8";
     private static final String userNguyen = "Nam";
     private static final String passNguyen = "Anhnam220797anhnam";
+
     public static Connection getConnection() {
         Connection connection = null;
         try {
