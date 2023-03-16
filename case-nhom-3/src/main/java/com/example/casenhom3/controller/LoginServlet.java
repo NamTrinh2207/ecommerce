@@ -13,7 +13,7 @@ public class LoginServlet extends HttpServlet {
 AccountDao accountDao=new AccountDao();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+doPost(request, response);
     }
 
     @Override
@@ -22,7 +22,8 @@ AccountDao accountDao=new AccountDao();
         String password=request.getParameter("password");
         AccountAdmin accountAdmin1=accountDao.checkLogin(username,password);
         if (accountAdmin1==null){
-            response.sendRedirect("/login/login.jsp");
+            request.setAttribute("mess","Đăng Nhập Sai Xin Hãy Đăng Nhập Lại");
+            request.getRequestDispatcher("/login/login.jsp").forward(request,response);
         }else {
             response.sendRedirect("/employees?page=1");
         }

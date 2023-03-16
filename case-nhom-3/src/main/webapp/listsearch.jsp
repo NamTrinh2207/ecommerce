@@ -125,14 +125,14 @@
                                     </ul>
                                     <form action="/SearchProductServlet" method="post" class="form-inline my-2 my-lg-0">
                                         <div class="input-group input-group-sm">
-                                            <input value="${txtst}" name="txt" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
+                                            <input  name="txt" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
                                             <div class="input-group-append">
                                                 <button type="submit" class="btn btn-secondary btn-number">
                                                     <i class="fa fa-search"></i>
                                                 </button>
                                             </div>
                                         </div>
-                                        <a class="btn btn-danger btn-sm ml-3" href="/login/cart.jsp">
+                                        <a class="btn btn-danger btn-sm ml-3" href="show">
                                             <i class="fa fa-shopping-cart"></i> Cart
                                             <span class="badge badge-light">3</span>
                                         </a>
@@ -233,7 +233,7 @@
                         <div class="title">
                             <h2> THỂ LOẠI</h2>
                             <ul class="categiri">
-                                <li class="active"><a href="#">DANH MỤC</a></li>
+                                <li class="active"><a href="/HomeServlet">Về Trang Chủ</a></li>
                                 <li><a href="#electrolic">Thiết bị điện tử</a></li>
                                 <li><a href="#shoes">Sức khỏe & làm đẹp</a></li>
                                 <li><a href="#men">Thời trang nam</a></li>
@@ -247,9 +247,9 @@
                 </div>
                 <%--kkkkkkkk--%>
                 <div id="shoes" class="shoes-bg">
-                    <h3>Sản Phẩm</h3>
+                    <h3>Sản Phẩm Bạn Tìm</h3>
                     <div class="row">
-                        <c:forEach items="${product}" var="p">
+                        <c:forEach items="${list}" var="p">
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                                 <div class="shoes-box">
                                     <i><img src="${p.getProductImage()}"/></i>

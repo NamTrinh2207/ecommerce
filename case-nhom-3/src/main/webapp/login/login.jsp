@@ -103,13 +103,14 @@
       <img src="https://www.tutorialrepublic.com/examples/images/avatar.png" alt="Avatar">
     </div>
     <div class="form-group">
+      <p class="alert-danger">${mess}</p>
       <input type="text" class="form-control input-lg" name="username" placeholder="Username" required="required">
     </div>
     <div class="form-group">
       <input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
     </div>
     <div class="form-group">
-      <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Sign in</button>
+      <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">login</button>
     </div>
     <p class="hint-text">Don't have an account? <a href="signup.jsp">Sign up here</a></p>
   </form>

@@ -15,7 +15,7 @@ public class ProductDAO implements IEcommerce<Product> {
     private final String INSERT_PRODUCT = "insert into product(code, name, price, img, describee) value(?,?,?,?,?);";
     private final String UPDATE_PRODUCT = "update product set code=?, name=?, price=?,img=?,describee=? where id = ?;";
     private final String DELETE_PRODUCT = "delete from product where id = ?;";
-    private final String FIND_BY_NAME = "select id,code,name,price,img,describee from product where name " +
+    private final String FIND_BY_NAME = "select id,productCode,productName,productPrice,productImage,productDescribe from product where productName " +
             "like concat('%' , ? , '%') ;";
 
     private final String FIND_PRODUCT_HAVE_MAX_PRICE = "select * from product where price >= all(select max(price) from product);";
