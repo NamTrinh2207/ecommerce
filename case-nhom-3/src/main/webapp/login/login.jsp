@@ -59,7 +59,7 @@
                                 <form action="<c:url value="/login"/>" method="post">
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form2Example11">Tài khoản</label>
-                                        <input type="text" id="form2Example11" name="username" class="form-control"
+                                        <input type="email" id="form2Example11" name="username" class="form-control"
                                                placeholder="Phone number or email address"/>
                                     </div>
 
@@ -78,7 +78,7 @@
                                     <div class="d-flex align-items-center justify-content-center pb-4">
                                         <p class="mb-0 me-2">Bạn chưa có tài khoản ?</p>
                                         <button type="button" class="btn btn-outline-danger"><a
-                                                style="text-decoration: none; font-size: 16px" href="/login/signup.jsp">Tạo tài
+                                                style="text-decoration: none; font-size: 16px" href="signup.jsp">Tạo tài
                                             khoản
                                         </a></button>
                                     </div>
@@ -101,7 +101,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
 </section>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -112,20 +111,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-=======
-    <div class="form-group">
-      <p class="alert-danger">${mess}</p>
-      <input type="text" class="form-control input-lg" name="username" placeholder="Username" required="required">
-    </div>
-    <div class="form-group">
-      <input type="password" class="form-control input-lg" name="password" placeholder="Password" required="required">
-    </div>
-    <div class="form-group">
-      <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">login</button>
-    </div>
-    <p class="hint-text">Don't have an account? <a href="signup.jsp">Sign up here</a></p>
-  </form>
-</div>
->>>>>>> doan
 </body>
 </html>

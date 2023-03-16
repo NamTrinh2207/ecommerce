@@ -26,8 +26,8 @@ public class OrderServiceImpl implements OrderService
             long order_id = rs.getLong("id");
             Date orderDate = rs.getDate("orderDate");
             int orderStatus = rs.getInt("status");
-            long customer_id = rs.getLong("customer_id");
-            long employee_id = rs.getLong("employee_id");
+            Long customer_id = rs.getLong("customer_id");
+            Long employee_id = rs.getLong("employee_id");
             Customer customer = new Customer(customer_id);
             Employee employee = new Employee(employee_id);
             Orders order = new Orders(order_id, customer, employee,orderDate, orderStatus);

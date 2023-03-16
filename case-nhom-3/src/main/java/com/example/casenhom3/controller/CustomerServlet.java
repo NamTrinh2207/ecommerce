@@ -32,31 +32,12 @@ public class CustomerServlet extends HttpServlet {
                 formEdit(request, response);
                 break;
             case "delete":
-                deleteCustomer(request, response);
+                formDelete(request, response);
                 break;
-            case "view":
-                viewCustomer(request, response);
             default:
                 listCustomer(request, response);
 
         }
-    }
-
-    private void viewCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        int id = Integer.parseInt(request.getParameter("id"));
-        Customer customer = this.customerService.findById(id);
-        if (customer == null) {
-            response.sendRedirect("customer/customer.jsp");
-        } else {
-            RequestDispatcher dispatcher = request.getRequestDispatcher("customer/view.jsp");
-            request.setAttribute("customer", customer);
-            try {
-                dispatcher.forward(request, response);
-            } catch (ServletException e) {
-                throw new RuntimeException(e);
-            }
-        }
-
     }
 
     @Override
@@ -82,7 +63,7 @@ public class CustomerServlet extends HttpServlet {
             case "search":
                 findCustomerByPhone(request, response);
                 break;
-            case "sorf":
+            case "sorf" :
                 sorfByName(request, response);
                 break;
             default:
@@ -94,7 +75,7 @@ public class CustomerServlet extends HttpServlet {
     private void sorfByName(HttpServletRequest request, HttpServletResponse response) {
         List<Customer> customers = this.customerService.sorfByName();
         request.setAttribute("customer", customers);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("orderList.jsp");
+        RequestDispatcher dispatcher =  request.getRequestDispatcher("orderList.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -110,7 +91,7 @@ public class CustomerServlet extends HttpServlet {
         try {
             List<Customer> customers = this.customerService.findAll();
             request.setAttribute("customer", customers);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("customer/customer.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("orderList.jsp");
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
@@ -118,7 +99,7 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void formCreate(HttpServletRequest request, HttpServletResponse response) {
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("customer/create.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("create.jsp");
         try {
             requestDispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
@@ -133,7 +114,7 @@ public class CustomerServlet extends HttpServlet {
         if (customer == null) {
             dispatcher = request.getRequestDispatcher("/CustomerServlet");
         } else {
-            dispatcher = request.getRequestDispatcher("customer/edit.jsp");
+            dispatcher = request.getRequestDispatcher("edit.jsp");
         }
         try {
             dispatcher.forward(request, response);
@@ -150,7 +131,7 @@ public class CustomerServlet extends HttpServlet {
             dispatcher = request.getRequestDispatcher("/CustomerServlet");
         } else {
             request.setAttribute("customer", customer);
-            dispatcher = request.getRequestDispatcher("customer/delete.jsp");
+            dispatcher = request.getRequestDispatcher("delete.jsp");
         }
         try {
             dispatcher.forward(request, response);
@@ -171,7 +152,7 @@ public class CustomerServlet extends HttpServlet {
         Customer customer = new Customer(id, code, name, date, address, email, phone);
         this.customerService.save(customer);
         id++;
-        RequestDispatcher dispatcher = request.getRequestDispatcher("customer/create.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("create.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
@@ -206,7 +187,7 @@ public class CustomerServlet extends HttpServlet {
             customer.setEmail(email);
             customer.setPhone(phone);
             this.customerService.update(id, customer);
-            dispatcher = request.getRequestDispatcher("customer/edit.jsp");
+            dispatcher = request.getRequestDispatcher("edit.jsp");
             request.setAttribute("customer", customer);
         }
         try {

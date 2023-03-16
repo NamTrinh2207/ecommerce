@@ -157,8 +157,13 @@ public class EmployeeServlet extends HttpServlet {
     }
 
     private void deleteEmployee(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("id"));
-        iEcommerce.delete(id);
+        try {
+            int id = Integer.parseInt(request.getParameter("id"));
+            iEcommerce.delete(id);
+            response.sendRedirect("http://localhost:8080/employees");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void editEmployee(HttpServletRequest request, HttpServletResponse response) throws ParseException {

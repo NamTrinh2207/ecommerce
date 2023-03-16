@@ -17,7 +17,7 @@ public class HomePageServlet extends HttpServlet {
     ProductDAO productDAO=new ProductDAO();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request,response);
+doPost(request,response);
     }
 
     @Override
