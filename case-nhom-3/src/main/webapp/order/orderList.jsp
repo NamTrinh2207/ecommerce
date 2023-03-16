@@ -238,7 +238,7 @@
                       <input type='text' class="form-control" data-provide="datepicker" name="endDate" placeholder="Đến ngày" style='width: 300px;' > <br>
                         <div class="search-box">
                             <i class="material-icons">&#xE8B6;</i>
-                            <input name="name" type="text" class="form-control" placeholder="Tìm kiếm hóa đơn">
+                            <input  type="submit" class="form-control" placeholder="Tìm kiếm hóa đơn">
                         </div>
                     </div>
 
@@ -257,8 +257,8 @@
                 <c:forEach items="${requestScope.orders}" var="order">
                     <tr>
                         <td><c:out value="${order.id}"/></td>
-                        <td><c:out value="${order.customer_id}"/></td>
-                        <td><c:out value="${order.employee_id}"/></td>
+                        <td><c:out value="${order.customer_id.id}"/></td>
+                        <td><c:out value="${order.employee_id.id}"/></td>
                         <td><fmt:formatDate value="${order.orderDate}" type="date" pattern="dd-MM-yyyy"/></td>
                     </tr>
                 </c:forEach>

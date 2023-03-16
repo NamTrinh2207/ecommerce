@@ -63,7 +63,7 @@ public class OrderServlet extends HttpServlet
             String startDate = request.getParameter("startDate");
             String endDate = request.getParameter("endDate");
 
-            SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+            SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
             Date start = new Date(dateFormat.parse(startDate).getTime());
             Date end = new Date(dateFormat.parse(endDate).getTime());
             List<Order> orderList = orderService.findOrderByDate(start, end);
