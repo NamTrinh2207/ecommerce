@@ -4,6 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/model/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32.xml" afterDir="false" />
@@ -48,6 +52,43 @@
       <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/signup.jsp" afterDir="false" />
     </list>
+=======
+    <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="" />
+>>>>>>> tuong
+=======
+=======
+>>>>>>> 9c069ec8a25178c84d4eb0411b8420450241d309
+    <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/HomePageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_3_2023_12_23_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_3_2023_12_23_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_12_50_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_12_50_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_12_50_AM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_12_50_AM__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_08_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_08_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_09_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_09_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_8_02_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_8_02_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_8_19_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_8_19_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_9_41_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_9_41_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_9_41_AM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_9_41_AM__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_2023_9_40_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_2023_9_40_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+    <list default="true" id="ef07a0c9-4cff-4f45-93b0-b5a7ae2cf895" name="Changes" comment="">
+<<<<<<< HEAD
+>>>>>>> tuong
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/CustomerServlet.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/index.jsp" afterDir="false" />
+>>>>>>> 9c069ec8a25178c84d4eb0411b8420450241d309
+=======
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/customer/customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/customer/customer.jsp" afterDir="false" />
+>>>>>>> tuong
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +122,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="nam" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -273,4 +314,48 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
+<<<<<<< HEAD
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/CustomerServlet.java</url>
+          <line>239</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/DAO/CustomerDAO.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/DAO/CustomerDAO.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/DAO/CustomerDAO.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/DAO/CustomerDAO.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/DAO/CustomerDAO.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/DAO/CustomerDAO.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+=======
+>>>>>>> 9c069ec8a25178c84d4eb0411b8420450241d309
 </project>

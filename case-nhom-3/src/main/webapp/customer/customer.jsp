@@ -253,13 +253,13 @@
     <div class="table-wrapper">
       <div class="table-title">
         <div class="row">
-          <div class="col-sm-8"><h2>EMPLOYEES <b>LIST</b></h2></div>
+          <div class="col-sm-8"><h2>CUSTOMER <b>LIST</b></h2></div>
         </div>
         <form action="/CustomerServlet?action=search" method="post">
           <div class="col-sm-4 float-right">
             <div class="search-box">
               <i class="material-icons">&#xE8B6;</i>
-              <input name="name" type="text" class="form-control" placeholder="Search&hellip;">
+              <input name="phone" type="text" class="form-control" placeholder="phone&hellip;">
             </div>
           </div>
         </form>
@@ -270,9 +270,14 @@
           <div class="hint-text"><a href="<c:url value="/CustomerServlet?action=create"/>" class="page-link">Thêm
             Khách hàng</a></div>
         </div>
-        <c:forEach begin="${1}" end="${requestScope.num}" var="i">
-          <a class="${i==page?"active":""}" href="<c:url value="/CustomerServlet?page=${i}"/>">${i}</a>
-        </c:forEach>
+        <div class="clearfix mb-3">
+          <div class="hint-text"><a href="<c:url value="/CustomerServlet?action=sorf"/>" class="page-link">Sắp xếp
+            Khách hàng</a></div>
+        </div>
+
+<%--        <c:forEach begin="${1}" end="${requestScope.num}" var="i">--%>
+<%--          <a class="${i==page?"active":""}" href="<c:url value="/CustomerServlet?page=${i}"/>">${i}</a>--%>
+<%--        </c:forEach>--%>
       </div>
       <table class="table table-striped table-hover table-bordered">
         <thead>

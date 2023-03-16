@@ -78,7 +78,7 @@
                                     <div class="d-flex align-items-center justify-content-center pb-4">
                                         <p class="mb-0 me-2">Bạn chưa có tài khoản ?</p>
                                         <button type="button" class="btn btn-outline-danger"><a
-                                                style="text-decoration: none; font-size: 16px" href="signup.jsp">Tạo tài
+                                                style="text-decoration: none; font-size: 16px" href="/login/signup.jsp">Tạo tài
                                             khoản
                                         </a></button>
                                     </div>
