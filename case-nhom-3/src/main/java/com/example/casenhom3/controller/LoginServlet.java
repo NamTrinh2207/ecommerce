@@ -1,5 +1,4 @@
 package com.example.casenhom3.controller;
-
 import com.example.casenhom3.model.Admin;
 import com.example.casenhom3.service.admin.AdminService;
 
@@ -16,7 +15,6 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("login/login.jsp").forward(request, response);
     }
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
