@@ -48,7 +48,7 @@ public class ProductServlet extends HttpServlet {
             response.sendRedirect("/productServlet");
             System.out.println("ko tim thay");
         } else {
-            RequestDispatcher dispatcher = request.getRequestDispatcher("order.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("orderList.jsp");
             request.setAttribute("product", products);
             dispatcher.forward(request, response);
             System.out.println("Tim thay");
@@ -101,7 +101,7 @@ public class ProductServlet extends HttpServlet {
 
     private void listProduct(HttpServletRequest request, HttpServletResponse response) {
         List<Product> products = this.productService.findAll();
-        RequestDispatcher dispatcher = request.getRequestDispatcher("order.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("orderList.jsp");
         request.setAttribute("product", products);
         try {
             dispatcher.forward(request, response);

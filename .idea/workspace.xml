@@ -9,6 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="" />
+=======
     <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Tomcat_8_5_86.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
@@ -26,6 +29,7 @@
       <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/login.jsp" afterDir="false" />
     </list>
+>>>>>>> doan
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,11 +56,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+<<<<<<< HEAD
+=======
         <option value="Jsp File" />
+>>>>>>> doan
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="nam" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
@@ -98,7 +110,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2N2xpP6kj4oFZyy4wX0aDJ1bCrU" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -114,10 +126,19 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Module3/case-study-3&quot;,
+<<<<<<< HEAD
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+>>>>>>> doan
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -125,11 +146,14 @@
     ]
   }
 }</component>
+<<<<<<< HEAD
+=======
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Module3\case-study-3\case-nhom-3\src\main\webapp" />
     </key>
   </component>
+>>>>>>> doan
   <component name="RunManager">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -222,9 +246,14 @@
       <option name="presentableId" value="Default" />
       <updated>1678876161920</updated>
       <workItem from="1678876164965" duration="178000" />
+<<<<<<< HEAD
+      <workItem from="1678883085180" duration="126000" />
+      <workItem from="1678883229892" duration="11473000" />
+=======
       <workItem from="1678878342245" duration="73000" />
       <workItem from="1678880213453" duration="568000" />
       <workItem from="1678880796380" duration="17808000" />
+>>>>>>> doan
     </task>
     <servers />
   </component>

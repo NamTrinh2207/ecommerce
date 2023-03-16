@@ -14,7 +14,7 @@ public class EmployeeService implements IEmployeeService, SearchAndListByPage<Em
     private static final String SELECT_ALL_EMPLOYEES = "select * from employee";
     private static final String DELETE_EMPLOYEE = "delete from employee where id = ?;";
     private static final String UPDATE_EMPLOYEE = "update employee set code = ?,name = ?,date = ?,address = ?, email = ?, phone = ?, image=? where id = ?;";
-    private final String SEARCH_BY_NAME = "select id,code,name,date,address,email,phone,image from employee where name " +
+    private static final String SEARCH_BY_NAME = "select id,code,name,date,address,email,phone,image from employee where name " +
             "like concat('%' , ? ,'%') ;";
 
     @Override
