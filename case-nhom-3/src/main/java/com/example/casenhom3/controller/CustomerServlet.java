@@ -10,12 +10,11 @@ import java.io.IOException;
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "CustomerServlet", value = "/CustomerServlet")
 public class CustomerServlet extends HttpServlet {
-    private CustomerService customerService = new CustomerService();
+    private final CustomerService customerService = new CustomerService();
     private long id = 0;
 
     @Override
@@ -63,7 +62,7 @@ public class CustomerServlet extends HttpServlet {
             case "search":
                 findCustomerByPhone(request, response);
                 break;
-            case "sorf" :
+            case "sorf":
                 sorfByName(request, response);
                 break;
             default:
@@ -75,12 +74,10 @@ public class CustomerServlet extends HttpServlet {
     private void sorfByName(HttpServletRequest request, HttpServletResponse response) {
         List<Customer> customers = this.customerService.sorfByName();
         request.setAttribute("customer", customers);
-        RequestDispatcher dispatcher =  request.getRequestDispatcher("orderList.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("orderList.jsp");
         try {
             dispatcher.forward(request, response);
-        } catch (ServletException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
+        } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
         }
     }
@@ -226,9 +223,7 @@ public class CustomerServlet extends HttpServlet {
         }
         try {
             dispatcher.forward(request, response);
-        } catch (ServletException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
+        } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
         }
     }
