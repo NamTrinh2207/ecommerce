@@ -64,7 +64,7 @@
             <ul class="list-unstyled components">
 
                 <li class="active">
-                    <a href="/index.jsp">Trang chủ</a>
+                    <a href="/HomeServlet">Trang chủ</a>
                 </li>
                 <c:forEach items="${category}" var="p">
                     <li>
@@ -108,11 +108,11 @@
                                                                                      src="icon/5.png" alt="#"/> </a>
                                         </li>
                                         <li class="menu_iconb">
-                                            <a href="login/login.jsp">Đăng Xuất<img style="margin-left: 15px;"
-                                                                                    src="icon/6.png" alt="#"/></a>
+<%--                                            <a href="login/login.jsp">Đăng Xuất<img style="margin-left: 15px;"--%>
+<%--                                                                                    src="icon/6.png" alt="#"/></a>--%>
                                         </li>
                                         <li class="tytyu">
-                                            <a href="login/cart.jsp"> <img style="margin-right: 15px;" src="icon/2.png"
+                                            <a href="login/login.jsp"> <img style="margin-right: 15px;" src="icon/2.png"
                                                                            alt="#"/></a>
                                         </li>
                                         <li>
@@ -121,16 +121,16 @@
                                             </button>
                                         </li>
                                     </ul>
-                                    <form action="/SearchProductServlet" method="post" class="form-inline my-2 my-lg-0">
-                                        <div class="input-group input-group-sm">
-                                            <input value="${txtst}" name="txt" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
-                                            <div class="input-group-append">
-                                                <button type="submit" class="btn btn-secondary btn-number">
-                                                    <i class="fa fa-search"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
+<%--                                    <form action="/SearchProductServlet" method="post" class="form-inline my-2 my-lg-0">--%>
+<%--                                        <div class="input-group input-group-sm">--%>
+<%--                                            <input value="${txtst}" name="txt" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search...">--%>
+<%--                                            <div class="input-group-append">--%>
+<%--                                                <button type="submit" class="btn btn-secondary btn-number">--%>
+<%--                                                    <i class="fa fa-search"></i>--%>
+<%--                                                </button>--%>
+<%--                                            </div>--%>
+<%--                                        </div>--%>
+<%--                                    </form>--%>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@
                                             Sản <br>
                                             Phẩm</h1>
                                         <span>Hệ Thống Bán Hàng Lớn Nhất Việt Nam</span>
-                                        <a href="#">Mua Ngay</a>
+                                        <a href="login/login.jsp">Mua Hàng</a>
                                     </div>
                                 </div>
                                 <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
@@ -249,7 +249,7 @@
                                     <i><img src="${p.getProductImage()}"/></i>
                                     <h4><a type="" href="ProductServletInformation?pid=${p.getId()}">${p.getProductName()}</a> <span class="nolmal">${p.getProductPrice()}$</span></h4>
                                 </div>
-                                <a class="buynow" href="#">Mua Ngay</a>
+                                <a class="buynow" href="login/login.jsp">Mua Hàng</a>
                             </div>
 
 
@@ -276,7 +276,7 @@
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                 <div class="save_box">
                                     <h3>Đang Giảm 50%</h3>
-                                    <a href="#">Mua Ngay</a>
+                                    <a href="login/login.jsp">Mua Hàng</a>
                                 </div>
                             </div>
                         </div>
@@ -319,7 +319,7 @@
                                         <li>
                                             <a href="https://www.google.com/maps/place/CodeGym/@21.0357101,105.7660288,17z/data=!4m14!1m7!3m6!1s0x313454b9444c676b:0xe713200541b7456d!2sCodeGym!8m2!3d21.0357101!4d105.7682175!16s%2Fg%2F11dxrrzx7t!3m5!1s0x313454b9444c676b:0xe713200541b7456d!8m2!3d21.0357101!4d105.7682175!16s%2Fg%2F11dxrrzx7t"><img
                                                     src="icon/loc.png" alt="#"/></a>Lô 02/MonCity
-                                            <br>uk
+                                            <br>
                                         </li>
                                         <li>
                                             <a href="#"><img src="icon/call.png" alt="#"/></a>+12586954775
@@ -340,8 +340,8 @@
                                         <li class="active"><a href="#">Tài Khoản</a></li>
                                         <li><a href="#">Yêu Thích</a></li>
                                         <li><a href="#">Giỏ Hàng</a></li>
-                                        <li><a href="#">Đăng Xuất</a></li>
-                                        <li><a href="#">Đăng Nhập</a></li>
+<%--                                        <li><a href="#">Đăng Xuất</a></li>--%>
+                                        <li><a href="login/login.jsp">Đăng Nhập</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -352,8 +352,8 @@
                                         <li class="active"><a href="#">Tài Khoản</a></li>
                                         <li><a href="#">Yêu Thích</a></li>
                                         <li><a href="#">Giỏ Hàng</a></li>
-                                        <li><a href="#"> Đăng Xuất</a></li>
-                                        <li><a href="#">Đăng Nhập</a></li>
+<%--                                        <li><a href="#"> Đăng Xuất</a></li>--%>
+                                        <li><a href="login/login.jsp">Đăng Nhập</a></li>
                                     </ul>
                                 </div>
                             </div>

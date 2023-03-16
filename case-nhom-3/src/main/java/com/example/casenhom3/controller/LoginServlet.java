@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
             } else if (admin1.getRole() == 2) {
                 request.getRequestDispatcher("/CustomerServlet").forward(request, response);
             } else {
-                request.getRequestDispatcher("/index.jsp").forward(request, response);
+                request.getRequestDispatcher("/HomePageServlet").forward(request, response);
             }
         }
     }
