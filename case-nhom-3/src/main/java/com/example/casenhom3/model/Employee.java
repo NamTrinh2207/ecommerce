@@ -2,7 +2,7 @@ package com.example.casenhom3.model;
 
 import java.sql.Date;
 
-public class Employee extends Person{
+public class Employee extends Person {
     private String image;
 
     public Employee(String image) {
@@ -21,6 +21,10 @@ public class Employee extends Person{
     public Employee(String code, String name, Date date, String address, String email, String phone, String image) {
         super(code, name, date, address, email, phone);
         this.image = image;
+    }
+
+    public Employee(String code, String name, Date date, String address, String email, String phone) {
+        super(code, name, date, address, email, phone);
     }
 
     public String getImage() {

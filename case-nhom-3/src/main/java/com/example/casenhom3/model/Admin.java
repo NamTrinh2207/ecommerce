@@ -4,13 +4,17 @@ public class Admin {
     private String username, password;
     private int role;
 
+    public Admin(int role) {
+        this.role = role;
+    }
+
     public Admin() {
     }
 
     public Admin(String username, String password, int role) {
         this.username = username;
         this.password = password;
-        this.role = role;
+        this.role = 1;
     }
 
     public String getUsername() {
