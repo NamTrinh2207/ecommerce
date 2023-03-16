@@ -253,7 +253,7 @@
     <div class="table-wrapper">
       <div class="table-title">
         <div class="row">
-          <div class="col-sm-8"><h2>EMPLOYEES <b>LIST</b></h2></div>
+          <div class="col-sm-8"><h2>CUSTOMER <b>LIST</b></h2></div>
         </div>
         <form action="/CustomerServlet?action=search" method="post">
           <div class="col-sm-4 float-right">
