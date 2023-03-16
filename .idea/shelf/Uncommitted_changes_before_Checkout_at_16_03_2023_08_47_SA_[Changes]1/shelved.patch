@@ -1,0 +1,132 @@
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	
++++ /dev/null	
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/case-study-3.iml" filepath="$PROJECT_DIR$/.idea/case-study-3.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/dataSources.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DataSourceManagerImpl\" format=\"xml\" multifile-model=\"true\">\r\n    <data-source source=\"LOCAL\" name=\"@localhost\" uuid=\"71fb2842-c4d4-4f32-9e2e-ebabb1fc6f5e\">\r\n      <driver-ref>mysql.8</driver-ref>\r\n      <synchronize>true</synchronize>\r\n      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>\r\n      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>\r\n      <working-dir>$ProjectFileDir$</working-dir>\r\n    </data-source>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.xml b/.idea/dataSources.xml
+--- a/.idea/dataSources.xml	
++++ b/.idea/dataSources.xml	
+@@ -1,7 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+-    <data-source source="LOCAL" name="@localhost" uuid="71fb2842-c4d4-4f32-9e2e-ebabb1fc6f5e">
++    <data-source source="LOCAL" name="@localhost" uuid="bde3590e-d670-43e3-9ea9-d64837427726">
+       <driver-ref>mysql.8</driver-ref>
+       <synchronize>true</synchronize>
+       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+Index: .idea/modules/case-nhom-3.main.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module external.linked.project.id=\"case-nhom-3:main\" external.linked.project.path=\"$MODULE_DIR$/../../case-nhom-3\" external.root.project.path=\"$MODULE_DIR$/../../case-nhom-3\" external.system.id=\"GRADLE\" external.system.module.group=\"com.example\" external.system.module.type=\"sourceSet\" external.system.module.version=\"1.0-SNAPSHOT\" type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"FacetManager\">\r\n    <facet type=\"web\" name=\"Web Gradle : case-nhom-3-1.0-SNAPSHOT.war\">\r\n      <configuration>\r\n        <descriptors>\r\n          <deploymentDescriptor name=\"web.xml\" url=\"file://$MODULE_DIR$/../../case-nhom-3/src/main/webapp/WEB-INF/web.xml\" />\r\n        </descriptors>\r\n        <webroots>\r\n          <root url=\"file://$MODULE_DIR$/../../case-nhom-3/src/main/webapp\" relative=\"/\" />\r\n        </webroots>\r\n        <sourceRoots>\r\n          <root url=\"file://$MODULE_DIR$/../../case-nhom-3/src/main/java\" />\r\n        </sourceRoots>\r\n      </configuration>\r\n    </facet>\r\n  </component>\r\n  <component name=\"NewModuleRootManager\">\r\n    <output url=\"file://$MODULE_DIR$/../../case-nhom-3/build/classes/java/main\" />\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$/../../case-nhom-3/src/main\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/../../case-nhom-3/src/main/java\" isTestSource=\"false\" />\r\n    </content>\r\n    <content url=\"file://$MODULE_DIR$/../../case-nhom-3/src/main\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/../../case-nhom-3/src/main/java\" isTestSource=\"false\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n    <orderEntry type=\"library\" scope=\"PROVIDED\" name=\"Gradle: javax.servlet:javax.servlet-api:4.0.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: javax.servlet:jstl:1.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: com.mysql:mysql-connector-j:8.0.32\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: com.google.protobuf:protobuf-java:3.21.9\" level=\"project\" />\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules/case-nhom-3.main.iml b/.idea/modules/case-nhom-3.main.iml
+--- a/.idea/modules/case-nhom-3.main.iml	
++++ b/.idea/modules/case-nhom-3.main.iml	
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<module external.linked.project.id="case-nhom-3:main" external.linked.project.path="$MODULE_DIR$/../../case-nhom-3" external.root.project.path="$MODULE_DIR$/../../case-nhom-3" external.system.id="GRADLE" external.system.module.group="com.example" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
++<module version="4">
+   <component name="FacetManager">
+     <facet type="web" name="Web Gradle : case-nhom-3-1.0-SNAPSHOT.war">
+       <configuration>
+@@ -15,20 +15,4 @@
+       </configuration>
+     </facet>
+   </component>
+-  <component name="NewModuleRootManager">
+-    <output url="file://$MODULE_DIR$/../../case-nhom-3/build/classes/java/main" />
+-    <exclude-output />
+-    <content url="file://$MODULE_DIR$/../../case-nhom-3/src/main">
+-      <sourceFolder url="file://$MODULE_DIR$/../../case-nhom-3/src/main/java" isTestSource="false" />
+-    </content>
+-    <content url="file://$MODULE_DIR$/../../case-nhom-3/src/main">
+-      <sourceFolder url="file://$MODULE_DIR$/../../case-nhom-3/src/main/java" isTestSource="false" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-    <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.servlet:javax.servlet-api:4.0.1" level="project" />
+-    <orderEntry type="library" name="Gradle: javax.servlet:jstl:1.2" level="project" />
+-    <orderEntry type="library" name="Gradle: com.mysql:mysql-connector-j:8.0.32" level="project" />
+-    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:3.21.9" level="project" />
+-  </component>
+ </module>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <bytecodeTargetLevel>\r\n      <module name=\"case-nhom-3\" target=\"1.8\" />\r\n      <module name=\"case-nhom-3.main\" target=\"1.8\" />\r\n      <module name=\"case-nhom-3.test\" target=\"1.8\" />\r\n    </bytecodeTargetLevel>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	
++++ b/.idea/compiler.xml	
+@@ -3,8 +3,6 @@
+   <component name="CompilerConfiguration">
+     <bytecodeTargetLevel>
+       <module name="case-nhom-3" target="1.8" />
+-      <module name="case-nhom-3.main" target="1.8" />
+-      <module name="case-nhom-3.test" target="1.8" />
+     </bytecodeTargetLevel>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/modules/case-nhom-3.test.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module external.linked.project.id=\"case-nhom-3:test\" external.linked.project.path=\"$MODULE_DIR$/../../case-nhom-3\" external.root.project.path=\"$MODULE_DIR$/../../case-nhom-3\" external.system.id=\"GRADLE\" external.system.module.group=\"com.example\" external.system.module.type=\"sourceSet\" external.system.module.version=\"1.0-SNAPSHOT\" type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" LANGUAGE_LEVEL=\"JDK_1_8\">\r\n    <output-test url=\"file://$MODULE_DIR$/../../case-nhom-3/build/classes/java/test\" />\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$/../../case-nhom-3/src/test\" />\r\n    <content url=\"file://$MODULE_DIR$/../../case-nhom-3/src/test\" />\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n    <orderEntry type=\"module\" module-name=\"case-nhom-3.main\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: javax.servlet:jstl:1.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: org.junit.jupiter:junit-jupiter-api:5.9.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: com.mysql:mysql-connector-j:8.0.32\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: org.junit.platform:junit-platform-commons:1.9.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: org.opentest4j:opentest4j:1.2.0\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"PROVIDED\" name=\"Gradle: org.apiguardian:apiguardian-api:1.1.2\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"Gradle: com.google.protobuf:protobuf-java:3.21.9\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"RUNTIME\" name=\"Gradle: org.junit.jupiter:junit-jupiter-engine:5.9.1\" level=\"project\" />\r\n    <orderEntry type=\"library\" scope=\"RUNTIME\" name=\"Gradle: org.junit.platform:junit-platform-engine:1.9.1\" level=\"project\" />\r\n  </component>\r\n  <component name=\"TestModuleProperties\" production-module=\"case-nhom-3.main\" />\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules/case-nhom-3.test.iml b/.idea/modules/case-nhom-3.test.iml
+--- a/.idea/modules/case-nhom-3.test.iml	
++++ b/.idea/modules/case-nhom-3.test.iml	
+@@ -1,22 +1,4 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<module external.linked.project.id="case-nhom-3:test" external.linked.project.path="$MODULE_DIR$/../../case-nhom-3" external.root.project.path="$MODULE_DIR$/../../case-nhom-3" external.system.id="GRADLE" external.system.module.group="com.example" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+-    <output-test url="file://$MODULE_DIR$/../../case-nhom-3/build/classes/java/test" />
+-    <exclude-output />
+-    <content url="file://$MODULE_DIR$/../../case-nhom-3/src/test" />
+-    <content url="file://$MODULE_DIR$/../../case-nhom-3/src/test" />
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-    <orderEntry type="module" module-name="case-nhom-3.main" />
+-    <orderEntry type="library" name="Gradle: javax.servlet:jstl:1.2" level="project" />
+-    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.9.1" level="project" />
+-    <orderEntry type="library" name="Gradle: com.mysql:mysql-connector-j:8.0.32" level="project" />
+-    <orderEntry type="library" name="Gradle: org.junit.platform:junit-platform-commons:1.9.1" level="project" />
+-    <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.2.0" level="project" />
+-    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apiguardian:apiguardian-api:1.1.2" level="project" />
+-    <orderEntry type="library" name="Gradle: com.google.protobuf:protobuf-java:3.21.9" level="project" />
+-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.9.1" level="project" />
+-    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.9.1" level="project" />
+-  </component>
++<module version="4">
+   <component name="TestModuleProperties" production-module="case-nhom-3.main" />
+ </module>
+\ No newline at end of file
