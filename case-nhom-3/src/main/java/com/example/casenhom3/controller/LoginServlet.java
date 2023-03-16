@@ -1,5 +1,4 @@
 package com.example.casenhom3.controller;
-
 import com.example.casenhom3.model.Admin;
 import com.example.casenhom3.service.admin.AdminService;
 
@@ -14,23 +13,10 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-<<<<<<< HEAD
-
-        request.getRequestDispatcher("login/login.jsp").forward(request, response);
-
-doPost(request, response);
-
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-=======
         request.getRequestDispatcher("login/login.jsp").forward(request, response);
     }
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
->>>>>>> e896347871d4a9fd40567d62ca1f9d3199315fe3
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         Admin admin1 = admin.checkLogin(username, password);
@@ -47,20 +33,6 @@ doPost(request, response);
             } else {
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
             }
-<<<<<<< HEAD
-
-
-        String username=request.getParameter("username");
-        String password=request.getParameter("password");
-        AccountAdmin accountAdmin1=accountDao.checkLogin(username,password);
-        if (accountAdmin1==null){
-            request.setAttribute("mess","Đăng Nhập Sai Xin Hãy Đăng Nhập Lại");
-            request.getRequestDispatcher("/login/login.jsp").forward(request,response);
-        }else {
-            response.sendRedirect("/employees?page=1");
-
-=======
->>>>>>> e896347871d4a9fd40567d62ca1f9d3199315fe3
         }
     }
 }
