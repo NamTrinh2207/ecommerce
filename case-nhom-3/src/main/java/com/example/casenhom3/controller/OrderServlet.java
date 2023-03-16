@@ -52,7 +52,6 @@ public class OrderServlet extends HttpServlet
             case "searchByDate":
                 searchOrderByDate(req, resp);
                 break;
-            case "searchById":
 
         }
     }
