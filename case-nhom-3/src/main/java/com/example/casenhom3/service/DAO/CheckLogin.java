@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CheckLogin {
-    private static final String SAVE_ACCOUNT="insert into  logincustomer(user, password) values (?,?);";
+    private static final String SAVE_ACCOUNT="insert into  admin(user, password,role) values (?,?,0);";
     private static final String checkLOg="select * from logincustomer where user = ? and password = ?;";
     Connection connection=null;
     PreparedStatement preparedStatement=null;

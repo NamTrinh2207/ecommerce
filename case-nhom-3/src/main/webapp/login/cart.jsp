@@ -103,7 +103,7 @@
                                 <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng thanh toán</strong>
                                     <h5 class="font-weight-bold">110 $</h5>
                                 </li>
-                            </ul><a href="buy" class="btn btn-dark rounded-pill py-2 btn-block">Mua hàng</a>
+                            </ul><a href="/login/information.jsp" class="btn btn-dark rounded-pill py-2 btn-block">Mua hàng</a>
                         </div>
                     </div>
                 </div>

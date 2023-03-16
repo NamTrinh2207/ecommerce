@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/Check.java" beforeDir="false" />
@@ -16,14 +17,35 @@
     <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="" />
 >>>>>>> tuong
 =======
+=======
+>>>>>>> 9c069ec8a25178c84d4eb0411b8420450241d309
     <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/HomePageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_3_2023_12_23_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_3_2023_12_23_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_12_50_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_12_50_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_12_50_AM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_12_50_AM__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_08_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_08_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_09_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_09_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_8_02_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_8_02_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_8_19_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_8_19_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_9_41_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_9_41_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_9_41_AM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_9_41_AM__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_2023_9_40_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_2023_9_40_AM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
 =======
     <list default="true" id="ef07a0c9-4cff-4f45-93b0-b5a7ae2cf895" name="Changes" comment="">
 >>>>>>> tuong
       <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/CustomerServlet.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/index.jsp" afterDir="false" />
+>>>>>>> 9c069ec8a25178c84d4eb0411b8420450241d309
     </list>
->>>>>>> tuong
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +79,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="nam" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -229,14 +251,6 @@
       <workItem from="1678883229892" duration="11473000" />
       <workItem from="1678945289677" duration="363000" />
       <workItem from="1678945697726" duration="3065000" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      <workItem from="1678950299519" duration="5400000" />
->>>>>>> tuong
-=======
-      <workItem from="1678950299519" duration="9583000" />
->>>>>>> tuong
     </task>
     <servers />
   </component>
@@ -257,6 +271,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -298,4 +313,6 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+=======
+>>>>>>> 9c069ec8a25178c84d4eb0411b8420450241d309
 </project>
