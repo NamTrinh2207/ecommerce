@@ -1,4 +1,5 @@
 package com.example.casenhom3.controller;
+
 import com.example.casenhom3.model.Admin;
 import com.example.casenhom3.service.admin.AdminService;
 
@@ -10,10 +11,12 @@ import java.io.IOException;
 @WebServlet(name = "LoginServlet", value = "/login")
 public class LoginServlet extends HttpServlet {
     AdminService admin = new AdminService();
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("login/login.jsp").forward(request, response);
     }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
@@ -26,11 +29,11 @@ public class LoginServlet extends HttpServlet {
         } else {
             session.setAttribute("account", admin1);
             if (admin1.getRole() == 1) {
-                request.getRequestDispatcher("/employees?page=1").forward(request, response);
+                response.sendRedirect("/employees?page=1");
             } else if (admin1.getRole() == 2) {
-                request.getRequestDispatcher("/CustomerServlet").forward(request, response);
+                response.sendRedirect("/CustomerServlet");
             } else {
-                request.getRequestDispatcher("/HomePageServlet").forward(request, response);
+                response.sendRedirect("/HomePageServlet");
             }
         }
     }
