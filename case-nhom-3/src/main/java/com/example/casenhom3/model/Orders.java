@@ -2,24 +2,24 @@ package com.example.casenhom3.model;
 
 import java.sql.Date;
 
-public class Order {
+public class Orders {
     private long id;
     private Customer customer_id;
     private Employee employee_id;
     private Date orderDate;
     private int status;
 
-    public Order() {
+    public Orders() {
     }
 
-    public Order(long id, Customer customer_id, Employee employee_id, Date orderDate, int status) {
+    public Orders(long id, Customer customer_id, Employee employee_id, Date orderDate, int status) {
         this.id = id;
         this.customer_id = customer_id;
         this.employee_id = employee_id;
         this.orderDate = orderDate;
         this.status = status;
     }
-    public Order(long id, Customer customer_id, Employee employee_id, Date orderDate)
+    public Orders(long id, Customer customer_id, Employee employee_id, Date orderDate)
     {
         this.id = id;
         this.customer_id = customer_id;
@@ -27,12 +27,12 @@ public class Order {
         this.orderDate = orderDate;
         this.status = 2;
     }
-    public Order(Customer customer_id)
+    public Orders(Customer customer_id)
     {
         this.customer_id = customer_id;
     }
 
-    public Order(long id) {
+    public Orders(long id) {
         this.id = id;
     }
 

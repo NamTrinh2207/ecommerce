@@ -18,9 +18,9 @@ public class OrderServiceImpl implements OrderService
     }
 
     // 39.Hiển thị báo cáo bán hàng theo ngày
-    private List<Order> orderListResult(ResultSet rs) throws SQLException
+    private List<Orders> orderListResult(ResultSet rs) throws SQLException
     {
-        List<Order> orderList = new ArrayList<>();
+        List<Orders> orderList = new ArrayList<>();
         while (rs.next())
         {
             long order_id = rs.getLong("id");
@@ -30,7 +30,7 @@ public class OrderServiceImpl implements OrderService
             Long employee_id = rs.getLong("employee_id");
             Customer customer = new Customer(customer_id);
             Employee employee = new Employee(employee_id);
-            Order order = new Order(order_id, customer, employee,orderDate, orderStatus);
+            Orders order = new Orders(order_id, customer, employee,orderDate, orderStatus);
             orderList.add(order);
         }
         return orderList;
@@ -39,7 +39,7 @@ public class OrderServiceImpl implements OrderService
 
     // 70. Hiển thị danh sách đơn hàng
     @Override
-    public List<Order> findAll()
+    public List<Orders> findAll()
     {
         if (connection != null)
         {
@@ -94,7 +94,7 @@ public class OrderServiceImpl implements OrderService
                     String productDescribe = rs.getString("productDescribe");
                     int quantity = rs.getInt("quantity");
                     double amount = rs.getDouble("amount");
-                    Order order = new Order(rs.getLong("order_id"));
+                    Orders order = new Orders(rs.getLong("order_id"));
                     Product product = new Product(product_id,productCode, productName, productPrice, productImage,productDescribe);
                     OrderDetail orderDetail = new OrderDetail(id, order, product,quantity, amount);
                     return orderDetail;
@@ -117,7 +117,7 @@ public class OrderServiceImpl implements OrderService
     }
     // 72,78  Tìm kiếm đơn hàng theo khoảng thời gian
     @Override
-    public List<Order> findOrderByDate(Date start, Date end)
+    public List<Orders> findOrderByDate(Date start, Date end)
     {
         if (connection != null)
         {
@@ -148,7 +148,7 @@ public class OrderServiceImpl implements OrderService
         return null;
     }
     @Override
-    public Order findById(long orderId)
+    public Orders findById(long orderId)
     {
         if (connection != null)
         {
@@ -169,7 +169,7 @@ public class OrderServiceImpl implements OrderService
                     int status = rs.getInt("status");
                     Customer customer= new Customer(customer_id);
                     Employee employee = new Employee(employee_id);
-                    Order order = new Order(orderId,customer, employee,orderDate,status);
+                    Orders order = new Orders(orderId,customer, employee,orderDate,status);
                     return order;
                 }
             }
@@ -255,7 +255,7 @@ public class OrderServiceImpl implements OrderService
                     double sumAmount = rs.getDouble("amountSum");
 
                     Customer customer = new Customer(customerId,customerCode,customerName,customerDate, customerPlace, customerEmail, customerPhone);
-                    Order order = new Order(customer);
+                    Orders order = new Orders(customer);
                     OrderDetail orderDetail = new OrderDetail(order, sumAmount);
                     orderDetails.add(orderDetail);
                 }
@@ -278,7 +278,7 @@ public class OrderServiceImpl implements OrderService
     }
     // Tạo hóa đơn
     @Override
-    public void save(Order order)
+    public void save(Orders order)
     {
         if (connection != null)
         {
@@ -366,7 +366,7 @@ public class OrderServiceImpl implements OrderService
     }
 
     @Override
-    public void update(long id, Order order)
+    public void update(long id, Orders order)
     {
 
     }

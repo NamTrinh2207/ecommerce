@@ -1,6 +1,6 @@
 package com.example.casenhom3.controller;
 
-import com.example.casenhom3.model.Order;
+import com.example.casenhom3.model.Orders;
 import com.example.casenhom3.service.order.OrderService;
 import com.example.casenhom3.service.order.OrderServiceImpl;
 
@@ -66,7 +66,7 @@ public class OrderServlet extends HttpServlet
             SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
             Date start = new Date(dateFormat.parse(startDate).getTime());
             Date end = new Date(dateFormat.parse(endDate).getTime());
-            List<Order> orderList = orderService.findOrderByDate(start, end);
+            List<Orders> orderList = orderService.findOrderByDate(start, end);
             if (orderList == null)
             {
                 orderList = new ArrayList<>();
