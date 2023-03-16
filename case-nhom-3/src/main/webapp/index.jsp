@@ -132,10 +132,10 @@
                                                 </button>
                                             </div>
                                         </div>
-                                        <a class="btn btn-danger btn-sm ml-3" href="/login/cart.jsp">
-                                            <i class="fa fa-shopping-cart"></i> Cart
-                                            <span class="badge badge-light">3</span>
-                                        </a>
+<%--                                        <a class="btn btn-danger btn-sm ml-3" href="/login/cart.jsp">--%>
+<%--                                            <i class="fa fa-shopping-cart"></i> Cart--%>
+<%--                                            <span class="badge badge-light">3</span>--%>
+<%--                                        </a>--%>
                                     </form>
                                 </div>
                             </div>

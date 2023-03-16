@@ -1,9 +1,14 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Tomcat 8.5.86" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.86" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+  <configuration default="false" name="Tomcat 8.5.86" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.86" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="openjdk-19" nameIsGenerated="true">
     <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/HomeServlet" />
     <option name="UPDATING_POLICY" value="restart-server" />
     <deployment>
       <artifact name="Gradle : com.example : case-nhom-3-1.0-SNAPSHOT.war (exploded)">
+        <settings>
+          <option name="CONTEXT_PATH" value="" />
+        </settings>
+      </artifact>
+      <artifact name="Gradle : com.example : case-nhom-3-1.0-SNAPSHOT.war">
         <settings>
           <option name="CONTEXT_PATH" value="" />
         </settings>
