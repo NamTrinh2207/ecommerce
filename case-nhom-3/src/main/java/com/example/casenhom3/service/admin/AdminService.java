@@ -10,11 +10,11 @@ import java.sql.SQLException;
 
 public class AdminService {
     private static final String sql = "select * from admin where user = ? and password = ?";
-    Connection connection = null;
+    Connection connection = CreateDatabase.getConnection();
+    ;
 
     public Admin checkLogin(String user, String password) {
         try {
-            connection = CreateDatabase.getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, user);
             preparedStatement.setString(2, password);
