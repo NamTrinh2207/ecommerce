@@ -29,7 +29,6 @@ public class CategoryService implements ICategory {
     public void update(long id, Categories category) {
         categoriesDAO.update(id, category);
     }
-
     @Override
     public void delete(long id) {
         categoriesDAO.delete(id);
