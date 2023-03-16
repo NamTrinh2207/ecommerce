@@ -270,9 +270,14 @@
           <div class="hint-text"><a href="<c:url value="/CustomerServlet?action=create"/>" class="page-link">Thêm
             Khách hàng</a></div>
         </div>
-        <c:forEach begin="${1}" end="${requestScope.num}" var="i">
-          <a class="${i==page?"active":""}" href="<c:url value="/CustomerServlet?page=${i}"/>">${i}</a>
-        </c:forEach>
+        <div class="clearfix mb-3">
+          <div class="hint-text"><a href="<c:url value="/CustomerServlet?action=sorf"/>" class="page-link">Sắp xếp
+            Khách hàng</a></div>
+        </div>
+
+<%--        <c:forEach begin="${1}" end="${requestScope.num}" var="i">--%>
+<%--          <a class="${i==page?"active":""}" href="<c:url value="/CustomerServlet?page=${i}"/>">${i}</a>--%>
+<%--        </c:forEach>--%>
       </div>
       <table class="table table-striped table-hover table-bordered">
         <thead>
