@@ -18,6 +18,7 @@ build/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+connection/
 ### Eclipse ###
 .apt_generated
 .classpath
