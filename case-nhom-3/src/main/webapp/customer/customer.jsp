@@ -259,7 +259,7 @@
           <div class="col-sm-4 float-right">
             <div class="search-box">
               <i class="material-icons">&#xE8B6;</i>
-              <input name="name" type="text" class="form-control" placeholder="Search&hellip;">
+              <input name="phone" type="text" class="form-control" placeholder="phone&hellip;">
             </div>
           </div>
         </form>

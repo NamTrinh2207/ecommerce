@@ -37,6 +37,7 @@
 <<<<<<< HEAD
 =======
     <list default="true" id="ef07a0c9-4cff-4f45-93b0-b5a7ae2cf895" name="Changes" comment="">
+<<<<<<< HEAD
 >>>>>>> tuong
       <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/CustomerServlet.java" afterDir="false" />
 =======
@@ -45,6 +46,9 @@
       <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/index.jsp" afterDir="false" />
 >>>>>>> 9c069ec8a25178c84d4eb0411b8420450241d309
+=======
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/customer/customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/customer/customer.jsp" afterDir="false" />
+>>>>>>> tuong
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
