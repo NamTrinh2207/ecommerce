@@ -1,0 +1,1061 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"9fe73e8a-4814-4ecb-b177-36d2b41a8441\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/LoginServlet.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/LoginServlet.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/admin/AdminService.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/admin/AdminService.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/login.jsp\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/login.jsp\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ExternalProjectsData\">\r\n    <projectState path=\"$PROJECT_DIR$/case-nhom-3\">\r\n      <ProjectState />\r\n    </projectState>\r\n  </component>\r\n  <component name=\"ExternalProjectsManager\">\r\n    <system id=\"GRADLE\">\r\n      <state>\r\n        <projects_view>\r\n          <tree_state>\r\n            <expand />\r\n            <select />\r\n          </tree_state>\r\n        </projects_view>\r\n      </state>\r\n    </system>\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"nam\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitToolBoxStore\">\r\n    <option name=\"recentBranches\">\r\n      <RecentBranches>\r\n        <option name=\"branchesForRepo\">\r\n          <list>\r\n            <RecentBranchesForRepo>\r\n              <option name=\"branches\">\r\n                <list>\r\n                  <RecentBranch>\r\n                    <option name=\"branchName\" value=\"doan\" />\r\n                    <option name=\"lastUsedInstant\" value=\"1678876477\" />\r\n                  </RecentBranch>\r\n                  <RecentBranch>\r\n                    <option name=\"branchName\" value=\"dev\" />\r\n                    <option name=\"lastUsedInstant\" value=\"1678876476\" />\r\n                  </RecentBranch>\r\n                </list>\r\n              </option>\r\n              <option name=\"repositoryRootUrl\" value=\"file://$PROJECT_DIR$\" />\r\n            </RecentBranchesForRepo>\r\n          </list>\r\n        </option>\r\n      </RecentBranches>\r\n    </option>\r\n  </component>\r\n  <component name=\"LogFilters\">\r\n    <option name=\"FILTER_ERRORS\" value=\"false\" />\r\n    <option name=\"FILTER_WARNINGS\" value=\"false\" />\r\n    <option name=\"FILTER_INFO\" value=\"true\" />\r\n    <option name=\"FILTER_DEBUG\" value=\"true\" />\r\n    <option name=\"CUSTOM_FILTER\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2N2xpP6kj4oFZyy4wX0aDJ1bCrU\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\r\n    \"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"D:/Module3/case-study-3\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  },\r\n  \"keyToStringList\": {\r\n    \"DatabaseDriversLRU\": [\r\n      \"mysql\"\r\n    ]\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"Tomcat 8.5.86\" type=\"#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory\" factoryName=\"Local\" APPLICATION_SERVER_NAME=\"Tomcat 8.5.86\" ALTERNATIVE_JRE_ENABLED=\"false\" nameIsGenerated=\"true\">\r\n      <option name=\"UPDATING_POLICY\" value=\"restart-server\" />\r\n      <deployment>\r\n        <artifact name=\"Gradle : com.example : case-nhom-3-1.0-SNAPSHOT.war\">\r\n          <settings>\r\n            <option name=\"CONTEXT_PATH\" value=\"\" />\r\n          </settings>\r\n        </artifact>\r\n      </deployment>\r\n      <server-settings>\r\n        <option name=\"BASE_DIRECTORY_NAME\" value=\"52592f80-2c97-4a67-aacf-ca4a074cd2a5\" />\r\n      </server-settings>\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat\" />\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat Catalina\" />\r\n      <predefined_log_file id=\"Tomcat Manager\" />\r\n      <predefined_log_file id=\"Tomcat Host Manager\" />\r\n      <predefined_log_file id=\"Tomcat Localhost Access\" />\r\n      <RunnerSettings RunnerId=\"Debug\">\r\n        <option name=\"DEBUG_PORT\" value=\"59130\" />\r\n      </RunnerSettings>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Profile\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n        <option name=\"BuildArtifacts\" enabled=\"true\">\r\n          <artifact name=\"Gradle : com.example : case-nhom-3-1.0-SNAPSHOT.war\" />\r\n        </option>\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"9fe73e8a-4814-4ecb-b177-36d2b41a8441\" name=\"Changes\" comment=\"\" />\r\n      <created>1678876161920</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1678876161920</updated>\r\n      <workItem from=\"1678876164965\" duration=\"178000\" />\r\n      <workItem from=\"1678883085180\" duration=\"126000\" />\r\n      <workItem from=\"1678883229892\" duration=\"11473000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision c199a07510cd2d15d5bf2d8408a310becc6c08b2)
++++ b/.idea/workspace.xml	(date 1678944037392)
+@@ -5,10 +5,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/LoginServlet.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/admin/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/admin/AdminService.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/login.jsp" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/order/OrderServiceImpl.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -42,7 +43,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="nam" />
++        <entry key="$PROJECT_DIR$" value="nguyen" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -90,28 +91,28 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "last_opened_file_path": "D:/Module3/case-study-3",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
++    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;last_opened_file_path&quot;: &quot;D:/Module3/case-study-3&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   },
+-  "keyToStringList": {
+-    "DatabaseDriversLRU": [
+-      "mysql"
++  &quot;keyToStringList&quot;: {
++    &quot;DatabaseDriversLRU&quot;: [
++      &quot;mysql&quot;
+     ]
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager">
+     <configuration name="Tomcat 8.5.86" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.86" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+       <option name="UPDATING_POLICY" value="restart-server" />
+Index: case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.casenhom3.connection;\r\n\r\nimport java.sql.Connection;\r\nimport java.sql.DriverManager;\r\nimport java.sql.SQLException;\r\n\r\npublic class CreateDatabase {\r\n    private static final String DRIVER = \"com.mysql.cj.jdbc.Driver\";\r\n    private static final String URL = \"jdbc:mysql://localhost:3306/ecommerce?useUnicode=yes&characterEncoding=UTF-8\";\r\n    private static final String userNguyen = \"root\";\r\n    private static final String passNguyen = \"10061995\";\r\n    public static Connection getConnection() {\r\n        Connection connection = null;\r\n        try {\r\n            Class.forName(DRIVER);\r\n            connection = DriverManager.getConnection(URL, userNguyen, passNguyen);\r\n            System.out.println(\"connection successfully\");\r\n        } catch (SQLException | ClassNotFoundException e) {\r\n            e.printStackTrace();\r\n        }\r\n        return connection;\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java b/case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java
+--- a/case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java	(revision c199a07510cd2d15d5bf2d8408a310becc6c08b2)
++++ b/case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java	(date 1678943614048)
+@@ -8,7 +8,7 @@
+     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
+     private static final String URL = "jdbc:mysql://localhost:3306/ecommerce?useUnicode=yes&characterEncoding=UTF-8";
+     private static final String userNguyen = "root";
+-    private static final String passNguyen = "10061995";
++    private static final String passNguyen = "Nguyen251096*";
+     public static Connection getConnection() {
+         Connection connection = null;
+         try {
+Index: .idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<dataSource name=\"@localhost\">\r\n  <database-model serializer=\"dbm\" dbms=\"MYSQL\" family-id=\"MYSQL\" format-version=\"4.45\">\r\n    <root id=\"1\">\r\n      <DefaultCasing>lower/lower</DefaultCasing>\r\n      <DefaultEngine>InnoDB</DefaultEngine>\r\n      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>\r\n      <Grants>|root||root|localhost|ALTER|G\r\n|root||tuong2001||ALTER|G\r\n|root||root|localhost|ALTER ROUTINE|G\r\n|root||tuong2001||ALTER ROUTINE|G\r\n|root||root|localhost|APPLICATION_PASSWORD_ADMIN|G\r\n|root||tuong2001||APPLICATION_PASSWORD_ADMIN|G\r\n|root||mysql.infoschema|localhost|AUDIT_ABORT_EXEMPT|G\r\n|root||mysql.session|localhost|AUDIT_ABORT_EXEMPT|G\r\n|root||mysql.sys|localhost|AUDIT_ABORT_EXEMPT|G\r\n|root||root|localhost|AUDIT_ABORT_EXEMPT|G\r\n|root||tuong2001||AUDIT_ABORT_EXEMPT|G\r\n|root||root|localhost|AUDIT_ADMIN|G\r\n|root||tuong2001||AUDIT_ADMIN|G\r\n|root||mysql.session|localhost|AUTHENTICATION_POLICY_ADMIN|G\r\n|root||root|localhost|AUTHENTICATION_POLICY_ADMIN|G\r\n|root||tuong2001||AUTHENTICATION_POLICY_ADMIN|G\r\n|root||mysql.session|localhost|BACKUP_ADMIN|G\r\n|root||root|localhost|BACKUP_ADMIN|G\r\n|root||tuong2001||BACKUP_ADMIN|G\r\n|root||root|localhost|BINLOG_ADMIN|G\r\n|root||tuong2001||BINLOG_ADMIN|G\r\n|root||root|localhost|BINLOG_ENCRYPTION_ADMIN|G\r\n|root||tuong2001||BINLOG_ENCRYPTION_ADMIN|G\r\n|root||mysql.session|localhost|CLONE_ADMIN|G\r\n|root||root|localhost|CLONE_ADMIN|G\r\n|root||tuong2001||CLONE_ADMIN|G\r\n|root||mysql.session|localhost|CONNECTION_ADMIN|G\r\n|root||root|localhost|CONNECTION_ADMIN|G\r\n|root||tuong2001||CONNECTION_ADMIN|G\r\n|root||root|localhost|CREATE|G\r\n|root||tuong2001||CREATE|G\r\n|root||root|localhost|CREATE ROLE|G\r\n|root||tuong2001||CREATE ROLE|G\r\n|root||root|localhost|CREATE ROUTINE|G\r\n|root||tuong2001||CREATE ROUTINE|G\r\n|root||root|localhost|CREATE TABLESPACE|G\r\n|root||tuong2001||CREATE TABLESPACE|G\r\n|root||root|localhost|CREATE TEMPORARY TABLES|G\r\n|root||tuong2001||CREATE TEMPORARY TABLES|G\r\n|root||root|localhost|CREATE USER|G\r\n|root||tuong2001||CREATE USER|G\r\n|root||root|localhost|CREATE VIEW|G\r\n|root||tuong2001||CREATE VIEW|G\r\n|root||root|localhost|DELETE|G\r\n|root||tuong2001||DELETE|G\r\n|root||root|localhost|DROP|G\r\n|root||tuong2001||DROP|G\r\n|root||root|localhost|DROP ROLE|G\r\n|root||tuong2001||DROP ROLE|G\r\n|root||root|localhost|ENCRYPTION_KEY_ADMIN|G\r\n|root||tuong2001||ENCRYPTION_KEY_ADMIN|G\r\n|root||root|localhost|EVENT|G\r\n|root||tuong2001||EVENT|G\r\n|root||root|localhost|EXECUTE|G\r\n|root||tuong2001||EXECUTE|G\r\n|root||root|localhost|FILE|G\r\n|root||tuong2001||FILE|G\r\n|root||mysql.infoschema|localhost|FIREWALL_EXEMPT|G\r\n|root||mysql.session|localhost|FIREWALL_EXEMPT|G\r\n|root||mysql.sys|localhost|FIREWALL_EXEMPT|G\r\n|root||root|localhost|FIREWALL_EXEMPT|G\r\n|root||tuong2001||FIREWALL_EXEMPT|G\r\n|root||root|localhost|FLUSH_OPTIMIZER_COSTS|G\r\n|root||tuong2001||FLUSH_OPTIMIZER_COSTS|G\r\n|root||root|localhost|FLUSH_STATUS|G\r\n|root||tuong2001||FLUSH_STATUS|G\r\n|root||root|localhost|FLUSH_TABLES|G\r\n|root||tuong2001||FLUSH_TABLES|G\r\n|root||root|localhost|FLUSH_USER_RESOURCES|G\r\n|root||tuong2001||FLUSH_USER_RESOURCES|G\r\n|root||root|localhost|GROUP_REPLICATION_ADMIN|G\r\n|root||tuong2001||GROUP_REPLICATION_ADMIN|G\r\n|root||root|localhost|GROUP_REPLICATION_STREAM|G\r\n|root||tuong2001||GROUP_REPLICATION_STREAM|G\r\n|root||root|localhost|INDEX|G\r\n|root||tuong2001||INDEX|G\r\n|root||root|localhost|INNODB_REDO_LOG_ARCHIVE|G\r\n|root||tuong2001||INNODB_REDO_LOG_ARCHIVE|G\r\n|root||root|localhost|INNODB_REDO_LOG_ENABLE|G\r\n|root||tuong2001||INNODB_REDO_LOG_ENABLE|G\r\n|root||root|localhost|INSERT|G\r\n|root||tuong2001||INSERT|G\r\n|root||root|localhost|LOCK TABLES|G\r\n|root||tuong2001||LOCK TABLES|G\r\n|root||root|localhost|PASSWORDLESS_USER_ADMIN|G\r\n|root||tuong2001||PASSWORDLESS_USER_ADMIN|G\r\n|root||mysql.session|localhost|PERSIST_RO_VARIABLES_ADMIN|G\r\n|root||root|localhost|PERSIST_RO_VARIABLES_ADMIN|G\r\n|root||tuong2001||PERSIST_RO_VARIABLES_ADMIN|G\r\n|root||root|localhost|PROCESS|G\r\n|root||tuong2001||PROCESS|G\r\n|root||root|localhost|REFERENCES|G\r\n|root||tuong2001||REFERENCES|G\r\n|root||root|localhost|RELOAD|G\r\n|root||tuong2001||RELOAD|G\r\n|root||root|localhost|REPLICATION CLIENT|G\r\n|root||tuong2001||REPLICATION CLIENT|G\r\n|root||root|localhost|REPLICATION SLAVE|G\r\n|root||tuong2001||REPLICATION SLAVE|G\r\n|root||root|localhost|REPLICATION_APPLIER|G\r\n|root||tuong2001||REPLICATION_APPLIER|G\r\n|root||root|localhost|REPLICATION_SLAVE_ADMIN|G\r\n|root||tuong2001||REPLICATION_SLAVE_ADMIN|G\r\n|root||root|localhost|RESOURCE_GROUP_ADMIN|G\r\n|root||tuong2001||RESOURCE_GROUP_ADMIN|G\r\n|root||root|localhost|RESOURCE_GROUP_USER|G\r\n|root||tuong2001||RESOURCE_GROUP_USER|G\r\n|root||root|localhost|ROLE_ADMIN|G\r\n|root||tuong2001||ROLE_ADMIN|G\r\n|root||mysql.infoschema|localhost|SELECT|G\r\n|root||root|localhost|SELECT|G\r\n|root||tuong2001||SELECT|G\r\n|root||root|localhost|SENSITIVE_VARIABLES_OBSERVER|G\r\n|root||tuong2001||SENSITIVE_VARIABLES_OBSERVER|G\r\n|root||root|localhost|SERVICE_CONNECTION_ADMIN|G\r\n|root||tuong2001||SERVICE_CONNECTION_ADMIN|G\r\n|root||mysql.session|localhost|SESSION_VARIABLES_ADMIN|G\r\n|root||root|localhost|SESSION_VARIABLES_ADMIN|G\r\n|root||tuong2001||SESSION_VARIABLES_ADMIN|G\r\n|root||root|localhost|SET_USER_ID|G\r\n|root||tuong2001||SET_USER_ID|G\r\n|root||root|localhost|SHOW DATABASES|G\r\n|root||tuong2001||SHOW DATABASES|G\r\n|root||root|localhost|SHOW VIEW|G\r\n|root||tuong2001||SHOW VIEW|G\r\n|root||root|localhost|SHOW_ROUTINE|G\r\n|root||tuong2001||SHOW_ROUTINE|G\r\n|root||mysql.session|localhost|SHUTDOWN|G\r\n|root||root|localhost|SHUTDOWN|G\r\n|root||tuong2001||SHUTDOWN|G\r\n|root||mysql.session|localhost|SUPER|G\r\n|root||root|localhost|SUPER|G\r\n|root||tuong2001||SUPER|G\r\n|root||mysql.infoschema|localhost|SYSTEM_USER|G\r\n|root||mysql.session|localhost|SYSTEM_USER|G\r\n|root||mysql.sys|localhost|SYSTEM_USER|G\r\n|root||root|localhost|SYSTEM_USER|G\r\n|root||tuong2001||SYSTEM_USER|G\r\n|root||mysql.session|localhost|SYSTEM_VARIABLES_ADMIN|G\r\n|root||root|localhost|SYSTEM_VARIABLES_ADMIN|G\r\n|root||tuong2001||SYSTEM_VARIABLES_ADMIN|G\r\n|root||root|localhost|TABLE_ENCRYPTION_ADMIN|G\r\n|root||tuong2001||TABLE_ENCRYPTION_ADMIN|G\r\n|root||root|localhost|TRIGGER|G\r\n|root||tuong2001||TRIGGER|G\r\n|root||root|localhost|UPDATE|G\r\n|root||tuong2001||UPDATE|G\r\n|root||root|localhost|XA_RECOVER_ADMIN|G\r\n|root||tuong2001||XA_RECOVER_ADMIN|G\r\n|root||root|localhost|grant option|G\r\n|root||tuong2001||grant option|G\r\nperformance_schema|schema||mysql.session|localhost|SELECT|G\r\nsys|schema||mysql.sys|localhost|TRIGGER|G</Grants>\r\n      <ServerVersion>8.0.31</ServerVersion>\r\n    </root>\r\n    <collation id=\"2\" parent=\"1\" name=\"armscii8_bin\">\r\n      <Charset>armscii8</Charset>\r\n    </collation>\r\n    <collation id=\"3\" parent=\"1\" name=\"armscii8_general_ci\">\r\n      <Charset>armscii8</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"4\" parent=\"1\" name=\"ascii_bin\">\r\n      <Charset>ascii</Charset>\r\n    </collation>\r\n    <collation id=\"5\" parent=\"1\" name=\"ascii_general_ci\">\r\n      <Charset>ascii</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"6\" parent=\"1\" name=\"big5_bin\">\r\n      <Charset>big5</Charset>\r\n    </collation>\r\n    <collation id=\"7\" parent=\"1\" name=\"big5_chinese_ci\">\r\n      <Charset>big5</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"8\" parent=\"1\" name=\"binary\">\r\n      <Charset>binary</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"9\" parent=\"1\" name=\"cp1250_bin\">\r\n      <Charset>cp1250</Charset>\r\n    </collation>\r\n    <collation id=\"10\" parent=\"1\" name=\"cp1250_croatian_ci\">\r\n      <Charset>cp1250</Charset>\r\n    </collation>\r\n    <collation id=\"11\" parent=\"1\" name=\"cp1250_czech_cs\">\r\n      <Charset>cp1250</Charset>\r\n    </collation>\r\n    <collation id=\"12\" parent=\"1\" name=\"cp1250_general_ci\">\r\n      <Charset>cp1250</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"13\" parent=\"1\" name=\"cp1250_polish_ci\">\r\n      <Charset>cp1250</Charset>\r\n    </collation>\r\n    <collation id=\"14\" parent=\"1\" name=\"cp1251_bin\">\r\n      <Charset>cp1251</Charset>\r\n    </collation>\r\n    <collation id=\"15\" parent=\"1\" name=\"cp1251_bulgarian_ci\">\r\n      <Charset>cp1251</Charset>\r\n    </collation>\r\n    <collation id=\"16\" parent=\"1\" name=\"cp1251_general_ci\">\r\n      <Charset>cp1251</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"17\" parent=\"1\" name=\"cp1251_general_cs\">\r\n      <Charset>cp1251</Charset>\r\n    </collation>\r\n    <collation id=\"18\" parent=\"1\" name=\"cp1251_ukrainian_ci\">\r\n      <Charset>cp1251</Charset>\r\n    </collation>\r\n    <collation id=\"19\" parent=\"1\" name=\"cp1256_bin\">\r\n      <Charset>cp1256</Charset>\r\n    </collation>\r\n    <collation id=\"20\" parent=\"1\" name=\"cp1256_general_ci\">\r\n      <Charset>cp1256</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"21\" parent=\"1\" name=\"cp1257_bin\">\r\n      <Charset>cp1257</Charset>\r\n    </collation>\r\n    <collation id=\"22\" parent=\"1\" name=\"cp1257_general_ci\">\r\n      <Charset>cp1257</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"23\" parent=\"1\" name=\"cp1257_lithuanian_ci\">\r\n      <Charset>cp1257</Charset>\r\n    </collation>\r\n    <collation id=\"24\" parent=\"1\" name=\"cp850_bin\">\r\n      <Charset>cp850</Charset>\r\n    </collation>\r\n    <collation id=\"25\" parent=\"1\" name=\"cp850_general_ci\">\r\n      <Charset>cp850</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"26\" parent=\"1\" name=\"cp852_bin\">\r\n      <Charset>cp852</Charset>\r\n    </collation>\r\n    <collation id=\"27\" parent=\"1\" name=\"cp852_general_ci\">\r\n      <Charset>cp852</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"28\" parent=\"1\" name=\"cp866_bin\">\r\n      <Charset>cp866</Charset>\r\n    </collation>\r\n    <collation id=\"29\" parent=\"1\" name=\"cp866_general_ci\">\r\n      <Charset>cp866</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"30\" parent=\"1\" name=\"cp932_bin\">\r\n      <Charset>cp932</Charset>\r\n    </collation>\r\n    <collation id=\"31\" parent=\"1\" name=\"cp932_japanese_ci\">\r\n      <Charset>cp932</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"32\" parent=\"1\" name=\"dec8_bin\">\r\n      <Charset>dec8</Charset>\r\n    </collation>\r\n    <collation id=\"33\" parent=\"1\" name=\"dec8_swedish_ci\">\r\n      <Charset>dec8</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"34\" parent=\"1\" name=\"eucjpms_bin\">\r\n      <Charset>eucjpms</Charset>\r\n    </collation>\r\n    <collation id=\"35\" parent=\"1\" name=\"eucjpms_japanese_ci\">\r\n      <Charset>eucjpms</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"36\" parent=\"1\" name=\"euckr_bin\">\r\n      <Charset>euckr</Charset>\r\n    </collation>\r\n    <collation id=\"37\" parent=\"1\" name=\"euckr_korean_ci\">\r\n      <Charset>euckr</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"38\" parent=\"1\" name=\"gb18030_bin\">\r\n      <Charset>gb18030</Charset>\r\n    </collation>\r\n    <collation id=\"39\" parent=\"1\" name=\"gb18030_chinese_ci\">\r\n      <Charset>gb18030</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"40\" parent=\"1\" name=\"gb18030_unicode_520_ci\">\r\n      <Charset>gb18030</Charset>\r\n    </collation>\r\n    <collation id=\"41\" parent=\"1\" name=\"gb2312_bin\">\r\n      <Charset>gb2312</Charset>\r\n    </collation>\r\n    <collation id=\"42\" parent=\"1\" name=\"gb2312_chinese_ci\">\r\n      <Charset>gb2312</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"43\" parent=\"1\" name=\"gbk_bin\">\r\n      <Charset>gbk</Charset>\r\n    </collation>\r\n    <collation id=\"44\" parent=\"1\" name=\"gbk_chinese_ci\">\r\n      <Charset>gbk</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"45\" parent=\"1\" name=\"geostd8_bin\">\r\n      <Charset>geostd8</Charset>\r\n    </collation>\r\n    <collation id=\"46\" parent=\"1\" name=\"geostd8_general_ci\">\r\n      <Charset>geostd8</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"47\" parent=\"1\" name=\"greek_bin\">\r\n      <Charset>greek</Charset>\r\n    </collation>\r\n    <collation id=\"48\" parent=\"1\" name=\"greek_general_ci\">\r\n      <Charset>greek</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"49\" parent=\"1\" name=\"hebrew_bin\">\r\n      <Charset>hebrew</Charset>\r\n    </collation>\r\n    <collation id=\"50\" parent=\"1\" name=\"hebrew_general_ci\">\r\n      <Charset>hebrew</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"51\" parent=\"1\" name=\"hp8_bin\">\r\n      <Charset>hp8</Charset>\r\n    </collation>\r\n    <collation id=\"52\" parent=\"1\" name=\"hp8_english_ci\">\r\n      <Charset>hp8</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"53\" parent=\"1\" name=\"keybcs2_bin\">\r\n      <Charset>keybcs2</Charset>\r\n    </collation>\r\n    <collation id=\"54\" parent=\"1\" name=\"keybcs2_general_ci\">\r\n      <Charset>keybcs2</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"55\" parent=\"1\" name=\"koi8r_bin\">\r\n      <Charset>koi8r</Charset>\r\n    </collation>\r\n    <collation id=\"56\" parent=\"1\" name=\"koi8r_general_ci\">\r\n      <Charset>koi8r</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"57\" parent=\"1\" name=\"koi8u_bin\">\r\n      <Charset>koi8u</Charset>\r\n    </collation>\r\n    <collation id=\"58\" parent=\"1\" name=\"koi8u_general_ci\">\r\n      <Charset>koi8u</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"59\" parent=\"1\" name=\"latin1_bin\">\r\n      <Charset>latin1</Charset>\r\n    </collation>\r\n    <collation id=\"60\" parent=\"1\" name=\"latin1_danish_ci\">\r\n      <Charset>latin1</Charset>\r\n    </collation>\r\n    <collation id=\"61\" parent=\"1\" name=\"latin1_general_ci\">\r\n      <Charset>latin1</Charset>\r\n    </collation>\r\n    <collation id=\"62\" parent=\"1\" name=\"latin1_general_cs\">\r\n      <Charset>latin1</Charset>\r\n    </collation>\r\n    <collation id=\"63\" parent=\"1\" name=\"latin1_german1_ci\">\r\n      <Charset>latin1</Charset>\r\n    </collation>\r\n    <collation id=\"64\" parent=\"1\" name=\"latin1_german2_ci\">\r\n      <Charset>latin1</Charset>\r\n    </collation>\r\n    <collation id=\"65\" parent=\"1\" name=\"latin1_spanish_ci\">\r\n      <Charset>latin1</Charset>\r\n    </collation>\r\n    <collation id=\"66\" parent=\"1\" name=\"latin1_swedish_ci\">\r\n      <Charset>latin1</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"67\" parent=\"1\" name=\"latin2_bin\">\r\n      <Charset>latin2</Charset>\r\n    </collation>\r\n    <collation id=\"68\" parent=\"1\" name=\"latin2_croatian_ci\">\r\n      <Charset>latin2</Charset>\r\n    </collation>\r\n    <collation id=\"69\" parent=\"1\" name=\"latin2_czech_cs\">\r\n      <Charset>latin2</Charset>\r\n    </collation>\r\n    <collation id=\"70\" parent=\"1\" name=\"latin2_general_ci\">\r\n      <Charset>latin2</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"71\" parent=\"1\" name=\"latin2_hungarian_ci\">\r\n      <Charset>latin2</Charset>\r\n    </collation>\r\n    <collation id=\"72\" parent=\"1\" name=\"latin5_bin\">\r\n      <Charset>latin5</Charset>\r\n    </collation>\r\n    <collation id=\"73\" parent=\"1\" name=\"latin5_turkish_ci\">\r\n      <Charset>latin5</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"74\" parent=\"1\" name=\"latin7_bin\">\r\n      <Charset>latin7</Charset>\r\n    </collation>\r\n    <collation id=\"75\" parent=\"1\" name=\"latin7_estonian_cs\">\r\n      <Charset>latin7</Charset>\r\n    </collation>\r\n    <collation id=\"76\" parent=\"1\" name=\"latin7_general_ci\">\r\n      <Charset>latin7</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"77\" parent=\"1\" name=\"latin7_general_cs\">\r\n      <Charset>latin7</Charset>\r\n    </collation>\r\n    <collation id=\"78\" parent=\"1\" name=\"macce_bin\">\r\n      <Charset>macce</Charset>\r\n    </collation>\r\n    <collation id=\"79\" parent=\"1\" name=\"macce_general_ci\">\r\n      <Charset>macce</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"80\" parent=\"1\" name=\"macroman_bin\">\r\n      <Charset>macroman</Charset>\r\n    </collation>\r\n    <collation id=\"81\" parent=\"1\" name=\"macroman_general_ci\">\r\n      <Charset>macroman</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"82\" parent=\"1\" name=\"sjis_bin\">\r\n      <Charset>sjis</Charset>\r\n    </collation>\r\n    <collation id=\"83\" parent=\"1\" name=\"sjis_japanese_ci\">\r\n      <Charset>sjis</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"84\" parent=\"1\" name=\"swe7_bin\">\r\n      <Charset>swe7</Charset>\r\n    </collation>\r\n    <collation id=\"85\" parent=\"1\" name=\"swe7_swedish_ci\">\r\n      <Charset>swe7</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"86\" parent=\"1\" name=\"tis620_bin\">\r\n      <Charset>tis620</Charset>\r\n    </collation>\r\n    <collation id=\"87\" parent=\"1\" name=\"tis620_thai_ci\">\r\n      <Charset>tis620</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"88\" parent=\"1\" name=\"ucs2_bin\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"89\" parent=\"1\" name=\"ucs2_croatian_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"90\" parent=\"1\" name=\"ucs2_czech_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"91\" parent=\"1\" name=\"ucs2_danish_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"92\" parent=\"1\" name=\"ucs2_esperanto_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"93\" parent=\"1\" name=\"ucs2_estonian_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"94\" parent=\"1\" name=\"ucs2_general_ci\">\r\n      <Charset>ucs2</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"95\" parent=\"1\" name=\"ucs2_general_mysql500_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"96\" parent=\"1\" name=\"ucs2_german2_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"97\" parent=\"1\" name=\"ucs2_hungarian_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"98\" parent=\"1\" name=\"ucs2_icelandic_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"99\" parent=\"1\" name=\"ucs2_latvian_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"100\" parent=\"1\" name=\"ucs2_lithuanian_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"101\" parent=\"1\" name=\"ucs2_persian_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"102\" parent=\"1\" name=\"ucs2_polish_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"103\" parent=\"1\" name=\"ucs2_roman_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"104\" parent=\"1\" name=\"ucs2_romanian_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"105\" parent=\"1\" name=\"ucs2_sinhala_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"106\" parent=\"1\" name=\"ucs2_slovak_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"107\" parent=\"1\" name=\"ucs2_slovenian_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"108\" parent=\"1\" name=\"ucs2_spanish2_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"109\" parent=\"1\" name=\"ucs2_spanish_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"110\" parent=\"1\" name=\"ucs2_swedish_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"111\" parent=\"1\" name=\"ucs2_turkish_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"112\" parent=\"1\" name=\"ucs2_unicode_520_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"113\" parent=\"1\" name=\"ucs2_unicode_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"114\" parent=\"1\" name=\"ucs2_vietnamese_ci\">\r\n      <Charset>ucs2</Charset>\r\n    </collation>\r\n    <collation id=\"115\" parent=\"1\" name=\"ujis_bin\">\r\n      <Charset>ujis</Charset>\r\n    </collation>\r\n    <collation id=\"116\" parent=\"1\" name=\"ujis_japanese_ci\">\r\n      <Charset>ujis</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"117\" parent=\"1\" name=\"utf16_bin\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"118\" parent=\"1\" name=\"utf16_croatian_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"119\" parent=\"1\" name=\"utf16_czech_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"120\" parent=\"1\" name=\"utf16_danish_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"121\" parent=\"1\" name=\"utf16_esperanto_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"122\" parent=\"1\" name=\"utf16_estonian_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"123\" parent=\"1\" name=\"utf16_general_ci\">\r\n      <Charset>utf16</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"124\" parent=\"1\" name=\"utf16_german2_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"125\" parent=\"1\" name=\"utf16_hungarian_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"126\" parent=\"1\" name=\"utf16_icelandic_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"127\" parent=\"1\" name=\"utf16_latvian_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"128\" parent=\"1\" name=\"utf16_lithuanian_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"129\" parent=\"1\" name=\"utf16_persian_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"130\" parent=\"1\" name=\"utf16_polish_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"131\" parent=\"1\" name=\"utf16_roman_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"132\" parent=\"1\" name=\"utf16_romanian_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"133\" parent=\"1\" name=\"utf16_sinhala_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"134\" parent=\"1\" name=\"utf16_slovak_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"135\" parent=\"1\" name=\"utf16_slovenian_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"136\" parent=\"1\" name=\"utf16_spanish2_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"137\" parent=\"1\" name=\"utf16_spanish_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"138\" parent=\"1\" name=\"utf16_swedish_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"139\" parent=\"1\" name=\"utf16_turkish_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"140\" parent=\"1\" name=\"utf16_unicode_520_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"141\" parent=\"1\" name=\"utf16_unicode_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"142\" parent=\"1\" name=\"utf16_vietnamese_ci\">\r\n      <Charset>utf16</Charset>\r\n    </collation>\r\n    <collation id=\"143\" parent=\"1\" name=\"utf16le_bin\">\r\n      <Charset>utf16le</Charset>\r\n    </collation>\r\n    <collation id=\"144\" parent=\"1\" name=\"utf16le_general_ci\">\r\n      <Charset>utf16le</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"145\" parent=\"1\" name=\"utf32_bin\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"146\" parent=\"1\" name=\"utf32_croatian_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"147\" parent=\"1\" name=\"utf32_czech_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"148\" parent=\"1\" name=\"utf32_danish_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"149\" parent=\"1\" name=\"utf32_esperanto_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"150\" parent=\"1\" name=\"utf32_estonian_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"151\" parent=\"1\" name=\"utf32_general_ci\">\r\n      <Charset>utf32</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"152\" parent=\"1\" name=\"utf32_german2_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"153\" parent=\"1\" name=\"utf32_hungarian_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"154\" parent=\"1\" name=\"utf32_icelandic_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"155\" parent=\"1\" name=\"utf32_latvian_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"156\" parent=\"1\" name=\"utf32_lithuanian_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"157\" parent=\"1\" name=\"utf32_persian_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"158\" parent=\"1\" name=\"utf32_polish_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"159\" parent=\"1\" name=\"utf32_roman_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"160\" parent=\"1\" name=\"utf32_romanian_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"161\" parent=\"1\" name=\"utf32_sinhala_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"162\" parent=\"1\" name=\"utf32_slovak_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"163\" parent=\"1\" name=\"utf32_slovenian_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"164\" parent=\"1\" name=\"utf32_spanish2_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"165\" parent=\"1\" name=\"utf32_spanish_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"166\" parent=\"1\" name=\"utf32_swedish_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"167\" parent=\"1\" name=\"utf32_turkish_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"168\" parent=\"1\" name=\"utf32_unicode_520_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"169\" parent=\"1\" name=\"utf32_unicode_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"170\" parent=\"1\" name=\"utf32_vietnamese_ci\">\r\n      <Charset>utf32</Charset>\r\n    </collation>\r\n    <collation id=\"171\" parent=\"1\" name=\"utf8mb3_bin\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"172\" parent=\"1\" name=\"utf8mb3_croatian_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"173\" parent=\"1\" name=\"utf8mb3_czech_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"174\" parent=\"1\" name=\"utf8mb3_danish_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"175\" parent=\"1\" name=\"utf8mb3_esperanto_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"176\" parent=\"1\" name=\"utf8mb3_estonian_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"177\" parent=\"1\" name=\"utf8mb3_general_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"178\" parent=\"1\" name=\"utf8mb3_general_mysql500_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"179\" parent=\"1\" name=\"utf8mb3_german2_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"180\" parent=\"1\" name=\"utf8mb3_hungarian_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"181\" parent=\"1\" name=\"utf8mb3_icelandic_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"182\" parent=\"1\" name=\"utf8mb3_latvian_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"183\" parent=\"1\" name=\"utf8mb3_lithuanian_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"184\" parent=\"1\" name=\"utf8mb3_persian_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"185\" parent=\"1\" name=\"utf8mb3_polish_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"186\" parent=\"1\" name=\"utf8mb3_roman_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"187\" parent=\"1\" name=\"utf8mb3_romanian_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"188\" parent=\"1\" name=\"utf8mb3_sinhala_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"189\" parent=\"1\" name=\"utf8mb3_slovak_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"190\" parent=\"1\" name=\"utf8mb3_slovenian_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"191\" parent=\"1\" name=\"utf8mb3_spanish2_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"192\" parent=\"1\" name=\"utf8mb3_spanish_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"193\" parent=\"1\" name=\"utf8mb3_swedish_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"194\" parent=\"1\" name=\"utf8mb3_tolower_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"195\" parent=\"1\" name=\"utf8mb3_turkish_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"196\" parent=\"1\" name=\"utf8mb3_unicode_520_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"197\" parent=\"1\" name=\"utf8mb3_unicode_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"198\" parent=\"1\" name=\"utf8mb3_vietnamese_ci\">\r\n      <Charset>utf8mb3</Charset>\r\n    </collation>\r\n    <collation id=\"199\" parent=\"1\" name=\"utf8mb4_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n      <DefaultForCharset>1</DefaultForCharset>\r\n    </collation>\r\n    <collation id=\"200\" parent=\"1\" name=\"utf8mb4_0900_as_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"201\" parent=\"1\" name=\"utf8mb4_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"202\" parent=\"1\" name=\"utf8mb4_0900_bin\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"203\" parent=\"1\" name=\"utf8mb4_bg_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"204\" parent=\"1\" name=\"utf8mb4_bg_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"205\" parent=\"1\" name=\"utf8mb4_bin\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"206\" parent=\"1\" name=\"utf8mb4_bs_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"207\" parent=\"1\" name=\"utf8mb4_bs_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"208\" parent=\"1\" name=\"utf8mb4_croatian_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"209\" parent=\"1\" name=\"utf8mb4_cs_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"210\" parent=\"1\" name=\"utf8mb4_cs_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"211\" parent=\"1\" name=\"utf8mb4_czech_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"212\" parent=\"1\" name=\"utf8mb4_da_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"213\" parent=\"1\" name=\"utf8mb4_da_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"214\" parent=\"1\" name=\"utf8mb4_danish_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"215\" parent=\"1\" name=\"utf8mb4_de_pb_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"216\" parent=\"1\" name=\"utf8mb4_de_pb_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"217\" parent=\"1\" name=\"utf8mb4_eo_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"218\" parent=\"1\" name=\"utf8mb4_eo_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"219\" parent=\"1\" name=\"utf8mb4_es_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"220\" parent=\"1\" name=\"utf8mb4_es_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"221\" parent=\"1\" name=\"utf8mb4_es_trad_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"222\" parent=\"1\" name=\"utf8mb4_es_trad_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"223\" parent=\"1\" name=\"utf8mb4_esperanto_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"224\" parent=\"1\" name=\"utf8mb4_estonian_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"225\" parent=\"1\" name=\"utf8mb4_et_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"226\" parent=\"1\" name=\"utf8mb4_et_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"227\" parent=\"1\" name=\"utf8mb4_general_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"228\" parent=\"1\" name=\"utf8mb4_german2_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"229\" parent=\"1\" name=\"utf8mb4_gl_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"230\" parent=\"1\" name=\"utf8mb4_gl_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"231\" parent=\"1\" name=\"utf8mb4_hr_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"232\" parent=\"1\" name=\"utf8mb4_hr_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"233\" parent=\"1\" name=\"utf8mb4_hu_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"234\" parent=\"1\" name=\"utf8mb4_hu_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"235\" parent=\"1\" name=\"utf8mb4_hungarian_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"236\" parent=\"1\" name=\"utf8mb4_icelandic_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"237\" parent=\"1\" name=\"utf8mb4_is_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"238\" parent=\"1\" name=\"utf8mb4_is_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"239\" parent=\"1\" name=\"utf8mb4_ja_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"240\" parent=\"1\" name=\"utf8mb4_ja_0900_as_cs_ks\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"241\" parent=\"1\" name=\"utf8mb4_la_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"242\" parent=\"1\" name=\"utf8mb4_la_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"243\" parent=\"1\" name=\"utf8mb4_latvian_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"244\" parent=\"1\" name=\"utf8mb4_lithuanian_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"245\" parent=\"1\" name=\"utf8mb4_lt_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"246\" parent=\"1\" name=\"utf8mb4_lt_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"247\" parent=\"1\" name=\"utf8mb4_lv_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"248\" parent=\"1\" name=\"utf8mb4_lv_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"249\" parent=\"1\" name=\"utf8mb4_mn_cyrl_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"250\" parent=\"1\" name=\"utf8mb4_mn_cyrl_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"251\" parent=\"1\" name=\"utf8mb4_nb_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"252\" parent=\"1\" name=\"utf8mb4_nb_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"253\" parent=\"1\" name=\"utf8mb4_nn_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"254\" parent=\"1\" name=\"utf8mb4_nn_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"255\" parent=\"1\" name=\"utf8mb4_persian_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"256\" parent=\"1\" name=\"utf8mb4_pl_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"257\" parent=\"1\" name=\"utf8mb4_pl_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"258\" parent=\"1\" name=\"utf8mb4_polish_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"259\" parent=\"1\" name=\"utf8mb4_ro_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"260\" parent=\"1\" name=\"utf8mb4_ro_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"261\" parent=\"1\" name=\"utf8mb4_roman_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"262\" parent=\"1\" name=\"utf8mb4_romanian_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"263\" parent=\"1\" name=\"utf8mb4_ru_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"264\" parent=\"1\" name=\"utf8mb4_ru_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"265\" parent=\"1\" name=\"utf8mb4_sinhala_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"266\" parent=\"1\" name=\"utf8mb4_sk_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"267\" parent=\"1\" name=\"utf8mb4_sk_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"268\" parent=\"1\" name=\"utf8mb4_sl_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"269\" parent=\"1\" name=\"utf8mb4_sl_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"270\" parent=\"1\" name=\"utf8mb4_slovak_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"271\" parent=\"1\" name=\"utf8mb4_slovenian_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"272\" parent=\"1\" name=\"utf8mb4_spanish2_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"273\" parent=\"1\" name=\"utf8mb4_spanish_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"274\" parent=\"1\" name=\"utf8mb4_sr_latn_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"275\" parent=\"1\" name=\"utf8mb4_sr_latn_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"276\" parent=\"1\" name=\"utf8mb4_sv_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"277\" parent=\"1\" name=\"utf8mb4_sv_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"278\" parent=\"1\" name=\"utf8mb4_swedish_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"279\" parent=\"1\" name=\"utf8mb4_tr_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"280\" parent=\"1\" name=\"utf8mb4_tr_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"281\" parent=\"1\" name=\"utf8mb4_turkish_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"282\" parent=\"1\" name=\"utf8mb4_unicode_520_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"283\" parent=\"1\" name=\"utf8mb4_unicode_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"284\" parent=\"1\" name=\"utf8mb4_vi_0900_ai_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"285\" parent=\"1\" name=\"utf8mb4_vi_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"286\" parent=\"1\" name=\"utf8mb4_vietnamese_ci\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <collation id=\"287\" parent=\"1\" name=\"utf8mb4_zh_0900_as_cs\">\r\n      <Charset>utf8mb4</Charset>\r\n    </collation>\r\n    <schema id=\"288\" parent=\"1\" name=\"casemd3\">\r\n      <Current>1</Current>\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"289\" parent=\"1\" name=\"dao\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"290\" parent=\"1\" name=\"demo\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"291\" parent=\"1\" name=\"ecommerce\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"292\" parent=\"1\" name=\"information_schema\">\r\n      <CollationName>utf8mb3_general_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"293\" parent=\"1\" name=\"luyentap\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"294\" parent=\"1\" name=\"minitest\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"295\" parent=\"1\" name=\"mysql\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"296\" parent=\"1\" name=\"performance_schema\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"297\" parent=\"1\" name=\"petshop\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"298\" parent=\"1\" name=\"quanlysinhvien\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"299\" parent=\"1\" name=\"sakila\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"300\" parent=\"1\" name=\"test\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"301\" parent=\"1\" name=\"testdao\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <schema id=\"302\" parent=\"1\" name=\"world\">\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </schema>\r\n    <user id=\"303\" parent=\"1\" name=\"mysql.infoschema\">\r\n      <CanLogin>0</CanLogin>\r\n      <Host>localhost</Host>\r\n      <Plugin>caching_sha2_password</Plugin>\r\n    </user>\r\n    <user id=\"304\" parent=\"1\" name=\"mysql.session\">\r\n      <CanLogin>0</CanLogin>\r\n      <Host>localhost</Host>\r\n      <Plugin>caching_sha2_password</Plugin>\r\n    </user>\r\n    <user id=\"305\" parent=\"1\" name=\"mysql.sys\">\r\n      <CanLogin>0</CanLogin>\r\n      <Host>localhost</Host>\r\n      <Plugin>caching_sha2_password</Plugin>\r\n    </user>\r\n    <user id=\"306\" parent=\"1\" name=\"root\">\r\n      <Host>localhost</Host>\r\n      <Plugin>caching_sha2_password</Plugin>\r\n    </user>\r\n    <user id=\"307\" parent=\"1\" name=\"tuong\"/>\r\n    <user id=\"308\" parent=\"1\" name=\"tuong2001\"/>\r\n    <table id=\"309\" parent=\"291\" name=\"admin\">\r\n      <Engine>InnoDB</Engine>\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </table>\r\n    <table id=\"310\" parent=\"291\" name=\"categories\">\r\n      <Engine>InnoDB</Engine>\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </table>\r\n    <table id=\"311\" parent=\"291\" name=\"categories_product\">\r\n      <Engine>InnoDB</Engine>\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </table>\r\n    <table id=\"312\" parent=\"291\" name=\"customer\">\r\n      <Engine>InnoDB</Engine>\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </table>\r\n    <table id=\"313\" parent=\"291\" name=\"employee\">\r\n      <Engine>InnoDB</Engine>\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </table>\r\n    <table id=\"314\" parent=\"291\" name=\"logincustomer\">\r\n      <Engine>InnoDB</Engine>\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </table>\r\n    <table id=\"315\" parent=\"291\" name=\"order\">\r\n      <Engine>InnoDB</Engine>\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </table>\r\n    <table id=\"316\" parent=\"291\" name=\"orderdetail\">\r\n      <Engine>InnoDB</Engine>\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </table>\r\n    <table id=\"317\" parent=\"291\" name=\"product\">\r\n      <Engine>InnoDB</Engine>\r\n      <CollationName>utf8mb4_0900_ai_ci</CollationName>\r\n    </table>\r\n    <column id=\"318\" parent=\"309\" name=\"user\">\r\n      <DasType>varchar(50)|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>1</Position>\r\n    </column>\r\n    <column id=\"319\" parent=\"309\" name=\"password\">\r\n      <DasType>varchar(50)|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>2</Position>\r\n    </column>\r\n    <column id=\"320\" parent=\"309\" name=\"role\">\r\n      <DasType>int|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>3</Position>\r\n    </column>\r\n    <column id=\"321\" parent=\"310\" name=\"id\">\r\n      <AutoIncrement>2</AutoIncrement>\r\n      <DasType>bigint|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>1</Position>\r\n    </column>\r\n    <column id=\"322\" parent=\"310\" name=\"categoriesName\">\r\n      <DasType>varchar(40)|0s</DasType>\r\n      <Position>2</Position>\r\n      <CollationName>utf8mb3_general_ci</CollationName>\r\n    </column>\r\n    <index id=\"323\" parent=\"310\" name=\"PRIMARY\">\r\n      <ColNames>id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"324\" parent=\"310\" name=\"id\">\r\n      <ColNames>id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <key id=\"325\" parent=\"310\" name=\"PRIMARY\">\r\n      <NameSurrogate>1</NameSurrogate>\r\n      <Primary>1</Primary>\r\n      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"326\" parent=\"310\" name=\"id\">\r\n      <UnderlyingIndexName>id</UnderlyingIndexName>\r\n    </key>\r\n    <column id=\"327\" parent=\"311\" name=\"categories_id\">\r\n      <DasType>bigint|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>1</Position>\r\n    </column>\r\n    <column id=\"328\" parent=\"311\" name=\"product_id\">\r\n      <DasType>bigint|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>2</Position>\r\n    </column>\r\n    <foreign-key id=\"329\" parent=\"311\" name=\"fk_categories_product_categories\">\r\n      <ColNames>categories_id</ColNames>\r\n      <RefColNames>id</RefColNames>\r\n      <RefTableName>categories</RefTableName>\r\n    </foreign-key>\r\n    <foreign-key id=\"330\" parent=\"311\" name=\"fk_categories_product_product\">\r\n      <ColNames>product_id</ColNames>\r\n      <RefColNames>id</RefColNames>\r\n      <RefTableName>product</RefTableName>\r\n    </foreign-key>\r\n    <index id=\"331\" parent=\"311\" name=\"PRIMARY\">\r\n      <ColNames>categories_id\r\nproduct_id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"332\" parent=\"311\" name=\"fk_categories_product_product\">\r\n      <ColNames>product_id</ColNames>\r\n      <Type>btree</Type>\r\n    </index>\r\n    <key id=\"333\" parent=\"311\" name=\"PRIMARY\">\r\n      <NameSurrogate>1</NameSurrogate>\r\n      <Primary>1</Primary>\r\n      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>\r\n    </key>\r\n    <column id=\"334\" parent=\"312\" name=\"id\">\r\n      <AutoIncrement>1</AutoIncrement>\r\n      <DasType>bigint|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>1</Position>\r\n    </column>\r\n    <column id=\"335\" parent=\"312\" name=\"code\">\r\n      <DasType>varchar(20)|0s</DasType>\r\n      <Position>2</Position>\r\n    </column>\r\n    <column id=\"336\" parent=\"312\" name=\"name\">\r\n      <DasType>varchar(255)|0s</DasType>\r\n      <Position>3</Position>\r\n      <CollationName>utf8mb3_general_ci</CollationName>\r\n    </column>\r\n    <column id=\"337\" parent=\"312\" name=\"date\">\r\n      <DasType>date|0s</DasType>\r\n      <Position>4</Position>\r\n    </column>\r\n    <column id=\"338\" parent=\"312\" name=\"address\">\r\n      <DasType>varchar(255)|0s</DasType>\r\n      <Position>5</Position>\r\n      <CollationName>utf8mb3_general_ci</CollationName>\r\n    </column>\r\n    <column id=\"339\" parent=\"312\" name=\"email\">\r\n      <DasType>varchar(50)|0s</DasType>\r\n      <Position>6</Position>\r\n    </column>\r\n    <column id=\"340\" parent=\"312\" name=\"phone\">\r\n      <DasType>varchar(11)|0s</DasType>\r\n      <Position>7</Position>\r\n    </column>\r\n    <index id=\"341\" parent=\"312\" name=\"PRIMARY\">\r\n      <ColNames>id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"342\" parent=\"312\" name=\"id\">\r\n      <ColNames>id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"343\" parent=\"312\" name=\"customerCode\">\r\n      <ColNames>code</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"344\" parent=\"312\" name=\"customerEmail\">\r\n      <ColNames>email</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"345\" parent=\"312\" name=\"customerPhone\">\r\n      <ColNames>phone</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <key id=\"346\" parent=\"312\" name=\"PRIMARY\">\r\n      <NameSurrogate>1</NameSurrogate>\r\n      <Primary>1</Primary>\r\n      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"347\" parent=\"312\" name=\"id\">\r\n      <UnderlyingIndexName>id</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"348\" parent=\"312\" name=\"customerCode\">\r\n      <UnderlyingIndexName>customerCode</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"349\" parent=\"312\" name=\"customerEmail\">\r\n      <UnderlyingIndexName>customerEmail</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"350\" parent=\"312\" name=\"customerPhone\">\r\n      <UnderlyingIndexName>customerPhone</UnderlyingIndexName>\r\n    </key>\r\n    <column id=\"351\" parent=\"313\" name=\"id\">\r\n      <AutoIncrement>6468</AutoIncrement>\r\n      <DasType>bigint|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>1</Position>\r\n    </column>\r\n    <column id=\"352\" parent=\"313\" name=\"code\">\r\n      <DasType>varchar(20)|0s</DasType>\r\n      <Position>2</Position>\r\n    </column>\r\n    <column id=\"353\" parent=\"313\" name=\"name\">\r\n      <DasType>varchar(255)|0s</DasType>\r\n      <Position>3</Position>\r\n      <CollationName>utf8mb3_general_ci</CollationName>\r\n    </column>\r\n    <column id=\"354\" parent=\"313\" name=\"date\">\r\n      <DasType>date|0s</DasType>\r\n      <Position>4</Position>\r\n    </column>\r\n    <column id=\"355\" parent=\"313\" name=\"address\">\r\n      <DasType>varchar(255)|0s</DasType>\r\n      <Position>5</Position>\r\n      <CollationName>utf8mb3_general_ci</CollationName>\r\n    </column>\r\n    <column id=\"356\" parent=\"313\" name=\"email\">\r\n      <DasType>varchar(50)|0s</DasType>\r\n      <Position>6</Position>\r\n    </column>\r\n    <column id=\"357\" parent=\"313\" name=\"phone\">\r\n      <DasType>varchar(11)|0s</DasType>\r\n      <Position>7</Position>\r\n    </column>\r\n    <column id=\"358\" parent=\"313\" name=\"image\">\r\n      <DasType>varchar(255)|0s</DasType>\r\n      <Position>8</Position>\r\n    </column>\r\n    <index id=\"359\" parent=\"313\" name=\"PRIMARY\">\r\n      <ColNames>id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"360\" parent=\"313\" name=\"id\">\r\n      <ColNames>id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"361\" parent=\"313\" name=\"employeeCode\">\r\n      <ColNames>code</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"362\" parent=\"313\" name=\"employeeEmail\">\r\n      <ColNames>email</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"363\" parent=\"313\" name=\"employeePhone\">\r\n      <ColNames>phone</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <key id=\"364\" parent=\"313\" name=\"PRIMARY\">\r\n      <NameSurrogate>1</NameSurrogate>\r\n      <Primary>1</Primary>\r\n      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"365\" parent=\"313\" name=\"id\">\r\n      <UnderlyingIndexName>id</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"366\" parent=\"313\" name=\"employeeCode\">\r\n      <UnderlyingIndexName>employeeCode</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"367\" parent=\"313\" name=\"employeeEmail\">\r\n      <UnderlyingIndexName>employeeEmail</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"368\" parent=\"313\" name=\"employeePhone\">\r\n      <UnderlyingIndexName>employeePhone</UnderlyingIndexName>\r\n    </key>\r\n    <column id=\"369\" parent=\"314\" name=\"user\">\r\n      <DasType>varchar(50)|0s</DasType>\r\n      <Position>1</Position>\r\n    </column>\r\n    <column id=\"370\" parent=\"314\" name=\"password\">\r\n      <DasType>varchar(50)|0s</DasType>\r\n      <Position>2</Position>\r\n    </column>\r\n    <column id=\"371\" parent=\"315\" name=\"id\">\r\n      <AutoIncrement>1</AutoIncrement>\r\n      <DasType>bigint|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>1</Position>\r\n    </column>\r\n    <column id=\"372\" parent=\"315\" name=\"customer_id\">\r\n      <DasType>bigint|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>2</Position>\r\n    </column>\r\n    <column id=\"373\" parent=\"315\" name=\"employee_id\">\r\n      <DasType>bigint|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>3</Position>\r\n    </column>\r\n    <column id=\"374\" parent=\"315\" name=\"orderDate\">\r\n      <DasType>date|0s</DasType>\r\n      <Position>4</Position>\r\n    </column>\r\n    <column id=\"375\" parent=\"315\" name=\"status\">\r\n      <DasType>int|0s</DasType>\r\n      <Position>5</Position>\r\n    </column>\r\n    <foreign-key id=\"376\" parent=\"315\" name=\"fk_order_customer\">\r\n      <ColNames>customer_id</ColNames>\r\n      <RefColNames>id</RefColNames>\r\n      <RefTableName>customer</RefTableName>\r\n    </foreign-key>\r\n    <foreign-key id=\"377\" parent=\"315\" name=\"fk_order_employee\">\r\n      <ColNames>employee_id</ColNames>\r\n      <RefColNames>id</RefColNames>\r\n      <RefTableName>employee</RefTableName>\r\n    </foreign-key>\r\n    <index id=\"378\" parent=\"315\" name=\"PRIMARY\">\r\n      <ColNames>id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"379\" parent=\"315\" name=\"id\">\r\n      <ColNames>id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"380\" parent=\"315\" name=\"fk_order_customer\">\r\n      <ColNames>customer_id</ColNames>\r\n      <Type>btree</Type>\r\n    </index>\r\n    <index id=\"381\" parent=\"315\" name=\"fk_order_employee\">\r\n      <ColNames>employee_id</ColNames>\r\n      <Type>btree</Type>\r\n    </index>\r\n    <key id=\"382\" parent=\"315\" name=\"PRIMARY\">\r\n      <NameSurrogate>1</NameSurrogate>\r\n      <Primary>1</Primary>\r\n      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"383\" parent=\"315\" name=\"id\">\r\n      <UnderlyingIndexName>id</UnderlyingIndexName>\r\n    </key>\r\n    <check id=\"384\" parent=\"316\" name=\"orderdetail_chk_1\">\r\n      <NameSurrogate>1</NameSurrogate>\r\n      <Predicate>`quantity` &gt; 0</Predicate>\r\n    </check>\r\n    <column id=\"385\" parent=\"316\" name=\"id\">\r\n      <AutoIncrement>1</AutoIncrement>\r\n      <DasType>bigint|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>1</Position>\r\n    </column>\r\n    <column id=\"386\" parent=\"316\" name=\"order_id\">\r\n      <DasType>bigint|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>2</Position>\r\n    </column>\r\n    <column id=\"387\" parent=\"316\" name=\"product_id\">\r\n      <DasType>bigint|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>3</Position>\r\n    </column>\r\n    <column id=\"388\" parent=\"316\" name=\"quantity\">\r\n      <DasType>int|0s</DasType>\r\n      <Position>4</Position>\r\n    </column>\r\n    <column id=\"389\" parent=\"316\" name=\"amount\">\r\n      <DasType>double|0s</DasType>\r\n      <Position>5</Position>\r\n    </column>\r\n    <column id=\"390\" parent=\"316\" name=\"sumAmount\">\r\n      <DasType>double|0s</DasType>\r\n      <Position>6</Position>\r\n    </column>\r\n    <foreign-key id=\"391\" parent=\"316\" name=\"fk_orderdeatil_order\">\r\n      <ColNames>order_id</ColNames>\r\n      <RefColNames>id</RefColNames>\r\n      <RefTableName>order</RefTableName>\r\n    </foreign-key>\r\n    <foreign-key id=\"392\" parent=\"316\" name=\"fk_orderdetail_product\">\r\n      <ColNames>product_id</ColNames>\r\n      <RefColNames>id</RefColNames>\r\n      <RefTableName>product</RefTableName>\r\n    </foreign-key>\r\n    <index id=\"393\" parent=\"316\" name=\"PRIMARY\">\r\n      <ColNames>id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"394\" parent=\"316\" name=\"id\">\r\n      <ColNames>id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"395\" parent=\"316\" name=\"fk_orderdeatil_order\">\r\n      <ColNames>order_id</ColNames>\r\n      <Type>btree</Type>\r\n    </index>\r\n    <index id=\"396\" parent=\"316\" name=\"fk_orderdetail_product\">\r\n      <ColNames>product_id</ColNames>\r\n      <Type>btree</Type>\r\n    </index>\r\n    <key id=\"397\" parent=\"316\" name=\"PRIMARY\">\r\n      <NameSurrogate>1</NameSurrogate>\r\n      <Primary>1</Primary>\r\n      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"398\" parent=\"316\" name=\"id\">\r\n      <UnderlyingIndexName>id</UnderlyingIndexName>\r\n    </key>\r\n    <check id=\"399\" parent=\"317\" name=\"product_chk_1\">\r\n      <NameSurrogate>1</NameSurrogate>\r\n      <Predicate>`productPrice` &gt;= 0</Predicate>\r\n    </check>\r\n    <column id=\"400\" parent=\"317\" name=\"id\">\r\n      <AutoIncrement>2</AutoIncrement>\r\n      <DasType>bigint|0s</DasType>\r\n      <NotNull>1</NotNull>\r\n      <Position>1</Position>\r\n    </column>\r\n    <column id=\"401\" parent=\"317\" name=\"productCode\">\r\n      <DasType>varchar(20)|0s</DasType>\r\n      <Position>2</Position>\r\n      <CollationName>utf8mb3_general_ci</CollationName>\r\n    </column>\r\n    <column id=\"402\" parent=\"317\" name=\"productName\">\r\n      <DasType>varchar(255)|0s</DasType>\r\n      <Position>3</Position>\r\n      <CollationName>utf8mb3_general_ci</CollationName>\r\n    </column>\r\n    <column id=\"403\" parent=\"317\" name=\"productPrice\">\r\n      <DasType>double|0s</DasType>\r\n      <DefaultExpression>0</DefaultExpression>\r\n      <Position>4</Position>\r\n    </column>\r\n    <column id=\"404\" parent=\"317\" name=\"productImage\">\r\n      <DasType>varchar(250)|0s</DasType>\r\n      <Position>5</Position>\r\n      <CollationName>utf8mb3_general_ci</CollationName>\r\n    </column>\r\n    <column id=\"405\" parent=\"317\" name=\"productDescribe\">\r\n      <DasType>longtext|0s</DasType>\r\n      <Position>6</Position>\r\n    </column>\r\n    <index id=\"406\" parent=\"317\" name=\"PRIMARY\">\r\n      <ColNames>id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"407\" parent=\"317\" name=\"id\">\r\n      <ColNames>id</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <index id=\"408\" parent=\"317\" name=\"productCode\">\r\n      <ColNames>productCode</ColNames>\r\n      <Type>btree</Type>\r\n      <Unique>1</Unique>\r\n    </index>\r\n    <key id=\"409\" parent=\"317\" name=\"PRIMARY\">\r\n      <NameSurrogate>1</NameSurrogate>\r\n      <Primary>1</Primary>\r\n      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"410\" parent=\"317\" name=\"id\">\r\n      <UnderlyingIndexName>id</UnderlyingIndexName>\r\n    </key>\r\n    <key id=\"411\" parent=\"317\" name=\"productCode\">\r\n      <UnderlyingIndexName>productCode</UnderlyingIndexName>\r\n    </key>\r\n  </database-model>\r\n</dataSource>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32.xml b/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32.xml
+--- a/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32.xml	(revision c199a07510cd2d15d5bf2d8408a310becc6c08b2)
++++ b/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32.xml	(date 1678943646933)
+@@ -5,157 +5,157 @@
+       <DefaultCasing>lower/lower</DefaultCasing>
+       <DefaultEngine>InnoDB</DefaultEngine>
+       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
+-      <Grants>|root||root|localhost|ALTER|G
+-|root||tuong2001||ALTER|G
++      <Grants>|root||nguyendinhnguyen|localhost|ALTER|G
++|root||root|localhost|ALTER|G
++|root||nguyendinhnguyen|localhost|ALTER ROUTINE|G
+ |root||root|localhost|ALTER ROUTINE|G
+-|root||tuong2001||ALTER ROUTINE|G
++|root||nguyendinhnguyen|localhost|APPLICATION_PASSWORD_ADMIN|G
+ |root||root|localhost|APPLICATION_PASSWORD_ADMIN|G
+-|root||tuong2001||APPLICATION_PASSWORD_ADMIN|G
+ |root||mysql.infoschema|localhost|AUDIT_ABORT_EXEMPT|G
+ |root||mysql.session|localhost|AUDIT_ABORT_EXEMPT|G
+ |root||mysql.sys|localhost|AUDIT_ABORT_EXEMPT|G
++|root||nguyendinhnguyen|localhost|AUDIT_ABORT_EXEMPT|G
+ |root||root|localhost|AUDIT_ABORT_EXEMPT|G
+-|root||tuong2001||AUDIT_ABORT_EXEMPT|G
++|root||nguyendinhnguyen|localhost|AUDIT_ADMIN|G
+ |root||root|localhost|AUDIT_ADMIN|G
+-|root||tuong2001||AUDIT_ADMIN|G
+ |root||mysql.session|localhost|AUTHENTICATION_POLICY_ADMIN|G
++|root||nguyendinhnguyen|localhost|AUTHENTICATION_POLICY_ADMIN|G
+ |root||root|localhost|AUTHENTICATION_POLICY_ADMIN|G
+-|root||tuong2001||AUTHENTICATION_POLICY_ADMIN|G
+ |root||mysql.session|localhost|BACKUP_ADMIN|G
++|root||nguyendinhnguyen|localhost|BACKUP_ADMIN|G
+ |root||root|localhost|BACKUP_ADMIN|G
+-|root||tuong2001||BACKUP_ADMIN|G
++|root||nguyendinhnguyen|localhost|BINLOG_ADMIN|G
+ |root||root|localhost|BINLOG_ADMIN|G
+-|root||tuong2001||BINLOG_ADMIN|G
++|root||nguyendinhnguyen|localhost|BINLOG_ENCRYPTION_ADMIN|G
+ |root||root|localhost|BINLOG_ENCRYPTION_ADMIN|G
+-|root||tuong2001||BINLOG_ENCRYPTION_ADMIN|G
+ |root||mysql.session|localhost|CLONE_ADMIN|G
++|root||nguyendinhnguyen|localhost|CLONE_ADMIN|G
+ |root||root|localhost|CLONE_ADMIN|G
+-|root||tuong2001||CLONE_ADMIN|G
+ |root||mysql.session|localhost|CONNECTION_ADMIN|G
++|root||nguyendinhnguyen|localhost|CONNECTION_ADMIN|G
+ |root||root|localhost|CONNECTION_ADMIN|G
+-|root||tuong2001||CONNECTION_ADMIN|G
++|root||nguyendinhnguyen|localhost|CREATE|G
+ |root||root|localhost|CREATE|G
+-|root||tuong2001||CREATE|G
++|root||nguyendinhnguyen|localhost|CREATE ROLE|G
+ |root||root|localhost|CREATE ROLE|G
+-|root||tuong2001||CREATE ROLE|G
++|root||nguyendinhnguyen|localhost|CREATE ROUTINE|G
+ |root||root|localhost|CREATE ROUTINE|G
+-|root||tuong2001||CREATE ROUTINE|G
++|root||nguyendinhnguyen|localhost|CREATE TABLESPACE|G
+ |root||root|localhost|CREATE TABLESPACE|G
+-|root||tuong2001||CREATE TABLESPACE|G
++|root||nguyendinhnguyen|localhost|CREATE TEMPORARY TABLES|G
+ |root||root|localhost|CREATE TEMPORARY TABLES|G
+-|root||tuong2001||CREATE TEMPORARY TABLES|G
++|root||nguyendinhnguyen|localhost|CREATE USER|G
+ |root||root|localhost|CREATE USER|G
+-|root||tuong2001||CREATE USER|G
++|root||nguyendinhnguyen|localhost|CREATE VIEW|G
+ |root||root|localhost|CREATE VIEW|G
+-|root||tuong2001||CREATE VIEW|G
++|root||nguyendinhnguyen|localhost|DELETE|G
+ |root||root|localhost|DELETE|G
+-|root||tuong2001||DELETE|G
++|root||nguyendinhnguyen|localhost|DROP|G
+ |root||root|localhost|DROP|G
+-|root||tuong2001||DROP|G
++|root||nguyendinhnguyen|localhost|DROP ROLE|G
+ |root||root|localhost|DROP ROLE|G
+-|root||tuong2001||DROP ROLE|G
++|root||nguyendinhnguyen|localhost|ENCRYPTION_KEY_ADMIN|G
+ |root||root|localhost|ENCRYPTION_KEY_ADMIN|G
+-|root||tuong2001||ENCRYPTION_KEY_ADMIN|G
++|root||nguyendinhnguyen|localhost|EVENT|G
+ |root||root|localhost|EVENT|G
+-|root||tuong2001||EVENT|G
++|root||nguyendinhnguyen|localhost|EXECUTE|G
+ |root||root|localhost|EXECUTE|G
+-|root||tuong2001||EXECUTE|G
++|root||nguyendinhnguyen|localhost|FILE|G
+ |root||root|localhost|FILE|G
+-|root||tuong2001||FILE|G
+ |root||mysql.infoschema|localhost|FIREWALL_EXEMPT|G
+ |root||mysql.session|localhost|FIREWALL_EXEMPT|G
+ |root||mysql.sys|localhost|FIREWALL_EXEMPT|G
++|root||nguyendinhnguyen|localhost|FIREWALL_EXEMPT|G
+ |root||root|localhost|FIREWALL_EXEMPT|G
+-|root||tuong2001||FIREWALL_EXEMPT|G
++|root||nguyendinhnguyen|localhost|FLUSH_OPTIMIZER_COSTS|G
+ |root||root|localhost|FLUSH_OPTIMIZER_COSTS|G
+-|root||tuong2001||FLUSH_OPTIMIZER_COSTS|G
++|root||nguyendinhnguyen|localhost|FLUSH_STATUS|G
+ |root||root|localhost|FLUSH_STATUS|G
+-|root||tuong2001||FLUSH_STATUS|G
++|root||nguyendinhnguyen|localhost|FLUSH_TABLES|G
+ |root||root|localhost|FLUSH_TABLES|G
+-|root||tuong2001||FLUSH_TABLES|G
++|root||nguyendinhnguyen|localhost|FLUSH_USER_RESOURCES|G
+ |root||root|localhost|FLUSH_USER_RESOURCES|G
+-|root||tuong2001||FLUSH_USER_RESOURCES|G
++|root||nguyendinhnguyen|localhost|GROUP_REPLICATION_ADMIN|G
+ |root||root|localhost|GROUP_REPLICATION_ADMIN|G
+-|root||tuong2001||GROUP_REPLICATION_ADMIN|G
++|root||nguyendinhnguyen|localhost|GROUP_REPLICATION_STREAM|G
+ |root||root|localhost|GROUP_REPLICATION_STREAM|G
+-|root||tuong2001||GROUP_REPLICATION_STREAM|G
++|root||nguyendinhnguyen|localhost|INDEX|G
+ |root||root|localhost|INDEX|G
+-|root||tuong2001||INDEX|G
++|root||nguyendinhnguyen|localhost|INNODB_REDO_LOG_ARCHIVE|G
+ |root||root|localhost|INNODB_REDO_LOG_ARCHIVE|G
+-|root||tuong2001||INNODB_REDO_LOG_ARCHIVE|G
++|root||nguyendinhnguyen|localhost|INNODB_REDO_LOG_ENABLE|G
+ |root||root|localhost|INNODB_REDO_LOG_ENABLE|G
+-|root||tuong2001||INNODB_REDO_LOG_ENABLE|G
++|root||nguyendinhnguyen|localhost|INSERT|G
+ |root||root|localhost|INSERT|G
+-|root||tuong2001||INSERT|G
++|root||nguyendinhnguyen|localhost|LOCK TABLES|G
+ |root||root|localhost|LOCK TABLES|G
+-|root||tuong2001||LOCK TABLES|G
++|root||nguyendinhnguyen|localhost|PASSWORDLESS_USER_ADMIN|G
+ |root||root|localhost|PASSWORDLESS_USER_ADMIN|G
+-|root||tuong2001||PASSWORDLESS_USER_ADMIN|G
+ |root||mysql.session|localhost|PERSIST_RO_VARIABLES_ADMIN|G
++|root||nguyendinhnguyen|localhost|PERSIST_RO_VARIABLES_ADMIN|G
+ |root||root|localhost|PERSIST_RO_VARIABLES_ADMIN|G
+-|root||tuong2001||PERSIST_RO_VARIABLES_ADMIN|G
++|root||nguyendinhnguyen|localhost|PROCESS|G
+ |root||root|localhost|PROCESS|G
+-|root||tuong2001||PROCESS|G
++|root||nguyendinhnguyen|localhost|REFERENCES|G
+ |root||root|localhost|REFERENCES|G
+-|root||tuong2001||REFERENCES|G
++|root||nguyendinhnguyen|localhost|RELOAD|G
+ |root||root|localhost|RELOAD|G
+-|root||tuong2001||RELOAD|G
++|root||nguyendinhnguyen|localhost|REPLICATION CLIENT|G
+ |root||root|localhost|REPLICATION CLIENT|G
+-|root||tuong2001||REPLICATION CLIENT|G
++|root||nguyendinhnguyen|localhost|REPLICATION SLAVE|G
+ |root||root|localhost|REPLICATION SLAVE|G
+-|root||tuong2001||REPLICATION SLAVE|G
++|root||nguyendinhnguyen|localhost|REPLICATION_APPLIER|G
+ |root||root|localhost|REPLICATION_APPLIER|G
+-|root||tuong2001||REPLICATION_APPLIER|G
++|root||nguyendinhnguyen|localhost|REPLICATION_SLAVE_ADMIN|G
+ |root||root|localhost|REPLICATION_SLAVE_ADMIN|G
+-|root||tuong2001||REPLICATION_SLAVE_ADMIN|G
++|root||nguyendinhnguyen|localhost|RESOURCE_GROUP_ADMIN|G
+ |root||root|localhost|RESOURCE_GROUP_ADMIN|G
+-|root||tuong2001||RESOURCE_GROUP_ADMIN|G
++|root||nguyendinhnguyen|localhost|RESOURCE_GROUP_USER|G
+ |root||root|localhost|RESOURCE_GROUP_USER|G
+-|root||tuong2001||RESOURCE_GROUP_USER|G
++|root||nguyendinhnguyen|localhost|ROLE_ADMIN|G
+ |root||root|localhost|ROLE_ADMIN|G
+-|root||tuong2001||ROLE_ADMIN|G
+ |root||mysql.infoschema|localhost|SELECT|G
++|root||nguyendinhnguyen|localhost|SELECT|G
+ |root||root|localhost|SELECT|G
+-|root||tuong2001||SELECT|G
++|root||nguyendinhnguyen|localhost|SENSITIVE_VARIABLES_OBSERVER|G
+ |root||root|localhost|SENSITIVE_VARIABLES_OBSERVER|G
+-|root||tuong2001||SENSITIVE_VARIABLES_OBSERVER|G
++|root||nguyendinhnguyen|localhost|SERVICE_CONNECTION_ADMIN|G
+ |root||root|localhost|SERVICE_CONNECTION_ADMIN|G
+-|root||tuong2001||SERVICE_CONNECTION_ADMIN|G
+ |root||mysql.session|localhost|SESSION_VARIABLES_ADMIN|G
++|root||nguyendinhnguyen|localhost|SESSION_VARIABLES_ADMIN|G
+ |root||root|localhost|SESSION_VARIABLES_ADMIN|G
+-|root||tuong2001||SESSION_VARIABLES_ADMIN|G
++|root||nguyendinhnguyen|localhost|SET_USER_ID|G
+ |root||root|localhost|SET_USER_ID|G
+-|root||tuong2001||SET_USER_ID|G
++|root||nguyendinhnguyen|localhost|SHOW DATABASES|G
+ |root||root|localhost|SHOW DATABASES|G
+-|root||tuong2001||SHOW DATABASES|G
++|root||nguyendinhnguyen|localhost|SHOW VIEW|G
+ |root||root|localhost|SHOW VIEW|G
+-|root||tuong2001||SHOW VIEW|G
++|root||nguyendinhnguyen|localhost|SHOW_ROUTINE|G
+ |root||root|localhost|SHOW_ROUTINE|G
+-|root||tuong2001||SHOW_ROUTINE|G
+ |root||mysql.session|localhost|SHUTDOWN|G
++|root||nguyendinhnguyen|localhost|SHUTDOWN|G
+ |root||root|localhost|SHUTDOWN|G
+-|root||tuong2001||SHUTDOWN|G
+ |root||mysql.session|localhost|SUPER|G
++|root||nguyendinhnguyen|localhost|SUPER|G
+ |root||root|localhost|SUPER|G
+-|root||tuong2001||SUPER|G
+ |root||mysql.infoschema|localhost|SYSTEM_USER|G
+ |root||mysql.session|localhost|SYSTEM_USER|G
+ |root||mysql.sys|localhost|SYSTEM_USER|G
++|root||nguyendinhnguyen|localhost|SYSTEM_USER|G
+ |root||root|localhost|SYSTEM_USER|G
+-|root||tuong2001||SYSTEM_USER|G
+ |root||mysql.session|localhost|SYSTEM_VARIABLES_ADMIN|G
++|root||nguyendinhnguyen|localhost|SYSTEM_VARIABLES_ADMIN|G
+ |root||root|localhost|SYSTEM_VARIABLES_ADMIN|G
+-|root||tuong2001||SYSTEM_VARIABLES_ADMIN|G
++|root||nguyendinhnguyen|localhost|TABLE_ENCRYPTION_ADMIN|G
+ |root||root|localhost|TABLE_ENCRYPTION_ADMIN|G
+-|root||tuong2001||TABLE_ENCRYPTION_ADMIN|G
++|root||nguyendinhnguyen|localhost|TRIGGER|G
+ |root||root|localhost|TRIGGER|G
+-|root||tuong2001||TRIGGER|G
++|root||nguyendinhnguyen|localhost|UPDATE|G
+ |root||root|localhost|UPDATE|G
+-|root||tuong2001||UPDATE|G
++|root||nguyendinhnguyen|localhost|XA_RECOVER_ADMIN|G
+ |root||root|localhost|XA_RECOVER_ADMIN|G
+-|root||tuong2001||XA_RECOVER_ADMIN|G
++|root||nguyendinhnguyen|localhost|grant option|G
+ |root||root|localhost|grant option|G
+-|root||tuong2001||grant option|G
+ performance_schema|schema||mysql.session|localhost|SELECT|G
+ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
+       <ServerVersion>8.0.31</ServerVersion>
+@@ -1059,534 +1059,524 @@
+     <collation id="287" parent="1" name="utf8mb4_zh_0900_as_cs">
+       <Charset>utf8mb4</Charset>
+     </collation>
+-    <schema id="288" parent="1" name="casemd3">
++    <schema id="288" parent="1" name="ecommerce">
+       <Current>1</Current>
+-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+-    </schema>
+-    <schema id="289" parent="1" name="dao">
+-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+-    </schema>
+-    <schema id="290" parent="1" name="demo">
+-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+-    </schema>
+-    <schema id="291" parent="1" name="ecommerce">
+-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
++      <CollationName>utf8mb3_unicode_ci</CollationName>
+     </schema>
+-    <schema id="292" parent="1" name="information_schema">
++    <schema id="289" parent="1" name="information_schema">
+       <CollationName>utf8mb3_general_ci</CollationName>
+     </schema>
+-    <schema id="293" parent="1" name="luyentap">
+-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+-    </schema>
+-    <schema id="294" parent="1" name="minitest">
++    <schema id="290" parent="1" name="mysql">
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </schema>
+-    <schema id="295" parent="1" name="mysql">
++    <schema id="291" parent="1" name="performance_schema">
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </schema>
+-    <schema id="296" parent="1" name="performance_schema">
++    <schema id="292" parent="1" name="product">
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </schema>
+-    <schema id="297" parent="1" name="petshop">
++    <schema id="293" parent="1" name="sakila">
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </schema>
+-    <schema id="298" parent="1" name="quanlysinhvien">
++    <schema id="294" parent="1" name="shopmanager">
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </schema>
+-    <schema id="299" parent="1" name="sakila">
++    <schema id="295" parent="1" name="studentmanager">
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </schema>
+-    <schema id="300" parent="1" name="test">
++    <schema id="296" parent="1" name="sys">
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </schema>
+-    <schema id="301" parent="1" name="testdao">
++    <schema id="297" parent="1" name="touristmanager">
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </schema>
+-    <schema id="302" parent="1" name="world">
+-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
++    <schema id="298" parent="1" name="usermanager">
++      <CollationName>utf8mb4_vietnamese_ci</CollationName>
+     </schema>
+-    <user id="303" parent="1" name="mysql.infoschema">
++    <user id="299" parent="1" name="mysql.infoschema">
+       <CanLogin>0</CanLogin>
+       <Host>localhost</Host>
+       <Plugin>caching_sha2_password</Plugin>
+     </user>
+-    <user id="304" parent="1" name="mysql.session">
++    <user id="300" parent="1" name="mysql.session">
+       <CanLogin>0</CanLogin>
+       <Host>localhost</Host>
+       <Plugin>caching_sha2_password</Plugin>
+     </user>
+-    <user id="305" parent="1" name="mysql.sys">
++    <user id="301" parent="1" name="mysql.sys">
+       <CanLogin>0</CanLogin>
+       <Host>localhost</Host>
+       <Plugin>caching_sha2_password</Plugin>
+     </user>
+-    <user id="306" parent="1" name="root">
++    <user id="302" parent="1" name="root">
+       <Host>localhost</Host>
+       <Plugin>caching_sha2_password</Plugin>
+     </user>
+-    <user id="307" parent="1" name="tuong"/>
+-    <user id="308" parent="1" name="tuong2001"/>
+-    <table id="309" parent="291" name="admin">
++    <user id="303" parent="1" name="nguyendinhnguyen">
++      <Host>localhost</Host>
++      <Plugin>caching_sha2_password</Plugin>
++    </user>
++    <table id="304" parent="288" name="_order">
+       <Engine>InnoDB</Engine>
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </table>
+-    <table id="310" parent="291" name="categories">
++    <table id="305" parent="288" name="admin">
+       <Engine>InnoDB</Engine>
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </table>
+-    <table id="311" parent="291" name="categories_product">
++    <table id="306" parent="288" name="categories">
+       <Engine>InnoDB</Engine>
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </table>
+-    <table id="312" parent="291" name="customer">
++    <table id="307" parent="288" name="categories_product">
+       <Engine>InnoDB</Engine>
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </table>
+-    <table id="313" parent="291" name="employee">
++    <table id="308" parent="288" name="customer">
+       <Engine>InnoDB</Engine>
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </table>
+-    <table id="314" parent="291" name="logincustomer">
++    <table id="309" parent="288" name="employee">
+       <Engine>InnoDB</Engine>
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </table>
+-    <table id="315" parent="291" name="order">
++    <table id="310" parent="288" name="logincustomer">
+       <Engine>InnoDB</Engine>
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </table>
+-    <table id="316" parent="291" name="orderdetail">
++    <table id="311" parent="288" name="orderdetail">
+       <Engine>InnoDB</Engine>
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </table>
+-    <table id="317" parent="291" name="product">
++    <table id="312" parent="288" name="product">
+       <Engine>InnoDB</Engine>
+       <CollationName>utf8mb4_0900_ai_ci</CollationName>
+     </table>
+-    <column id="318" parent="309" name="user">
++    <column id="313" parent="304" name="id">
++      <AutoIncrement>1</AutoIncrement>
++      <DasType>bigint|0s</DasType>
++      <NotNull>1</NotNull>
++      <Position>1</Position>
++    </column>
++    <column id="314" parent="304" name="customer_id">
++      <DasType>bigint|0s</DasType>
++      <NotNull>1</NotNull>
++      <Position>2</Position>
++    </column>
++    <column id="315" parent="304" name="employee_id">
++      <DasType>bigint|0s</DasType>
++      <NotNull>1</NotNull>
++      <Position>3</Position>
++    </column>
++    <column id="316" parent="304" name="orderDate">
++      <DasType>date|0s</DasType>
++      <Position>4</Position>
++    </column>
++    <column id="317" parent="304" name="status">
++      <DasType>int|0s</DasType>
++      <Position>5</Position>
++    </column>
++    <foreign-key id="318" parent="304" name="fk_order_customer">
++      <ColNames>customer_id</ColNames>
++      <RefColNames>id</RefColNames>
++      <RefTableName>customer</RefTableName>
++    </foreign-key>
++    <foreign-key id="319" parent="304" name="fk_order_employee">
++      <ColNames>employee_id</ColNames>
++      <RefColNames>id</RefColNames>
++      <RefTableName>employee</RefTableName>
++    </foreign-key>
++    <index id="320" parent="304" name="PRIMARY">
++      <ColNames>id</ColNames>
++      <Type>btree</Type>
++      <Unique>1</Unique>
++    </index>
++    <index id="321" parent="304" name="id">
++      <ColNames>id</ColNames>
++      <Type>btree</Type>
++      <Unique>1</Unique>
++    </index>
++    <index id="322" parent="304" name="fk_order_customer">
++      <ColNames>customer_id</ColNames>
++      <Type>btree</Type>
++    </index>
++    <index id="323" parent="304" name="fk_order_employee">
++      <ColNames>employee_id</ColNames>
++      <Type>btree</Type>
++    </index>
++    <key id="324" parent="304" name="PRIMARY">
++      <NameSurrogate>1</NameSurrogate>
++      <Primary>1</Primary>
++      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
++    </key>
++    <key id="325" parent="304" name="id">
++      <UnderlyingIndexName>id</UnderlyingIndexName>
++    </key>
++    <column id="326" parent="305" name="user">
+       <DasType>varchar(50)|0s</DasType>
+       <NotNull>1</NotNull>
+       <Position>1</Position>
+     </column>
+-    <column id="319" parent="309" name="password">
++    <column id="327" parent="305" name="password">
+       <DasType>varchar(50)|0s</DasType>
+       <NotNull>1</NotNull>
+       <Position>2</Position>
+     </column>
+-    <column id="320" parent="309" name="role">
++    <column id="328" parent="305" name="role">
+       <DasType>int|0s</DasType>
+       <NotNull>1</NotNull>
+       <Position>3</Position>
+     </column>
+-    <column id="321" parent="310" name="id">
++    <column id="329" parent="306" name="id">
+       <AutoIncrement>2</AutoIncrement>
+       <DasType>bigint|0s</DasType>
+       <NotNull>1</NotNull>
+       <Position>1</Position>
+     </column>
+-    <column id="322" parent="310" name="categoriesName">
++    <column id="330" parent="306" name="categoriesName">
+       <DasType>varchar(40)|0s</DasType>
+       <Position>2</Position>
+       <CollationName>utf8mb3_general_ci</CollationName>
+     </column>
+-    <index id="323" parent="310" name="PRIMARY">
++    <index id="331" parent="306" name="PRIMARY">
+       <ColNames>id</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="324" parent="310" name="id">
++    <index id="332" parent="306" name="id">
+       <ColNames>id</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <key id="325" parent="310" name="PRIMARY">
++    <key id="333" parent="306" name="PRIMARY">
+       <NameSurrogate>1</NameSurrogate>
+       <Primary>1</Primary>
+       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+     </key>
+-    <key id="326" parent="310" name="id">
++    <key id="334" parent="306" name="id">
+       <UnderlyingIndexName>id</UnderlyingIndexName>
+     </key>
+-    <column id="327" parent="311" name="categories_id">
++    <column id="335" parent="307" name="categories_id">
+       <DasType>bigint|0s</DasType>
+       <NotNull>1</NotNull>
+       <Position>1</Position>
+     </column>
+-    <column id="328" parent="311" name="product_id">
++    <column id="336" parent="307" name="product_id">
+       <DasType>bigint|0s</DasType>
+       <NotNull>1</NotNull>
+       <Position>2</Position>
+     </column>
+-    <foreign-key id="329" parent="311" name="fk_categories_product_categories">
++    <foreign-key id="337" parent="307" name="fk_categories_product_categories">
+       <ColNames>categories_id</ColNames>
+       <RefColNames>id</RefColNames>
+       <RefTableName>categories</RefTableName>
+     </foreign-key>
+-    <foreign-key id="330" parent="311" name="fk_categories_product_product">
++    <foreign-key id="338" parent="307" name="fk_categories_product_product">
+       <ColNames>product_id</ColNames>
+       <RefColNames>id</RefColNames>
+       <RefTableName>product</RefTableName>
+     </foreign-key>
+-    <index id="331" parent="311" name="PRIMARY">
++    <index id="339" parent="307" name="PRIMARY">
+       <ColNames>categories_id
+ product_id</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="332" parent="311" name="fk_categories_product_product">
++    <index id="340" parent="307" name="fk_categories_product_product">
+       <ColNames>product_id</ColNames>
+       <Type>btree</Type>
+     </index>
+-    <key id="333" parent="311" name="PRIMARY">
++    <key id="341" parent="307" name="PRIMARY">
+       <NameSurrogate>1</NameSurrogate>
+       <Primary>1</Primary>
+       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+     </key>
+-    <column id="334" parent="312" name="id">
++    <column id="342" parent="308" name="id">
+       <AutoIncrement>1</AutoIncrement>
+       <DasType>bigint|0s</DasType>
+       <NotNull>1</NotNull>
+       <Position>1</Position>
+     </column>
+-    <column id="335" parent="312" name="code">
++    <column id="343" parent="308" name="code">
+       <DasType>varchar(20)|0s</DasType>
+       <Position>2</Position>
+     </column>
+-    <column id="336" parent="312" name="name">
++    <column id="344" parent="308" name="name">
+       <DasType>varchar(255)|0s</DasType>
+       <Position>3</Position>
+       <CollationName>utf8mb3_general_ci</CollationName>
+     </column>
+-    <column id="337" parent="312" name="date">
++    <column id="345" parent="308" name="date">
+       <DasType>date|0s</DasType>
+       <Position>4</Position>
+     </column>
+-    <column id="338" parent="312" name="address">
++    <column id="346" parent="308" name="address">
+       <DasType>varchar(255)|0s</DasType>
+       <Position>5</Position>
+       <CollationName>utf8mb3_general_ci</CollationName>
+     </column>
+-    <column id="339" parent="312" name="email">
++    <column id="347" parent="308" name="email">
+       <DasType>varchar(50)|0s</DasType>
+       <Position>6</Position>
+     </column>
+-    <column id="340" parent="312" name="phone">
++    <column id="348" parent="308" name="phone">
+       <DasType>varchar(11)|0s</DasType>
+       <Position>7</Position>
+     </column>
+-    <index id="341" parent="312" name="PRIMARY">
++    <index id="349" parent="308" name="PRIMARY">
+       <ColNames>id</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="342" parent="312" name="id">
++    <index id="350" parent="308" name="id">
+       <ColNames>id</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="343" parent="312" name="customerCode">
++    <index id="351" parent="308" name="customerCode">
+       <ColNames>code</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="344" parent="312" name="customerEmail">
++    <index id="352" parent="308" name="customerEmail">
+       <ColNames>email</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="345" parent="312" name="customerPhone">
++    <index id="353" parent="308" name="customerPhone">
+       <ColNames>phone</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <key id="346" parent="312" name="PRIMARY">
++    <key id="354" parent="308" name="PRIMARY">
+       <NameSurrogate>1</NameSurrogate>
+       <Primary>1</Primary>
+       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+     </key>
+-    <key id="347" parent="312" name="id">
++    <key id="355" parent="308" name="id">
+       <UnderlyingIndexName>id</UnderlyingIndexName>
+     </key>
+-    <key id="348" parent="312" name="customerCode">
++    <key id="356" parent="308" name="customerCode">
+       <UnderlyingIndexName>customerCode</UnderlyingIndexName>
+     </key>
+-    <key id="349" parent="312" name="customerEmail">
++    <key id="357" parent="308" name="customerEmail">
+       <UnderlyingIndexName>customerEmail</UnderlyingIndexName>
+     </key>
+-    <key id="350" parent="312" name="customerPhone">
++    <key id="358" parent="308" name="customerPhone">
+       <UnderlyingIndexName>customerPhone</UnderlyingIndexName>
+     </key>
+-    <column id="351" parent="313" name="id">
++    <column id="359" parent="309" name="id">
+       <AutoIncrement>6468</AutoIncrement>
+       <DasType>bigint|0s</DasType>
+       <NotNull>1</NotNull>
+       <Position>1</Position>
+     </column>
+-    <column id="352" parent="313" name="code">
++    <column id="360" parent="309" name="code">
+       <DasType>varchar(20)|0s</DasType>
+       <Position>2</Position>
+     </column>
+-    <column id="353" parent="313" name="name">
++    <column id="361" parent="309" name="name">
+       <DasType>varchar(255)|0s</DasType>
+       <Position>3</Position>
+       <CollationName>utf8mb3_general_ci</CollationName>
+     </column>
+-    <column id="354" parent="313" name="date">
++    <column id="362" parent="309" name="date">
+       <DasType>date|0s</DasType>
+       <Position>4</Position>
+     </column>
+-    <column id="355" parent="313" name="address">
++    <column id="363" parent="309" name="address">
+       <DasType>varchar(255)|0s</DasType>
+       <Position>5</Position>
+       <CollationName>utf8mb3_general_ci</CollationName>
+     </column>
+-    <column id="356" parent="313" name="email">
++    <column id="364" parent="309" name="email">
+       <DasType>varchar(50)|0s</DasType>
+       <Position>6</Position>
+     </column>
+-    <column id="357" parent="313" name="phone">
++    <column id="365" parent="309" name="phone">
+       <DasType>varchar(11)|0s</DasType>
+       <Position>7</Position>
+     </column>
+-    <column id="358" parent="313" name="image">
++    <column id="366" parent="309" name="image">
+       <DasType>varchar(255)|0s</DasType>
+       <Position>8</Position>
+     </column>
+-    <index id="359" parent="313" name="PRIMARY">
++    <index id="367" parent="309" name="PRIMARY">
+       <ColNames>id</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="360" parent="313" name="id">
++    <index id="368" parent="309" name="id">
+       <ColNames>id</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="361" parent="313" name="employeeCode">
++    <index id="369" parent="309" name="employeeCode">
+       <ColNames>code</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="362" parent="313" name="employeeEmail">
++    <index id="370" parent="309" name="employeeEmail">
+       <ColNames>email</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="363" parent="313" name="employeePhone">
++    <index id="371" parent="309" name="employeePhone">
+       <ColNames>phone</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <key id="364" parent="313" name="PRIMARY">
++    <key id="372" parent="309" name="PRIMARY">
+       <NameSurrogate>1</NameSurrogate>
+       <Primary>1</Primary>
+       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+     </key>
+-    <key id="365" parent="313" name="id">
++    <key id="373" parent="309" name="id">
+       <UnderlyingIndexName>id</UnderlyingIndexName>
+     </key>
+-    <key id="366" parent="313" name="employeeCode">
++    <key id="374" parent="309" name="employeeCode">
+       <UnderlyingIndexName>employeeCode</UnderlyingIndexName>
+     </key>
+-    <key id="367" parent="313" name="employeeEmail">
++    <key id="375" parent="309" name="employeeEmail">
+       <UnderlyingIndexName>employeeEmail</UnderlyingIndexName>
+     </key>
+-    <key id="368" parent="313" name="employeePhone">
++    <key id="376" parent="309" name="employeePhone">
+       <UnderlyingIndexName>employeePhone</UnderlyingIndexName>
+     </key>
+-    <column id="369" parent="314" name="user">
++    <column id="377" parent="310" name="user">
+       <DasType>varchar(50)|0s</DasType>
+       <Position>1</Position>
+     </column>
+-    <column id="370" parent="314" name="password">
++    <column id="378" parent="310" name="password">
+       <DasType>varchar(50)|0s</DasType>
+       <Position>2</Position>
+     </column>
+-    <column id="371" parent="315" name="id">
+-      <AutoIncrement>1</AutoIncrement>
+-      <DasType>bigint|0s</DasType>
+-      <NotNull>1</NotNull>
+-      <Position>1</Position>
+-    </column>
+-    <column id="372" parent="315" name="customer_id">
+-      <DasType>bigint|0s</DasType>
+-      <NotNull>1</NotNull>
+-      <Position>2</Position>
+-    </column>
+-    <column id="373" parent="315" name="employee_id">
+-      <DasType>bigint|0s</DasType>
+-      <NotNull>1</NotNull>
+-      <Position>3</Position>
+-    </column>
+-    <column id="374" parent="315" name="orderDate">
+-      <DasType>date|0s</DasType>
+-      <Position>4</Position>
+-    </column>
+-    <column id="375" parent="315" name="status">
+-      <DasType>int|0s</DasType>
+-      <Position>5</Position>
+-    </column>
+-    <foreign-key id="376" parent="315" name="fk_order_customer">
+-      <ColNames>customer_id</ColNames>
+-      <RefColNames>id</RefColNames>
+-      <RefTableName>customer</RefTableName>
+-    </foreign-key>
+-    <foreign-key id="377" parent="315" name="fk_order_employee">
+-      <ColNames>employee_id</ColNames>
+-      <RefColNames>id</RefColNames>
+-      <RefTableName>employee</RefTableName>
+-    </foreign-key>
+-    <index id="378" parent="315" name="PRIMARY">
+-      <ColNames>id</ColNames>
+-      <Type>btree</Type>
+-      <Unique>1</Unique>
+-    </index>
+-    <index id="379" parent="315" name="id">
+-      <ColNames>id</ColNames>
+-      <Type>btree</Type>
+-      <Unique>1</Unique>
+-    </index>
+-    <index id="380" parent="315" name="fk_order_customer">
+-      <ColNames>customer_id</ColNames>
+-      <Type>btree</Type>
+-    </index>
+-    <index id="381" parent="315" name="fk_order_employee">
+-      <ColNames>employee_id</ColNames>
+-      <Type>btree</Type>
+-    </index>
+-    <key id="382" parent="315" name="PRIMARY">
+-      <NameSurrogate>1</NameSurrogate>
+-      <Primary>1</Primary>
+-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+-    </key>
+-    <key id="383" parent="315" name="id">
+-      <UnderlyingIndexName>id</UnderlyingIndexName>
+-    </key>
+-    <check id="384" parent="316" name="orderdetail_chk_1">
++    <check id="379" parent="311" name="orderdetail_chk_1">
+       <NameSurrogate>1</NameSurrogate>
+       <Predicate>`quantity` &gt; 0</Predicate>
+     </check>
+-    <column id="385" parent="316" name="id">
++    <column id="380" parent="311" name="id">
+       <AutoIncrement>1</AutoIncrement>
+       <DasType>bigint|0s</DasType>
+       <NotNull>1</NotNull>
+       <Position>1</Position>
+     </column>
+-    <column id="386" parent="316" name="order_id">
++    <column id="381" parent="311" name="order_id">
+       <DasType>bigint|0s</DasType>
+       <NotNull>1</NotNull>
+       <Position>2</Position>
+     </column>
+-    <column id="387" parent="316" name="product_id">
++    <column id="382" parent="311" name="product_id">
+       <DasType>bigint|0s</DasType>
+       <NotNull>1</NotNull>
+       <Position>3</Position>
+     </column>
+-    <column id="388" parent="316" name="quantity">
++    <column id="383" parent="311" name="quantity">
+       <DasType>int|0s</DasType>
+       <Position>4</Position>
+     </column>
+-    <column id="389" parent="316" name="amount">
++    <column id="384" parent="311" name="amount">
+       <DasType>double|0s</DasType>
+       <Position>5</Position>
+     </column>
+-    <column id="390" parent="316" name="sumAmount">
++    <column id="385" parent="311" name="sumAmount">
+       <DasType>double|0s</DasType>
+       <Position>6</Position>
+     </column>
+-    <foreign-key id="391" parent="316" name="fk_orderdeatil_order">
++    <foreign-key id="386" parent="311" name="fk_orderdeatil_order">
+       <ColNames>order_id</ColNames>
+       <RefColNames>id</RefColNames>
+-      <RefTableName>order</RefTableName>
++      <RefTableName>_order</RefTableName>
+     </foreign-key>
+-    <foreign-key id="392" parent="316" name="fk_orderdetail_product">
++    <foreign-key id="387" parent="311" name="fk_orderdetail_product">
+       <ColNames>product_id</ColNames>
+       <RefColNames>id</RefColNames>
+       <RefTableName>product</RefTableName>
+     </foreign-key>
+-    <index id="393" parent="316" name="PRIMARY">
++    <index id="388" parent="311" name="PRIMARY">
+       <ColNames>id</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="394" parent="316" name="id">
++    <index id="389" parent="311" name="id">
+       <ColNames>id</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="395" parent="316" name="fk_orderdeatil_order">
++    <index id="390" parent="311" name="fk_orderdeatil_order">
+       <ColNames>order_id</ColNames>
+       <Type>btree</Type>
+     </index>
+-    <index id="396" parent="316" name="fk_orderdetail_product">
++    <index id="391" parent="311" name="fk_orderdetail_product">
+       <ColNames>product_id</ColNames>
+       <Type>btree</Type>
+     </index>
+-    <key id="397" parent="316" name="PRIMARY">
++    <key id="392" parent="311" name="PRIMARY">
+       <NameSurrogate>1</NameSurrogate>
+       <Primary>1</Primary>
+       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+     </key>
+-    <key id="398" parent="316" name="id">
++    <key id="393" parent="311" name="id">
+       <UnderlyingIndexName>id</UnderlyingIndexName>
+     </key>
+-    <check id="399" parent="317" name="product_chk_1">
++    <check id="394" parent="312" name="product_chk_1">
+       <NameSurrogate>1</NameSurrogate>
+       <Predicate>`productPrice` &gt;= 0</Predicate>
+     </check>
+-    <column id="400" parent="317" name="id">
++    <column id="395" parent="312" name="id">
+       <AutoIncrement>2</AutoIncrement>
+       <DasType>bigint|0s</DasType>
+       <NotNull>1</NotNull>
+       <Position>1</Position>
+     </column>
+-    <column id="401" parent="317" name="productCode">
++    <column id="396" parent="312" name="productCode">
+       <DasType>varchar(20)|0s</DasType>
+       <Position>2</Position>
+       <CollationName>utf8mb3_general_ci</CollationName>
+     </column>
+-    <column id="402" parent="317" name="productName">
++    <column id="397" parent="312" name="productName">
+       <DasType>varchar(255)|0s</DasType>
+       <Position>3</Position>
+       <CollationName>utf8mb3_general_ci</CollationName>
+     </column>
+-    <column id="403" parent="317" name="productPrice">
++    <column id="398" parent="312" name="productPrice">
+       <DasType>double|0s</DasType>
+       <DefaultExpression>0</DefaultExpression>
+       <Position>4</Position>
+     </column>
+-    <column id="404" parent="317" name="productImage">
++    <column id="399" parent="312" name="productImage">
+       <DasType>varchar(250)|0s</DasType>
+       <Position>5</Position>
+       <CollationName>utf8mb3_general_ci</CollationName>
+     </column>
+-    <column id="405" parent="317" name="productDescribe">
++    <column id="400" parent="312" name="productDescribe">
+       <DasType>longtext|0s</DasType>
+       <Position>6</Position>
+     </column>
+-    <index id="406" parent="317" name="PRIMARY">
++    <index id="401" parent="312" name="PRIMARY">
+       <ColNames>id</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="407" parent="317" name="id">
++    <index id="402" parent="312" name="id">
+       <ColNames>id</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <index id="408" parent="317" name="productCode">
++    <index id="403" parent="312" name="productCode">
+       <ColNames>productCode</ColNames>
+       <Type>btree</Type>
+       <Unique>1</Unique>
+     </index>
+-    <key id="409" parent="317" name="PRIMARY">
++    <key id="404" parent="312" name="PRIMARY">
+       <NameSurrogate>1</NameSurrogate>
+       <Primary>1</Primary>
+       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+     </key>
+-    <key id="410" parent="317" name="id">
++    <key id="405" parent="312" name="id">
+       <UnderlyingIndexName>id</UnderlyingIndexName>
+     </key>
+-    <key id="411" parent="317" name="productCode">
++    <key id="406" parent="312" name="productCode">
+       <UnderlyingIndexName>productCode</UnderlyingIndexName>
+     </key>
+   </database-model>
+Index: .idea/dataSources.local.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"dataSourceStorageLocal\" created-in=\"IU-223.8836.41\">\r\n    <data-source name=\"@localhost\" uuid=\"50abe5f9-1b6c-4079-8164-db1e8df99b32\">\r\n      <database-info product=\"MySQL\" version=\"8.0.31\" jdbc-version=\"4.2\" driver-name=\"MySQL Connector/J\" driver-version=\"mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)\" dbms=\"MYSQL\" exact-version=\"8.0.31\" exact-driver-version=\"8.0\">\r\n        <extra-name-characters>#@</extra-name-characters>\r\n        <identifier-quote-string>`</identifier-quote-string>\r\n      </database-info>\r\n      <case-sensitivity plain-identifiers=\"lower\" quoted-identifiers=\"lower\" />\r\n      <secret-storage>master_key</secret-storage>\r\n      <user-name>root</user-name>\r\n      <schema-mapping>\r\n        <introspection-scope>\r\n          <node kind=\"schema\" qname=\"ecommerce\" />\r\n        </introspection-scope>\r\n      </schema-mapping>\r\n    </data-source>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.local.xml b/.idea/dataSources.local.xml
+--- a/.idea/dataSources.local.xml	(revision c199a07510cd2d15d5bf2d8408a310becc6c08b2)
++++ b/.idea/dataSources.local.xml	(date 1678943871036)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="dataSourceStorageLocal" created-in="IU-223.8836.41">
++  <component name="dataSourceStorageLocal" created-in="IU-223.8617.56">
+     <data-source name="@localhost" uuid="50abe5f9-1b6c-4079-8164-db1e8df99b32">
+       <database-info product="MySQL" version="8.0.31" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.25 (Revision: 08be9e9b4cba6aa115f9b27b215887af40b159e0)" dbms="MYSQL" exact-version="8.0.31" exact-driver-version="8.0">
+         <extra-name-characters>#@</extra-name-characters>
