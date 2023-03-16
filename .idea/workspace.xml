@@ -5,17 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/model/ItemCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/DAO/CartDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/css/information.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/information.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_12_38_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_12_38_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_12_40_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_12_40_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/demo1.rr6wBQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/democustomer.weqxMA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/ecommerce.QLYXWw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/managerstudents1.jDAArg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/minitest1.6EcrMQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/minitest3.6kcrMQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/minitest4.60crMQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/product.78yN7Q.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/quanlydiemthi.CmVoNw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/shopmanager.9xOLDg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/studentmanager.EqW5kQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/sv.Yw4AAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/touristmanager.OwQGpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/user2.x42mBg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/usermanager.glmSvA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/DAO/CheckLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/DAO/CheckLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,29 +124,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Module3/case-study-3",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Module3/case-study-3&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat 8.5.86" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.86" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -237,6 +249,7 @@
       <workItem from="1678883229892" duration="11473000" />
       <workItem from="1678945289677" duration="363000" />
       <workItem from="1678945697726" duration="13260000" />
+      <workItem from="1678975325435" duration="107000" />
     </task>
     <servers />
   </component>
