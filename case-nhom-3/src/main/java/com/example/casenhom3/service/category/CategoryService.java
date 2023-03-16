@@ -20,8 +20,6 @@ public class CategoryService implements ICategory {
         categoriesDAO.create(category);
     }
 
-
-
     @Override
     public Categories findById(long id) {
         return categoriesDAO.findById(id);

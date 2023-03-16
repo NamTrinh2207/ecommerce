@@ -1,5 +1,5 @@
 package com.example.casenhom3.controller;
-import com.example.casenhom3.model.User;
+import com.example.casenhom3.model.Admin;
 import com.example.casenhom3.service.admin.AdminService;
 
 import javax.servlet.*;
@@ -18,7 +18,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        User admin1 = admin.checkLogin(username, password);
+        Admin admin1 = admin.checkLogin(username, password);
         HttpSession session = request.getSession();
         if (admin1 == null) {
             request.setAttribute("error", "Sai tài khoản hoặc mật khẩu !");

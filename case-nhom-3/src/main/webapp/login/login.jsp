@@ -59,7 +59,7 @@
                                 <form action="<c:url value="/login"/>" method="post">
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="form2Example11">Tài khoản</label>
-                                        <input type="email" id="form2Example11" name="username" class="form-control"
+                                        <input type="text" id="form2Example11" name="username" class="form-control"
                                                placeholder="Phone number or email address"/>
                                     </div>
 
