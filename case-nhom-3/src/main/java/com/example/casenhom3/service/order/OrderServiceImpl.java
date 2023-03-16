@@ -26,27 +26,10 @@ public class OrderServiceImpl implements OrderService
             long order_id = rs.getLong("id");
             Date orderDate = rs.getDate("orderDate");
             int orderStatus = rs.getInt("status");
-
-            // get customer infomation
             Long customer_id = rs.getLong("customer_id");
-            String customerCode = rs.getString("customerCode");
-            String customerName = rs.getString("customerName");
-            Date customerDate = rs.getDate("customerDate");
-            String customerPlace = rs.getString("customerPlace");
-            String customerEmail = rs.getString("customerEmail");
-            String customerPhone = rs.getString("customerPhone");
-
-            // get employee infomation
-            Long employee_id = rs.getLong("id");
-            String employeeCode = rs.getString("code");
-            String employeeName = rs.getString("name");
-            Date employeeDate = rs.getDate("date");
-            String employeePlace = rs.getString("address");
-            String employeeEmail = rs.getString("email");
-            String employeePhone = rs.getString("phone");
-            String employeeImage = rs.getString("image");
-            Customer customer = new Customer(customer_id, customerCode, customerName,customerDate,customerPlace, customerEmail, customerPhone);
-            Employee employee = new Employee(employee_id, employeeCode, employeeName,employeeDate, employeePlace, employeeEmail,employeePhone,employeeImage);
+            Long employee_id = rs.getLong("employee_id");
+            Customer customer = new Customer(customer_id);
+            Employee employee = new Employee(employee_id);
             Order order = new Order(order_id, customer, employee,orderDate, orderStatus);
             orderList.add(order);
         }
@@ -64,14 +47,9 @@ public class OrderServiceImpl implements OrderService
             {
                 StringBuilder s = new StringBuilder();
                 s.append("select * from order");
-                s.append(" ");
-                s.append("(join customer on order.customer_id = customer.id)");
-                s.append(" ");
-                s.append("join employee  on order.employee_id = employee.id");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 ResultSet rs = p.executeQuery();
                 return orderListResult(rs);
-
             }
             catch (SQLException e)
             {
