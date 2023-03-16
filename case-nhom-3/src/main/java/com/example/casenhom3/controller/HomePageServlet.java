@@ -11,12 +11,13 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "HomeServlet", value = "/HomeServlet")
-public class HomeServlet extends HttpServlet {
+@WebServlet(name = "HomePageServlet", value = "/HomePageServlet")
+public class HomePageServlet extends HttpServlet {
     CategoryService categoryService = new CategoryService();
     ProductDAO productDAO=new ProductDAO();
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request,response);
+doPost(request,response);
     }
 
     @Override
@@ -26,11 +27,14 @@ public class HomeServlet extends HttpServlet {
         try {
             request.setAttribute("category", categories);
             request.setAttribute("product", products);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("home.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
             throw new RuntimeException(e);
         }
     }
+
+
+
 
 }

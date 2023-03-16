@@ -46,7 +46,7 @@ public class OrderServiceImpl implements OrderService
             try
             {
                 StringBuilder s = new StringBuilder();
-                s.append("select * from order");
+                s.append("select * from _order");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 ResultSet rs = p.executeQuery();
                 return orderListResult(rs);
