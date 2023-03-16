@@ -93,6 +93,13 @@
                                                     <option> 1 </option>
                                                     <option> 2 </option>
                                                     <option> 3 </option>
+                                                    <option> 4 </option>
+                                                    <option> 5 </option>
+                                                    <option> 6 </option>
+                                                    <option> 7 </option>
+                                                    <option> 8 </option>
+                                                    <option> 9 </option>
+                                                    <option> 10 </option>
                                                 </select>
                                             </dd>
                                         </dl>  <!-- item-property .// -->
@@ -100,8 +107,8 @@
 
                                 </div> <!-- row.// -->
                                 <hr>
-                                <a href="#" class="btn btn-lg btn-primary text-uppercase"> Buy now </a>
-                                <a href="#" class="btn btn-lg btn-outline-primary text-uppercase"> <i class="fas fa-shopping-cart"></i> Add to cart </a>
+                                <a href="#" class="btn btn-lg btn-primary text-uppercase"> Mua Ngay </a>
+                                <a href="/HomeServlet" class="btn btn-lg btn-outline-primary text-uppercase"> <i class="fas fa-shopping-cart"></i>Quay Lại  </a>
                             </article> <!-- card-body.// -->
                         </aside> <!-- col.// -->
                     </div> <!-- row.// -->

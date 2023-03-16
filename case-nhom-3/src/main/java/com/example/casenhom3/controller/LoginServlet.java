@@ -14,11 +14,16 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+<<<<<<< HEAD
         request.getRequestDispatcher("login/login.jsp").forward(request, response);
+=======
+doPost(request, response);
+>>>>>>> doan
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+<<<<<<< HEAD
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         Admin admin1 = admin.checkLogin(username, password);
@@ -36,6 +41,16 @@ public class LoginServlet extends HttpServlet {
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
             }
 
+=======
+        String username=request.getParameter("username");
+        String password=request.getParameter("password");
+        AccountAdmin accountAdmin1=accountDao.checkLogin(username,password);
+        if (accountAdmin1==null){
+            request.setAttribute("mess","Đăng Nhập Sai Xin Hãy Đăng Nhập Lại");
+            request.getRequestDispatcher("/login/login.jsp").forward(request,response);
+        }else {
+            response.sendRedirect("/employees?page=1");
+>>>>>>> doan
         }
     }
 }
