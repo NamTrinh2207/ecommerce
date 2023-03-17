@@ -1,6 +1,7 @@
 package com.example.casenhom3.controller;
 
 import com.example.casenhom3.model.Order;
+import com.example.casenhom3.model.OrderDetail;
 import com.example.casenhom3.service.order.OrderService;
 import com.example.casenhom3.service.order.OrderServiceImpl;
 
@@ -19,6 +20,7 @@ import java.util.List;
 @WebServlet(value = "/orders")
 public class OrderServlet extends HttpServlet
 {
+
     private OrderService orderService = new OrderServiceImpl();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
@@ -33,7 +35,21 @@ public class OrderServlet extends HttpServlet
         {
             case "edit":
                 break;
+            case "detail":
+                 long orderId = Long.parseLong(req.getParameter("orderId"));
+                 OrderDetail orderDetail = orderService.getOrderDetailById(orderId);
+                 req.setAttribute("orderDetail", orderDetail);
+                 req.getRequestDispatcher("/order/orderDetail.jsp").forward(req,resp);
+                 break;
+            case "moneyTotal":
+                req.setAttribute("customerOrders", orderService.amountSumOfCustomer());
+                req.getRequestDispatcher("/order/customerOrderSum.jsp").forward(req,resp);
+                break;
+            case "statusUpdate":
+                orderUpdateByStatus(req, resp);
+                break;
             default:
+                req.setAttribute("orderSum",orderService.allOrderSum());
                 req.setAttribute("orders", orderService.findAll());
                 req.getRequestDispatcher("/order/orderList.jsp").forward(req,resp);
         }
@@ -52,7 +68,6 @@ public class OrderServlet extends HttpServlet
             case "searchByDate":
                 searchOrderByDate(req, resp);
                 break;
-
         }
     }
 
@@ -63,15 +78,18 @@ public class OrderServlet extends HttpServlet
             String startDate = request.getParameter("startDate");
             String endDate = request.getParameter("endDate");
 
-            SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
-            Date start = new Date(dateFormat.parse(startDate).getTime());
-            Date end = new Date(dateFormat.parse(endDate).getTime());
-            List<Order> orderList = orderService.findOrderByDate(start, end);
-            if (orderList == null)
+            if (!startDate.equals("") && !endDate.equals(""))
             {
-                orderList = new ArrayList<>();
+                SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
+                Date start = new Date(dateFormat.parse(startDate).getTime());
+                Date end = new Date(dateFormat.parse(endDate).getTime());
+                List<Order> orderList = orderService.findOrderByDate(start, end);
+                if (orderList == null)
+                {
+                    orderList = new ArrayList<>();
+                }
+                request.setAttribute("orders", orderList);
             }
-            request.setAttribute("orders", orderList);
             request.getRequestDispatcher("/order/orderList.jsp").forward(request,response);
         }
         catch (ParseException e) {
@@ -82,8 +100,11 @@ public class OrderServlet extends HttpServlet
             System.out.println("IO Exception");
         }
     }
-    public void searchOrderById(HttpServletRequest request, HttpServletResponse response)
-    {
-
+    public void orderUpdateByStatus(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+         long customerId = Long.parseLong(request.getParameter("customerId"));
+         long orderId =  Long.parseLong(request.getParameter("orderId"));
+         int status = Integer.parseInt(request.getParameter("status"));
+         orderService.orderUpdate(customerId,orderId, status);
+         response.sendRedirect("/orders");
     }
 }
