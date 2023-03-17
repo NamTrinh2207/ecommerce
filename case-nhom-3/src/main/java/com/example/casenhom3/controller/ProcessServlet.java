@@ -25,7 +25,7 @@ public class ProcessServlet extends HttpServlet {
             cart=new Cart();
         }
         int tnum= Integer.parseInt(request.getParameter("quantity"));
-        Long id= Long.valueOf(request.getParameter("id"));
+        Long id= Long.valueOf(request.getParameter("idp"));
         if (tnum==-1 && cart.getQuantty(id)<=1){
             cart.deleteItemCart(id);
 
@@ -34,7 +34,7 @@ public class ProcessServlet extends HttpServlet {
             Double price=product1.getProductPrice();
             ItemCart itemCart=new ItemCart(product1,price,tnum);
             cart.addItemCart(itemCart);
-        }
+    }
         List<ItemCart>list=cart.getCartList();
         session.setAttribute("cart",cart);
         session.setAttribute("size",list.size());
@@ -51,7 +51,7 @@ public class ProcessServlet extends HttpServlet {
         }else {
             cart=new Cart();
         }
-        Long id= Long.valueOf(request.getParameter("id"));
+        Long id= Long.valueOf(request.getParameter("idp"));
         cart.deleteItemCart(id);
         List<ItemCart> list=cart.getCartList();
         session.setAttribute("cart",cart);

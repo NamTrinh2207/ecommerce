@@ -8,9 +8,14 @@
       <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/order/customerOrderSum.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/order/orderDetail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/OrderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/OrderServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/order/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/order/orderList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/order/orderList.jsp" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/ProcessServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/ProcessServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/cart.jsp" afterDir="false" />
+>>>>>>> doan
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +70,19 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="doan" />
+<<<<<<< HEAD
                     <option name="lastUsedInstant" value="1678876477" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
                     <option name="lastUsedInstant" value="1678876476" />
+=======
+                    <option name="lastUsedInstant" value="1679015439" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1679015327" />
+>>>>>>> doan
                   </RecentBranch>
                 </list>
               </option>
@@ -224,6 +237,7 @@
       <workItem from="1678876164965" duration="178000" />
       <workItem from="1678883085180" duration="126000" />
       <workItem from="1678883229892" duration="11473000" />
+<<<<<<< HEAD
       <workItem from="1678952932581" duration="285000" />
       <workItem from="1678953244936" duration="91000" />
       <workItem from="1678953363381" duration="601000" />
@@ -233,6 +247,17 @@
       <workItem from="1678955531703" duration="6924000" />
       <workItem from="1678979675437" duration="15109000" />
       <workItem from="1679015029087" duration="1261000" />
+=======
+      <workItem from="1678945289677" duration="363000" />
+      <workItem from="1678945697726" duration="13260000" />
+      <workItem from="1678975325435" duration="107000" />
+      <workItem from="1678977963107" duration="13785000" />
+      <workItem from="1678991832543" duration="3721000" />
+      <workItem from="1678995581906" duration="3927000" />
+      <workItem from="1679014709014" duration="159000" />
+      <workItem from="1679014888310" duration="809000" />
+      <workItem from="1679015721378" duration="1336000" />
+>>>>>>> doan
     </task>
     <servers />
   </component>
@@ -252,5 +277,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/ProcessServlet.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -70,7 +70,7 @@
                                             <input type="text" value="${o.quantity}">
                                             <a href="http://localhost:8081/ProcessServlet?quantity=1&id=${o.product.getId()}"><button class="btnAdd">+</button></a>
                                         </td>
-                                        <td class="align-middle"><a href="http://localhost:8081/ProcessServlet?id=${o.product.getId()}" class="text-dark">
+                                        <td class="align-middle"><a href="http://localhost:8081/ProcessServlet?idp=${o.product.getId()}" class="text-dark">
                                             <button type="button" class="btn btn-danger">Delete</button>
                                         </a>
                                         </td>
