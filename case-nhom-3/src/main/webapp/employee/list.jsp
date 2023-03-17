@@ -242,7 +242,7 @@
                     <a class="nav-link" href="${orderManager}">Quản lý hóa đơn</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Quản lý khách hàng</a>
+                    <a class="nav-link" href="/CustomerServlet">Quản lý khách hàng</a>
                 </li>
             </ul>
         </div>
