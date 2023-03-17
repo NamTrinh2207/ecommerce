@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/ProcessServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/ProcessServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/login/cart.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +71,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="doan" />
-                    <option name="lastUsedInstant" value="1678949112" />
+                    <option name="lastUsedInstant" value="1679015439" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1678948970" />
+                    <option name="lastUsedInstant" value="1679015327" />
                   </RecentBranch>
                 </list>
               </option>
@@ -232,6 +234,8 @@
       <workItem from="1678991832543" duration="3721000" />
       <workItem from="1678995581906" duration="3927000" />
       <workItem from="1679014709014" duration="159000" />
+      <workItem from="1679014888310" duration="809000" />
+      <workItem from="1679015721378" duration="1336000" />
     </task>
     <servers />
   </component>
@@ -251,5 +255,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/ProcessServlet.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
