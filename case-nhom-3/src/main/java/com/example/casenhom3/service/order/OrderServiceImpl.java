@@ -14,7 +14,7 @@ public class OrderServiceImpl implements OrderService
 
     public OrderServiceImpl()
     {
-        connection = CreateDatabase.getConnection();
+
     }
 
     // 39.Hiển thị báo cáo bán hàng theo ngày
@@ -41,12 +41,13 @@ public class OrderServiceImpl implements OrderService
     @Override
     public List<Orders> findAll()
     {
+        connection = CreateDatabase.getConnection();
         if (connection != null)
         {
             try
             {
                 StringBuilder s = new StringBuilder();
-                s.append("select * from _order");
+                s.append("select * from orders");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 ResultSet rs = p.executeQuery();
                 return orderListResult(rs);
@@ -72,6 +73,7 @@ public class OrderServiceImpl implements OrderService
     @Override
     public OrderDetail getOrderDetailById(long orderId)
     {
+        connection = CreateDatabase.getConnection();
         if (connection != null)
         {
             try
@@ -119,11 +121,12 @@ public class OrderServiceImpl implements OrderService
     @Override
     public List<Orders> findOrderByDate(Date start, Date end)
     {
+        connection = CreateDatabase.getConnection();
         if (connection != null)
         {
             try
             {
-                String sql = "select * from order where orderDate between ? and ?";
+                String sql = "select * from orders where orderDate between ? and ?";
                 PreparedStatement p = connection.prepareStatement(sql);
                 p.setDate(1, start);
                 p.setDate(2, end);
@@ -150,14 +153,15 @@ public class OrderServiceImpl implements OrderService
     @Override
     public Orders findById(long orderId)
     {
+        connection = CreateDatabase.getConnection();
         if (connection != null)
         {
             try
             {
                 StringBuilder s = new StringBuilder();
-                s.append("select * from order, customer, employee ");
+                s.append("select * from orders, customer, employee ");
                 s.append(" ");
-                s.append("where customer.id = order.customer_id and employee.id = order.employee_id and order.id = ?");
+                s.append("where customer.id = orders.customer_id and employee.id = orders.employee_id and orders.id = ?");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 p.setLong(1, orderId);
                 ResultSet rs = p.executeQuery();
@@ -193,20 +197,21 @@ public class OrderServiceImpl implements OrderService
     @Override
     public double allOrderSum()
     {
-        double sum = 0.0;
+        connection = CreateDatabase.getConnection();
+        double sum = 0;
         if (connection != null)
         {
             try
             {
                 StringBuilder s = new StringBuilder();
-                s.append("select sum(od.amount) as amountSum from orderdetail, order  ");
+                s.append("select sum(orderdetail.amount) as amountSum from orderdetail, orders  ");
                 s.append(" ");
-                s.append("where order.id = orderdetail.order_id and order.status = 1");
+                s.append("where orders.id = orderdetail.order_id and orders.status = 1");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 ResultSet rs = p.executeQuery();
                 if (rs.next())
                 {
-                    sum += rs.getDouble("amountSum");
+                    sum = rs.getDouble("amountSum");
                 }
             }
             catch (SQLException e)
@@ -229,29 +234,31 @@ public class OrderServiceImpl implements OrderService
     @Override
     public List<OrderDetail> amountSumOfCustomer()
     {
+        connection = CreateDatabase.getConnection();
         if (connection != null)
         {
             try
             {
                 List<OrderDetail> orderDetails = new ArrayList<>();
                 StringBuilder s = new StringBuilder();
-                s.append("select id, customerCode, customerName, customerDate,customerPlace,customerEmail, customerPhone, sum(od.amount) as amountSum");
-                s.append("from orderdetail , order , customer ");
+                s.append("select customer.id, code, name, date,address,email, phone, sum(orderdetail.amount) as amountSum");
                 s.append(" ");
-                s.append("where orderdetail.order_id = order.id and customer.id = order.customer_id and order.status = 1");
+                s.append("from orderdetail , orders , customer ");
                 s.append(" ");
-                s.append("group by id, customerCode, customerName, customerDate,customerPlace,customerEmail, customerPhone");
+                s.append("where orderdetail.order_id = orders.id and customer.id = orders.customer_id and orders.status = 1");
+                s.append(" ");
+                s.append("group by customer.id, code, name, date,address,email, phone");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 ResultSet rs = p.executeQuery();
                 while (rs.next())
                 {
                     long customerId = rs.getLong("id");
-                    String customerCode = rs.getString("customerCode");
-                    String customerName = rs.getString("customerName");
-                    Date customerDate = rs.getDate("customerDate");
-                    String customerPlace = rs.getString("customerPlace");
-                    String customerEmail = rs.getString("customerEmail");
-                    String customerPhone = rs.getString("customerPhone");
+                    String customerCode = rs.getString("code");
+                    String customerName = rs.getString("name");
+                    Date customerDate = rs.getDate("date");
+                    String customerPlace = rs.getString("address");
+                    String customerEmail = rs.getString("email");
+                    String customerPhone = rs.getString("phone");
                     double sumAmount = rs.getDouble("amountSum");
 
                     Customer customer = new Customer(customerId,customerCode,customerName,customerDate, customerPlace, customerEmail, customerPhone);
@@ -280,12 +287,13 @@ public class OrderServiceImpl implements OrderService
     @Override
     public void save(Orders order)
     {
+        connection = CreateDatabase.getConnection();
         if (connection != null)
         {
             try
             {
                 StringBuilder s = new StringBuilder();
-                s.append("insert into order(customer_id,employee_id,orderDate,status) values(?,?,?,?)");
+                s.append("insert into orders(customer_id,employee_id,orderDate,status) values(?,?,?,?)");
                 PreparedStatement p = connection.prepareStatement(s.toString());
                 p.setLong(1, order.getCustomer_id().getId());
                 p.setLong(2,order.getEmployee_id().getId());
@@ -318,6 +326,7 @@ public class OrderServiceImpl implements OrderService
     @Override
     public void orderUpdate(long customerId, long orderId, int status)
     {
+        connection = CreateDatabase.getConnection();
         if (connection != null)
         {
             try
@@ -327,9 +336,9 @@ public class OrderServiceImpl implements OrderService
                 {
                     if (status == 0)
                     {
-                        s.append("Delete from order , orderdetail  ");
+                        s.append("Delete from orders , orderdetail  ");
                         s.append(" ");
-                        s.append("where order.id = orderdetail.order_id and order.id = ? and order.customer_id = ? and order.status = ? and order.status = 0");
+                        s.append("where orders.id = orderdetail.order_id and orders.id = ? and orders.customer_id = ? and orders.status = ? and orders.status = 0");
                         PreparedStatement p = connection.prepareStatement(s.toString());
                         p.setLong(1,orderId);
                         p.setLong(2, customerId);
@@ -339,9 +348,9 @@ public class OrderServiceImpl implements OrderService
                     else
                     {
                         s = new StringBuilder();
-                        s.append("update order set status = ? ");
+                        s.append("update orders set status = ?");
                         s.append(" ");
-                        s.append("where id = ? and customerId = ? ");
+                        s.append("where id = ? and customer_id = ? ");
                         PreparedStatement p = connection.prepareStatement(s.toString());
                         p.setInt(1, status);
                         p.setLong(2, orderId);
@@ -352,7 +361,7 @@ public class OrderServiceImpl implements OrderService
             }
             catch (SQLException e)
             {
-                System.out.println("Connection Error");
+                System.out.println("Query Error");
             }
             finally
             {

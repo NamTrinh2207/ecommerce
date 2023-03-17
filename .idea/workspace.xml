@@ -5,35 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f66aa76-0ab9-4522-b941-0d14c17bb3aa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f66aa76-0ab9-4522-b941-0d14c17bb3aa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb3d725e-8bcb-4523-b405-f40f2bf240ed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/demo1.rr6wBQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb3d725e-8bcb-4523-b405-f40f2bf240ed/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/democustomer.weqxMA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/ecommerce.QLYXWw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb3d725e-8bcb-4523-b405-f40f2bf240ed/storage_v2/_src_/schema/ecommerce.QLYXWw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f66aa76-0ab9-4522-b941-0d14c17bb3aa/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/managerstudents1.jDAArg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/minitest1.6EcrMQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb3d725e-8bcb-4523-b405-f40f2bf240ed/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/minitest3.6kcrMQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/minitest4.60crMQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f66aa76-0ab9-4522-b941-0d14c17bb3aa/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f66aa76-0ab9-4522-b941-0d14c17bb3aa/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/product.78yN7Q.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/quanlydiemthi.CmVoNw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/sakila.oXLGyQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/shopmanager.9xOLDg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/studentmanager.EqW5kQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/sv.Yw4AAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb3d725e-8bcb-4523-b405-f40f2bf240ed/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/touristmanager.OwQGpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/user2.x42mBg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/usermanager.glmSvA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb3d725e-8bcb-4523-b405-f40f2bf240ed/storage_v2/_src_/schema/sakila.oXLGyQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb3d725e-8bcb-4523-b405-f40f2bf240ed/storage_v2/_src_/schema/sakila.oXLGyQ.meta" afterDir="false" />
-=======
->>>>>>> doan
+      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/order/customerOrderSum.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/order/orderDetail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/OrderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/OrderServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/order/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/service/order/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/order/orderList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/order/orderList.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +27,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="case-nhom-3" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -60,26 +42,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="doan" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="dev" />
@@ -96,12 +64,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1678975711" />
+                    <option name="branchName" value="doan" />
+                    <option name="lastUsedInstant" value="1678876477" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="doan" />
-                    <option name="lastUsedInstant" value="1678949112" />
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1678876476" />
                   </RecentBranch>
                 </list>
               </option>
@@ -139,12 +107,15 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Module3/case-study-3&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -253,17 +224,15 @@
       <workItem from="1678876164965" duration="178000" />
       <workItem from="1678883085180" duration="126000" />
       <workItem from="1678883229892" duration="11473000" />
-      <workItem from="1678945289677" duration="363000" />
-      <workItem from="1678945697726" duration="13260000" />
-<<<<<<< HEAD
-      <workItem from="1678975325435" duration="481000" />
-=======
-      <workItem from="1678975325435" duration="107000" />
-      <workItem from="1678977963107" duration="13785000" />
-      <workItem from="1678991832543" duration="3721000" />
-      <workItem from="1678995581906" duration="3927000" />
-      <workItem from="1679014709014" duration="159000" />
->>>>>>> doan
+      <workItem from="1678952932581" duration="285000" />
+      <workItem from="1678953244936" duration="91000" />
+      <workItem from="1678953363381" duration="601000" />
+      <workItem from="1678953999587" duration="178000" />
+      <workItem from="1678954203668" duration="145000" />
+      <workItem from="1678954381287" duration="807000" />
+      <workItem from="1678955531703" duration="6924000" />
+      <workItem from="1678979675437" duration="15109000" />
+      <workItem from="1679015029087" duration="1261000" />
     </task>
     <servers />
   </component>

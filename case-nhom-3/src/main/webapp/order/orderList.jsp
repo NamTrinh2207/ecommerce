@@ -234,43 +234,71 @@
                 <c:url value="/orders?action=searchByDate" var="searchByDate"/>
                 <form action="${searchByDate}" method="post">
                     <div class="col-sm-4 float-right">
-                      <input type='text' class="form-control" data-provide="datepicker" name="startDate" placeholder='Từ ngày' style='width: 300px;' >
+                      <input type='text' class="form-control" data-provide="datepicker" name="startDate" placeholder='Từ ngày' style='width: 300px;' ><br>
                       <input type='text' class="form-control" data-provide="datepicker" name="endDate" placeholder="Đến ngày" style='width: 300px;' > <br>
                         <div class="search-box">
                             <i class="material-icons">&#xE8B6;</i>
-                            <input name="name" type="text" class="form-control" placeholder="Tìm kiếm hóa đơn">
+                            <input  type="submit" class="form-control" placeholder="Tìm kiếm hóa đơn">
                         </div>
                     </div>
 
                 </form>
             </div>
-            <table class="table table-striped table-hover table-bordered">
-                <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Customer ID <i class="fa fa-sort"></i></th>
-                    <th>Employee Id</th>
-                    <th>Order Date</th>
-                </tr>
-                </thead>
-                <tbody>
-                <c:forEach items="${requestScope.orders}" var="order">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead>
                     <tr>
-                        <td><c:out value="${order.id}"/></td>
-                        <td><c:out value="${order.customer_id}"/></td>
-                        <td><c:out value="${order.employee_id}"/></td>
-                        <td><fmt:formatDate value="${order.orderDate}" type="date" pattern="dd-MM-yyyy"/></td>
+                        <th>Id</th>
+                        <th>Customer ID <i class="fa fa-sort"></i></th>
+                        <th>Employee Id</th>
+                        <th>Order Date</th>
+                        <th>Status</th>
                     </tr>
-                </c:forEach>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    <c:forEach items="${requestScope.orders}" var="order">
+                        <tr>
+                            <td><a href="<c:url value="/orders?action=detail&orderId=${order.id}"/>"><c:out value="${order.id}"/></a></td>
+                            <td><c:out value="${order.customer_id.id}"/></td>
+                            <td><c:out value="${order.employee_id.id}"/></td>
+                            <td><fmt:formatDate value="${order.orderDate}" type="date" pattern="dd-MM-yyyy"/></td>
+                            <td>
+                                <select class="form-select" id="status"  onchange="updateStatus(${order.customer_id.id},${order.id});">
+                                    <c:choose>
+                                        <c:when test="${order.status == 1}">
+                                                <option value="2" >Chưa thanh toán</option>
+                                                <option value="1" selected>Đã thanh toán</option>
+                                                <option value="0">Đã hủy</option>
+                                        </c:when>
+                                       <c:otherwise>
+                                             <option value="2" selected>Chưa thanh toán</option>
+                                             <option value="1">Đã thanh toán</option>
+                                              <option value="0">Đã hủy</option>
+                                       </c:otherwise>
+
+                                    </c:choose>
+
+                                </select>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                    </tbody>
+                </table>
         </div>
+        <p>Tổng tiền hóa đơn : ${orderSum}  <a href="<c:url value="/orders?action=moneyTotal"/>">Xem tổng tiền khách hàng đặt hàng  </a>   </p>
     </div>
 </div>
 <script type="text/javascript">
     $(document).ready(function(){
         $('#datepicker').datepicker();
     });
+    function updateStatus(customerId,orderId)
+    {
+        let statusSelect = document.getElementById("status");
+        let status = statusSelect.options[statusSelect.selectedIndex].value;
+        if (confirm("Bạn có chắc chắn cập nhật hóa đơn có id là " + orderId + " không ? ")) {
+            window.location = "/orders?action=statusUpdate&customerId="+customerId+"&orderId=" + orderId+"&status="+status;
+        }
+    }
 </script>
 </body>
 </html>
