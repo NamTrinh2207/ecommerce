@@ -103,17 +103,18 @@
                                         <li class="menu_iconb">
                                             <a href="#"><img style="margin-right: 15px;" src="icon/1.png" alt="#"/>7213456789</a>
                                         </li>
-                                        <li class="menu_iconb">
-                                            <a href="login/login.jsp">Đăng Nhập <img style="margin-right: 15px;"
-                                                                                     src="icon/5.png" alt="#"/> </a>
-                                        </li>
+<%--                                        <li class="menu_iconb">--%>
+<%--                                            <a href="login/login.jsp">Đăng Nhập <img style="margin-right: 15px;"--%>
+<%--                                                                                     src="icon/5.png" alt="#"/> </a>--%>
+<%--                                        </li>--%>
                                         <li class="menu_iconb">
                                             <a href="login/login.jsp">Đăng Xuất<img style="margin-left: 15px;"
                                                                                     src="icon/6.png" alt="#"/></a>
                                         </li>
                                         <li class="tytyu">
+                                            <c:set var="size" value="${sessionScope.size}"></c:set>
                                             <a href="login/cart.jsp"> <img style="margin-right: 15px;" src="icon/2.png"
-                                                                           alt="#"/></a>
+                                                                           alt="#"/>${size}</a>
                                         </li>
                                         <li>
                                             <button type="button" id="sidebarCollapse">
@@ -243,17 +244,21 @@
                 <div id="shoes" class="shoes-bg">
                     <h3>Sản Phẩm</h3>
                     <div class="row">
+
                         <c:forEach items="${product}" var="p">
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
                                 <div class="shoes-box">
                                     <i><img src="${p.getProductImage()}"/></i>
                                     <h4><a type="" href="ProductServletInformation?pid=${p.getId()}">${p.getProductName()}</a> <span class="nolmal">${p.getProductPrice()}$</span></h4>
                                 </div>
-                                <a class="buynow" href="#">Mua Ngay</a>
+                                <form name="f" action="" method="post">
+<%--                                <input type="number" value="1" name="number">--%>
+<%--                                    <input type="submit" onclick="BuyNowServlet('${p.p.getId()}')" value="Mua Ngay">--%>
+                                <a class="buynow" href="BuyNowServlet?cid=${p.getId()}">Mua Ngay</a>
+                                </form>
                             </div>
-
-
                         </c:forEach>
+
                     </div>
                 </div>
                 <a class="seemore" href="#">Nhiều Hơn</a>
@@ -388,7 +393,7 @@
 
 <div class="overlay"></div>
 
-<!-- Javascript files-->
+
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>

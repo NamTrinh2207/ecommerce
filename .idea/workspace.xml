@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f66aa76-0ab9-4522-b941-0d14c17bb3aa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f66aa76-0ab9-4522-b941-0d14c17bb3aa.xml" afterDir="false" />
@@ -30,6 +31,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/user2.x42mBg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/50abe5f9-1b6c-4079-8164-db1e8df99b32/storage_v2/_src_/schema/usermanager.glmSvA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb3d725e-8bcb-4523-b405-f40f2bf240ed/storage_v2/_src_/schema/sakila.oXLGyQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb3d725e-8bcb-4523-b405-f40f2bf240ed/storage_v2/_src_/schema/sakila.oXLGyQ.meta" afterDir="false" />
+=======
+>>>>>>> doan
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,7 +255,15 @@
       <workItem from="1678883229892" duration="11473000" />
       <workItem from="1678945289677" duration="363000" />
       <workItem from="1678945697726" duration="13260000" />
+<<<<<<< HEAD
       <workItem from="1678975325435" duration="481000" />
+=======
+      <workItem from="1678975325435" duration="107000" />
+      <workItem from="1678977963107" duration="13785000" />
+      <workItem from="1678991832543" duration="3721000" />
+      <workItem from="1678995581906" duration="3927000" />
+      <workItem from="1679014709014" duration="159000" />
+>>>>>>> doan
     </task>
     <servers />
   </component>

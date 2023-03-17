@@ -52,23 +52,25 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <c:forEach items="${list}" var="o">
+                                <c:set var="c" value="${sessionScope.cart}"></c:set>
+                                <c:forEach items="${c.cartList}" var="o">
+
                                     <tr>
                                         <th scope="row">
                                             <div class="p-2">
-                                                <img src="${o.image}" alt="" width="70" class="img-fluid rounded shadow-sm">
+                                                <img src="${o.product.getProductImage()}" alt="" width="70" class="img-fluid rounded shadow-sm">
                                                 <div class="ml-3 d-inline-block align-middle">
-                                                    <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">${o.name}</a></h5><span class="text-muted font-weight-normal font-italic"></span>
+                                                    <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">${o.product.getProductPrice()}</a></h5><span class="text-muted font-weight-normal font-italic"></span>
                                                 </div>
                                             </div>
                                         </th>
-                                        <td class="align-middle"><strong>${o.price}</strong></td>
+                                        <td class="align-middle"><strong>${o.product.getProductName()}</strong></td>
                                         <td class="align-middle">
-                                            <a href="#"><button class="btnSub">-</button></a>
-                                            <strong>${o.amount}</strong>
-                                            <a href="#"><button class="btnAdd">+</button></a>
+                                            <a href="http://localhost:8081/ProcessServlet?quantity=-1&id=${o.product.getId()}"><button class="btnSub">-</button></a>
+                                            <input type="text" value="${o.quantity}">
+                                            <a href="http://localhost:8081/ProcessServlet?quantity=1&id=${o.product.getId()}"><button class="btnAdd">+</button></a>
                                         </td>
-                                        <td class="align-middle"><a href="#" class="text-dark">
+                                        <td class="align-middle"><a href="http://localhost:8081/ProcessServlet?id=${o.product.getId()}" class="text-dark">
                                             <button type="button" class="btn btn-danger">Delete</button>
                                         </a>
                                         </td>
@@ -94,15 +96,18 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Thành tiền</div>
-                        <div class="p-4">
+<%--                        <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Thành tiền</div>--%>
+<%--                        <div class="p-4">--%>
                             <ul class="list-unstyled mb-4">
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng tiền hàng</strong><strong>100 $</strong></li>
+<%--<c:set var="a" value="${sessionScope.cart}"></c:set>--%>
+                                <c:forEach items="${c.cartList}" var="b">
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng tiền hàng</strong><strong>${b.product.getProductPrice()*b.quantity}</strong></li>
                                 <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Phí vận chuyển</strong><strong>Free ship</strong></li>
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">VAT</strong><strong>10 $</strong></li>
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng thanh toán</strong>
-                                    <h5 class="font-weight-bold">110 $</h5>
-                                </li>
+
+<%--                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng thanh toán</strong>--%>
+<%--                                    <h5 class="font-weight-bold">110 $</h5>--%>
+<%--                                </li>--%>
+                                </c:forEach>
                             </ul><a href="/login/information.jsp" class="btn btn-dark rounded-pill py-2 btn-block">Mua hàng</a>
                         </div>
                     </div>
