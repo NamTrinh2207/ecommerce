@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/model/ItemCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_03_2023_08_47_SA__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_03_2023_08_47_SA__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_03_2023_08_47_SA__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16_03_2023_08_47_SA__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_04_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_04_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_05_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_05_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_46_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_46_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_47_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_16_2023_1_47_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_03_2023_08_48_SA__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_03_2023_08_48_SA__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_2023_1_46_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_3_16_2023_1_46_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/connection/CreateDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/CustomerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/CustomerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/customer/customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/customer/customer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/employee/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case-nhom-3/src/main/webapp/employee/list.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="9fe73e8a-4814-4ecb-b177-36d2b41a8441" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +20,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="case-nhom-3" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -46,26 +35,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="doan" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="dev" />
@@ -83,11 +58,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="doan" />
-                    <option name="lastUsedInstant" value="1679017630" />
+                    <option name="lastUsedInstant" value="1678876477" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1679017464" />
+                    <option name="lastUsedInstant" value="1678876476" />
                   </RecentBranch>
                 </list>
               </option>
@@ -125,12 +100,15 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Module3/case-study-3&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -239,15 +217,16 @@
       <workItem from="1678876164965" duration="178000" />
       <workItem from="1678883085180" duration="126000" />
       <workItem from="1678883229892" duration="11473000" />
-      <workItem from="1678945289677" duration="363000" />
-      <workItem from="1678945697726" duration="13260000" />
-      <workItem from="1678975325435" duration="107000" />
-      <workItem from="1678977963107" duration="13785000" />
-      <workItem from="1678991832543" duration="3721000" />
-      <workItem from="1678995581906" duration="3927000" />
-      <workItem from="1679014709014" duration="159000" />
-      <workItem from="1679014888310" duration="809000" />
-      <workItem from="1679015721378" duration="3245000" />
+      <workItem from="1678952932581" duration="285000" />
+      <workItem from="1678953244936" duration="91000" />
+      <workItem from="1678953363381" duration="601000" />
+      <workItem from="1678953999587" duration="178000" />
+      <workItem from="1678954203668" duration="145000" />
+      <workItem from="1678954381287" duration="807000" />
+      <workItem from="1678955531703" duration="6924000" />
+      <workItem from="1678979675437" duration="15109000" />
+      <workItem from="1679015029087" duration="7615000" />
+      <workItem from="1679141828280" duration="6582000" />
     </task>
     <servers />
   </component>
@@ -267,5 +246,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/case-nhom-3/src/main/java/com/example/casenhom3/controller/OrderServlet.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
