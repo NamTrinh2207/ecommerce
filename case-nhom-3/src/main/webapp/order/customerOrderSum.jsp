@@ -248,9 +248,8 @@
           <tr>
             <td><c:out value="${customerOrder.order_id.customer_id.id}"/></td>
             <td><c:out value="${customerOrder.order_id.customer_id.code}"/></td>
-            <td>><c:out value="${customerOrder.order_id.customer_id.name}"/></td>
+            <td><c:out value="${customerOrder.order_id.customer_id.name}"/></td>
             <td><c:out value="${customerOrder.order_id.customer_id.email}"/></td>
-            <td><c:out value="${customerOrder.order_id.customer_id.phone}"/></td>
             <td><c:out value="${customerOrder.order_id.customer_id.phone}"/></td>
             <td><c:out value="${customerOrder.sumAmount}"/></td>
           </tr>
