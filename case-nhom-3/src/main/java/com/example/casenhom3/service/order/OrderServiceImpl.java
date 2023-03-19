@@ -334,6 +334,7 @@ public class OrderServiceImpl implements OrderService
                 StringBuilder s = new StringBuilder();
                 if (status == 0)
                 {
+                    connection.setAutoCommit(false);
                     s.append("Delete from orderdetail");
                     s.append(" ");
                     s.append("where order_id= ?");
@@ -349,6 +350,8 @@ public class OrderServiceImpl implements OrderService
                     p.setLong(1, orderId);
                     p.setLong(2, customerId);
                     p.executeUpdate();
+
+                    connection.commit();
                 }
                 else
                 {
@@ -370,6 +373,7 @@ public class OrderServiceImpl implements OrderService
             finally
             {
                 try {
+                    connection.rollback();
                     connection.close();
                 } catch (SQLException e) {
                     System.out.println("Close Error");
